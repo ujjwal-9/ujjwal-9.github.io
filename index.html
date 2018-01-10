@@ -36,10 +36,25 @@
         font-size: 1.2em;
         content: "k";
     }
+
+    .loader-overlay {
+        width: 100%;
+        height: 100%;
+        background: url('https://cdn.dribbble.com/users/408943/screenshots/2465356/infinity-loader.gif') center no-repeat #2b2c2f;
+        z-index: 99999;
+        position: fixed;
+    }
     </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+    jQuery(window).load(function() {
+        jQuery(".loader-overlay").fadeOut(5000);
+    });
+    </script>
 </head>
 
 <body>
+    <div class="loader-overlay"></div>
     <section class="hero" name="top">
         <div class="shape-layer shape-layer-1">
             <svg class="shape shape-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 207.2 227.4">
