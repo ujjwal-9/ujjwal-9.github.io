@@ -63,7 +63,7 @@ a {
 }
 
 .hero {
-  background: url("https://images.unsplash.com/photo-1455894127589-22f75500213a?format=auto&auto=compress&dpr=1&crop=entropy&fit=crop&w=1280&h=944&q=80") no-repeat center;
+  background: url("../img/background.gif") no-repeat center;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.8);
   background-blend-mode: multiply;
