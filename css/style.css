@@ -228,6 +228,10 @@ a {
   color: #21beff;
 }
 
+.fa-bolt:hover{
+  color: #FFFF00;
+}
+
 a.button {
   display: inline-block;
   color: #FFF;
