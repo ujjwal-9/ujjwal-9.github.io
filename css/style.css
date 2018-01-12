@@ -204,8 +204,8 @@ a {
   background: #FFF;
 }
 
-.fa-google-plus:hover {
-  color: #dd4b39;
+.fa-envelope:hover {
+  color: #ea4c25;
 }
 
 .fa-facebook:hover {
@@ -220,8 +220,12 @@ a {
   color: #55acee;
 }
 
-.fa-chevron-up {
-  color: #fff;
+.fa-github-alt:hover{
+  color: #000;
+}
+
+.fa-font:hover{
+  color: #21beff;
 }
 
 a.button {
