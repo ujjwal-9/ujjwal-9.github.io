@@ -243,10 +243,6 @@ a.button {
   transition: background 0.2s ease-out;
 }
 
-a.button:hover {
-  background-color: #555;
-}
-
 a.button.small {
   background-color: #7f8c8d;
   padding: 8px;
