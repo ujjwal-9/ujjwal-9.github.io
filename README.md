@@ -2,5 +2,5 @@
 
 ### Information
 
-**Hosting Service:** Freenom
+**Hosting Service:** [Freenom](https://my.freenom.com/)
 **Update:** 3rd
