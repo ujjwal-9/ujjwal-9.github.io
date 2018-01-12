@@ -229,6 +229,9 @@ a {
 }
 
 .fa-bolt:hover{
+  color: #FFFFFF;
+}
+.fa-bolt{
   color: #FFFF00;
 }
 
