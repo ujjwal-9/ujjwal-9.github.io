@@ -2,5 +2,9 @@
 
 ### Information
 
-**Hosting Service:** [Freenom](https://my.freenom.com/)
-**Update:** 3rd
+**Hosting Service:** [Github](https://Github.com/)
+**Update:** 4rd
+
+-------------------------------------------------------------------
+
+**Previous Hosting:** [Freenom](https://my.freenom.com/)
