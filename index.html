@@ -4,9 +4,9 @@
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script type="text/javascript">
-    jQuery(window).load(function() {
-        jQuery(".loader-overlay").fadeOut(5000);
-    });
+	    jQuery(window).load(function() {
+	        jQuery(".loader-overlay").fadeOut(5000);
+	    });
     </script>
     <meta charset="UTF-8">
     <meta name="description" content="Portfolio Page of Ujjwal. Do visit it !. Gmail . Linkedin . Facebook . Twitter . Medium . Github . kaggle">
@@ -36,34 +36,47 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="shortcut icon" href="favicon.ico" type="favicon.ico">
     <style type="text/css">
-    .fa-font:before {
-        font-family: roboto;
-        color: #377eb6;
-        font-size: 1.2em;
-        content: "k";
-    }
+	    .fa-font:before {
+	        font-family: roboto;
+	        color: #377eb6;
+	        font-size: 1.2em;
+	        content: "k";
+	    }
 
-    .loader-overlay {
-        width: 100%;
-        height: 100%;
-        background: url('img/infinity.gif') center no-repeat #151515;
-        z-index: 99999;
-        position: fixed;
-    }
+	    .loader-overlay {
+	        width: 100%;
+	        height: 100%;
+	        background: url('img/infinity.gif') center no-repeat #151515;
+	        z-index: 99999;
+	        position: fixed;
+	    }
+
+	    video#bgVideo {
+	        position: absolute;
+	        top: 0px;
+	        left: 0px;
+	        min-width: 100%;
+	        min-height: 100%;
+	        z-index: -1;
+	        object-fit: fill;
+	    }
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112402500-1"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
+        window.dataLayer = window.dataLayer || [];
 
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+	    function gtag() { dataLayer.push(arguments); }
+	    gtag('js', new Date());
 
-    gtag('config', 'UA-112402500-1');
+	    gtag('config', 'UA-112402500-1');
     </script>
 </head>
 
 <body>
+    <video id="bgVideo" class="hero" autoplay loop muted playsinline>
+        <source src="img/background.webm" type="video/webm">
+    </video>
     <div class="loader-overlay"></div>
     <section class="hero" name="top">
         <div class="inner-text">
