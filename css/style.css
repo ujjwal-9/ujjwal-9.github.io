@@ -1,5 +1,5 @@
 html, body {
-  height: 100%;
+  height: 100vh;
 }
 
 body {
@@ -27,9 +27,9 @@ a {
 }
 
 .hero {
-  background: url("../img/background.gif") no-repeat center;
+  background: url("../img/colorful.jpg") no-repeat center;
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.2);
   background-blend-mode: multiply;
   background-attachment: fixed;
   height: 100%;
@@ -74,7 +74,7 @@ a {
 .p1 {
   display: inline-block;
   font-size: 0.7em;
-  font-weight: 900;
+  font-weight: 800;
   margin: 0;
   line-height: 1;
 }
@@ -87,11 +87,12 @@ a {
 
 .p2 {
   display: inline-block;
-  font-size: 0.7em;
-  font-weight: 100;
+  font-size: 0.8em;
+  font-weight: 800;
   margin: 0;
-  line-height: 1;
-  color: #4FC3F7;
+  /*line-height: 1;*/
+  /*color: #4FC3F7;*/
+  color: #1A237E;
 }
 @media only screen and (max-width: 465px) {
   .p2 {
@@ -103,11 +104,16 @@ a {
 .p3 {
   display: block;
   font-size: 0.28em;
-  font-weight: 100;
+  font-weight: 600;
   margin: 0;
   line-height: 1;
   color: #4FC3F7;
 }
+
+b {
+  font-size: 1.2em;
+}
+
 @media only screen and (max-width: 465px) {
   .p3 {
     position: relative;
@@ -180,7 +186,7 @@ a {
 .icon-row i {
   border-radius: 3px;
   cursor: pointer;
-  font-size: 0.4em;
+  font-size: 0.45em;
   margin: 0px 20px;
   padding: 20px 30px;
   transition: all 500ms ease-in-out;
@@ -188,9 +194,9 @@ a {
 }
 @media only screen and (max-width: 465px) {
   .icon-row i {
-    padding: 10px 10px;
-    margin: 20px 10px;
-    font-size: 0.5em;
+    padding: 0px 10px;
+    margin: 5px 10px;
+    font-size: 0.45em;
   }
 }
 
