@@ -243,6 +243,40 @@ b {
   color: #21beff;
 }*/
 
+
+.fa-envelope {
+  color: #ea4c25;
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+
+.fa-linkedin {
+  color: #007bb5;
+}
+
+.fa-twitter {
+  color: #55acee;
+}
+
+.fa-github-alt{
+  color: #000;
+}
+
+.fa-github{
+  color: #000;
+}
+
+.fa-medium{
+  color: #00e470;
+}
+
+.fa-font{
+  color: #21beff;
+}
+
+
 .fa-bolt:hover{
   color: #FFFFFF;
 }
