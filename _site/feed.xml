@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ujjwal Upadhyay</title>
+    <description>Personal webpage</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 17 Jan 2021 14:16:21 -0600</pubDate>
+    <lastBuildDate>Sun, 17 Jan 2021 14:16:21 -0600</lastBuildDate>
+    <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>Knowledge Distillation</title>
+        <description>&lt;p&gt;The blog first appeared at Intel Devpost. &lt;a href=&quot;https://software.intel.com/content/www/us/en/develop/articles/knowledge-distillation-with-keras.html&quot;&gt;Here is the link&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Hinton, Geoffrey, et al. “Distilling the Knowledge in a Neural Network.” arXiv, 9 Mar. 2015, arxiv.org/abs/1503.02531v1.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/1503.02531v1&quot;&gt;Link to paper&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;abstract&quot;&gt;Abstract&lt;/h1&gt;
+
+&lt;p&gt;The problem that we are facing right now is that we have built sophisticated models that can perform complex tasks, but the question is, how do we deploy such bulky models on our mobile devices for instant usage. Obviously, we can deploy our model to the cloud and can call it whenever we need its service but this would require a reliable internet connection and hence it becomes a constraint in production. So what we need is a model that can run on our mobile devices.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/1*vCILduBp-gylqOp7WUme0Q.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;**So what’s the problem? **We can train a small network that can run on the limited computational resource of our mobile device. But there is a problem in this approach. Small models can’t extract many complex features that can be handy in generating predictions unless you devise some elegant algorithm to do so. Though ensemble of small models gives good results but unfortunately making predictions using a whole ensemble of models is cumbersome and may be too computationally expensive to allow deployment to a large number of users. In this case, we resort to either of the 2 techniques:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Knowledge Distillation&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Model Compression&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;If you have developed a better solution or if I might have missed something, please mention in the comments 🙂&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In this blog, we will look at &lt;strong&gt;Knowledge Distillation&lt;/strong&gt;. I will cover model compression in an upcoming blog.&lt;/p&gt;
+
+&lt;p&gt;So knowledge distillation is a simple way to improve the performance of deep learning models on mobile devices. In this process, we train a large and complex network or an ensemble model which can extract important features from the given data and can, therefore, produce better predictions. Then we train a small network with the help of the cumbersome model. This small network will be able to produce comparable results, and in some cases, it can even be made capable of replicating the results of the cumbersome network.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2456/1*r_eguFXxHkAzDRu8tM-95g.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;For example, Since GoogLeNet is a very cumbersome (means deep and complex) network, its deepness gives the ability to extract and complex features and its complexity gives it the power to remain accurate. But the model is heavy enough that one for sure need a large amount of memory and a powerful GPU to perform large and complex calculations. So that’s why we need to transfer the knowledge learned by this model to a much smaller model which can easily be used in mobile.&lt;/p&gt;
+
+&lt;h1 id=&quot;about-cumbersome-models&quot;&gt;About Cumbersome Models&lt;/h1&gt;
+
+&lt;p&gt;Cumbersome models learn to discriminate between a large number of classes. The normal &lt;strong&gt;training objective&lt;/strong&gt; is to maximize the average log probability of the correct answer, and it assigns a probability to all the classes, with some classes given small probabilities with respect to others. The relative probabilities of incorrect answers tell us a lot about how this complex model tends to generalize. An image of a Car, for example, may only have a very small chance of being mistaken for a Truck, but that mistake is still many times more probable than mistaking it for a Cat.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Note that objective function should be chosen such that it generalizes well to new data. So it should be kept in mind while selecting an appropriate objective function that it shouldn’t be selected in such a way that it optimizes well on training data.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Since these operations will be quite heavy for mobile during the performance, so to deal with this situation, we have to transfer the knowledge of the cumbersome model to a small model which can be easily exported to mobile devices. To achieve this, we can consider the cumbersome model as &lt;strong&gt;Teacher Network&lt;/strong&gt; and our new small model as &lt;strong&gt;Student Network.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;teacher-and-student&quot;&gt;Teacher and Student&lt;/h1&gt;
+
+&lt;p&gt;You can ‘distill’ the large and complex network in another much smaller network, and the smaller network does a reasonable job of approximating the original function learned by a deep network.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/1*6G6HHityX_zBgrFfR_z-UQ.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;However, there is a catch, the distilled model (&lt;strong&gt;student&lt;/strong&gt;), is trained to mimic the output of the larger network (&lt;strong&gt;teacher&lt;/strong&gt;), instead of training it on the raw data directly. This has something to do with how the deeper network learns hierarchical abstractions of the features.&lt;/p&gt;
+
+&lt;h1 id=&quot;so-how-is-this-transfer-of-knowledge-done&quot;&gt;So how is this transfer of knowledge done?&lt;/h1&gt;
+
+&lt;center&gt;
+
+![](https://cdn-images-1.medium.com/max/2964/1*WxFiH3XDY1-28tbyi4BGDA.png)
+
+&lt;/center&gt;
+
+&lt;p&gt;The transferring of the generalization ability of the cumbersome model to a small model can be done by the use of class probabilities produced by the cumbersome model as “soft targets” for training the small model. For this transfer stage, we use the same training set or a separate “transfer” set as used for training the cumbersome model. When the cumbersome model is a large ensemble of simpler models, we can use arithmetic or geometric mean of their individual predictive distributions as the soft targets. When the soft targets have high entropy, they provide much more information per training case than hard targets and much less variance in the gradient between training cases, so the small model can often be trained on much less data than the original cumbersome model while using a much higher learning rate.&lt;/p&gt;
+
+&lt;center&gt;
+
+&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/1*ekrPR2eYbD2Y9HWTV5YGxw.jpeg&quot; /&gt;
+
+&lt;/center&gt;
+
+&lt;p&gt;Much of the information about the learned function resides in the ratios of very small probabilities in the soft targets. This is valuable information that defines a rich similarity structure over the data (i. e. it says which 2’s look like 3’s and which look like 7’s or which “golden retriever” looks like “Labrador”) but it has very little influence on the cross-entropy cost function during the transfer stage because the probabilities are so close to zero.&lt;/p&gt;
+
+&lt;h1 id=&quot;distillation&quot;&gt;Distillation&lt;/h1&gt;
+
+&lt;p&gt;For distilling the learned knowledge we use &lt;strong&gt;Logits&lt;/strong&gt; (the inputs to the final softmax). Logits can be used for learning the small model and this can be done by minimizing the squared difference between the logits produced by the cumbersome model and the logits produced by the small model.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/1*yJD5529FbmtbZ-GC25_ITw.png&quot; alt=&quot;&quot; title=&quot;Softmax with Temperature&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;For high temperatures (&lt;strong&gt;&lt;em&gt;T -&amp;gt; inf&lt;/em&gt;&lt;/strong&gt;), all actions have nearly the same probability and at the lower the temperature (&lt;strong&gt;&lt;em&gt;T -&amp;gt; 0&lt;/em&gt;&lt;/strong&gt;), the more expected rewards affect the probability. For low temperature, the probability of the action with the highest expected reward tends to 1.&lt;/p&gt;
+
+&lt;p&gt;In distillation, we raise the temperature of the final softmax until the cumbersome model produces a suitably soft set of targets. We then use the same high temperature when training the small model to match these soft targets.&lt;/p&gt;
+
+&lt;h1 id=&quot;objective-function&quot;&gt;Objective Function&lt;/h1&gt;
+
+&lt;p&gt;The first objective function is the cross-entropy with the soft targets and this cross entropy is computed using the same high temperature in the softmax of the distilled model as was used for generating the soft targets from the cumbersome model.&lt;/p&gt;
+
+&lt;p&gt;The second objective function is the cross-entropy with the correct labels and this is computed using exactly the same logits in softmax of the distilled model but at a temperature of 1&lt;/p&gt;
+
+&lt;center&gt;
+
+&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/1*rbi3dpUQaQjI-ezbyDzhug.png&quot; /&gt;
+
+&lt;/center&gt;
+
+&lt;h1 id=&quot;training-ensembles-of-specialists&quot;&gt;Training ensembles of specialists&lt;/h1&gt;
+
+&lt;p&gt;Training an ensemble of models is a very simple way to take advantage of parallel computation. But there is an objection that an ensemble requires too much computation at test time. But this can be easily dealt with the technique we are learning. And so “Distillation” can be used to deal with this allegation.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/1*aIBLpCWRF5J1kbXE_s9KcQ.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h1 id=&quot;specialist-models&quot;&gt;&lt;strong&gt;Specialist Models&lt;/strong&gt;&lt;/h1&gt;
+
+&lt;p&gt;&lt;em&gt;Specialist models and one generalist model make our one cumbersome model&lt;/em&gt;. Generalist Model is trained on all training data and Specialist Models focus on a different confusable subset of the classes can reduce the total amount of computation required to learn an ensemble. The main problem with specialists is that they overfit very easily. But this overfitting may be prevented by using soft targets.&lt;/p&gt;
+
+&lt;h1 id=&quot;reduce-overfitting-in-specialist-models&quot;&gt;Reduce Overfitting in Specialist Models&lt;/h1&gt;
+
+&lt;p&gt;To reduce overfitting and share the work of learning lower level feature detectors, each specialist model is initialized with the weights of the generalist model. These weights are then slightly modified by training the specialist, with half its examples coming from its special subset, and half sampled at random from the remainder of the training set. After training, we can correct for the biased training set by incrementing the logit of the dustbin class by the log of the proportion by which the specialist class is oversampled.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/1*TDMCC6ZHzxQo-pn6Y-ZZWA.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h1 id=&quot;assign-classes-to-specialists&quot;&gt;Assign classes to Specialists&lt;/h1&gt;
+
+&lt;p&gt;We apply a clustering algorithm to the covariance matrix of the predictions of our generalist model so that a set of classes Sm that are often predicted together will be used as targets for one of our specialist models, m. So we apply K-means clustering to the columns of the covariance matrix to get our required clusters or classes.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/1*Coch85xMgRVk6UbS5zjzVg.png&quot; alt=&quot;&quot; title=&quot;Assign a score to an ordered covariance matrix. High correlations within a cluster improve the score. High correlations between clusters decease the score.&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Covariance/Correlation clustering provides a method for clustering a set of objects into the optimum number of clusters without specifying that number in advance.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;performing-inference&quot;&gt;Performing inference&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;For each test case, we find the ‘n’ most probable classes according to the generalist model. Call this set of classes k.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;We then take all the specialist models, m, whose special subset of confusable classes, Sm, has a non-empty intersection with k and call this the active set of specialists Ak (note that this set may be empty). We then find the full probability distribution q over all the classes that minimizes:&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+\[KL(p^g, q) + \sum_{m \epsilon A_k} KL(p^m, q)\]
+
+\[KL(p||q) = \sum_{i}p_i \log\frac{p_i}{q_i}\]
+
+&lt;!-- &lt;center&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/1*NRXkBNMx4VE5xDYGl5aB-w.png&quot;&gt;&lt;/center&gt;
+
+&lt;center&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/1*MpnL9tKLfqAdhAJkY6hnwA.png&quot;&gt;&lt;/center&gt; --&gt;
+
+&lt;p&gt;KL denotes the KL divergence, and $p^m$, $p^g$ denote the probability distribution of a specialist model or the generalist full model. The distribution $p^m$ is over all the specialist classes of $m$ plus a single dustbin class, so when computing its $KL$ divergence from the full $q$ distribution we sum all of the probabilities that the full $q$ distribution assigns to all the classes in $m$’s dustbin.&lt;/p&gt;
+
+&lt;h1 id=&quot;soft-targets-as-regularizers&quot;&gt;Soft Targets as Regularizers&lt;/h1&gt;
+
+&lt;p&gt;Soft Targets or labels predicted from a model contain more information that binary hard labels due to the fact that they encode similarity measures between the classes.&lt;/p&gt;
+
+&lt;p&gt;Incorrect labels tagged by the model describe co-label similarities, and these similarities should be evident in future stages of learning, even if the effect is diminished. For example, imagine training a deep neural net on a classification dataset of various dog breeds. In the initial few stages of learning the model will not accurately distinguish between similar dog-breeds such as a Belgian Shepherd versus a German Shepherd. This same effect, although not so exaggerated, should appear in later stages of training. If given an image of a German Shepherd, the model predicts the class German Shepherd with a high-accuracy, the next highest predicted dog should still be a Belgian Shepherd or a similar looking dog. Over-fitting starts to occur when the majority of these co-label effects begin to disappear. By forcing the model to contain these effects in the later stages of training, we reduced the amount of over-fitting.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Though using soft targets as Regularizers is not considered very effective.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Associated Code can be found at &lt;a href=&quot;https://github.com/Ujjwal-9/Knowledge-Distillation&quot;&gt;Github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;Follow me on twitter &lt;a href=&quot;https://twitter.com/theujjwal9&quot;&gt;@theujjwal9&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 04 May 2018 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/articles/18/knowledge-distillation</link>
+        <guid isPermaLink="true">http://localhost:4000/articles/18/knowledge-distillation</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>The 7 Most Remote Chicago Parks</title>
+        <description>&lt;p&gt;Stretching over 18 miles from Edgewater to South Shore, Chicago’s Lakefront Trail might be the city’s most iconic park. But the term “trail” is absurd. For most of its length, this paved path runs adjacent to a six-lane highway!
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;That observation led me to think about the points in Chicago that are farthest from a road. I wrote a &lt;a href=&quot;https://github.com/potash/higher-ground&quot;&gt;computer program&lt;/a&gt; to calculate the (Euclidean) distance to the nearest road at every point in Chicago. Then I defined the “remoteness” of a park to be the farthest I could from a road within that park.&lt;/p&gt;
+
+&lt;p&gt;How remote is the Lakefront Trail? Just 608 feet, when the path goes east around Museum Campus:&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+&lt;figure id=&quot;lakefront&quot; class=&quot;higherground fullwidth&quot;&gt;
+    &lt;div id=&quot;lakefront-panorama&quot; class=&quot;higherground_panorama&quot;&gt;&lt;/div&gt;
+    &lt;div id=&quot;lakefront-map&quot; class=&quot;higherground_map&quot;&gt;&lt;/div&gt;
+    &lt;figcaption&gt;Above, an interactive panorama that I shot at the point farthest from a road on the Lakefront Trail. Below, a map with a marker at the point and a circle with radius equal to the distance to the nearest road, so that the circle contains no roads.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;script&gt;higher_ground([&quot;lakefront&quot;, &quot;-87.61536&quot;, &quot;41.86810&quot;, &quot;https://i.imgur.com/9tiJATm.jpg&quot;, &quot;608&quot;, &quot;0&quot;, &quot;Above, an interactive panorama that I shot at the point farthest from a road on the Lakefront Trail. Below, a map with a marker at the point and a circle with radius equal to the distance to the nearest road, so that the circle contains no roads.&quot;])&lt;/script&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Next I visited the most remote parks. I was surprised in a number of ways. First, by just how far from a road I could get within the city. Second, by the beauty that this simplistic measure of remoteness led me to. Third, by the fact that 5 of the 7 most remote parks are on the South Side. I don’t think that’s a coincidence. Nor do I think it can be principally explained by a generosity of City Council to a side of town it otherwise neglects. The abundance of park land on the South Side is part of a larger story in land use history across the country: the conversion of former industrial and military sites into parks.&lt;/p&gt;
+
+&lt;p&gt;On to the list.&lt;/p&gt;
+
+&lt;h2 id=&quot;7-powderhorn-marsh-and-prairie-1487-ft&quot;&gt;7. Powderhorn Marsh and Prairie: 1,487 ft&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Tucked between rail yards and neighborhoods at the far southeast side of Chicago, Powderhorn Lake Forest Preserve’s 192 acres of woodland, prairie and wetland reflect the ecological richness that survives in similar pockets across the industrialized Calumet region. The lake and surrounding lands are popular among anglers, nature lovers and birders. (&lt;a href=&quot;http://fpdcc.com/powderhorn-lake/&quot;&gt;FPDCC&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;/p&gt;
+&lt;figure id=&quot;powderhorn&quot; class=&quot;higherground fullwidth&quot;&gt;
+    &lt;div id=&quot;powderhorn-panorama&quot; class=&quot;higherground_panorama&quot;&gt;&lt;/div&gt;
+    &lt;div id=&quot;powderhorn-map&quot; class=&quot;higherground_map&quot;&gt;&lt;/div&gt;
+    &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;script&gt;higher_ground([&quot;powderhorn&quot;, &quot;-87.53003&quot;, &quot;41.64503&quot;, &quot;https://i.imgur.com/FFz1iDz.jpg&quot;, &quot;1487&quot;, &quot;32&quot;])&lt;/script&gt;
+
+&lt;h2 id=&quot;6-lincoln-park-1595-ft&quot;&gt;6. Lincoln Park: 1,595 ft&lt;/h2&gt;
+&lt;p&gt;Lincoln Park is Chicago’s largest park at 1,208 acres. There’s a lot to see, but roads criss-cross through most of it. The farthest point from a road in Lincoln Park is the Montrose Point Bird Sanctuary.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;During the Cold War, Montrose point, which juts out into Lake Michigan, was used by the United States Army as a Nike missile base. The Army camouflaged their missile launchers and barracks behind honeysuckle hedges. (&lt;a href=&quot;https://en.wikipedia.org/wiki/Lincoln_Park&quot;&gt;Wikipedia&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;/p&gt;
+&lt;figure id=&quot;montrose&quot; class=&quot;higherground fullwidth&quot;&gt;
+    &lt;div id=&quot;montrose-panorama&quot; class=&quot;higherground_panorama&quot;&gt;&lt;/div&gt;
+    &lt;div id=&quot;montrose-map&quot; class=&quot;higherground_map&quot;&gt;&lt;/div&gt;
+    &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;script&gt;higher_ground([&quot;montrose&quot;, &quot;-87.63199&quot;, &quot;41.96656&quot;, &quot;https://i.imgur.com/Wo9WkYc.jpg&quot;, &quot;1595&quot;, &quot;-72&quot;])&lt;/script&gt;
+
+&lt;h2 id=&quot;5-beaubian-woods-1633-ft&quot;&gt;5. Beaubian Woods: 1,633 ft&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Before European settlement, Beaubien Woods was a wet prairie and open savanna community. Early agriculture and grazing altered the soil and removed native vegetation. Railroad and expressway construction further damaged soils and cleared areas for use in construction staging. (&lt;a href=&quot;http://fpdcc.com/beaubien-woods/&quot;&gt;FPDCC&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;/p&gt;
+&lt;figure id=&quot;beaubian&quot; class=&quot;higherground fullwidth&quot;&gt;
+    &lt;div id=&quot;beaubian-panorama&quot; class=&quot;higherground_panorama&quot;&gt;&lt;/div&gt;
+    &lt;div id=&quot;beaubian-map&quot; class=&quot;higherground_map&quot;&gt;&lt;/div&gt;
+    &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;script&gt;higher_ground([&quot;beaubian&quot;, &quot;-87.58553&quot;, &quot;41.64588&quot;, &quot;https://i.imgur.com/BbhuS7w.jpg&quot;, &quot;1633&quot;, &quot;131&quot;])&lt;/script&gt;
+
+&lt;h2 id=&quot;4-catherine-chevalier-woods-1650-ft&quot;&gt;4. Catherine Chevalier Woods: 1,650 ft&lt;/h2&gt;
+&lt;p&gt;Chevalier Woods is the most accessible park on this list: the entrance is less than a mile from the Cumberland stop on the Blue Line; the Des Plaines River Trail makes it easy to get to by bike; and if you’re visiting from out of town, it’s just a few miles from O’Hare airport! That last fact makes this park better for watching planes than birds. And as you can see from the photo there’s almost no understory. You can thank the &lt;a href=&quot;https://www.cityofchicago.org/content/dam/city/depts/zlup/Sustainable_Development/Publications/Chicago_Nature_and_Wildlife_Plan/Catherine_Chevalier_Woods_Forest_Preserve.pdf&quot;&gt;deer&lt;/a&gt; for that.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+&lt;figure id=&quot;chevalier&quot; class=&quot;higherground fullwidth&quot;&gt;
+    &lt;div id=&quot;chevalier-panorama&quot; class=&quot;higherground_panorama&quot;&gt;&lt;/div&gt;
+    &lt;div id=&quot;chevalier-map&quot; class=&quot;higherground_map&quot;&gt;&lt;/div&gt;
+    &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;script&gt;higher_ground([&quot;chevalier&quot;, &quot;-87.85596&quot;, &quot;41.97348&quot;, &quot;https://i.imgur.com/gWw3QC8.jpg&quot;, &quot;1650&quot;, &quot;78&quot;])&lt;/script&gt;
+
+&lt;h2 id=&quot;3-william-w-powers-state-recreation-area-1814-ft&quot;&gt;3. William W. Powers State Recreation Area: 1,814 ft&lt;/h2&gt;
+&lt;p&gt;Powers Recreation Area is another former Nike missile site. There’s not much to see here (apparently the main attraction is fishing) but you can get pretty far from a road by bushwhacking out on this man-made peninsula.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+&lt;figure id=&quot;powers&quot; class=&quot;higherground fullwidth&quot;&gt;
+    &lt;div id=&quot;powers-panorama&quot; class=&quot;higherground_panorama&quot;&gt;&lt;/div&gt;
+    &lt;div id=&quot;powers-map&quot; class=&quot;higherground_map&quot;&gt;&lt;/div&gt;
+    &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;script&gt;higher_ground([&quot;powers&quot;, &quot;-87.53181&quot;, &quot;41.66287&quot;, &quot;https://i.imgur.com/r3e9kBC.jpg&quot;, &quot;1814&quot;, &quot;-5&quot;])&lt;/script&gt;
+
+&lt;h2 id=&quot;2-big-marsh-2324-ft&quot;&gt;2. Big Marsh: 2,324 ft&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Once the site of a waste and slag dumping ground from surrounding industrial operations since the late 1800s, the City of Chicago and the Chicago Park District teamed up in early 2000s to restore this area to a healthy habitat and eco-recreation park.  The Chicago Park District acquired the site in 2011… (&lt;a href=&quot;http://www.chicagoparkdistrict.com/parks/big-marsh-park-no564/&quot;&gt;Chicago Park District&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;/p&gt;
+&lt;figure id=&quot;bigmarsh&quot; class=&quot;higherground fullwidth&quot;&gt;
+    &lt;div id=&quot;bigmarsh-panorama&quot; class=&quot;higherground_panorama&quot;&gt;&lt;/div&gt;
+    &lt;div id=&quot;bigmarsh-map&quot; class=&quot;higherground_map&quot;&gt;&lt;/div&gt;
+    &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;script&gt;higher_ground([&quot;bigmarsh&quot;, &quot;-87.56799&quot;, &quot;41.69063&quot;, &quot;https://i.imgur.com/pskOvVm.jpg&quot;, &quot;2324&quot;, &quot;10&quot;])&lt;/script&gt;
+
+&lt;h2 id=&quot;1-park-no-566-2614-ft&quot;&gt;1. Park No. 566: 2,614 ft&lt;/h2&gt;
+&lt;p&gt;The farthest point from a road in Chicago’s parks lies on the former site of U.S. Steel South Works. The steel mill was active from 1901 until its closure for economic reasons in 1992. The buildings were demolished in 1997. A narrow stretch of coast was acquired by the Park District for Park No. 566. The rest of the land was supposed to be the site of a mixed development of residential, retail, and wind power. That &lt;a href=&quot;https://chicago.curbed.com/2016/3/1/11140996/chicago-lakeside-development-project-abandoned&quot;&gt;folded once&lt;/a&gt; but has since been &lt;a href=&quot;https://chicago.curbed.com/2017/1/31/14445698/chicago-south-works-us-steel-new-development-plan&quot;&gt;resurrected&lt;/a&gt;. Should the plans materialize, expect the construction of new roads to bump this park off the list.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+&lt;figure id=&quot;park566&quot; class=&quot;higherground fullwidth&quot;&gt;
+    &lt;div id=&quot;park566-panorama&quot; class=&quot;higherground_panorama&quot;&gt;&lt;/div&gt;
+    &lt;div id=&quot;park566-map&quot; class=&quot;higherground_map&quot;&gt;&lt;/div&gt;
+    &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;script&gt;higher_ground([&quot;park566&quot;, &quot;-87.53085&quot;, &quot;41.74773&quot;, &quot;https://i.imgur.com/mCg3C5H.jpg&quot;, &quot;2614&quot;, &quot;-175&quot;])&lt;/script&gt;
+
+&lt;p&gt;And here’s a bonus:&lt;/p&gt;
+
+&lt;h2 id=&quot;calumet-breakwater-6066-ft&quot;&gt;Calumet Breakwater: 6,066 ft!&lt;/h2&gt;
+&lt;p&gt;It’s not a park, but I couldn’t resist checking out this concrete barrier that protects Calumet Harbor. It extends more than a mile into Lake Michigan. The lighthouse at the end is technically in Indiana waters!&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+&lt;figure id=&quot;calumet&quot; class=&quot;higherground fullwidth&quot;&gt;
+    &lt;div id=&quot;calumet-panorama&quot; class=&quot;higherground_panorama&quot;&gt;&lt;/div&gt;
+    &lt;div id=&quot;calumet-map&quot; class=&quot;higherground_map&quot;&gt;&lt;/div&gt;
+    &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;script&gt;higher_ground([&quot;calumet&quot;, &quot;-87.50793&quot;, &quot;41.73683&quot;, &quot;https://i.imgur.com/SxfN0JY.jpg&quot;, &quot;6066&quot;, &quot;143&quot;])&lt;/script&gt;
+
+</description>
+        <pubDate>Sun, 05 Nov 2017 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/articles/17/chicago-parks</link>
+        <guid isPermaLink="true">http://localhost:4000/articles/17/chicago-parks</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

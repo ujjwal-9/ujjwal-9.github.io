@@ -1,0 +1,24 @@
+<!--- Header and nav template site-wide -->
+<header>
+    <nav class="group">
+        <ul class="topnav" style="float:left">
+            <li><a style="padding-top:.5em" href="{{site.baseurl}}/"><strong>Ujjwal Upadhyay</strong></a></li>
+        </ul>
+	<ul class="topnav">    
+        {% assign pages = site.pages | sort:"weight" | reverse %}
+	{% for node in pages %}
+            {% if node.title %}
+            {% unless node.nav_exclude %}
+	        {% if page.url == node.url %}
+                <li><a class="active right" href="{{node.url | prepend: site.baseurl}}">{{node.title}}</a></li>
+	        {% else %}
+                <li><a class="right" href="{{node.url | prepend: site.baseurl}}">{{node.title}}</a></li>
+	        {% endif %}
+	    {% endunless %}
+            {% endif %}
+  	{% endfor %}
+        <li><a class="right" href="https://drive.google.com/file/d/1T3-bmXLxtnoR4x3_KS89RSL1-jLPsikA/view?usp=sharing">cv</a></li>
+	</ul>
+	</nav>
+        <hr class="slender">
+</header>
