@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ujjwal Upadhyay</title>
+    <description>Personal webpage</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 18 Jan 2021 15:39:56 -0600</pubDate>
+    <lastBuildDate>Mon, 18 Jan 2021 15:39:56 -0600</lastBuildDate>
+    <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>Docker Overview</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://docker.com/&quot;&gt;Docker Website!&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Checkout my project code @ &lt;a href=&quot;https://github.com/Ujjwal-9/medical-training/tree/master/dockerized-run&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Follow me on twitter &lt;a href=&quot;https://twitter.com/theujjwal9&quot;&gt;@theujjwal9&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;abstract&quot;&gt;Abstract&lt;/h1&gt;
+&lt;p&gt;We often try to simplify things but usually end up making it much more difficult. Similar is the case with code. We code, install additional dependencies, and remove redundancies. With this 3 step process, we sometimes end up with very difficult process to explain on how to reproduce the results and rerun the experiments. This blog explains about docker which is a tool designed to make it easier to create, deploy, and run applications by using containers.&lt;/p&gt;
+
+&lt;h1 id=&quot;earlier-work&quot;&gt;Earlier Work&lt;/h1&gt;
+&lt;p&gt;Before docker was introduced, virtualization of resources was used which provided independent virtual machines for clients to work upon. But this came with a price of heavy operating systems which may easily exceed over &lt;em&gt;1GB&lt;/em&gt; despite supporting light applications (like 300MB). So, this drawback led to advent of containers (dockers).&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;/assets/img/docker/docker-vs-vm.png&quot; width=&quot;600&quot; style=&quot;margin-top: 2rem;&quot; /&gt;
+  &lt;figcaption style=&quot;margin-top: 2rem;&quot;&gt;Docker and Virtual Machine Architecture&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&quot;what-is-docker&quot;&gt;What is docker?&lt;/h1&gt;
+&lt;p&gt;Docker is based on containers which run on shared resources of your PC but in isolation as shown in the following architecture. Container is an efficient mechanism to keep your software components together and maintainable. You can also run multiple containers at the same time to support a serive. Docker also provides with a mechanism to start all the containers concerned with that service with one command using docker compose. We will talk about it later.&lt;/p&gt;
+
+&lt;h1 id=&quot;dockerfile&quot;&gt;Dockerfile&lt;/h1&gt;
+
+&lt;p&gt;A Dockerfile is a simple text file that contains a list of commands that the Docker client calls while creating an image.&lt;/p&gt;
+
+&lt;p&gt;Working Dockerfile for conda environemnt.&lt;/p&gt;
+
+&lt;div class=&quot;language-dockerfile highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; continuumio/miniconda3&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;WORKDIR&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; /app&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Create the environment:&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;COPY&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; environment.yml .&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;RUN &lt;/span&gt;conda &lt;span class=&quot;nb&quot;&gt;env &lt;/span&gt;create &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; environment.yml
+
+&lt;span class=&quot;c&quot;&gt;# Make RUN commands use the new environment:&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;SHELL&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; [&quot;conda&quot;, &quot;run&quot;, &quot;-n&quot;, &quot;myenv&quot;, &quot;/bin/bash&quot;, &quot;-c&quot;]&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;RUN &lt;/span&gt;python &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;import numpy&quot;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# The code to run when container is started:&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;COPY&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; run.py .&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ENTRYPOINT&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; [&quot;conda&quot;, &quot;run&quot;, &quot;-n&quot;, &quot;myenv&quot;, &quot;python&quot;, &quot;run.py&quot;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;FROM creates a layer from the continuumio/miniconda3 Docker image.&lt;/li&gt;
+&lt;li&gt;COPY adds files from your Docker client’s current directory.&lt;/li&gt;
+&lt;li&gt;RUN builds your application with make.&lt;/li&gt;
+&lt;li&gt;CMD specifies what command to run within the container.&lt;/li&gt;
+&lt;li&gt;ENTRYPOINT is to set the image’s main command, allowing that image to be run as though it was that command.&lt;/li&gt;
+&lt;li&gt;SHELL instruction allows the default shell used for the shell form of commands to be overridden. The default shell on Linux is [&quot;/bin/sh&quot;, &quot;-c&quot;], and on Windows is [&quot;cmd&quot;, &quot;/S&quot;, &quot;/C&quot;]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- 1. FROM creates a layer from the continuumio/miniconda3 Docker image.
+
+2. COPY adds files from your Docker client’s current directory.
+
+3. RUN builds your application with make.
+
+4. CMD specifies what command to run within the container.
+
+5. ENTRYPOINT is to set the image’s main command, allowing that image to be run as though it was that command.
+
+6. SHELL instruction allows the default shell used for the shell form of commands to be overridden. The default shell on Linux is `[&quot;/bin/sh&quot;, &quot;-c&quot;]`, and on Windows is `[&quot;cmd&quot;, &quot;/S&quot;, &quot;/C&quot;]` --&gt;
+
+&lt;p&gt;Container Image is built using&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker build &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; &amp;lt;app_name&amp;gt;:&amp;lt;label_name&amp;gt; &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;To make sure certain package is installed we can add,&lt;/p&gt;
+
+&lt;div class=&quot;language-dockerfile highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;RUN &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Make sure flask is installed:&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;RUN &lt;/span&gt;python &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;import flask&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The image defined by your Dockerfile generate containers that have &lt;strong&gt;ephemeral&lt;/strong&gt; states. It gets destroyed as soon as process is over. To access files in container we may either bash into container to run the command which generates a new file which we need on our local file system and then use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$docker cp&lt;/code&gt; to tranfer to local file system. And if we wish to use files from our local system in docker container we may mount those files either using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;COPY&lt;/code&gt; when generating container or we may mount it at runtime using volume. We can also specify volume which can be utilized by both local file system and docker.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker build &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; dockerized-run &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker run &lt;span class=&quot;nt&quot;&gt;--rm&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-it&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; &amp;lt;PATH-TO_IMAGES&amp;gt;/images:/app/images &lt;span class=&quot;nt&quot;&gt;--entrypoint&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/bin/bash dockerized-run
+
+&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;base&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; root@b74706db6f68:/app# &lt;span class=&quot;nb&quot;&gt;ls
+&lt;/span&gt;environment.yml  images
+&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;base&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; root@b74706db6f68:/app# &lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;images
+&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;base&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; root@b74706db6f68:/app/images# &lt;span class=&quot;nb&quot;&gt;ls
+&lt;/span&gt;out.png  test.png
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;volume&quot;&gt;Volume&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Mounting volume at runtime.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker run &lt;span class=&quot;nt&quot;&gt;--rm&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-it&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; &amp;lt;source-path&amp;gt;:&amp;lt;target-path&amp;gt; &amp;lt;docker-container-name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The above command will run docker with specified volume (-v) mounted in the&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Mounting volume at build time using docker compose.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;3.9&quot;&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;services&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;deeplearning&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;.&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;volumes&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;./images:/app/images&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Here &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;volume&lt;/code&gt; keyword specifies to mount current directory on local file system to /images on container. So the changes made to those files mounted at /images will also be reflected in local file system.&lt;/p&gt;
+
+&lt;h1 id=&quot;docker-compose&quot;&gt;Docker Compose&lt;/h1&gt;
+
+&lt;p&gt;It is used to start multiple containers as a single service. You may start services like react and flask server together as a service.&lt;/p&gt;
+
+&lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;3.9&quot;&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;services&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;web&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;.&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;ports&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;5000:5000&quot;&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;redis&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;redis:alpine&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Taken from docker compose example at &lt;a href=&quot;https://docs.docker.com/compose/gettingstarted/&quot;&gt;docker compose docs&lt;/a&gt;. Here we are starting 2 services 	web and redis. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Web&lt;/code&gt; is build using dockerfile as specified by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;. (dot)&lt;/code&gt; pointing towards dockerfile and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;port&lt;/code&gt; binds the container and the host machine to the exposed port, 5000. This can also be done using dockerfile by using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;EXPOSE&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;version&lt;/code&gt; is used to specify that we want the details of the version of Docker Compose.&lt;/p&gt;
+
+&lt;h1 id=&quot;application&quot;&gt;Application&lt;/h1&gt;
+&lt;p&gt;Lets also talk about dockers application in AI research. Now given todays deep learning systems and its other applications, the need for using sameversion of library becomes necessary for inducing reproducibilty in these models. The most common package manager used for python is anaconda.&lt;/p&gt;
+
+&lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;myenv&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;channels&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;conda-forge&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;dependencies&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;python=3.8&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;numpy&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;We build it with below specified dockerfile.&lt;/p&gt;
+
+&lt;div class=&quot;language-dockerfile highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; continuumio/miniconda3&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;COPY&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; environment.yml .&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;RUN &lt;/span&gt;conda &lt;span class=&quot;nb&quot;&gt;env &lt;/span&gt;create &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; environment.yml
+
+&lt;span class=&quot;k&quot;&gt;ENTRYPOINT&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; [&quot;conda&quot;, &quot;run&quot;, &quot;-n&quot;, &quot;example&quot;, \&lt;/span&gt;
+            &quot;python&quot;, &quot;-c&quot;, \
+            &quot;import numpy; print('success!')&quot;]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;In this environment, we install Python 3.8 and NumPy, and when we run the image it imports NumPy to make sure everything is working. This can bloat upto &lt;em&gt;950MB&lt;/em&gt;. Where is all the disk space being going?&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Conda caches downloaded packages.&lt;/li&gt;
+  &lt;li&gt;Conda base environment where toolchain is installed takes huge space. For example, when we install &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;continuumio/miniconda3&lt;/code&gt;, it comes with its own python which we dont intend use.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;First problem can be solved by removing those cached files. Second problem is conda specific and hence unavoidable but we can do away with it at runtime.&lt;/p&gt;
+
+&lt;div class=&quot;language-dockerfile highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# The build-stage image:&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; continuumio/miniconda3 AS build&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Install the package as normal:&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;COPY&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; environment.yml .&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;RUN &lt;/span&gt;conda &lt;span class=&quot;nb&quot;&gt;env &lt;/span&gt;create &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; environment.yml
+
+&lt;span class=&quot;c&quot;&gt;# Install conda-pack:&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;RUN &lt;/span&gt;conda &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; conda-forge conda-pack
+
+&lt;span class=&quot;c&quot;&gt;# Use conda-pack to create a standalone enviornment&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# in /venv:&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;RUN &lt;/span&gt;conda-pack &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; example &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; /tmp/env.tar &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\
+&lt;/span&gt;  &lt;span class=&quot;nb&quot;&gt;mkdir&lt;/span&gt; /venv &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /venv &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;tar &lt;/span&gt;xf /tmp/env.tar &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\
+&lt;/span&gt;  &lt;span class=&quot;nb&quot;&gt;rm&lt;/span&gt; /tmp/env.tar
+
+&lt;span class=&quot;c&quot;&gt;# We've put venv in same path it'll be in final image,&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# so now fix up paths:&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;RUN &lt;/span&gt;/venv/bin/conda-unpack
+
+
+&lt;span class=&quot;c&quot;&gt;# The runtime-stage image; we can use Debian as the&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# base image since the Conda env also includes Python&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# for us.&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; debian:buster AS runtime&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Copy /venv from the previous stage:&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;COPY&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; --from=build /venv /venv&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# When image is run, run the code with the environment&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# activated:&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;SHELL&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; [&quot;/bin/bash&quot;, &quot;-c&quot;]&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ENTRYPOINT&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; source /venv/bin/activate &amp;amp;&amp;amp; \&lt;/span&gt;
+           python -c &quot;import numpy; print('success!')&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;The above solutions is provided &lt;a href=&quot;https://pythonspeed.com/articles/conda-docker-image-size/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 24 Dec 2020 00:00:00 -0600</pubDate>
+        <link>/articles/20/docker</link>
+        <guid isPermaLink="true">/articles/20/docker</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Knowledge Distillation</title>
+        <description>&lt;p&gt;The blog first appeared at Intel Devpost. &lt;a href=&quot;https://software.intel.com/content/www/us/en/develop/articles/knowledge-distillation-with-keras.html&quot;&gt;Here is the link&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Hinton, Geoffrey, et al. “Distilling the Knowledge in a Neural Network.” arXiv, 9 Mar. 2015, arxiv.org/abs/1503.02531v1.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/1503.02531v1&quot;&gt;Link to paper&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Follow me on twitter &lt;a href=&quot;https://twitter.com/theujjwal9&quot;&gt;@theujjwal9&lt;/a&gt;&lt;/p&gt;
+
+&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  jax: [&quot;input/TeX&quot;,&quot;output/HTML-CSS&quot;],
+  displayAlign: &quot;left&quot;,
+  &quot;HTML-CSS&quot;: { scale: 110}
+});
+&lt;/script&gt;
+
+&lt;h1 id=&quot;abstract&quot;&gt;Abstract&lt;/h1&gt;
+
+&lt;p&gt;The problem that we are facing right now is that we have built sophisticated models that can perform complex tasks, but the question is, how do we deploy such bulky models on our mobile devices for instant usage. Obviously, we can deploy our model to the cloud and can call it whenever we need its service but this would require a reliable internet connection and hence it becomes a constraint in production. So what we need is a model that can run on our mobile devices.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/1*vCILduBp-gylqOp7WUme0Q.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;So what’s the problem? We can train a small network that can run on the limited computational resource of our mobile device. But there is a problem in this approach. Small models can’t extract many complex features that can be handy in generating predictions unless you devise some elegant algorithm to do so. Though ensemble of small models gives good results but unfortunately making predictions using a whole ensemble of models is cumbersome and may be too computationally expensive to allow deployment to a large number of users. In this case, we resort to either of the 2 techniques:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Knowledge Distillation&lt;/li&gt;
+  &lt;li&gt;Model Compression&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you have developed a better solution or if I might have missed something, please mention in the comments 🙂&lt;/p&gt;
+
+&lt;p&gt;In this blog, we will look at &lt;strong&gt;Knowledge Distillation&lt;/strong&gt;. I will cover model compression in an upcoming blog.&lt;/p&gt;
+
+&lt;p&gt;So knowledge distillation is a simple way to improve the performance of deep learning models on mobile devices. In this process, we train a large and complex network or an ensemble model which can extract important features from the given data and can, therefore, produce better predictions. Then we train a small network with the help of the cumbersome model. This small network will be able to produce comparable results, and in some cases, it can even be made capable of replicating the results of the cumbersome network.&lt;/p&gt;
+
+&lt;figure class=&quot;fullwidth&quot;&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2456/1*r_eguFXxHkAzDRu8tM-95g.jpeg&quot; /&gt;&lt;figcaption&gt;GoogleNet&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;img src=&quot;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;For example, Since GoogLeNet is a very cumbersome (means deep and complex) network, its deepness gives the ability to extract and complex features and its complexity gives it the power to remain accurate. But the model is heavy enough that one for sure need a large amount of memory and a powerful GPU to perform large and complex calculations. So that’s why we need to transfer the knowledge learned by this model to a much smaller model which can easily be used in mobile.&lt;/p&gt;
+
+&lt;h1 id=&quot;about-cumbersome-models&quot;&gt;About Cumbersome Models&lt;/h1&gt;
+
+&lt;p&gt;Cumbersome models learn to discriminate between a large number of classes. The normal &lt;strong&gt;training objective&lt;/strong&gt; is to maximize the average log probability of the correct answer, and it assigns a probability to all the classes, with some classes given small probabilities with respect to others. The relative probabilities of incorrect answers tell us a lot about how this complex model tends to generalize. An image of a Car, for example, may only have a very small chance of being mistaken for a Truck, but that mistake is still many times more probable than mistaking it for a Cat.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Note that objective function should be chosen such that it generalizes well to new data. So it should be kept in mind while selecting an appropriate objective function that it shouldn’t be selected in such a way that it optimizes well on training data.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Since these operations will be quite heavy for mobile during the performance, so to deal with this situation, we have to transfer the knowledge of the cumbersome model to a small model which can be easily exported to mobile devices. To achieve this, we can consider the cumbersome model as &lt;strong&gt;Teacher Network&lt;/strong&gt; and our new small model as &lt;strong&gt;Student Network.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;teacher-and-student&quot;&gt;Teacher and Student&lt;/h1&gt;
+
+&lt;p&gt;You can ‘distill’ the large and complex network in another much smaller network, and the smaller network does a reasonable job of approximating the original function learned by a deep network.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/1*6G6HHityX_zBgrFfR_z-UQ.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;However, there is a catch, the distilled model (&lt;strong&gt;student&lt;/strong&gt;), is trained to mimic the output of the larger network (&lt;strong&gt;teacher&lt;/strong&gt;), instead of training it on the raw data directly. This has something to do with how the deeper network learns hierarchical abstractions of the features.&lt;/p&gt;
+
+&lt;h1 id=&quot;so-how-is-this-transfer-of-knowledge-done&quot;&gt;So how is this transfer of knowledge done?&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2964/1*WxFiH3XDY1-28tbyi4BGDA.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The transferring of the generalization ability of the cumbersome model to a small model can be done by the use of class probabilities produced by the cumbersome model as “soft targets” for training the small model. For this transfer stage, we use the same training set or a separate “transfer” set as used for training the cumbersome model. When the cumbersome model is a large ensemble of simpler models, we can use arithmetic or geometric mean of their individual predictive distributions as the soft targets. When the soft targets have high entropy, they provide much more information per training case than hard targets and much less variance in the gradient between training cases, so the small model can often be trained on much less data than the original cumbersome model while using a much higher learning rate.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/1*ekrPR2eYbD2Y9HWTV5YGxw.jpeg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Much of the information about the learned function resides in the ratios of very small probabilities in the soft targets. This is valuable information that defines a rich similarity structure over the data (i. e. it says which 2’s look like 3’s and which look like 7’s or which “golden retriever” looks like “Labrador”) but it has very little influence on the cross-entropy cost function during the transfer stage because the probabilities are so close to zero.&lt;/p&gt;
+
+&lt;h1 id=&quot;distillation&quot;&gt;Distillation&lt;/h1&gt;
+
+&lt;p&gt;For distilling the learned knowledge we use &lt;strong&gt;Logits&lt;/strong&gt; (the inputs to the final softmax). Logits can be used for learning the small model and this can be done by minimizing the squared difference between the logits produced by the cumbersome model and the logits produced by the small model.&lt;/p&gt;
+
+&lt;p&gt;\(P_t(a) = \frac{\exp(q_t(a)/\tau)}{\sum_{i=1}^n\exp(q_t(i)/\tau)}\) &lt;label for=&quot;sidenote-id&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;sidenote-id&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;Softmax with Temperature &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;For high temperatures ($\tau \rightarrow \infty$), all actions have nearly the same probability and at the lower the temperature ($\tau \rightarrow 0$), the more expected rewards affect the probability. For low temperature, the probability of the action with the highest expected reward tends to 1.&lt;/p&gt;
+
+&lt;p&gt;In distillation, we raise the temperature of the final softmax until the cumbersome model produces a suitably soft set of targets. We then use the same high temperature when training the small model to match these soft targets.&lt;/p&gt;
+
+&lt;h1 id=&quot;objective-function&quot;&gt;Objective Function&lt;/h1&gt;
+
+&lt;p&gt;The first objective function is the cross-entropy with the soft targets and this cross entropy is computed using the same high temperature in the softmax of the distilled model as was used for generating the soft targets from the cumbersome model.&lt;/p&gt;
+
+&lt;p&gt;The second objective function is the cross-entropy with the correct labels and this is computed using exactly the same logits in softmax of the distilled model but at a temperature of 1&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/1*rbi3dpUQaQjI-ezbyDzhug.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;training-ensembles-of-specialists&quot;&gt;Training ensembles of specialists&lt;/h1&gt;
+
+&lt;p&gt;Training an ensemble of models is a very simple way to take advantage of parallel computation. But there is an objection that an ensemble requires too much computation at test time. But this can be easily dealt with the technique we are learning. And so “Distillation” can be used to deal with this allegation.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/1*aIBLpCWRF5J1kbXE_s9KcQ.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;specialist-models&quot;&gt;&lt;strong&gt;Specialist Models&lt;/strong&gt;&lt;/h1&gt;
+
+&lt;p&gt;&lt;em&gt;Specialist models and one generalist model make our one cumbersome model&lt;/em&gt;. Generalist Model is trained on all training data and Specialist Models focus on a different confusable subset of the classes can reduce the total amount of computation required to learn an ensemble. The main problem with specialists is that they overfit very easily. But this overfitting may be prevented by using soft targets.&lt;/p&gt;
+
+&lt;h1 id=&quot;reduce-overfitting-in-specialist-models&quot;&gt;Reduce Overfitting in Specialist Models&lt;/h1&gt;
+
+&lt;p&gt;To reduce overfitting and share the work of learning lower level feature detectors, each specialist model is initialized with the weights of the generalist model. These weights are then slightly modified by training the specialist, with half its examples coming from its special subset, and half sampled at random from the remainder of the training set. After training, we can correct for the biased training set by incrementing the logit of the dustbin class by the log of the proportion by which the specialist class is oversampled.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/1*TDMCC6ZHzxQo-pn6Y-ZZWA.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;assign-classes-to-specialists&quot;&gt;Assign classes to Specialists&lt;/h1&gt;
+
+&lt;p&gt;We apply a clustering algorithm to the covariance matrix of the predictions of our generalist model so that a set of classes Sm that are often predicted together will be used as targets for one of our specialist models, m. So we apply K-means clustering to the columns of the covariance matrix to get our required clusters or classes.&lt;/p&gt;
+
+&lt;figure&gt;&lt;figcaption&gt;Assign a score to an ordered covariance matrix. High correlations within a cluster improve the score. High correlations between clusters decease the score.&lt;/figcaption&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/1*Coch85xMgRVk6UbS5zjzVg.png&quot; /&gt;&lt;/figure&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Covariance/Correlation clustering provides a method for clustering a set of objects into the optimum number of clusters without specifying that number in advance.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;performing-inference&quot;&gt;Performing inference&lt;/h1&gt;
+
+&lt;p&gt;For each test case, we find the ‘n’ most probable classes according to the generalist model. Call this set of classes k.&lt;/p&gt;
+
+&lt;p&gt;We then take all the specialist models, m, whose special subset of confusable classes, Sm, has a non-empty intersection with k and call this the active set of specialists Ak (note that this set may be empty). We then find the full probability distribution q over all the classes that minimizes:&lt;/p&gt;
+
+&lt;p&gt;\(KL(p^g, q) + \sum_{m \epsilon A_k} KL(p^m, q)\) &lt;label for=&quot;sidenote-id&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;sidenote-id&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;KL denotes the KL divergence, and $p^m$, $p^g$ denote the probability distribution of a specialist model or the generalist full model. &lt;/span&gt;&lt;/p&gt;
+
+\[KL(p||q) = \sum_{i}p_i \log\frac{p_i}{q_i}\]
+
+&lt;!-- &lt;center&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/1*NRXkBNMx4VE5xDYGl5aB-w.png&quot;&gt;&lt;/center&gt;
+
+&lt;center&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/1*MpnL9tKLfqAdhAJkY6hnwA.png&quot;&gt;&lt;/center&gt; --&gt;
+
+&lt;p&gt;The distribution $p^m$ is over all the specialist classes of $m$ plus a single dustbin class, so when computing its $KL$ divergence from the full $q$ distribution we sum all of the probabilities that the full $q$ distribution assigns to all the classes in $m$’s dustbin.&lt;/p&gt;
+
+&lt;h1 id=&quot;soft-targets-as-regularizers&quot;&gt;Soft Targets as Regularizers&lt;/h1&gt;
+
+&lt;p&gt;Soft Targets or labels predicted from a model contain more information that binary hard labels due to the fact that they encode similarity measures between the classes.&lt;/p&gt;
+
+&lt;p&gt;Incorrect labels tagged by the model describe co-label similarities, and these similarities should be evident in future stages of learning, even if the effect is diminished. For example, imagine training a deep neural net on a classification dataset of various dog breeds. In the initial few stages of learning the model will not accurately distinguish between similar dog-breeds such as a Belgian Shepherd versus a German Shepherd. This same effect, although not so exaggerated, should appear in later stages of training. If given an image of a German Shepherd, the model predicts the class German Shepherd with a high-accuracy, the next highest predicted dog should still be a Belgian Shepherd or a similar looking dog. Over-fitting starts to occur when the majority of these co-label effects begin to disappear. By forcing the model to contain these effects in the later stages of training, we reduced the amount of over-fitting.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Though using soft targets as Regularizers is not considered very effective.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Associated Code can be found at &lt;a href=&quot;https://github.com/Ujjwal-9/Knowledge-Distillation&quot;&gt;Github&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 04 May 2018 00:00:00 -0500</pubDate>
+        <link>/articles/18/knowledge-distillation</link>
+        <guid isPermaLink="true">/articles/18/knowledge-distillation</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+  </channel>
+</rss>
