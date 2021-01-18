@@ -13,7 +13,7 @@ weight: 1
 
 [*DICOM Standards*](https://ujjwal9.ml/blog/medicine/2020/12/28/dicom-intro.html)<br/>What is dicom? What standards does it follow?OHIF Viewer Walkthrough.
 
-[*Docker Overview*](https://ujjwal9.ml/blog/docker/dl-tools/2020/12/24/docker.html)<br/>Leveraging docker to encourage reproducibility and easy maintainace of project.
+[*Docker Overview*](articles/20/docker)<br/>Leveraging docker to encourage reproducibility and easy maintainace of project.
 
 [*Heartrate detection using camera*](https://ujjwal9.ml/blog/maths/video/2019/04/06/heartrate-detection.html)<br/>How euler video magnification can be used to magnify motion and color.
 
