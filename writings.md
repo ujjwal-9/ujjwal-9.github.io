@@ -32,7 +32,7 @@ weight: 1
 
 [*Never Split the Difference: Negotiating As If Your Life Depended On It*]()<br />Christopher Voss and Tahl Raz
 
-[*The Power of your subconscious mind*]()<br />Joseph Murphy
+[*The Power of your Subconscious Mind*]()<br />Joseph Murphy
 
 <!-- ## Software
 [*Is the Weather Weird?*](https://www.istheweatherweird.com)<br/>Jonah-Bloch Johnson and I made a website to help answer that question. Bea Malsky made a [twitter bot](https://twitter.com/itww_chicago).
