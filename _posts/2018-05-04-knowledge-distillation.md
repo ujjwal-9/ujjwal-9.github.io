@@ -18,7 +18,7 @@ Follow me on twitter [@theujjwal9](https://twitter.com/theujjwal9)
 
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
-  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  <!-- tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}, -->
   jax: ["input/TeX","output/HTML-CSS"],
   displayAlign: "left",
   "HTML-CSS": { scale: 110}
@@ -32,6 +32,7 @@ The problem that we are facing right now is that we have built sophisticated mod
 ![](https://cdn-images-1.medium.com/max/2000/1*vCILduBp-gylqOp7WUme0Q.png)
 
 So what’s the problem? We can train a small network that can run on the limited computational resource of our mobile device. But there is a problem in this approach. Small models can’t extract many complex features that can be handy in generating predictions unless you devise some elegant algorithm to do so. Though ensemble of small models gives good results but unfortunately making predictions using a whole ensemble of models is cumbersome and may be too computationally expensive to allow deployment to a large number of users. In this case, we resort to either of the 2 techniques:
+
 - Knowledge Distillation
 - Model Compression
 
@@ -81,7 +82,7 @@ For distilling the learned knowledge we use **Logits** (the inputs to the final 
 $$P_t(a) = \frac{\exp(q_t(a)/\tau)}{\sum_{i=1}^n\exp(q_t(i)/\tau)}$$ {% sidenote "sidenote-id" "Softmax with Temperature" %}
 
 
-For high temperatures ($\tau \rightarrow \infty$), all actions have nearly the same probability and at the lower the temperature ($\tau \rightarrow 0$), the more expected rewards affect the probability. For low temperature, the probability of the action with the highest expected reward tends to 1.
+For high temperatures ($$\tau \rightarrow \infty$$), all actions have nearly the same probability and at the lower the temperature ($$\tau \rightarrow 0$$), the more expected rewards affect the probability. For low temperature, the probability of the action with the highest expected reward tends to 1.
 
 In distillation, we raise the temperature of the final softmax until the cumbersome model produces a suitably soft set of targets. We then use the same high temperature when training the small model to match these soft targets.
 
@@ -127,16 +128,19 @@ For each test case, we find the ‘n’ most probable classes according to the g
 We then take all the specialist models, m, whose special subset of confusable classes, Sm, has a non-empty intersection with k and call this the active set of specialists Ak (note that this set may be empty). We then find the full probability distribution q over all the classes that minimizes:
 
 
-$$KL(p^g, q) + \sum_{m \epsilon A_k} KL(p^m, q)$$ {% sidenote "sidenote-id" "KL denotes the KL divergence, and $p^m$, $p^g$ denote the probability distribution of a specialist model or the generalist full model." %}
+$$ KL(p^g, q) + \sum_{m \epsilon A_k} KL(p^m, q) $$ {% sidenote "sidenote-id" "KL denotes the KL divergence." %}
 
-$$KL(p||q) = \sum_{i}p_i \log\frac{p_i}{q_i}$$
+$$ p^m $$, $$ p^g $$ denote the probability distribution of a specialist model or the generalist full model.
+
+
+$$ KL(p||q) = \sum_{i}p_i \log {p_i \over q_i} $$ 
 
 <!-- <center><img src="https://cdn-images-1.medium.com/max/2000/1*NRXkBNMx4VE5xDYGl5aB-w.png"></center>
 
 <center><img src="https://cdn-images-1.medium.com/max/2000/1*MpnL9tKLfqAdhAJkY6hnwA.png"></center> -->
 
 
-The distribution $p^m$ is over all the specialist classes of $m$ plus a single dustbin class, so when computing its $KL$ divergence from the full $q$ distribution we sum all of the probabilities that the full $q$ distribution assigns to all the classes in $m$’s dustbin.
+The distribution $$p^m$$ is over all the specialist classes of $$m$$ plus a single dustbin class, so when computing its $$KL$$ divergence from the full $$q$$ distribution we sum all of the probabilities that the full $q$ distribution assigns to all the classes in $$m$$’s dustbin.
 
 # Soft Targets as Regularizers
 
