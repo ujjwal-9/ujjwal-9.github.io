@@ -9,7 +9,7 @@ weight: 1
 
 [*Brain Anatomy using CT Scans*](https://ujjwal9.ml/blog/medicine/2021/01/05/ct-brain-anatomy.html)<br/> What is a CT scan? Brain components visible in CT scan and their relevance.
 
-[*Introduction to Pydicom*](https://ujjwal9.ml/blog/medicine/library/2020/12/31/pydicom-tutorial.html)<br/>This blog is a tutorial on [pydicom](https://pydicom.github.io/) which is a pure Python package for working with DICOM files. It lets you read, modify and write DICOM data in an easy “pythonic” way.
+[*Introduction to Pydicom*](https://ujjwal9.ml/blog/medicine/library/2020/12/31/pydicom-tutorial.html)<br/>This blog is a tutorial on pydicom which is a pure Python package for working with DICOM files. It lets you read, modify and write DICOM data in an easy “pythonic” way.
 
 [*DICOM Standards*](https://ujjwal9.ml/blog/medicine/2020/12/28/dicom-intro.html)<br/>What is dicom? What standards does it follow?OHIF Viewer Walkthrough.
 
