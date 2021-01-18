@@ -1,7 +1,7 @@
 ---
 layout: full-width
-title: Misc
-weight: 2
+title: Writings
+weight: 1
 ---
 
 ## Blogs
