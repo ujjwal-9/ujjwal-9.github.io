@@ -34,8 +34,8 @@ The problem that we are facing right now is that we have built sophisticated mod
 **So what’s the problem? **We can train a small network that can run on the limited computational resource of our mobile device. But there is a problem in this approach. Small models can’t extract many complex features that can be handy in generating predictions unless you devise some elegant algorithm to do so. Though ensemble of small models gives good results but unfortunately making predictions using a whole ensemble of models is cumbersome and may be too computationally expensive to allow deployment to a large number of users. In this case, we resort to either of the 2 techniques:
 
 <ul>
-<li><p>Knowledge Distillation</p></li>
-<li><p>Model Compression</p></li>
+<li>Knowledge Distillation</li>
+<li>Model Compression</li>
 </ul>
 
 If you have developed a better solution or if I might have missed something, please mention in the comments 🙂
