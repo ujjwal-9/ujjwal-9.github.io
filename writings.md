@@ -20,7 +20,7 @@ weight: 1
 [*Knowledge Distillation*](articles/18/knowledge-distillation)<br/>Transforming large deep learning models to smaller models woith imporved perform.
 
 
-## Book Recommendation
+## Book Recommendations
 
 [*Thinking, Fast and Slow*]()<br/>Daniel Kahneman
 
