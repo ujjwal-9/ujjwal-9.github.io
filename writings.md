@@ -9,9 +9,9 @@ weight: 1
 
 [*Brain Anatomy using CT Scans*](articles/21/ct-brain-anatomy)<br/> What is a CT scan? Brain components visible in CT scan and their relevance.
 
-[*Introduction to Pydicom*](articles/20/pydicom-tutorial)<br/>This blog is a tutorial on pydicom which is a pure Python package for working with DICOM files. It lets you read, modify and write DICOM data in an easy “pythonic” way.
+[*Introduction to Pydicom*](articles/20/pydicom-tutorial)<br/>This blog is a tutorial on pydicom which is a pure Python package for working with Dicom files. It lets you read, modify and write Dicom data in an easy “pythonic” way.
 
-[*DICOM Standards*](articles/20/dicom-intro)<br/>What is dicom? What standards does it follow?OHIF Viewer Walkthrough.
+[*DICOM Standards*](articles/20/dicom-intro)<br/>What is Dicom? What standards does it follow? OHIF Viewer Walkthrough.
 
 [*Docker Overview*](articles/20/docker)<br/>Leveraging docker to encourage reproducibility and easy maintainace of project.
 
