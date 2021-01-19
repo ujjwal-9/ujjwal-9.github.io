@@ -43,7 +43,6 @@ In this blog, we will look at **Knowledge Distillation**. I will cover model com
 So knowledge distillation is a simple way to improve the performance of deep learning models on mobile devices. In this process, we train a large and complex network or an ensemble model which can extract important features from the given data and can, therefore, produce better predictions. Then we train a small network with the help of the cumbersome model. This small network will be able to produce comparable results, and in some cases, it can even be made capable of replicating the results of the cumbersome network.
 
 {% fullwidth 'https://cdn-images-1.medium.com/max/2456/1*r_eguFXxHkAzDRu8tM-95g.jpeg' 'GoogleNet' %}
-![]()
 
 For example, Since GoogLeNet is a very cumbersome (means deep and complex) network, its deepness gives the ability to extract and complex features and its complexity gives it the power to remain accurate. But the model is heavy enough that one for sure need a large amount of memory and a powerful GPU to perform large and complex calculations. So that’s why we need to transfer the knowledge learned by this model to a much smaller model which can easily be used in mobile.
 
@@ -134,10 +133,6 @@ $$ p^m $$, $$ p^g $$ denote the probability distribution of a specialist model o
 
 
 $$ KL(p||q) = \sum_{i}p_i \log {p_i \over q_i} $$ 
-
-<!-- <center><img src="https://cdn-images-1.medium.com/max/2000/1*NRXkBNMx4VE5xDYGl5aB-w.png"></center>
-
-<center><img src="https://cdn-images-1.medium.com/max/2000/1*MpnL9tKLfqAdhAJkY6hnwA.png"></center> -->
 
 
 The distribution $$p^m$$ is over all the specialist classes of $$m$$ plus a single dustbin class, so when computing its $$KL$$ divergence from the full $$q$$ distribution we sum all of the probabilities that the full $q$ distribution assigns to all the classes in $$m$$’s dustbin.
