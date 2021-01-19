@@ -140,7 +140,8 @@ MathJax.Hub.Config({
 
 <p><strong>For example</strong>:</p>
 
-<p><img src="https://www.radiologymasterclass.co.uk/images/ct/ct-brain/pathology/previous.jpg" alt="" /></p>
+<figure><figcaption>Example of how past cases may influence diagnosis and treatment.</figcaption><img src="https://www.radiologymasterclass.co.uk/images/ct/ct-brain/pathology/previous.jpg" /></figure>
+<p><img src="" alt="" /></p>
 
 <blockquote>
   <p>This elderly patient - who presented with acute confusion - has a large area of low density in the right frontal lobe seen on the current CT Review of a previous CT revealed that the abnormality in the brain was not new, but related to an infarct which occurred 5 months earlier The current CT appearances were not the cause of the acute confusion (urinary tract infection in this case)</p>
@@ -185,9 +186,18 @@ MathJax.Hub.Config({
 <p><a href="https://radiopaedia.org/articles/emergency-ct-head-mnemonic?lang=us">Source</a></p>
 
 <p>To look for these neuropathology, there is a 3 step process:</p>
-<figure><figcaption>Step 1</figcaption><img src="/assets/img/read-ct/step1.png" /></figure>
-<figure><figcaption>Step 2</figcaption><img src="/assets/img/read-ct/step2.png" /></figure>
-<figure><figcaption>Step 3</figcaption><img src="/assets/img/read-ct/step3.png" /></figure>
+<figure>
+<img src="/assets/img/read-ct/step1.png" width="400" />
+<figcaption>Step 1</figcaption>
+</figure>
+<figure>
+<img src="/assets/img/read-ct/step2.png" width="400" />
+<figcaption>Step 2</figcaption>
+</figure>
+<figure>
+<img src="/assets/img/read-ct/step3.png" width="400" />
+<figcaption>Step 3</figcaption>
+</figure>
 
 <p><strong>For this blog, we focus on bleeds/hemorrhage and its subtypes.</strong></p>
 
@@ -299,6 +309,7 @@ MathJax.Hub.Config({
 
 <figure>
 <img src="/assets/img/read-ct/hypertensive-dist.png" width="600" />
+<figcaption>Hypertensive hemorrhages</figcaption>
 </figure>
 
 <p>1- <strong>Basal ganglia hemorrhage</strong></p>
@@ -726,6 +737,7 @@ MathJax.Hub.Config({
 
 <figure>
 <img src="/assets/img/brain-anatomy-ct/flax.png" width="400" />
+<figcaption>Falx cerebri</figcaption>
 </figure>
 
 <p>A midline shift may occur when the pressure exerted by the buildup of blood and swelling around the damaged brain tissues is powerful enough to push the entire brain off-center.</p>
@@ -773,7 +785,10 @@ MathJax.Hub.Config({
   <p>Two <strong>lobes</strong> - frontal and temporal lobes are seperated by <strong>Sylvian</strong></p>
 </blockquote>
 
-<p><img src="/assets/img/brain-anatomy-ct/fissures.png" alt="" title="Interhemispheric fissure and Sylvian" /></p>
+<figure>
+<img src="/assets/img/brain-anatomy-ct/fissures.png" width="400" />
+<figcaption>Interhemispheric fissure and Sylvian.</figcaption>
+</figure>
 
 <h3 id="ventricles">Ventricles</h3>
 
@@ -1036,7 +1051,10 @@ MathJax.Hub.Config({
   <p>Slice thickness directly impacts the precision of target localization during treatment.</p>
 </blockquote>
 
-<p><img src="https://www.materialise.com/sites/default/files/image-uploads/pages/academy/Medical/slice_increment.jpg" /></p>
+<figure>
+<img src="https://www.materialise.com/sites/default/files/image-uploads/pages/academy/Medical/slice_increment.jpg" />
+<figcaption>Slice Increment and Slice Thickness</figcaption>
+</figure>
 
 <p>Slice Increment/Spacing refers to the movement of the table/scanner for scanning the next slice.</p>
 
@@ -1106,8 +1124,10 @@ MathJax.Hub.Config({
 <span class="n">plt</span><span class="p">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img3d</span><span class="p">[</span><span class="n">img_shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">//</span><span class="mi">2</span><span class="p">,</span> <span class="p">:,</span> <span class="p">:].</span><span class="n">T</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s">'gray'</span><span class="p">)</span>
 <span class="n">a3</span><span class="p">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="n">cor_aspect</span><span class="p">)</span>
 </code></pre></div></div>
-
-<p><img src="/assets/img/pydicom-tutorial/mpr.png" /></p>
+<figure>
+<img src="/assets/img/pydicom-tutorial/mpr.png" />
+<figcaption>Multiplanar reformation - axial, sagittal and coronal view</figcaption>
+</figure>
 
 <div class="epigraph"><blockquote><p>Multiplanar reformation or reconstruction (MPR) involves the process of converting data from an imaging modality acquired in a certain plane, usually axial, into another plane. It is most commonly performed with thin-slice data from volumetric CT in the axial plane, but it may be accomplished with scanning in any plane and whichever modality capable of cross-sectional imaging, including magnetic resonance imaging (MRI), PET and SPECT.</p><footer>Source, <cite>https://radiopaedia.org/articles/multiplanar-reformation-mpr?lang=us</cite></footer></blockquote></div>
 
@@ -1201,7 +1221,7 @@ MathJax.Hub.Config({
 
 <p>➔ requirements for conforming devices and programs</p>
 
-<p><img src="https://www.softneta.com/wp-content/uploads/2019/02/SendToPACS-converting-files-to-dicom-workflow.png" width="600" /> <label for="sidenote-id" class="margin-toggle"> ⊕</label><input type="checkbox" id="sidenote-id" class="margin-toggle" /><span class="marginnote"><a href="https://www.softneta.com/solutions/dicom-anonymization-for-medical-education-and-research/">[Image Source]</a> </span></p>
+<p><img src="/assets/img/dicom-intro/dicom-workflow.png" width="600" /> <label for="sidenote-id" class="margin-toggle"> ⊕</label><input type="checkbox" id="sidenote-id" class="margin-toggle" /><span class="marginnote"><a href="https://www.softneta.com/solutions/dicom-anonymization-for-medical-education-and-research/">[Image Source]</a> </span></p>
 
 <blockquote>
   <p>PACS (Picture Archiving and Communication System) provides economical storage of, and convenient access to, images from multiple modalities (source machine types).</p>
@@ -1211,7 +1231,7 @@ MathJax.Hub.Config({
   <p>RIS (Radiology Information System) is a computerized database used by radiology departments to store, manipulate, and distribute patient radiological data and imagery.</p>
 </blockquote>
 
-<p><img src="https://assets.extrahop.com/images/infographics/dicom-protocol-workflow.png" width="600" /> <label for="sidenote-id" class="margin-toggle"> ⊕</label><input type="checkbox" id="sidenote-id" class="margin-toggle" /><span class="marginnote"><a href="https://www.extrahop.com/company/blog/2016/introduction-to-dicom-protocol/">[Image Source]</a> </span></p>
+<p><img src="/assets/img/dicom-intro/dicom-protocol-workflow.png" width="600" /> <label for="sidenote-id" class="margin-toggle"> ⊕</label><input type="checkbox" id="sidenote-id" class="margin-toggle" /><span class="marginnote"><a href="https://www.extrahop.com/company/blog/2016/introduction-to-dicom-protocol/">[Image Source]</a> </span></p>
 
 <p>PACS-RIS integration improves the flow of images for the radiologist. They communicate using some set of commands (called HL7) concerned with Admission/Discharge/Transfer (ADT) and Order/Entry.</p>
 
@@ -1557,8 +1577,6 @@ MathJax.Hub.Config({
 
 <p>Checkout my project code @ <a href="https://github.com/Ujjwal-9/medical-training/tree/master/dockerized-run">Github</a></p>
 
-<p>Follow me on twitter <a href="https://twitter.com/theujjwal9">@theujjwal9</a></p>
-
 <h1 id="abstract">Abstract</h1>
 <p>We often try to simplify things but usually end up making it much more difficult. Similar is the case with code. We code, install additional dependencies, and remove redundancies. With this 3 step process, we sometimes end up with very difficult process to explain on how to reproduce the results and rerun the experiments. This blog explains about docker which is a tool designed to make it easier to create, deploy, and run applications by using containers.</p>
 
@@ -1750,6 +1768,10 @@ MathJax.Hub.Config({
            python -c "import numpy; print('success!')"
 </code></pre></div></div>
 <p>The above solutions is provided <a href="https://pythonspeed.com/articles/conda-docker-image-size/">here</a>.</p>
+
+<blockquote>
+  <p><strong>Follow me on twitter <a href="https://twitter.com/theujjwal9">@theujjwal9</a></strong></p>
+</blockquote>
 </div> 
         </li>
           
@@ -1760,8 +1782,6 @@ MathJax.Hub.Config({
           <a href="/articles/19/heartrate-detection"><h3 class="contrast">Heartrate detection using camera</h3></a>
           <br /><span class="smaller">April 6, 2019</span>  <br />
           <div><p>Euler Video Magnification <a href="https://people.csail.mit.edu/mrub/evm/">Project Link</a> at MIT CSAIL</p>
-
-<p>Follow me on twitter <a href="https://twitter.com/theujjwal9">@theujjwal9</a></p>
 
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
@@ -1942,6 +1962,10 @@ MathJax.Hub.Config({
 <p>This algorithm can find its use in many aspects of our life like in pulse oximetry which is limited to certain application areas (usually the fingertip) and bears the risk of the probe failing due to the movement of the patient or low perfusion of the hands during long-time recordings. These limitations can be overcome by the analysis of video signals using this technique, which do not depend on contact-based measurement hardware and can be applied to well-circulated body areas (e.g. the head).</p>
 
 <p>The world’s expanding and aging population has created a demand for inexpensive, unobtrusive, automated healthcare solutions. Eulerian Video Magnification (EVM) aids in the development of these solutions by allowing for the extraction of physiological signals from video data. This paper examines the potential of thermal video in conjunction with EVM to extract physiological measures, particularly heart rate.</p>
+
+<blockquote>
+  <p><strong>Follow me on twitter <a href="https://twitter.com/theujjwal9">@theujjwal9</a></strong></p>
+</blockquote>
 </div> 
         </li>
           
@@ -1972,7 +1996,7 @@ MathJax.Hub.Config({
 
 <p>The problem that we are facing right now is that we have built sophisticated models that can perform complex tasks, but the question is, how do we deploy such bulky models on our mobile devices for instant usage. Obviously, we can deploy our model to the cloud and can call it whenever we need its service but this would require a reliable internet connection and hence it becomes a constraint in production. So what we need is a model that can run on our mobile devices.</p>
 
-<p><img src="https://cdn-images-1.medium.com/max/2000/1*vCILduBp-gylqOp7WUme0Q.png" alt="" /></p>
+<figure><figcaption>Deep learning models in production</figcaption><img src="https://cdn-images-1.medium.com/max/2000/1*vCILduBp-gylqOp7WUme0Q.png" /></figure>
 
 <p>So what’s the problem? We can train a small network that can run on the limited computational resource of our mobile device. But there is a problem in this approach. Small models can’t extract many complex features that can be handy in generating predictions unless you devise some elegant algorithm to do so. Though ensemble of small models gives good results but unfortunately making predictions using a whole ensemble of models is cumbersome and may be too computationally expensive to allow deployment to a large number of users. In this case, we resort to either of the 2 techniques:</p>
 
@@ -2004,25 +2028,25 @@ MathJax.Hub.Config({
 
 <p>You can ‘distill’ the large and complex network in another much smaller network, and the smaller network does a reasonable job of approximating the original function learned by a deep network.</p>
 
-<p><img src="https://cdn-images-1.medium.com/max/2000/1*6G6HHityX_zBgrFfR_z-UQ.png" /></p>
+<figure><figcaption>Teacher Student Architecture</figcaption><img src="https://cdn-images-1.medium.com/max/2000/1*6G6HHityX_zBgrFfR_z-UQ.png" /></figure>
 
 <p>However, there is a catch, the distilled model (<strong>student</strong>), is trained to mimic the output of the larger network (<strong>teacher</strong>), instead of training it on the raw data directly. This has something to do with how the deeper network learns hierarchical abstractions of the features.</p>
 
 <h1 id="so-how-is-this-transfer-of-knowledge-done">So how is this transfer of knowledge done?</h1>
 
-<p><img src="https://cdn-images-1.medium.com/max/2964/1*WxFiH3XDY1-28tbyi4BGDA.png" /></p>
+<figure><figcaption>Knowledge Transfer between Student and Teacher.</figcaption><img src="https://cdn-images-1.medium.com/max/2964/1*WxFiH3XDY1-28tbyi4BGDA.png" /></figure>
 
 <p>The transferring of the generalization ability of the cumbersome model to a small model can be done by the use of class probabilities produced by the cumbersome model as “soft targets” for training the small model. For this transfer stage, we use the same training set or a separate “transfer” set as used for training the cumbersome model. When the cumbersome model is a large ensemble of simpler models, we can use arithmetic or geometric mean of their individual predictive distributions as the soft targets. When the soft targets have high entropy, they provide much more information per training case than hard targets and much less variance in the gradient between training cases, so the small model can often be trained on much less data than the original cumbersome model while using a much higher learning rate.</p>
 
-<p><img src="https://cdn-images-1.medium.com/max/2000/1*ekrPR2eYbD2Y9HWTV5YGxw.jpeg" /></p>
+<figure><figcaption>How soft logits gives idea of resemblence between classes.</figcaption><img src="https://cdn-images-1.medium.com/max/2000/1*ekrPR2eYbD2Y9HWTV5YGxw.jpeg" /></figure>
 
 <p>Much of the information about the learned function resides in the ratios of very small probabilities in the soft targets. This is valuable information that defines a rich similarity structure over the data (i. e. it says which 2’s look like 3’s and which look like 7’s or which “golden retriever” looks like “Labrador”) but it has very little influence on the cross-entropy cost function during the transfer stage because the probabilities are so close to zero.</p>
 
 <h1 id="distillation">Distillation</h1>
 
-<p>For distilling the learned knowledge we use <strong>Logits</strong> (the inputs to the final softmax). Logits can be used for learning the small model and this can be done by minimizing the squared difference between the logits produced by the cumbersome model and the logits produced by the small model.</p>
+<p>For distilling the learned knowledge we use <strong>Logits</strong> (the inputs to the final softmax). Logits can be used for learning the small model and this can be done by minimizing the squared difference between the logits produced by the cumbersome model and the logits produced by the small model. Equation below represents softmax with temperature.</p>
 
-<p>\(P_t(a) = \frac{\exp(q_t(a)/\tau)}{\sum_{i=1}^n\exp(q_t(i)/\tau)}\) <label for="sidenote-id" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sidenote-id" class="margin-toggle" /><span class="sidenote">Softmax with Temperature </span></p>
+\[P_t(a) = \frac{\exp(q_t(a)/\tau)}{\sum_{i=1}^n\exp(q_t(i)/\tau)}\]
 
 <p>For high temperatures (\(\tau \rightarrow \infty\)), all actions have nearly the same probability and at the lower the temperature (\(\tau \rightarrow 0\)), the more expected rewards affect the probability. For low temperature, the probability of the action with the highest expected reward tends to 1.</p>
 
@@ -2034,13 +2058,13 @@ MathJax.Hub.Config({
 
 <p>The second objective function is the cross-entropy with the correct labels and this is computed using exactly the same logits in softmax of the distilled model but at a temperature of 1</p>
 
-<p><img src="https://cdn-images-1.medium.com/max/2000/1*rbi3dpUQaQjI-ezbyDzhug.png" /></p>
+<figure><figcaption>Objective of deep learning models is to generalize.</figcaption><img src="https://cdn-images-1.medium.com/max/2000/1*rbi3dpUQaQjI-ezbyDzhug.png" /></figure>
 
 <h1 id="training-ensembles-of-specialists">Training ensembles of specialists</h1>
 
 <p>Training an ensemble of models is a very simple way to take advantage of parallel computation. But there is an objection that an ensemble requires too much computation at test time. But this can be easily dealt with the technique we are learning. And so “Distillation” can be used to deal with this allegation.</p>
 
-<p><img src="https://cdn-images-1.medium.com/max/2000/1*aIBLpCWRF5J1kbXE_s9KcQ.png" /></p>
+<figure><figcaption>Using large models to train small and simpler models.</figcaption><img src="https://cdn-images-1.medium.com/max/2000/1*aIBLpCWRF5J1kbXE_s9KcQ.png" /></figure>
 
 <h1 id="specialist-models"><strong>Specialist Models</strong></h1>
 
@@ -2050,7 +2074,7 @@ MathJax.Hub.Config({
 
 <p>To reduce overfitting and share the work of learning lower level feature detectors, each specialist model is initialized with the weights of the generalist model. These weights are then slightly modified by training the specialist, with half its examples coming from its special subset, and half sampled at random from the remainder of the training set. After training, we can correct for the biased training set by incrementing the logit of the dustbin class by the log of the proportion by which the specialist class is oversampled.</p>
 
-<p><img src="https://cdn-images-1.medium.com/max/2000/1*TDMCC6ZHzxQo-pn6Y-ZZWA.png" /></p>
+<figure><figcaption>How we reduce overfitting. One of the example.</figcaption><img src="https://cdn-images-1.medium.com/max/2000/1*TDMCC6ZHzxQo-pn6Y-ZZWA.png" /></figure>
 
 <h1 id="assign-classes-to-specialists">Assign classes to Specialists</h1>
 
@@ -2068,9 +2092,9 @@ MathJax.Hub.Config({
 
 <p>We then take all the specialist models, m, whose special subset of confusable classes, Sm, has a non-empty intersection with k and call this the active set of specialists Ak (note that this set may be empty). We then find the full probability distribution q over all the classes that minimizes:</p>
 
-<p>\(KL(p^g, q) + \sum_{m \epsilon A_k} KL(p^m, q)\) <label for="sidenote-id" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sidenote-id" class="margin-toggle" /><span class="sidenote">KL denotes the KL divergence. </span></p>
+\[KL(p^g, q) + \sum_{m \epsilon A_k} KL(p^m, q)\]
 
-<p>\(p^m\), \(p^g\) denote the probability distribution of a specialist model or the generalist full model.</p>
+<p>\(KL\) denotes the KL-divergence. \(p^m\), \(p^g\) denote the probability distribution of a specialist model or the generalist full model.</p>
 
 \[KL(p||q) = \sum_{i}p_i \log {p_i \over q_i}\]
 
