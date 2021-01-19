@@ -5,9 +5,1469 @@
     <description>Personal webpage</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 19 Jan 2021 01:36:22 -0600</pubDate>
-    <lastBuildDate>Tue, 19 Jan 2021 01:36:22 -0600</lastBuildDate>
+    <pubDate>Tue, 19 Jan 2021 05:06:18 -0600</pubDate>
+    <lastBuildDate>Tue, 19 Jan 2021 05:06:18 -0600</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>How to read HeadCT?</title>
+        <description>&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
+MathJax.Hub.Config({
+  &lt;!-- tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}, --&gt;
+  jax: [&quot;input/TeX&quot;,&quot;output/HTML-CSS&quot;],
+  displayAlign: &quot;left&quot;,
+  &quot;HTML-CSS&quot;: { scale: 110}
+});
+&lt;/script&gt;
+
+&lt;p&gt;This blogs talks about how to read head ct scans and how to identify different types of bleeds.&lt;/p&gt;
+
+&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;Head CT is also called Brain CT. It refers to computed tomography examination of the brain and surrounding structures. It can be performed in 2 ways:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Non-Contrast Study&lt;/li&gt;
+  &lt;li&gt;Contrast Study&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Preparation:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Without Contrast: No preparation is required.&lt;/p&gt;
+
+&lt;p&gt;With Contrast:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Only one CT contrast study should be scheduled within a 48 hour period.&lt;/li&gt;
+  &lt;li&gt;BUN &amp;amp; Creatinine must be done within 72 hours of the scan.&lt;/li&gt;
+  &lt;li&gt;Nothing but clear liquid after midnight before the scan.&lt;/li&gt;
+  &lt;li&gt;NPO 4 hours prior to exam (no food or drink).&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;During examination of CT scans, it is important to review old scans as they may provide information which is as clinically important as the current scans&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;For example&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://www.radiologymasterclass.co.uk/images/ct/ct-brain/pathology/previous.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This elderly patient - who presented with acute confusion - has a large area of low density in the right frontal lobe seen on the current CT Review of a previous CT revealed that the abnormality in the brain was not new, but related to an infarct which occurred 5 months earlier The current CT appearances were not the cause of the acute confusion (urinary tract infection in this case)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://wwww.radiologymasterclass.co.uk/tutorials/ct/ct_acute_brain/ct_brain_details&quot;&gt;Source&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;approach&quot;&gt;Approach&lt;/h1&gt;
+
+&lt;p&gt;In emergency situations radiologists tend to follow this mnemonic: &lt;strong&gt;Blood Can Be Very Bad&lt;/strong&gt; (BCBVB).&lt;/p&gt;
+
+&lt;p&gt;B: blood&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;look for epidural hematoma, subdural hematoma, intraparenchymal hemorrhage, intraventricular hemorrhage, subarachnoid hemorrhage and (also) extracranial hemorrhage&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;C: cisterns&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;look for the presence of blood, effacement and asymmetry in four key cisterns (perimesencephalic, suprasellar, quadrigeminal and Sylvian cisterns)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;B: brain&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;look for asymmetry or effacement of the sulcal pattern, gray-white matter differentiation (including the insular ribbon sign), structural shifts and abnormal hypodensities (e.g. air, edema, fat) or hyperdensities (e.g. blood, calcification)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;V: ventricles&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;look for intraventricular hemorrhage, ventricular effacement or shift and for hydrocephalus&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;B: bone&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;look for skull fractures (especially basal) on bone windows (soft tissue swelling, mastoid air cells and paranasal sinuses fluid in the setting of trauma should raise the possibility of a skull fracture; intracranial air means that the skull and the dura have been violated somewhere)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://radiopaedia.org/articles/emergency-ct-head-mnemonic?lang=us&quot;&gt;Source&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;To look for these neuropathology, there is a 3 step process:&lt;/p&gt;
+&lt;figure&gt;&lt;figcaption&gt;Step 1&lt;/figcaption&gt;&lt;img src=&quot;/assets/img/read-ct/step1.png&quot; /&gt;&lt;/figure&gt;
+&lt;figure&gt;&lt;figcaption&gt;Step 2&lt;/figcaption&gt;&lt;img src=&quot;/assets/img/read-ct/step2.png&quot; /&gt;&lt;/figure&gt;
+&lt;figure&gt;&lt;figcaption&gt;Step 3&lt;/figcaption&gt;&lt;img src=&quot;/assets/img/read-ct/step3.png&quot; /&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;For this blog, we focus on bleeds/hemorrhage and its subtypes.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The following points can be used as a guide to assess a brain CT to demonstrate/exclude a hemorrhage.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Brain parenchyma&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;is there asymmetry anywhere or obliteration of the gyri sulci pattern?&lt;/li&gt;
+  &lt;li&gt;abnormal gray-white matter differentiation?&lt;/li&gt;
+  &lt;li&gt;hypo/hyperdense abnormalities?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Hemorrhage&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;type/cause/location?&lt;/li&gt;
+  &lt;li&gt;subarachnoid cisterns; obliteration of the W shape, pentagon, moon shape, Sylvian fissure?&lt;/li&gt;
+  &lt;li&gt;mass effect or signs of herniation?  is there still space around the brain stem?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Ventricular system&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;hydrocephalus?&lt;/li&gt;
+  &lt;li&gt;intraventricular blood?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Bone&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;extracranial soft tissue swelling?&lt;/li&gt;
+  &lt;li&gt;fracture? Pneumocephalus?&lt;/li&gt;
+  &lt;li&gt;normal air content of the sinuses and the mastoid?  Air-fluid (blood) levels in the sinus? (CAUTION: fracture!)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Old examinations&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;new findings?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;hemorrhage-categorization&quot;&gt;Hemorrhage Categorization&lt;/h1&gt;
+
+&lt;p&gt;When a blood vessel within the skull is ruptured or leaks, it is called &lt;strong&gt;Intracranial hemorrhage (ICH)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;ICH encompasses many conditions characterized by the extravascular accumulation of blood within different intracranial spaces. Following categorization is based on locaiton:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Intra-axial hemorrhage&lt;/strong&gt; is bleeding within the brain itself, or cerebral hemorrhage. This category includes intraparenchymal hemorrhage (bleeding within the brain tissue) and intraventricular hemorrhage (bleeding within the brain’s ventricles).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Subtypes:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;intracerebral hemorrhage&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;lobar hemorrhage&lt;/li&gt;
+  &lt;li&gt;hypertensive hemorrhage
+    &lt;ul&gt;
+      &lt;li&gt;basal ganglia hemorrhage&lt;/li&gt;
+      &lt;li&gt;pontine hemorrhage&lt;/li&gt;
+      &lt;li&gt;cerebellar hemorrhage&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Intracerebral hemorrhage also called intraparenchymal cerebral hemorrhage, is a subset of an intracranial hemorrhage. It is the acute accumulation of blood within the parenchyma (tissues) of the brain.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Extra-axial hemorrhage&lt;/strong&gt;, bleeding that occurs within the skull but outside of the brain tissue, falls into three subtypes: Epidural hemorrhage (extradural hemorrhage) which occur between the dura mater (the outermost meninx) and the skull, is caused by trauma.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Subtypes:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;extradural hemorrhage (EDH)&lt;/li&gt;
+  &lt;li&gt;intralaminar dural hemorrhage&lt;/li&gt;
+  &lt;li&gt;subdural hemorrhage (SDH)&lt;/li&gt;
+  &lt;li&gt;subarachnoid hemorrhage (SAH)&lt;/li&gt;
+  &lt;li&gt;intraventricular hemorrhage (IVH)&lt;/li&gt;
+  &lt;li&gt;subpial hemorrhage&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Lets look at above mentioned neuropathology based on 3 steps metioned in Introduction:&lt;/p&gt;
+
+&lt;h2 id=&quot;brain-parenchyma&quot;&gt;Brain Parenchyma&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Intra-axial hemorrhages&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;lobar-hemorrhage&quot;&gt;Lobar hemorrhage&lt;/h3&gt;
+
+&lt;p&gt;Location : &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Lobar -&amp;gt; Lobes&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Hyperdense collection of blood&lt;/strong&gt;, located superficially within the lobes of the brain (i.e. not in the basal ganglia).&lt;/p&gt;
+
+&lt;p&gt;They are usually large and more common in elderly patients.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/img/read-ct/lobar-bleed.png&quot; width=&quot;400&quot; /&gt;
+&lt;figcaption&gt;Case courtesy of Assoc Prof Frank Gaillard, &lt;a href=&quot;https://radiopaedia.org/&quot;&gt;Radiopaedia.org&lt;/a&gt;. From the case &lt;a href=&quot;https://radiopaedia.org/cases/10678&quot;&gt;rID: 10678&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Extension into the subdural or subarachnoid and even intraventricular(common to basal ganglia hemorrhage - &lt;strong&gt;hypertensive&lt;/strong&gt;) space may be seen.&lt;/p&gt;
+
+&lt;h3 id=&quot;hypertensive-hemorrhage&quot;&gt;Hypertensive hemorrhage&lt;/h3&gt;
+
+&lt;p&gt;Distribution that matches incidence of hypertensive hemorrhages:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;80% around basal ganglia&lt;/li&gt;
+  &lt;li&gt;10% pons&lt;/li&gt;
+  &lt;li&gt;10% cerebellum&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/img/read-ct/hypertensive-dist.png&quot; width=&quot;600&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;1- &lt;strong&gt;Basal ganglia hemorrhage&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Name pretty much gives away the location of hemorrhage: around basal ganglia.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Abnormal Hyperdensity&lt;/strong&gt; centered on the basal ganglia or thalamus. It will be characterized as intraparenchymal hemorrhage.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/img/read-ct/basal-ganglia-bleed.png&quot; width=&quot;400&quot; /&gt;
+&lt;figcaption&gt;Case courtesy of Assoc Prof Frank Gaillard, &lt;a href=&quot;https://radiopaedia.org/&quot;&gt;Radiopaedia.org&lt;/a&gt;. From the case &lt;a href=&quot;https://radiopaedia.org/cases/2764&quot;&gt;rID: 2764&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Often times there may be an intraventricular extension. In this case it also becomes intraventricular hemorrhage.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/img/read-ct/basal-ganglia-bleed-extension.png&quot; width=&quot;400&quot; /&gt;
+&lt;figcaption&gt;Case courtesy of Dr Jeremy Jones, &lt;a href=&quot;https://radiopaedia.org/&quot;&gt;Radiopaedia.org&lt;/a&gt;. From the case &lt;a href=&quot;https://radiopaedia.org/cases/6223&quot;&gt;rID: 6223&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;2- &lt;strong&gt;Pontine hemorrhage&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;location: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pontine -&amp;gt; pons&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;These bleeds frequently rupture into the 4th ventricle as shown in figure.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/img/read-ct/pontine-bleed.png&quot; width=&quot;400&quot; /&gt;
+&lt;figcaption&gt;Case courtesy of Assoc Prof Frank Gaillard, &lt;a href=&quot;https://radiopaedia.org/&quot;&gt;Radiopaedia.org&lt;/a&gt;. From the case &lt;a href=&quot;https://radiopaedia.org/cases/11062&quot;&gt;rID: 11062&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;3- &lt;strong&gt;Cerebellar hemorrhage&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;location: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cerebellar hemispheres&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;It appears as hyperdensity within the cerebellar hemispheres. Extension into the fourth ventricle or subarachnoid space is relatively common.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/img/read-ct/cerebellar-bleed.png&quot; width=&quot;400&quot; /&gt;
+&lt;figcaption&gt;Case courtesy of Dr Farzad Pirzad, &lt;a href=&quot;https://radiopaedia.org/&quot;&gt;Radiopaedia.org&lt;/a&gt;. From the case &lt;a href=&quot;https://radiopaedia.org/cases/9620&quot;&gt;rID: 9620&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;outside-brain-parenchyma&quot;&gt;Outside Brain Parenchyma&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Extra-axial hemorrhage&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;extradural-hemorrhage&quot;&gt;Extradural hemorrhage&lt;/h3&gt;
+
+&lt;p&gt;location: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;between the inner surface of the skull and outer layer of the dura&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;shape: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bi-convex (or lentiform)&lt;/code&gt;&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/img/read-ct/diagram-intracranial-haemorrhage.jpg&quot; width=&quot;600&quot; /&gt;
+&lt;figcaption&gt;Case courtesy of Dr Matt Skalski, &lt;a href=&quot;https://radiopaedia.org/&quot;&gt;Radiopaedia.org&lt;/a&gt;. From the case &lt;a href=&quot;https://radiopaedia.org/cases/21542&quot;&gt;rID: 21542&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Extradural hematoma (EDH), also known as an epidural hematoma.&lt;/p&gt;
+
+&lt;p&gt;EDHs are &lt;strong&gt;hyperdense&lt;/strong&gt;. Depending on their size, secondary features of mass effect (e.g. midline shift, subfalcine herniation, uncal herniation) may be present.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/img/read-ct/extradural-bleed.png&quot; width=&quot;400&quot; /&gt;
+&lt;figcaption&gt;Case courtesy of Dr Sandeep Bhuta , &lt;a href=&quot;https://radiopaedia.org/&quot;&gt;Radiopaedia.org&lt;/a&gt;. From the case &lt;a href=&quot;https://radiopaedia.org/cases/4458&quot;&gt;rID: 4458&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h3 id=&quot;intralaminar-dural-hemorrhage&quot;&gt;Intralaminar dural hemorrhage&lt;/h3&gt;
+
+&lt;p&gt;location: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;between the two layers of the dura mater&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Intralaminar dural hematomas in the intracranial space, are exceedingly rare.&lt;/p&gt;
+
+&lt;h3 id=&quot;subdural-hemorrhage&quot;&gt;Subdural hemorrhage&lt;/h3&gt;
+
+&lt;p&gt;location: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;between the dura and arachnoid mater of the meninges around the brain&lt;/code&gt;&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/img/read-ct/diagram-subdural-haemorrhage.jpg&quot; width=&quot;600&quot; /&gt;
+&lt;figcaption&gt;Case courtesy of Dr Matt Skalski, &lt;a href=&quot;https://radiopaedia.org/&quot;&gt;Radiopaedia.org&lt;/a&gt;. From the case &lt;a href=&quot;https://radiopaedia.org/cases/21542&quot;&gt;rID: 21542&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The aspect of a Subdural hemorrhage (SDH) on a CT may vary: from hyperdense/heterogeneous in the acute phase to iso/hypodense during the chronic phase. In a mixed picture, fresh hemorrhages are seen in a chronic subdural hematoma.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Hyperacute&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;appearance: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;relatively isodense (same density) to cortex with swirled appearance&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;mass-effect: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cerebral swelling accentuates the mass-effect created by the collection of the clot, serum and ongoing unclotted blood.&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Acute&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;shape: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;crescent-shaped&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;appearance: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hyperdense relative to the cortex&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Subacute&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;duration: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;takes 3-21 days&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;appearance: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;isodense to the adjacent cortex&lt;/code&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Isodense appearance makes it hard to detect&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;key-id’s : &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mass-effect, thickening of cortex, CSF-filled sulci do not reach the skull but rather fade out into the subdural.&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Chronic&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;duration: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~3 weeks&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;shape: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;crescentic shape may change to a biconvex&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;appearance: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hypodense&lt;/code&gt;&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/img/read-ct/subdural-acute-chronic.png&quot; width=&quot;500&quot; /&gt;
+&lt;figcaption&gt;Chronic subdural hematoma (= hypodense) at right with an acute bleeding component (= hyperdense). &lt;a href=&quot;https://www.startradiology.com/internships/neurology/brain/ct-brain-hemorrhage/&quot;&gt;Source&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Please refer to ct scans for all above stages &lt;a href=&quot;https://radiopaedia.org/articles/subdural-haemorrhage?lang=us&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;subarachnoid-hemorrhage-sah&quot;&gt;Subarachnoid hemorrhage (SAH)&lt;/h3&gt;
+
+&lt;p&gt;location: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;subarachnoid spaces&lt;/code&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The subarachnoid spaces include the basal cisterns (= space around the brain stem), the Sylvian fissure, the cerebral sulci, the intraventricular space and the interhemispheric fissure&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/img/read-ct/diagram-subarachnoid-haemorrhage.jpg&quot; width=&quot;600&quot; /&gt;
+&lt;figcaption&gt;Case courtesy of Dr Matt Skalski, &lt;a href=&quot;https://radiopaedia.org/&quot;&gt;Radiopaedia.org&lt;/a&gt;. From the case &lt;a href=&quot;https://radiopaedia.org/cases/21542&quot;&gt;rID: 21542&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Small amounts of blood can sometimes be appreciated pooling in the interpeduncular fossa, appearing as a small hyperdense triangle, or within the occipital horns of the lateral ventricles.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/img/read-ct/subarachnoid-prepontine-cisterns-bleed.png&quot; width=&quot;500&quot; /&gt;
+&lt;figcaption&gt;Subarachnoid blood in the prepontine cisterns (hyperdense obliteration of the moon shape).&lt;a href=&quot;https://www.startradiology.com/internships/neurology/brain/ct-brain-hemorrhage/&quot;&gt;Source&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/img/read-ct/subarachnoid-cortical.png&quot; width=&quot;500&quot; /&gt;
+&lt;figcaption&gt;Blood along the right cerebral convexity. The blood follows the cortical gyri sulci pattern, characteristic of subarachnoid blood.&lt;a href=&quot;https://www.startradiology.com/internships/neurology/brain/ct-brain-hemorrhage/&quot;&gt;Source&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/img/read-ct/subarachnoid-intraventricular.png&quot; width=&quot;500&quot; /&gt;
+&lt;figcaption&gt;Extensive intraventricular blood in the left lateral ventricle, the aqueduct and the 4th ventricle.&lt;a href=&quot;https://www.startradiology.com/internships/neurology/brain/ct-brain-hemorrhage/&quot;&gt;Source&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h3 id=&quot;intraventricular-hemorrhage&quot;&gt;Intraventricular hemorrhage&lt;/h3&gt;
+
+&lt;p&gt;Intraventricular hemorrhage (IVH) denotes the presence of blood within the cerebral ventricular system.&lt;/p&gt;
+
+&lt;p&gt;IVH is divided in 2 types:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Primary - blood in the ventricles with little (if any) parenchymal blood&lt;/li&gt;
+  &lt;li&gt;Secondary - a large extraventricular component is present (e.g. parenchymal or subarachnoid) with secondary extension into the ventricles&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;\(P(Primary) &amp;lt; P(Secondary) \rightarrow\) P being Probablity&lt;/p&gt;
+
+&lt;p&gt;In above sections on hypertensive hemorrhage and subarachnoid hemorrhage, IVH CT scan is shown.&lt;/p&gt;
+
+&lt;h3 id=&quot;subpial-hemorrhage&quot;&gt;Subpial hemorrhage&lt;/h3&gt;
+
+&lt;p&gt;location: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;between the cortical surface and the pia mater&lt;/code&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Difficult to distinguish from subarachnoid hemorrhage.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It is very rare type of extra-axial intracranial hemorrhage.&lt;/p&gt;
+
+&lt;h2 id=&quot;cerebral-hemorrhagic-contusion&quot;&gt;Cerebral hemorrhagic contusion&lt;/h2&gt;
+
+&lt;p&gt;location: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;in the frontal lobes adjacent to the floor of the anterior cranial fossa and in the temporal poles&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;appearance: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hyperdense foci&lt;/code&gt;&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/img/read-ct/cerebral-contusions-bifrontal.png&quot; width=&quot;400&quot; /&gt;
+&lt;figcaption&gt;Case courtesy of Assoc Prof Frank Gaillard, &lt;a href=&quot;https://radiopaedia.org/&quot;&gt;Radiopaedia.org&lt;/a&gt;. From the case &lt;a href=&quot;https://radiopaedia.org/cases/7149&quot;&gt;rID: 7149&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Hemorrhagic contusion are common to see in significant head injury. Most contusions represent the brain coming to a sudden stop against the inner surface of the skull (contrecoup) accentuated by the natural contours of the skull.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Contusions vary in size and can appear as small petechial foci of hyperdensity/hemorrhages involving the grey matter and subcortical white matter or large cortical/subcortical bleed.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;key-findings&quot;&gt;Key Findings&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Midline Shift&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Midline of the brain is curved due to pressure build up inside brain either due to swelling or bleeding.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/img/read-ct/midline.jpg&quot; width=&quot;400&quot; /&gt;
+&lt;figcaption&gt;Case courtesy of UoE Radiology, &lt;a href=&quot;https://radiopaedia.org/&quot;&gt;Radiopaedia.org&lt;/a&gt;. From the case &lt;a href=&quot;https://radiopaedia.org/cases/34098&quot;&gt;rID: 34098&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Caused due to following:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;extra-axial collection causing mass effect&lt;/li&gt;
+  &lt;li&gt;parenchymal tumor causing mass effect&lt;/li&gt;
+  &lt;li&gt;stroke with associated edema causing mass effect&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Mass Effect&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Mass effect describes what happens around a tumor in the brain. It may be caused by:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;tumors&lt;/li&gt;
+  &lt;li&gt;cerebral abscess&lt;/li&gt;
+  &lt;li&gt;infarction and associated edema&lt;/li&gt;
+  &lt;li&gt;hemorrhage&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Hydrocephalus&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;It describes the situation where the intracranial ventricular system is enlarged because of increased pressure. It may be caused by:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;obstruction of CSF flow.&lt;/li&gt;
+  &lt;li&gt;altered CSF dynamics.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Follow me on twitter &lt;a href=&quot;https://twitter.com/@theujjwal9&quot;&gt;@theujjwal9&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Sat, 09 Jan 2021 00:00:00 -0600</pubDate>
+        <link>/articles/21/how-to-read-head-ct</link>
+        <guid isPermaLink="true">/articles/21/how-to-read-head-ct</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Brain Anatomy using CT Scans</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;What is a CT scan? Brain components visible in CT scan and their relevance.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This blog doesn’t dig deep into anatomy and may miss many key terms. Its purpose is to be familiar with brain anatomy for CT. It’s not for medical students although feel free to read and let me know what else can be added to it.&lt;/p&gt;
+
+&lt;p&gt;I would also like to give credits for all the images and content to &lt;a href=&quot;https://www.radiologymasterclass.co.uk/&quot;&gt;radiologymasterclass.co.uk&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;CT scans use a series of X-ray beams passed through the head. The images are then developed on sensitive film. This method creates cross-sectional images of the brain and shows the structure of the brain, but not its function.&lt;/p&gt;
+
+&lt;p&gt;Brain imaging methods allow neuroscientists to see inside the living brain. These methods help neuroscientists:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Understand the relationships between specific areas of the brain and what function they serve.&lt;/li&gt;
+  &lt;li&gt;Locate the areas of the brain that are affected by neurological disorders.&lt;/li&gt;
+  &lt;li&gt;Develop new strategies to treat brain disorders&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;420&quot; src=&quot;http://www.youtube.com/embed/DdPRfPm9SI4?color=white&amp;amp;theme=light&quot;&gt;&lt;/iframe&gt;
+
+&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;Understanding brain anatomy is important to read CT scans. In this blog we will go through key anatomy which will make CT scans more apparent to you. For the first, CT scans are viewed from below, so right side of the brain is on left side of viewer. Front part of head (Anterior) is on top.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/img/brain-anatomy-ct/sides.png&quot; width=&quot;400&quot; /&gt;
+&lt;figcaption&gt;CT Scan Orientation&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&quot;anatomy&quot;&gt;Anatomy&lt;/h1&gt;
+
+&lt;h2 id=&quot;skull&quot;&gt;Skull&lt;/h2&gt;
+
+&lt;p&gt;The brain is located inside an area bounded by skull and skull base called cranial vault. It is a protective casing for brain and brianstem. At the skull base the bones of the cranial vault form the cranial fossae which accommodate and support the brain.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/6/69/1311_Brain_Stem.jpg&quot; width=&quot;400&quot; /&gt; &lt;label for=&quot;note-id&quot; class=&quot;margin-toggle&quot;&gt; ⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;note-id&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;Brain Stem &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/brain-anatomy-ct/cranial-fossae.png&quot; width=&quot;300&quot; /&gt;&lt;label for=&quot;note-id&quot; class=&quot;margin-toggle&quot;&gt; ⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;note-id&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;Cranial Fossae &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Skull sutures has jagged appearance by nature they are not to be confused with fracture. In the figure, &lt;strong&gt;dipole&lt;/strong&gt; is a porous bone tissue which seprates outer (thick and dense) and inner (thin, dense and brittle) tables. &lt;a href=&quot;https://en.wikipedia.org/wiki/Calvaria_(skull)#Layers&quot;&gt;Source&lt;/a&gt;&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/img/brain-anatomy-ct/skull.png&quot; width=&quot;400&quot; /&gt;
+&lt;figcaption&gt;Skull Bone Structure&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;Sutures&lt;/strong&gt;: There are 4 main sutures:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Coronal (Connects &lt;em&gt;frontal bone with parietal bones&lt;/em&gt;)&lt;/li&gt;
+  &lt;li&gt;Sagittal (Connects &lt;em&gt;parietal bones in the midline&lt;/em&gt;)&lt;/li&gt;
+  &lt;li&gt;Lambdoid (Connects &lt;em&gt;parietal bones with the occipital bone&lt;/em&gt;)&lt;/li&gt;
+  &lt;li&gt;Squamosal (Connects &lt;em&gt;squamous portion of the temporal bone with the parietal bones&lt;/em&gt;)&lt;/li&gt;
+  &lt;li&gt;Metopic (Present in adults, Connects &lt;em&gt;2 fontal bones&lt;/em&gt;)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/img/brain-anatomy-ct/sutures.png&quot; width=&quot;400&quot; /&gt;
+&lt;figcaption&gt;Sutures&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Thinnest part of skull is &lt;strong&gt;PTERION&lt;/strong&gt;. The frontal, parietal, temporal and sphenoid bones unite at this point.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;sinuses&quot;&gt;Sinuses&lt;/h2&gt;
+
+&lt;p&gt;The sinuses are hollow spaces in the skull and the face bones around your nose.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Sinuses Overlay on Face&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Sinuses Overlay on CT&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Frontal Sinuses on CT&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/img/brain-anatomy-ct/sinuses-face.png&quot; width=&quot;400&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/img/brain-anatomy-ct/sinuses.png&quot; width=&quot;300&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/img/brain-anatomy-ct/frontal-sinuses.png&quot; width=&quot;300&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The mastoid air cells are continuous with the middle ear.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;In case of trauma, fluid in the sphenoid sinus may be a sign of a basal skull fracture.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;CT Scan for Basal skull fracture&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Symptoms&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/img/brain-anatomy-ct/basilar-skull.png&quot; width=&quot;330&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;http://www.emdocs.net/wp-content/uploads/2019/04/Screen-Shot-2019-04-21-at-5.46.27-PM-768x759.png&quot; width=&quot;350&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.emdocs.net/basilar-skull-fracture-basics-beyond/&quot;&gt;Source&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;meninges&quot;&gt;Meninges&lt;/h2&gt;
+
+&lt;p&gt;Meninges refer to the membranous coverings of the brain and spinal cord.&lt;/p&gt;
+
+&lt;p&gt;Knowledge about meninges is essential for understanding intracranial bleeding and infection (meningitis) in CT scans.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;https://www.radiologymasterclass.co.uk/images/ct/ct-brain/anatomy/meninges_4.jpg&quot; /&gt;
+&lt;figcaption&gt;Meninges&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;There are three layers of meninges (Acronym: Digital Audio Player):&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Dura mater&lt;/li&gt;
+  &lt;li&gt;Arachnoid mater&lt;/li&gt;
+  &lt;li&gt;Pia mater.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;https://teachmeanatomy.info/wp-content/uploads/Overview-of-the-Meninges-of-the-Brain.jpg&quot; width=&quot;400&quot; /&gt;
+&lt;figcaption&gt;Overview of the meninges, and their relationship to the skull and brain&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Functions of these covering include:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;To act as supportive framework for the cerebral and cranial vasculature.&lt;/li&gt;
+  &lt;li&gt;Acting with cerebrospinal fluid to protect the central nervous system from mechanical damage.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;dura-mater&quot;&gt;Dura Mater&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://teachmeanatomy.info/neuroanatomy/structures/meninges/&quot;&gt;Source&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Physical property: hick, tough and inextensible.&lt;/p&gt;
+
+&lt;p&gt;Within the cranial cavity, the dura contains two connective tissue sheets:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Periosteal layer – lines the inner surface of the bones of the cranium.&lt;/li&gt;
+  &lt;li&gt;Meningeal layer – only layer present in the vertebral column.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://teachmeanatomy.info/wp-content/uploads/Dura-Mater-in-Meningitis.jpg&quot;&gt;&lt;strong&gt;Viewer Discretion is advised&lt;/strong&gt; - Autopsy of a patient with meningitis. The dura mater is being retracted to show a grossly swollen cerebrum with pus accumulation.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tentorium cerebelli&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Tentorium is an extension of the dura; it separates the cerebrum (brain) from the cerebellum.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/b/b7/Illu_tentorium.jpg&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/img/brain-anatomy-ct/bleed.png&quot; width=&quot;400&quot; /&gt;
+&lt;figcaption&gt;Tentorial Subdural Hemorrhage&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://sinaiem.org/tentorial-subdural-hemorrhage/#:~:text=They%20may%20resemble%20intraparenchymal%20bleed,portion%20of%20the%20occipital%20lobes.&quot;&gt;Source&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This is what Tentorial Subdural Hemorrhage look like on CT. It may resemble &lt;a href=&quot;https://en.wikipedia.org/wiki/Intraparenchymal_hemorrhage#:~:text=Intraparenchymal%20hemorrhage%20(IPH)%20is%20one,a%20wide%20spectrum%20of%20disorders.&quot;&gt;intraparenchymal bleed&lt;/a&gt; on CT scans in rare cases.&lt;/p&gt;
+
+&lt;h3 id=&quot;arachnoid-mater&quot;&gt;Arachnoid Mater&lt;/h3&gt;
+
+&lt;p&gt;Underneath the arachnoid is a space known as the sub-arachnoid space. It contains cerebrospinal fluid, which acts to cushion the brain.&lt;/p&gt;
+
+&lt;h3 id=&quot;pia-mater&quot;&gt;Pia Mater&lt;/h3&gt;
+
+&lt;p&gt;Physical Property: very thin, and tightly adhered to the surface of the brain and spinal cord.&lt;/p&gt;
+
+&lt;p&gt;It covers contours of the brain (the gyri and fissures).&lt;/p&gt;
+
+&lt;h3 id=&quot;falx-cerebri&quot;&gt;Falx cerebri&lt;/h3&gt;
+
+&lt;p&gt;It lies in midline and separates the left and right cerebral hemispheres.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/img/brain-anatomy-ct/flax.png&quot; width=&quot;400&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;A midline shift may occur when the pressure exerted by the buildup of blood and swelling around the damaged brain tissues is powerful enough to push the entire brain off-center.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;https://prod-images-static.radiopaedia.org/images/13472872/cb1f533317efe6888fc9620f217ffe_gallery.jpg&quot; width=&quot;400&quot; /&gt;
+&lt;figcaption&gt;It suggestes bleeds or swelling in brain.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;cerebrospinal-fluid-csf-spaces&quot;&gt;Cerebrospinal Fluid (CSF) spaces&lt;/h2&gt;
+
+&lt;p&gt;The brain is surrounded by CSF fluids within the sulci, fissures and basal cisterns.&lt;/p&gt;
+
+&lt;p&gt;It serves three main functions:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Protection – acts as a cushion for the brain, limiting neural damage in cranial injuries.&lt;/li&gt;
+  &lt;li&gt;Buoyancy – immersion in CSF reduces net weight of brain to ~25 grams. This prevents excessive pressure on the base of the brain.&lt;/li&gt;
+  &lt;li&gt;Chemical stability – example. it maintains low extracellular K+ for synaptic transmission.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;CSF has lower density than gray or white matter (discussed ahead), hence appear darker in CT scans.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Gyrus = a fold of the brain surface (plural = gyri)&lt;/li&gt;
+  &lt;li&gt;Sulcus = furrow between the gyri which contains CSF (plural = sulci)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/img/brain-anatomy-ct/gyrus.png&quot; width=&quot;400&quot; /&gt;
+&lt;figcaption&gt;It suggestes bleeds or swelling in brain.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h3 id=&quot;fissures&quot;&gt;Fissures&lt;/h3&gt;
+
+&lt;p&gt;These are components of brain which serperate the two halves of the brain.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Two &lt;strong&gt;hemispheres&lt;/strong&gt; are seperated by &lt;strong&gt;interhemispheric fissure&lt;/strong&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Two &lt;strong&gt;lobes&lt;/strong&gt; - frontal and temporal lobes are seperated by &lt;strong&gt;Sylvian&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/brain-anatomy-ct/fissures.png&quot; alt=&quot;&quot; title=&quot;Interhemispheric fissure and Sylvian&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;ventricles&quot;&gt;Ventricles&lt;/h3&gt;
+
+&lt;p&gt;Ventricles are spaces inside brain containing CSF and responsible for its production. There are 4 ventricles in brain:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Lateral Ventricles (left and right)&lt;/li&gt;
+  &lt;li&gt;Third Ventricle&lt;/li&gt;
+  &lt;li&gt;Fourth Ventricle&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/img/brain-anatomy-ct/ventricles-all.png&quot; width=&quot;600&quot; /&gt;
+&lt;figcaption&gt;Ventricles&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;Lateral ventricles&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;They are located on either side of brain.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;https://www.radiologymasterclass.co.uk/images/ct/ct-brain/anatomy/ventricles_lat.jpg&quot; width=&quot;600&quot; /&gt;
+&lt;figcaption&gt;Lateral Ventricle&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Function:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;It ensures the communication between the third and fourth ventricles.&lt;/li&gt;
+  &lt;li&gt;It is to house the cerebrospinal fluid (CSF) and provide the passage for its circulation.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The marked choroid plexus produces CSF and is usually calcified (hardened by deposition of or conversion into calcium carbonate or another insoluble calcium compound) for adults.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;The volume of the lateral ventricles increases with age.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;Third Ventricle&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;https://www.radiologymasterclass.co.uk/images/ct/ct-brain/anatomy/ventricles_third.jpg&quot; width=&quot;600&quot; /&gt;
+&lt;figcaption&gt;Third Ventricle&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Small white colored &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Foramen of Monro&lt;/code&gt; is a messenger between lateral and third ventricle.&lt;/p&gt;
+
+&lt;p&gt;Abnormalities of the third ventricle are associated with various conditions including hydrocephalus, meningitis, and ventriculitis.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Fourth Ventricle&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;https://www.radiologymasterclass.co.uk/images/ct/ct-brain/anatomy/ventricles_fourth.jpg&quot; width=&quot;600&quot; /&gt;
+&lt;figcaption&gt;Fourth Ventricle&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;CSF in the basal cisterns surrounds the brain stem structures.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It has 2 function:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Production of cerebrospinal fluid (CSF) by choroid plexus&lt;/li&gt;
+  &lt;li&gt;Circulation of CSF&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;brain-lobes&quot;&gt;Brain Lobes&lt;/h2&gt;
+
+&lt;p&gt;Brain has paired lobes.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;https://www.mayoclinic.org/-/media/kcms/gbs/patient-consumer/images/2013/11/15/17/44/ds00266_ds00810_im03440_bn7_lobesthu_jpg.png&quot; /&gt;
+&lt;figcaption&gt;Brain Lobes&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;https://www.radiologymasterclass.co.uk/images/ct/ct-brain/anatomy/lobes_parietal.jpg&quot; /&gt;
+&lt;figcaption&gt;Brain Lobes CT Scan&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;Front Lobe&lt;/strong&gt; controls cognitive functions and voluntary movement.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Parietal Lobe&lt;/strong&gt; infers about temperature, taste, touch and movement from impulse recieved from receptors.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Occipital Lobe&lt;/strong&gt; is primarily responsible for vision.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Temporal Lobe&lt;/strong&gt; processes memories, integrating them with sensations of taste, sound, sight and touch.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Important point to note is that these lobes aren’t well defined and are difficult to point to hence these are also refered to as ‘regions’. Like temporal region, etc.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;grey-matter-v-white-matter&quot;&gt;Grey matter v white matter&lt;/h2&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;https://www.radiologymasterclass.co.uk/images/ct/ct-brain/anatomy/grey_v_white.jpg&quot; /&gt;
+&lt;figcaption&gt;Gray Matter vs White Matter&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;White matter is located centrally and appears blacker than grey matter due to its relatively low density but pathological processes may increase or decrease the differentiation in density between grey and white matter.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;Gray Matter&lt;/strong&gt; comprises &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bitcoin (BITC)&lt;/code&gt;. Basal ganglia, Insula, Thalamus, and Cortex.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Grey matter contains relatively few axons and a higher number of cell bodies.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;https://www.radiologymasterclass.co.uk/images/ct/ct-brain/anatomy/grey.jpg&quot; /&gt;
+&lt;figcaption&gt;Gray Matter&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Lets start with cortex, probably most recognized among all. It has huge number of variants in computer science field also :laughing: like &lt;a href=&quot;https://engineering.purdue.edu/elab/CortexNet/&quot;&gt;cortexnet&lt;/a&gt;, &lt;a href=&quot;https://jspuij.github.io/Cortex.Net.Docs&quot;&gt;Cortex.Net&lt;/a&gt;, etc.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Cerebral cortex&lt;/strong&gt; is a layer of grey matter formed in gyri over the entire brain surface.&lt;/p&gt;
+
+&lt;p&gt;Cerebral cortex is required for voluntary activities, language, speech, and multiple brain functions, such as thinking and memory. In short you conscious behaviour (as per science).&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The cerebrum is the largest brain structure and part of the forebrain (or prosencephalon). Its prominent outer portion, the cerebral cortex, not only processes sensory and motor information but enables consciousness, our ability to consider ourselves and the outside world.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.visiblebody.com/learn/nervous/brain#:~:text=The%20cerebrum%20is%20the%20largest,ourselves%20and%20the%20outside%20world.&quot;&gt;Source&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Next big thing in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;BITC&lt;/code&gt; is probably &lt;strong&gt;thalamus&lt;/strong&gt;. It has many essential roles in human physiology.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Thalamus&lt;/strong&gt; is basically a translator used to convert high level impulses from receptors to low level signals for cerebral cortex.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;As for clinical significance, insults to thalamus may result in thalamic pain syndrome.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;https://www.radiologymasterclass.co.uk/images/ct/ct-brain/anatomy/basal_ganglia_2.jpg&quot; /&gt;
+&lt;figcaption&gt;Thalamus and Basal ganglia&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;Basal ganglia = lentiform nucleus + caudate nucleus&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Important thing to note about &lt;strong&gt;basal ganglia&lt;/strong&gt;, insults to this component may cause movement disorders.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.flintrehab.com/basal-ganglia-brain-damage/&quot;&gt;Symptoms to detect damage basal ganglia&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The movement disorders are generally well treated using neuroplasticity of brain - ability of brain to repair itself- meaning you excersice the affected part often.&lt;/p&gt;
+
+&lt;p&gt;Last of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;BITC&lt;/code&gt; - Insula. Name may be small but it regulates immune system itself among other major functions such as taste.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;White Matter&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The internal capsules and corpus callosum are clinically important white matter tracts.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;White matter has a high content of myelinated axons.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;Corpus Callosum&lt;/strong&gt; is visible in Sagittal CT’s and connects white matter of the left and right cerebral hemispheres. Its clinical significance is that it can let lesions of brain to grow from one hemisphere to other. Elsewhere flax acts as a barrier to such invasions.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;https://www.radiologymasterclass.co.uk/images/ct/ct-brain/anatomy/corpus_callosum.jpg&quot; /&gt;
+&lt;figcaption&gt;Corpus Callosum&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Internal Capsule&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Even a small insult to the internal capsule can have a profound affect on motor and sensory function.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;https://www.radiologymasterclass.co.uk/images/ct/ct-brain/anatomy/internal_capsule.jpg&quot; /&gt;
+&lt;figcaption&gt;Internal Capsule&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;calcified-structures&quot;&gt;Calcified Structures&lt;/h2&gt;
+
+&lt;p&gt;There are some structures in brain which are normal if calcified.
+&lt;a href=&quot;https://www.radiologymasterclass.co.uk/tutorials/ct/ct_brain_anatomy/ct_brain_anatomy_choroid_calcified&quot;&gt;Please refer this&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;final-words&quot;&gt;Final Words&lt;/h1&gt;
+
+&lt;p&gt;You may also checkout &lt;a href=&quot;https://www.radiologycafe.com/medical-students/radiology-basics/head-anatomy&quot;&gt;Head and spine anatomy&lt;/a&gt;. This provides brain anatomy on slice by slice basis.&lt;/p&gt;
+
+&lt;p&gt;These are notes to me which helped me remember this anatomy. I followed learn by writing methodology here. Many things are missed here, please follow medical resources for that.&lt;/p&gt;
+
+&lt;h1 id=&quot;refernces&quot;&gt;Refernces&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.radiologymasterclass.co.uk/&quot;&gt;radiologymasterclass.co.uk&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.kenhub.com/&quot;&gt;kenhub.com&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.mayoclinic.org/&quot;&gt;mayoclinic.org&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://teachmeanatomy.info/&quot;&gt;teachmeanatomy.info&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.radiologycafe.com/medical-students/radiology-basics/head-anatomy&quot;&gt;radiologycafe.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Please follow &lt;a href=&quot;https://www.facebook.com/pages/Radiology-Masterclass/105315179515082&quot;&gt;Radiology-Masterclass FB Page&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Tue, 05 Jan 2021 00:00:00 -0600</pubDate>
+        <link>/articles/21/ct-brain-anatomy</link>
+        <guid isPermaLink="true">/articles/21/ct-brain-anatomy</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Introduction to Pydicom</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://pydicom.github.io/&quot;&gt;PyDICOM Website&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Code can be found @ &lt;a href=&quot;https://github.com/Ujjwal-9/medical-training/tree/master/dicom-demo&quot;&gt;Github&lt;/a&gt;. Checkout &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dicom-viewer.ipynb&lt;/code&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;abstract&quot;&gt;Abstract&lt;/h1&gt;
+
+&lt;p&gt;Pydicom is a pure Python package for working with DICOM files. It lets you read, modify and write DICOM data in an easy “pythonic” way.&lt;/p&gt;
+
+&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Installation&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Using pip:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;pydicom
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Using conda:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;conda &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; conda-forge pydicom
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Pydicom comes with its own set of dicom images which can be used to go through examples.&lt;/p&gt;
+
+&lt;p&gt;They also give &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;get_dataset.py&lt;/code&gt; file to download datasets, which is also included in the &lt;a href=&quot;https://github.com/Ujjwal-9/medical-training/tree/master/dicom-demo&quot;&gt;github repo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;python get_datasets.py &lt;span class=&quot;nt&quot;&gt;--show&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;python get_datasets.py &lt;span class=&quot;nt&quot;&gt;--output&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;path&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;tutorial&quot;&gt;Tutorial&lt;/h1&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;load_scan&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;slices&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pydicom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dcmread&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'/'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt;               
+              &lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;listdir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;slices&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;slices&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'SliceLocation'&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;slices&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;InstanceNumber&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;slice_thickness&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;abs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;slices&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ImagePositionPatient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;   
+                          &lt;span class=&quot;n&quot;&gt;slices&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ImagePositionPatient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;except&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;slice_thickness&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;abs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;slices&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SliceLocation&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; 
+                          &lt;span class=&quot;n&quot;&gt;slices&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SliceLocation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;slices&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SliceThickness&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;slice_thickness&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;slices&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;load_scan&lt;/code&gt; loads the dicom files and sorts them according to their &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Instance Number&lt;/code&gt;. It also extracts slice thickness which is a very important parameter in these scans as it is indicative of resolution of the scans. Lower the slice thickness, better the resolution.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Slice Thickness&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Slice thickness directly impacts the precision of target localization during treatment.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://www.materialise.com/sites/default/files/image-uploads/pages/academy/Medical/slice_increment.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Slice Increment/Spacing refers to the movement of the table/scanner for scanning the next slice.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If slice thickness is greater than slice increment than there is anatomical information loss.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;If there is overlap between 2 adjacent slices that is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;slice thickness &amp;gt; slice increment&lt;/code&gt; than such cases acts as error correction.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;HU Scaling&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;get_pixels_hu&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;scans&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;image&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pixel_array&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;scans&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;image&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;astype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;int16&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    
+    &lt;span class=&quot;c1&quot;&gt;# Convert to Hounsfield units (HU)
+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;slope&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;scans&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RescaleSlope&lt;/span&gt;
+    
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;slope&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;image&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;slope&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;astype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;float64&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;image&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;astype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;int16&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        
+    &lt;span class=&quot;n&quot;&gt;image&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;int16&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;scans&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RescaleIntercept&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dtype&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;int16&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;HU scaling is explained in my &lt;a href=&quot;http://ujjwal9.ml/blog/medicine/2020/12/28/dicom-intro.html&quot;&gt;dicom standard blog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Multiplanar reconstruction&lt;/strong&gt;&lt;/p&gt;
+&lt;figure&gt;&lt;figcaption&gt;Multiplanar view of brain.&lt;/figcaption&gt;&lt;img src=&quot;https://images.ctfassets.net/cnu0m8re1exe/1k0YS9HKpsyurGlnI1Zlky/223cbf9b658b7068925ba7f944a9bb39/sagittal.jpg&quot; /&gt;&lt;/figure&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;slices&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sorted&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;patient_dicom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SliceLocation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# pixel aspects, assuming all slices are the same
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pixel_spacing&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;slices&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PixelSpacing&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;slice_thickness&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;slices&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SliceThickness&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;ax_aspect&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pixel_spacing&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pixel_spacing&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;sag_aspect&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pixel_spacing&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;slice_thickness&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;cor_aspect&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;slice_thickness&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pixel_spacing&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# create 3D array
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;img_shape&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;slices&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pixel_array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;img_shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;slices&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;img3d&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zeros&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;img_shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# fill 3D array with the images from the files
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;enumerate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;slices&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;img2d&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pixel_array&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;img3d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;img2d&lt;/span&gt;
+    
+&lt;span class=&quot;c1&quot;&gt;# print(img3d.shape)
+&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# plot 3 orthogonal slices
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;subplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;a1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;axis&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'off'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;imshow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;img3d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;img_shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cmap&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'gray'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;a1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;set_aspect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ax_aspect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;a2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;subplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;a2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;axis&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'off'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;imshow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;img3d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;img_shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cmap&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'gray'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;a2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;set_aspect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sag_aspect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;a3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;subplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;a3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;axis&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'off'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;imshow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;img3d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;img_shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cmap&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'gray'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;a3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;set_aspect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cor_aspect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/pydicom-tutorial/mpr.png&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;epigraph&quot;&gt;&lt;blockquote&gt;&lt;p&gt;Multiplanar reformation or reconstruction (MPR) involves the process of converting data from an imaging modality acquired in a certain plane, usually axial, into another plane. It is most commonly performed with thin-slice data from volumetric CT in the axial plane, but it may be accomplished with scanning in any plane and whichever modality capable of cross-sectional imaging, including magnetic resonance imaging (MRI), PET and SPECT.&lt;/p&gt;&lt;footer&gt;Source, &lt;cite&gt;https://radiopaedia.org/articles/multiplanar-reformation-mpr?lang=us&lt;/cite&gt;&lt;/footer&gt;&lt;/blockquote&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Windowing&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;level&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dicom_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;WindowCenter&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;width&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dicom_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;WindowWidth&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# ...or set window/level manually to values you want
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vmin&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;level&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;vmax&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;level&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;imshow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hu_pixels&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cmap&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'gray'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vmin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vmin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vmax&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vmax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;figure&gt;&lt;figcaption&gt;Without Windowing.&lt;/figcaption&gt;&lt;img src=&quot;/assets/img/pydicom-tutorial/windowing-org.png&quot; /&gt;&lt;/figure&gt;
+&lt;figure&gt;&lt;figcaption&gt;With Windowing.&lt;/figcaption&gt;&lt;img src=&quot;/assets/img/pydicom-tutorial/windowing-new.png&quot; /&gt;&lt;/figure&gt;
+&lt;figure&gt;&lt;figcaption&gt;Windows for various scans.&lt;/figcaption&gt;&lt;img src=&quot;https://www.stepwards.com/wp-content/uploads/2019/12/Screen-Shot-2019-10-06-at-8.45.17-PM-e1577078248771.jpg&quot; /&gt;&lt;/figure&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Brain windows are useful for evaluation of brain hemorrhage, fluid-filled structures including blood vessels and ventricles, and air-filled spaces.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Bone windows are useful for evaluation in the setting of trauma.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://doi.org/10.1118/1.598500&quot;&gt;“Martin J. Murphy. The importance of computed tomography slice thickness in radiographic patient positioning for radiosurgery. “&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.materialise.com/en/faq/what-difference-between-slice-thickness-and-slice-increment#:~:text=Slice%20thickness%20and%20slice%20increment%20are%20central%20concepts%20that%20surround,4%20mm%20in%20the%20illustration&quot;&gt;“What is the difference between slice thickness and slice increment?”&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.sciencedirect.com/topics/medicine-and-dentistry/hounsfield-scale&quot;&gt;“Hounsfield Scale”&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4220362/&quot;&gt;“Usefulness of hounsfield unit and density in the assessment and treatment of urinary stones”&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://radiopaedia.org/articles/multiplanar-reformation-mpr?lang=us&quot;&gt;“Multiplanar reformation (MPR)”. Dr Daniel J Bell and Dr Francis Fortin et al. radiopaedia.org&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Follow me on twitter &lt;a href=&quot;https://twitter.com/theujjwal9&quot;&gt;@theujjwal9&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Thu, 31 Dec 2020 00:00:00 -0600</pubDate>
+        <link>/articles/20/pydicom-tutorial</link>
+        <guid isPermaLink="true">/articles/20/pydicom-tutorial</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>DICOM Standards</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://www.dicomstandard.org/&quot;&gt;Dicom Website!&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;DICOM = Digital Imaging and Communications in Medicine&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;DICOM standard includes a file format definition and a network communications protocol that uses TCP/IP to communicate between systems.&lt;/p&gt;
+
+&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
+MathJax.Hub.Config({
+  &lt;!-- tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}, --&gt;
+  jax: [&quot;input/TeX&quot;,&quot;output/HTML-CSS&quot;],
+  displayAlign: &quot;left&quot;,
+  &quot;HTML-CSS&quot;: { scale: 110}
+});
+&lt;/script&gt;
+
+&lt;h1 id=&quot;abstract&quot;&gt;Abstract&lt;/h1&gt;
+
+&lt;p&gt;Dicom standard was conceptualized and implemented when CT (computed tomography) Scans were developed. It takes special care of not losing the information when translating the medical images and other data to digital format. This is done so as to keep it as close to original as possible.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The main objective of this new standard was to create an open platform for the communication of medical images and related data.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;The contents of the DICOM standard go far beyond a definition of an exchange format for medical image data.&lt;/p&gt;
+
+&lt;p&gt;DICOM defines:&lt;/p&gt;
+
+&lt;p&gt;➔ data structures (formats) for medical images and related data,&lt;/p&gt;
+
+&lt;p&gt;➔ network oriented services, e. g.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;image transmission&lt;/li&gt;
+  &lt;li&gt;query of an image archive (PACS)&lt;/li&gt;
+  &lt;li&gt;print (hardcopy)&lt;/li&gt;
+  &lt;li&gt;RIS - PACS - modality integration&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;➔ formats for storage media exchange&lt;/p&gt;
+
+&lt;p&gt;➔ requirements for conforming devices and programs&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://www.softneta.com/wp-content/uploads/2019/02/SendToPACS-converting-files-to-dicom-workflow.png&quot; width=&quot;600&quot; /&gt; &lt;label for=&quot;sidenote-id&quot; class=&quot;margin-toggle&quot;&gt; ⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;sidenote-id&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;&lt;a href=&quot;https://www.softneta.com/solutions/dicom-anonymization-for-medical-education-and-research/&quot;&gt;[Image Source]&lt;/a&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;PACS (Picture Archiving and Communication System) provides economical storage of, and convenient access to, images from multiple modalities (source machine types).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;RIS (Radiology Information System) is a computerized database used by radiology departments to store, manipulate, and distribute patient radiological data and imagery.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://assets.extrahop.com/images/infographics/dicom-protocol-workflow.png&quot; width=&quot;600&quot; /&gt; &lt;label for=&quot;sidenote-id&quot; class=&quot;margin-toggle&quot;&gt; ⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;sidenote-id&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;&lt;a href=&quot;https://www.extrahop.com/company/blog/2016/introduction-to-dicom-protocol/&quot;&gt;[Image Source]&lt;/a&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;PACS-RIS integration improves the flow of images for the radiologist. They communicate using some set of commands (called HL7) concerned with Admission/Discharge/Transfer (ADT) and Order/Entry.&lt;/p&gt;
+
+&lt;h2 id=&quot;dicom-data-structures&quot;&gt;DICOM Data Structures&lt;/h2&gt;
+
+&lt;p&gt;Dicom consists of list of image attributes which contain vast amount of image and medical information:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;patient information (name, sex, identification number)&lt;/li&gt;
+  &lt;li&gt;modality and imaging procedure information (device parameters, calibration, radiation dose, contrast media)&lt;/li&gt;
+  &lt;li&gt;image information (resolution, windowing)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Dicom goes to the lengths and defines significance of each data element in multitude of cases. It defines if an attribute is required, optional or important for certain cases. But this feature comes at a cost.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Image objects are frequently incomplete : There is inconsistency in filling all the fields with the data. Some fields in image objects are often are left blank and some are filled with incorrect data.&lt;/li&gt;
+  &lt;li&gt;Another problem occurs when displaying an image on a device that is made from different manufacturer, because different imaging equipment use different amplitude ranges and the same number of allocated bits. In that case, images can be displayed as underexposed or overexposed with poor contrast, so those parameters should be adjusted manually.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;dicom-network-services&quot;&gt;DICOM Network Services&lt;/h2&gt;
+
+&lt;p&gt;This service is based over client-sever concept. They (Dicom applications) establish connection to exchange information. In addition to image transmission, there are other features too:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Image Archive Service: search images in a PACS archive by certain criteria (patient, time of creation of the images, modality etc.) and to selectively download images from this archive.&lt;/li&gt;
+  &lt;li&gt;Print Service: gives access to cameras and printers over a network.&lt;/li&gt;
+  &lt;li&gt;Modality Worklist Service: Download updated information regarding patient using above decribed PACS-RIS system.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;patient-model&quot;&gt;Patient Model&lt;/h3&gt;
+
+&lt;p&gt;Queries to image archives (PACS) are made in 4 level of DICOM hierarchy:&lt;/p&gt;
+&lt;figure&gt;
+&lt;svg width=&quot;300&quot; height=&quot;300&quot; viewBox=&quot;0 0 596 1628&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+&lt;g filter=&quot;url(#filter0_d)&quot;&gt;
+&lt;rect x=&quot;4&quot; width=&quot;588&quot; height=&quot;252&quot; fill=&quot;white&quot; /&gt;
+&lt;rect x=&quot;4.5&quot; y=&quot;0.5&quot; width=&quot;587&quot; height=&quot;251&quot; stroke=&quot;black&quot; /&gt;
+&lt;/g&gt;
+&lt;path d=&quot;M123.641 92.8C129.465 92.8 134.521 93.76 138.809 95.68C143.161 97.6 146.489 100.352 148.793 103.936C151.097 107.52 152.249 111.776 152.249 116.704C152.249 121.568 151.097 125.824 148.793 129.472C146.489 133.056 143.161 135.808 138.809 137.728C134.521 139.648 129.465 140.608 123.641 140.608H108.473V160H95.9928V92.8H123.641ZM123.065 130.048C128.505 130.048 132.633 128.896 135.449 126.592C138.265 124.288 139.673 120.992 139.673 116.704C139.673 112.416 138.265 109.12 135.449 106.816C132.633 104.512 128.505 103.36 123.065 103.36H108.473V130.048H123.065ZM204.921 144.448H171.321L164.697 160H151.832L182.073 92.8H194.361L224.697 160H211.641L204.921 144.448ZM200.792 134.656L188.121 105.28L175.545 134.656H200.792ZM243.5 103.36H221.228V92.8H278.252V103.36H255.98V160H243.5V103.36ZM287.618 92.8H300.098V160H287.618V92.8ZM368.674 149.536V160H318.274V92.8H367.33V103.264H330.754V120.736H363.202V131.008H330.754V149.536H368.674ZM442.299 92.8V160H432.027L394.971 114.496V160H382.587V92.8H392.859L429.915 138.304V92.8H442.299ZM473.937 103.36H451.665V92.8H508.689V103.36H486.417V160H473.937V103.36Z&quot; fill=&quot;black&quot; /&gt;
+&lt;g filter=&quot;url(#filter1_d)&quot;&gt;
+&lt;rect x=&quot;4&quot; y=&quot;456&quot; width=&quot;588&quot; height=&quot;252&quot; fill=&quot;white&quot; /&gt;
+&lt;rect x=&quot;4.5&quot; y=&quot;456.5&quot; width=&quot;587&quot; height=&quot;251&quot; stroke=&quot;black&quot; /&gt;
+&lt;/g&gt;
+&lt;path d=&quot;M162.059 616.96C156.875 616.96 151.851 616.224 146.987 614.752C142.187 613.28 138.379 611.328 135.563 608.896L139.883 599.2C142.635 601.376 145.995 603.168 149.963 604.576C153.995 605.92 158.027 606.592 162.059 606.592C167.051 606.592 170.763 605.792 173.195 604.192C175.691 602.592 176.939 600.48 176.939 597.856C176.939 595.936 176.235 594.368 174.827 593.152C173.483 591.872 171.755 590.88 169.643 590.176C167.531 589.472 164.651 588.672 161.003 587.776C155.883 586.56 151.723 585.344 148.523 584.128C145.387 582.912 142.667 581.024 140.363 578.464C138.123 575.84 137.003 572.32 137.003 567.904C137.003 564.192 137.995 560.832 139.979 557.824C142.027 554.752 145.067 552.32 149.099 550.528C153.195 548.736 158.187 547.84 164.075 547.84C168.171 547.84 172.203 548.352 176.171 549.376C180.139 550.4 183.563 551.872 186.443 553.792L182.507 563.488C179.563 561.76 176.491 560.448 173.291 559.552C170.091 558.656 166.987 558.208 163.979 558.208C159.051 558.208 155.371 559.04 152.939 560.704C150.571 562.368 149.387 564.576 149.387 567.328C149.387 569.248 150.059 570.816 151.403 572.032C152.811 573.248 154.571 574.208 156.683 574.912C158.795 575.616 161.675 576.416 165.323 577.312C170.315 578.464 174.411 579.68 177.611 580.96C180.811 582.176 183.531 584.064 185.771 586.624C188.075 589.184 189.227 592.64 189.227 596.992C189.227 600.704 188.203 604.064 186.155 607.072C184.171 610.08 181.131 612.48 177.035 614.272C172.939 616.064 167.947 616.96 162.059 616.96ZM214.297 559.36H192.025V548.8H249.049V559.36H226.777V616H214.297V559.36ZM286.092 616.96C276.812 616.96 269.58 614.368 264.396 609.184C259.212 603.936 256.62 596.448 256.62 586.72V548.8H269.1V586.24C269.1 599.424 274.796 606.016 286.188 606.016C297.516 606.016 303.18 599.424 303.18 586.24V548.8H315.468V586.72C315.468 596.448 312.876 603.936 307.692 609.184C302.572 614.368 295.372 616.96 286.092 616.96ZM332.946 548.8H362.322C369.49 548.8 375.858 550.208 381.426 553.024C386.994 555.776 391.314 559.712 394.386 564.832C397.458 569.888 398.994 575.744 398.994 582.4C398.994 589.056 397.458 594.944 394.386 600.064C391.314 605.12 386.994 609.056 381.426 611.872C375.858 614.624 369.49 616 362.322 616H332.946V548.8ZM361.746 605.44C366.674 605.44 370.994 604.512 374.706 602.656C378.482 600.736 381.362 598.048 383.346 594.592C385.394 591.072 386.418 587.008 386.418 582.4C386.418 577.792 385.394 573.76 383.346 570.304C381.362 566.784 378.482 564.096 374.706 562.24C370.994 560.32 366.674 559.36 361.746 559.36H345.426V605.44H361.746ZM438.344 592.288V616H425.864V592.48L399.464 548.8H412.808L432.488 581.536L452.36 548.8H464.648L438.344 592.288Z&quot; fill=&quot;black&quot; /&gt;
+&lt;g filter=&quot;url(#filter2_d)&quot;&gt;
+&lt;rect x=&quot;4&quot; y=&quot;912&quot; width=&quot;588&quot; height=&quot;252&quot; fill=&quot;white&quot; /&gt;
+&lt;rect x=&quot;4.5&quot; y=&quot;912.5&quot; width=&quot;587&quot; height=&quot;251&quot; stroke=&quot;black&quot; /&gt;
+&lt;/g&gt;
+&lt;path d=&quot;M152.731 1072.96C147.547 1072.96 142.523 1072.22 137.659 1070.75C132.859 1069.28 129.051 1067.33 126.235 1064.9L130.555 1055.2C133.307 1057.38 136.667 1059.17 140.635 1060.58C144.667 1061.92 148.699 1062.59 152.731 1062.59C157.723 1062.59 161.435 1061.79 163.867 1060.19C166.363 1058.59 167.611 1056.48 167.611 1053.86C167.611 1051.94 166.907 1050.37 165.499 1049.15C164.155 1047.87 162.427 1046.88 160.315 1046.18C158.203 1045.47 155.323 1044.67 151.675 1043.78C146.555 1042.56 142.395 1041.34 139.195 1040.13C136.059 1038.91 133.339 1037.02 131.035 1034.46C128.795 1031.84 127.675 1028.32 127.675 1023.9C127.675 1020.19 128.667 1016.83 130.651 1013.82C132.699 1010.75 135.739 1008.32 139.771 1006.53C143.867 1004.74 148.859 1003.84 154.747 1003.84C158.843 1003.84 162.875 1004.35 166.843 1005.38C170.811 1006.4 174.235 1007.87 177.115 1009.79L173.179 1019.49C170.235 1017.76 167.163 1016.45 163.963 1015.55C160.763 1014.66 157.659 1014.21 154.651 1014.21C149.723 1014.21 146.043 1015.04 143.611 1016.7C141.243 1018.37 140.059 1020.58 140.059 1023.33C140.059 1025.25 140.731 1026.82 142.075 1028.03C143.483 1029.25 145.243 1030.21 147.355 1030.91C149.467 1031.62 152.347 1032.42 155.995 1033.31C160.987 1034.46 165.083 1035.68 168.283 1036.96C171.483 1038.18 174.203 1040.06 176.443 1042.62C178.747 1045.18 179.899 1048.64 179.899 1052.99C179.899 1056.7 178.875 1060.06 176.827 1063.07C174.843 1066.08 171.803 1068.48 167.707 1070.27C163.611 1072.06 158.619 1072.96 152.731 1072.96ZM242.674 1061.54V1072H192.274V1004.8H241.33V1015.26H204.754V1032.74H237.202V1043.01H204.754V1061.54H242.674ZM300.555 1072L286.827 1052.32C286.251 1052.38 285.387 1052.42 284.235 1052.42H269.067V1072H256.587V1004.8H284.235C290.059 1004.8 295.115 1005.76 299.403 1007.68C303.755 1009.6 307.083 1012.35 309.387 1015.94C311.691 1019.52 312.843 1023.78 312.843 1028.7C312.843 1033.76 311.595 1038.11 309.099 1041.76C306.667 1045.41 303.147 1048.13 298.539 1049.92L313.995 1072H300.555ZM300.267 1028.7C300.267 1024.42 298.859 1021.12 296.042 1018.82C293.227 1016.51 289.099 1015.36 283.659 1015.36H269.067V1042.14H283.659C289.099 1042.14 293.227 1040.99 296.042 1038.69C298.859 1036.32 300.267 1032.99 300.267 1028.7ZM326.805 1004.8H339.285V1072H326.805V1004.8ZM407.862 1061.54V1072H357.462V1004.8H406.518V1015.26H369.942V1032.74H402.39V1043.01H369.942V1061.54H407.862ZM442.606 1072.96C437.422 1072.96 432.398 1072.22 427.534 1070.75C422.734 1069.28 418.926 1067.33 416.11 1064.9L420.43 1055.2C423.182 1057.38 426.542 1059.17 430.51 1060.58C434.542 1061.92 438.574 1062.59 442.606 1062.59C447.598 1062.59 451.31 1061.79 453.742 1060.19C456.238 1058.59 457.486 1056.48 457.486 1053.86C457.486 1051.94 456.782 1050.37 455.374 1049.15C454.03 1047.87 452.302 1046.88 450.19 1046.18C448.078 1045.47 445.198 1044.67 441.55 1043.78C436.43 1042.56 432.27 1041.34 429.07 1040.13C425.934 1038.91 423.214 1037.02 420.91 1034.46C418.67 1031.84 417.55 1028.32 417.55 1023.9C417.55 1020.19 418.542 1016.83 420.526 1013.82C422.574 1010.75 425.614 1008.32 429.646 1006.53C433.742 1004.74 438.734 1003.84 444.622 1003.84C448.718 1003.84 452.75 1004.35 456.718 1005.38C460.686 1006.4 464.11 1007.87 466.99 1009.79L463.054 1019.49C460.11 1017.76 457.038 1016.45 453.838 1015.55C450.638 1014.66 447.534 1014.21 444.526 1014.21C439.598 1014.21 435.918 1015.04 433.486 1016.7C431.118 1018.37 429.934 1020.58 429.934 1023.33C429.934 1025.25 430.606 1026.82 431.95 1028.03C433.358 1029.25 435.118 1030.21 437.23 1030.91C439.342 1031.62 442.222 1032.42 445.87 1033.31C450.862 1034.46 454.958 1035.68 458.158 1036.96C461.358 1038.18 464.078 1040.06 466.318 1042.62C468.622 1045.18 469.774 1048.64 469.774 1052.99C469.774 1056.7 468.75 1060.06 466.702 1063.07C464.718 1066.08 461.678 1068.48 457.582 1070.27C453.486 1072.06 448.494 1072.96 442.606 1072.96Z&quot; fill=&quot;black&quot; /&gt;
+&lt;g filter=&quot;url(#filter3_d)&quot;&gt;
+&lt;rect x=&quot;4&quot; y=&quot;1368&quot; width=&quot;588&quot; height=&quot;252&quot; fill=&quot;white&quot; /&gt;
+&lt;rect x=&quot;4.5&quot; y=&quot;1368.5&quot; width=&quot;587&quot; height=&quot;251&quot; stroke=&quot;black&quot; /&gt;
+&lt;/g&gt;
+&lt;path d=&quot;M54.0865 1460.8H66.5665V1528H54.0865V1460.8ZM144.455 1460.8V1528H134.183L97.1268 1482.5V1528H84.7428V1460.8H95.0148L132.071 1506.3V1460.8H144.455ZM183.294 1528.96C178.11 1528.96 173.086 1528.22 168.222 1526.75C163.422 1525.28 159.614 1523.33 156.798 1520.9L161.118 1511.2C163.87 1513.38 167.23 1515.17 171.198 1516.58C175.23 1517.92 179.262 1518.59 183.294 1518.59C188.286 1518.59 191.998 1517.79 194.43 1516.19C196.926 1514.59 198.174 1512.48 198.174 1509.86C198.174 1507.94 197.47 1506.37 196.062 1505.15C194.718 1503.87 192.99 1502.88 190.878 1502.18C188.766 1501.47 185.886 1500.67 182.238 1499.78C177.118 1498.56 172.958 1497.34 169.758 1496.13C166.622 1494.91 163.902 1493.02 161.598 1490.46C159.358 1487.84 158.238 1484.32 158.238 1479.9C158.238 1476.19 159.23 1472.83 161.214 1469.82C163.262 1466.75 166.302 1464.32 170.334 1462.53C174.43 1460.74 179.422 1459.84 185.31 1459.84C189.406 1459.84 193.438 1460.35 197.406 1461.38C201.374 1462.4 204.798 1463.87 207.677 1465.79L203.742 1475.49C200.798 1473.76 197.726 1472.45 194.526 1471.55C191.326 1470.66 188.222 1470.21 185.214 1470.21C180.286 1470.21 176.606 1471.04 174.174 1472.7C171.806 1474.37 170.622 1476.58 170.622 1479.33C170.622 1481.25 171.294 1482.82 172.638 1484.03C174.046 1485.25 175.806 1486.21 177.918 1486.91C180.03 1487.62 182.91 1488.42 186.558 1489.31C191.55 1490.46 195.646 1491.68 198.846 1492.96C202.046 1494.18 204.766 1496.06 207.006 1498.62C209.31 1501.18 210.462 1504.64 210.462 1508.99C210.462 1512.7 209.438 1516.06 207.39 1519.07C205.406 1522.08 202.366 1524.48 198.27 1526.27C194.174 1528.06 189.182 1528.96 183.294 1528.96ZM235.531 1471.36H213.259V1460.8H270.283V1471.36H248.011V1528H235.531V1471.36ZM319.858 1512.45H286.258L279.634 1528H266.77L297.01 1460.8H309.298L339.634 1528H326.578L319.858 1512.45ZM315.73 1502.66L303.058 1473.28L290.482 1502.66H315.73ZM407.892 1460.8V1528H397.62L360.564 1482.5V1528H348.18V1460.8H358.452L395.508 1506.3V1460.8H407.892ZM457.003 1528.96C450.219 1528.96 444.075 1527.49 438.571 1524.54C433.131 1521.54 428.843 1517.41 425.707 1512.16C422.635 1506.91 421.099 1500.99 421.099 1494.4C421.099 1487.81 422.667 1481.89 425.803 1476.64C428.939 1471.39 433.227 1467.3 438.667 1464.35C444.171 1461.34 450.315 1459.84 457.099 1459.84C462.603 1459.84 467.627 1460.8 472.171 1462.72C476.715 1464.64 480.555 1467.42 483.691 1471.07L475.627 1478.66C470.763 1473.41 464.779 1470.78 457.675 1470.78C453.067 1470.78 448.939 1471.81 445.291 1473.86C441.643 1475.84 438.795 1478.62 436.747 1482.21C434.699 1485.79 433.675 1489.86 433.675 1494.4C433.675 1498.94 434.699 1503.01 436.747 1506.59C438.795 1510.18 441.643 1512.99 445.291 1515.04C448.939 1517.02 453.067 1518.02 457.675 1518.02C464.779 1518.02 470.763 1515.36 475.627 1510.05L483.691 1517.73C480.555 1521.38 476.683 1524.16 472.075 1526.08C467.531 1528 462.507 1528.96 457.003 1528.96ZM546.049 1517.54V1528H495.649V1460.8H544.705V1471.26H508.129V1488.74H540.577V1499.01H508.129V1517.54H546.049Z&quot; fill=&quot;black&quot; /&gt;
+&lt;line x1=&quot;295.5&quot; y1=&quot;456.479&quot; x2=&quot;295.5&quot; y2=&quot;252&quot; stroke=&quot;black&quot; stroke-width=&quot;5&quot; /&gt;
+&lt;line x1=&quot;295.5&quot; y1=&quot;912.48&quot; x2=&quot;295.5&quot; y2=&quot;708.001&quot; stroke=&quot;black&quot; stroke-width=&quot;5&quot; /&gt;
+&lt;line x1=&quot;295.5&quot; y1=&quot;1368.48&quot; x2=&quot;295.5&quot; y2=&quot;1164&quot; stroke=&quot;black&quot; stroke-width=&quot;5&quot; /&gt;
+&lt;defs&gt;
+&lt;filter id=&quot;filter0_d&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;596&quot; height=&quot;260&quot; filterUnits=&quot;userSpaceOnUse&quot; color-interpolation-filters=&quot;sRGB&quot;&gt;
+&lt;feFlood flood-opacity=&quot;0&quot; result=&quot;BackgroundImageFix&quot; /&gt;
+&lt;feColorMatrix in=&quot;SourceAlpha&quot; type=&quot;matrix&quot; values=&quot;0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0&quot; /&gt;
+&lt;feOffset dy=&quot;4&quot; /&gt;
+&lt;feGaussianBlur stdDeviation=&quot;2&quot; /&gt;
+&lt;feColorMatrix type=&quot;matrix&quot; values=&quot;0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0&quot; /&gt;
+&lt;feBlend mode=&quot;normal&quot; in2=&quot;BackgroundImageFix&quot; result=&quot;effect1_dropShadow&quot; /&gt;
+&lt;feBlend mode=&quot;normal&quot; in=&quot;SourceGraphic&quot; in2=&quot;effect1_dropShadow&quot; result=&quot;shape&quot; /&gt;
+&lt;/filter&gt;
+&lt;filter id=&quot;filter1_d&quot; x=&quot;0&quot; y=&quot;456&quot; width=&quot;596&quot; height=&quot;260&quot; filterUnits=&quot;userSpaceOnUse&quot; color-interpolation-filters=&quot;sRGB&quot;&gt;
+&lt;feFlood flood-opacity=&quot;0&quot; result=&quot;BackgroundImageFix&quot; /&gt;
+&lt;feColorMatrix in=&quot;SourceAlpha&quot; type=&quot;matrix&quot; values=&quot;0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0&quot; /&gt;
+&lt;feOffset dy=&quot;4&quot; /&gt;
+&lt;feGaussianBlur stdDeviation=&quot;2&quot; /&gt;
+&lt;feColorMatrix type=&quot;matrix&quot; values=&quot;0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0&quot; /&gt;
+&lt;feBlend mode=&quot;normal&quot; in2=&quot;BackgroundImageFix&quot; result=&quot;effect1_dropShadow&quot; /&gt;
+&lt;feBlend mode=&quot;normal&quot; in=&quot;SourceGraphic&quot; in2=&quot;effect1_dropShadow&quot; result=&quot;shape&quot; /&gt;
+&lt;/filter&gt;
+&lt;filter id=&quot;filter2_d&quot; x=&quot;0&quot; y=&quot;912&quot; width=&quot;596&quot; height=&quot;260&quot; filterUnits=&quot;userSpaceOnUse&quot; color-interpolation-filters=&quot;sRGB&quot;&gt;
+&lt;feFlood flood-opacity=&quot;0&quot; result=&quot;BackgroundImageFix&quot; /&gt;
+&lt;feColorMatrix in=&quot;SourceAlpha&quot; type=&quot;matrix&quot; values=&quot;0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0&quot; /&gt;
+&lt;feOffset dy=&quot;4&quot; /&gt;
+&lt;feGaussianBlur stdDeviation=&quot;2&quot; /&gt;
+&lt;feColorMatrix type=&quot;matrix&quot; values=&quot;0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0&quot; /&gt;
+&lt;feBlend mode=&quot;normal&quot; in2=&quot;BackgroundImageFix&quot; result=&quot;effect1_dropShadow&quot; /&gt;
+&lt;feBlend mode=&quot;normal&quot; in=&quot;SourceGraphic&quot; in2=&quot;effect1_dropShadow&quot; result=&quot;shape&quot; /&gt;
+&lt;/filter&gt;
+&lt;filter id=&quot;filter3_d&quot; x=&quot;0&quot; y=&quot;1368&quot; width=&quot;596&quot; height=&quot;260&quot; filterUnits=&quot;userSpaceOnUse&quot; color-interpolation-filters=&quot;sRGB&quot;&gt;
+&lt;feFlood flood-opacity=&quot;0&quot; result=&quot;BackgroundImageFix&quot; /&gt;
+&lt;feColorMatrix in=&quot;SourceAlpha&quot; type=&quot;matrix&quot; values=&quot;0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0&quot; /&gt;
+&lt;feOffset dy=&quot;4&quot; /&gt;
+&lt;feGaussianBlur stdDeviation=&quot;2&quot; /&gt;
+&lt;feColorMatrix type=&quot;matrix&quot; values=&quot;0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0&quot; /&gt;
+&lt;feBlend mode=&quot;normal&quot; in2=&quot;BackgroundImageFix&quot; result=&quot;effect1_dropShadow&quot; /&gt;
+&lt;feBlend mode=&quot;normal&quot; in=&quot;SourceGraphic&quot; in2=&quot;effect1_dropShadow&quot; result=&quot;shape&quot; /&gt;
+&lt;/filter&gt;
+&lt;/defs&gt;
+&lt;/svg&gt;
+&lt;figcaption&gt;DICOM Data Model&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Patient has  studies, studies have series which are scans and scans may have multiple instances or images (which are slices in CT scans).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Patient Level&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;How many studies are there for this patient&lt;/li&gt;
+  &lt;li&gt;How many Series are there for this patient (in all studies)&lt;/li&gt;
+  &lt;li&gt;How many Instances (images) are there for this patient (in all series)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Study Level&lt;/strong&gt; (Patient and Study roots)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;How many Series are there in this study&lt;/li&gt;
+  &lt;li&gt;How many Instances (images) are there in this study (in all series)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Series Level&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;How many Instances (images) are there in this series&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Instance Level&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;label for=&quot;table-1-id&quot; class=&quot;margin-toggle&quot;&gt; ⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;table-1-id&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;Table is sourced from &lt;a href=&quot;https://www.medicalconnections.co.uk/kb/counting-studies-series-and-instances/&quot;&gt;here&lt;/a&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;div class=&quot;table-wrapper&quot;&gt;
+&lt;table class=&quot;booktabs&quot;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Attribute Name&lt;/th&gt;
+&lt;th&gt;Tag&lt;/th&gt;
+&lt;th&gt;Attribute Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Number of Patient Related Studies&lt;/td&gt;
+&lt;td&gt;(0020,1200)&lt;/td&gt;
+&lt;td&gt;The number of studies that match the Patient level Query/Retrieve search criteria&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Number of Patient Related Series&lt;/td&gt;
+&lt;td&gt;(0020,1202)&lt;/td&gt;
+&lt;td&gt;The number of series that match the Patient level Query/Retrieve search criteria&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Number of Patient Related Instances&lt;/td&gt;
+&lt;td&gt;(0020,1204)&lt;/td&gt;
+&lt;td&gt;The number of composite object instances that match the Patient level Query/Retrieve search criteria&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Number of Study Related Series&lt;/td&gt;
+&lt;td&gt;(0020,1206)&lt;/td&gt;
+&lt;td&gt;The number of series that match the Study level Query/Retrieve search criteria&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Number of Study Related Instances&lt;/td&gt;
+&lt;td&gt;(0020,1208)&lt;/td&gt;
+&lt;td&gt;The number of composite object instances that match the Study level Query/Retrieve search criteria&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Number of Series Related Instances&lt;/td&gt;
+&lt;td&gt;(0020,1209)&lt;/td&gt;
+&lt;td&gt;The number of composite object instances in a Series that match the Series level Query/Retrieve search criteria&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;SOP Classes in Study&lt;/td&gt;
+&lt;td&gt;(0008,0062)&lt;/td&gt;
+&lt;td&gt;The SOP Classes contained in the Study.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&quot;media-exchange&quot;&gt;Media Exchange&lt;/h2&gt;
+
+&lt;p&gt;DICOM defines &lt;strong&gt;application profiles&lt;/strong&gt; which defines how media is exchanged:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Encoding formats and compression schemes used (e. g. only uncompressed or loss-less JPEG)&lt;/li&gt;
+  &lt;li&gt;Storage medium used&lt;/li&gt;
+  &lt;li&gt;Images from which modalities may be present on the medium (X-Ray Angiography images, etc)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;DICOM directory: each dicom medium contains this directory which contains information (patient name, modality, unique identifiers etc.) for all images which are captured on the medium.&lt;/p&gt;
+
+&lt;h2 id=&quot;device-conformance&quot;&gt;Device Conformance&lt;/h2&gt;
+
+&lt;p&gt;Each DICOM supporting device must also specify which DICOM services and options are supported, which extensions and peculiarities have been implemented by the vendor, and how the device communicates with other DICOM systems.&lt;/p&gt;
+
+&lt;h1 id=&quot;dicom-file-format&quot;&gt;DICOM File Format&lt;/h1&gt;
+&lt;p&gt;The DICOM standard is divided in 2 parts:&lt;/p&gt;
+
+&lt;p&gt;A DICOM file consists of a header and image data sets.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/dicom-intro/packet.jpg&quot; width=&quot;250&quot; /&gt; &lt;label for=&quot;sidenote-id&quot; class=&quot;margin-toggle&quot;&gt; ⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;sidenote-id&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;Packet structure of dicom file. &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Preamble&lt;/strong&gt; is used to access the images and other data in DICOM file.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Prefix&lt;/strong&gt; contains the string “DICM” as uppercase characters.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Data Set&lt;/strong&gt; is the representation of real world information.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Data Elements&lt;/strong&gt;. There are 5 types of Data elements:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Type 1 Required Data elements,&lt;/li&gt;
+  &lt;li&gt;Type 1C Conditional Data Elements,&lt;/li&gt;
+  &lt;li&gt;Type 2 Required Data Elements,&lt;/li&gt;
+  &lt;li&gt;Type 2C Conditional Data Elements&lt;/li&gt;
+  &lt;li&gt;Type 3 optional Data Elements.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;clinical-terms&quot;&gt;Clinical Terms&lt;/h1&gt;
+
+&lt;p&gt;Some clinical terms to be aware of!&lt;/p&gt;
+
+&lt;h2 id=&quot;slice-thickness&quot;&gt;Slice Thickness&lt;/h2&gt;
+
+&lt;p&gt;Slice thickness refers to the (often axial) resolution of the scan.&lt;/p&gt;
+
+&lt;div class=&quot;epigraph&quot;&gt;&lt;blockquote&gt;&lt;p&gt;Patient Position (0018, 5100) will tell you if the patient was scanned head-first supine, feet-first prone, head-first prone, etc. Instance Number (0020, 0013), also commonly known as slice number, contains no information about spatial location and isn't even guaranteed to be unique. Slice Location (0020, 1041) is useful, if it exists, but you can't count on it always existing because it's a Type 3 (optional) attribute. To have a robust solution, you need to use Image Position Patient (0020, 0032) together with Image Orientation Patient (0020, 0037) and Patient Position (0018, 5100) to properly order the slices in space. Image Position Patient gives you a vector from the origin to the center of the first transmitted pixel of the image. Image Orientation Patient gives you vectors for the orientation of the rows and columns of the image in space. Patient Position tells you how the patient was placed on the table relative to the coordinate system.&lt;/p&gt;&lt;footer&gt;Source, &lt;cite&gt;https://stackoverflow.com/questions/6597843/dicom-slice-ordering&lt;/cite&gt;&lt;/footer&gt;&lt;/blockquote&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;hu-scaling-hounsfield-scale&quot;&gt;Hu Scaling (Hounsfield scale)&lt;/h2&gt;
+&lt;p&gt;HU is a quantitative scale for describing radiodensity. HU’s is standardized across all CT scans regardless of the scanner detector.&lt;/p&gt;
+
+\[HU = 1000 * \frac{\mu - \mu_{water}}{\mu_{water} - \mu_{air}}\]
+
+&lt;p&gt;Where \(\mu\) is &lt;a href=&quot;https://radiopaedia.org/articles/linear-attenuation-coefficient?lang=us&quot;&gt;linear attenuation coefficient&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;label for=&quot;table-1-id&quot; class=&quot;margin-toggle&quot;&gt; ⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;table-1-id&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;Here’s a quick list of a few useful ones, sourced from &lt;a href=&quot;https://en.wikipedia.org/wiki/Hounsfield_scale&quot;&gt;Wikipedia&lt;/a&gt;. &lt;/span&gt;&lt;/p&gt;
+&lt;div class=&quot;table-wrapper&quot;&gt;
+&lt;table class=&quot;booktabs&quot;&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;th colspan=&quot;2&quot;&gt;Substance&lt;/th&gt;
+&lt;th&gt;HU
+&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td colspan=&quot;2&quot;&gt;&lt;a href=&quot;/wiki/Air&quot; class=&quot;mw-redirect&quot; title=&quot;Air&quot;&gt;Air&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;−1000
+&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td colspan=&quot;2&quot;&gt;&lt;a href=&quot;/wiki/Fat&quot; title=&quot;Fat&quot;&gt;Fat&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;−120 to −90
+&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td colspan=&quot;2&quot;&gt;Soft tissue on &lt;a href=&quot;/wiki/Contrast_CT&quot; title=&quot;Contrast CT&quot;&gt;contrast CT&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;+100 to +300
+&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td rowspan=&quot;2&quot;&gt;&lt;a href=&quot;/wiki/Bone&quot; title=&quot;Bone&quot;&gt;Bone&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Cancellous&lt;/td&gt;
+&lt;td&gt;+300 to +400
+&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Cortical&lt;/td&gt;
+&lt;td&gt;+1800 to +1900
+&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;windowing&quot;&gt;Windowing&lt;/h2&gt;
+&lt;p&gt;Since it is difficult to recognize 4000 shades of gray easily, we use windowing. It limits the number of Hounsfield units that are displayed.&lt;/p&gt;
+
+&lt;p&gt;For example, if we want to examine the soft tissue in one CT scan we can use a window level of 40 and a window Width of 80 this will cover 40 units below and above the window level and the tissues with CT numbers outside this range will appear either black or white. A narrow range provides a higher contrast.&lt;/p&gt;
+
+&lt;p&gt;The &lt;strong&gt;window width&lt;/strong&gt; is the range of the grayscale that can be displayed. The center of grayscale range is referred to as the &lt;strong&gt;window level&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/img/dicom-intro/window.png&quot; width=&quot;600&quot; /&gt;
+&lt;figcaption&gt;Window width vs Window level&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;You can go through &lt;a href=&quot;https://kevalnagda.github.io/ct-windowing&quot;&gt;this blog&lt;/a&gt; to learn more about windowing.&lt;/p&gt;
+
+&lt;h1 id=&quot;walkthrough-ohif-viewer&quot;&gt;Walkthrough Ohif Viewer&lt;/h1&gt;
+
+&lt;p&gt;This section contains steps on how to use ohif viewer for viewing dicom file based medical records (studies, series, instances).&lt;/p&gt;
+
+&lt;h2 id=&quot;homepage&quot;&gt;Homepage&lt;/h2&gt;
+&lt;p&gt;Here you see the studies you have uploaded. Each study have series and these series have instances / images.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/dicom-intro/ohif-home.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Studies can be uploaded using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+&lt;/code&gt; button on right. Example is shown below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/dicom-intro/ohif-home.gif&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;details-on-scan-view&quot;&gt;Details on Scan View&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/dicom-intro/ct-scan-view.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;calibrating-windowing&quot;&gt;Calibrating Windowing&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/dicom-intro/ohif-change-WL.gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Vertical mouse movement changes window level and horizontal movement changes window width.&lt;/p&gt;
+
+&lt;h2 id=&quot;visualization-of-slices&quot;&gt;Visualization of slices&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/dicom-intro/ohif-slice.gif&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;2d-multiplanar-reconstruction-mpr&quot;&gt;2D Multiplanar Reconstruction (MPR)&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/dicom-intro/ohif-2d-mpr.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The MPR tool provided within the Viewer can be used to reconstruct images in orthogonal planes (coronal, sagittal, axial or oblique, depending on what the base image plane is). This can help to create a visualization of the anatomy which was not possible using base images alone.&lt;/p&gt;
+
+&lt;h2 id=&quot;report-view&quot;&gt;Report view&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/dicom-intro/ohif-report.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Report view has report on doc/pdf format displayed in viewer.&lt;/p&gt;
+
+&lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.digitmedicine.com/article.asp?issn=2226-8561;year=2015;volume=1;issue=2;spage=63;epage=66;aulast=Gupta&quot;&gt;“Significance of digital imaging and communication in medicine in digital imaging”. digitmedicine.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.medico-eng.com/en/products.php?id=71&quot;&gt;“Picture archiving and communication system”. medico-eng.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pubmed.ncbi.nlm.nih.gov/12080929/&quot;&gt;“The case for RIS/PACS integration”. PUBMED NCBI&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.medicalconnections.co.uk/kb/counting-studies-series-and-instances/&quot;&gt;“Counting Studies, Series and Instances”. medicalconnections.co.uk&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Follow me on twitter &lt;a href=&quot;https://twitter.com/theujjwal9&quot;&gt;@theujjwal9&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Mon, 28 Dec 2020 00:00:00 -0600</pubDate>
+        <link>/articles/20/dicom-intro</link>
+        <guid isPermaLink="true">/articles/20/dicom-intro</guid>
+        
+        
+        <category>medicine</category>
+        
+      </item>
     
       <item>
         <title>Docker Overview</title>
@@ -219,16 +1679,209 @@
       </item>
     
       <item>
+        <title>Heartrate detection using camera</title>
+        <description>&lt;p&gt;Euler Video Magnification &lt;a href=&quot;https://people.csail.mit.edu/mrub/evm/&quot;&gt;Project Link&lt;/a&gt; at MIT CSAIL&lt;/p&gt;
+
+&lt;p&gt;Follow me on twitter &lt;a href=&quot;https://twitter.com/theujjwal9&quot;&gt;@theujjwal9&lt;/a&gt;&lt;/p&gt;
+
+&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
+MathJax.Hub.Config({
+  &lt;!-- tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}, --&gt;
+  jax: [&quot;input/TeX&quot;,&quot;output/HTML-CSS&quot;],
+  displayAlign: &quot;left&quot;,
+  &quot;HTML-CSS&quot;: { scale: 110}
+});
+&lt;/script&gt;
+
+&lt;h1 id=&quot;introuction&quot;&gt;Introuction&lt;/h1&gt;
+
+&lt;p&gt;The world generates countless signals as it moves ahead in time, but most of these signals are invisible to the human eyes. This is due to the frequency of these signals, either it is too low to be perceived as change or it is too high that we can’t see the change actually occurring.&lt;/p&gt;
+
+&lt;p&gt;Finding a pattern in a seemingly random event is about how do we process the given information and convert it into something useful. In this article, we try to connect the dots of predicting heart rate with a camera alone. For this, we tag the video frame with actual heart rate and get to know which features impact an accurate prediction. For example which color signal in our RGB frames contributes towards better prediction and many more such small details.&lt;/p&gt;
+
+&lt;p&gt;Take for instance our eyes and our ability to understand facial expressions in others. These changes last in a long enough amount of time that we are able to perceive it. But changes exhibited by a heart rate last for a very short period of time and hence become invisible to us. With the camera of a sufficiently high frame rate, i.e almost all modern cameras, these changes become visible. And hence we can find the heart rate.&lt;/p&gt;
+
+&lt;p&gt;In this blog, we are going to introduce the algorithms required and demonstrate how to read a persons heart rate with a camera alone. The technique is called Euler Video Magnification.&lt;/p&gt;
+
+&lt;h2 id=&quot;measuring-heart-rate&quot;&gt;Measuring Heart Rate&lt;/h2&gt;
+
+&lt;p&gt;In order to measure your heart rate, doctors have traditionally relied upon technology that is based on monitors with leads that attach to your body. These devices measure one of the following pulses:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Radial Pulse&lt;/strong&gt;: Place your pointer and middle fingers on the inside of your opposite wrist just below the thumb and then count how many beats you feel in 1 minute.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Carotid Pulse&lt;/strong&gt;: Place your pointer and middle fingers on the side of your windpipe just below the jawbone and then count how many beats you feel in 1 minute.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Brachial Pulse&lt;/strong&gt;: Another location for checking your pulse is the &lt;a href=&quot;https://www.healthline.com/human-body-maps/brachial-artery&quot;&gt;brachial artery&lt;/a&gt;. This method is used most commonly in young children.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;overview-of-euler-video-magnification&quot;&gt;Overview of Euler video magnification&lt;/h2&gt;
+
+&lt;p&gt;A computational technique for visualizing subtle color and motion variations in ordinary videos by making the variations larger. It is a &lt;em&gt;microscope for small changes&lt;/em&gt; that are hard or impossible for us to see by ourselves. In addition, these small changes can be quantitatively analyzed and used to recover sounds from vibrations in distant objects, characterize material properties, and, in this case, remotely measure a person’s pulse.&lt;/p&gt;
+
+&lt;h2 id=&quot;concept&quot;&gt;Concept&lt;/h2&gt;
+
+&lt;p&gt;The general concept behind this algorithm is to first of all approximate a point on the forehead.&lt;/p&gt;
+
+&lt;p&gt;The intensity of this point is then decomposed into different color space namely Red, Blue, Green. But we prefer Red and Green color only as Blue tends to introduce noise in heart rate detection.&lt;/p&gt;
+
+&lt;figure&gt;&lt;figcaption&gt;Figure 1: Average Color Intensity Variation of a Location specified on the forehead.&lt;/figcaption&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/1*rBux120Fg5f-jZUyB8P-0A.png&quot; /&gt;&lt;/figure&gt;
+
+&lt;figure&gt;&lt;figcaption&gt;Figure 2: Heart Rate extracted by Fourier Transform.&lt;/figcaption&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/1*YCLMq00v1riy1at2b5-kwg.png&quot; /&gt;&lt;/figure&gt;
+
+&lt;p&gt;The variation in Red and Green colorspace on the location approximated on the forehead is then fed to &lt;strong&gt;Fourier Transform&lt;/strong&gt; to convert the function of spatial location on the video frame and time to frequency domain which therefore helps in extracting heart rate.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-fourier-transform&quot;&gt;What is Fourier transform?&lt;/h2&gt;
+
+&lt;p&gt;Fourier transform decomposes (also called &lt;em&gt;analysis&lt;/em&gt;) a &lt;a href=&quot;https://en.wikipedia.org/wiki/Function_(mathematics)&quot;&gt;function&lt;/a&gt; of time (a &lt;em&gt;signal&lt;/em&gt;) into its constituent frequencies. The Fourier transform of a function of time is itself a &lt;a href=&quot;https://en.wikipedia.org/wiki/Complex_number&quot;&gt;complex&lt;/a&gt;-valued function of frequency, whose magnitude component represents the amount of that frequency present in the original function, and whose &lt;a href=&quot;https://en.wikipedia.org/wiki/Complex_argument&quot;&gt;complex argument&lt;/a&gt; is the &lt;a href=&quot;https://en.wikipedia.org/wiki/Phase_offset&quot;&gt;phase offset&lt;/a&gt; of the basic sinusoid in that frequency. You can learn the basics of Fourier transform from this video.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;420&quot; src=&quot;http://www.youtube.com/embed/spUNpyF58BY?color=white&amp;amp;theme=light&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Now let’s talk about some amplification techniques namely Lagrangian and Eulerian. These techniques will help us in amplifying the particular frequency so that we can see change happening at that rate, in our case heart rate.&lt;/p&gt;
+
+&lt;h2 id=&quot;lagrangian-perspective&quot;&gt;Lagrangian perspective&lt;/h2&gt;
+
+&lt;p&gt;The Lagrangian version of amplification is to analyze the angle of motion of the pixels of interest in the tracking image. For example, if we want to study the flow rate of the river, we take a boat, go down the river, and record the movement of the ship.&lt;/p&gt;
+
+&lt;figure&gt;&lt;figcaption&gt;Lagrangian perspective of flow.&lt;/figcaption&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/1*eODd2ohQgUxhCOOBvdqwfA.png&quot; /&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;However, the Lagrange perspective approach has the following shortcomings:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;➔ It is necessary to accurately track and estimate the trajectory of particles, which requires more computational resources.&lt;/p&gt;
+
+&lt;p&gt;➔ The tracking of the particles is performed independently, and with the consideration, that system is closed i.e there is no transfer of energy in and out of frame being studied. So the lack of consideration of the overall image is prone to the fact that the image is not closed, thereby affecting the effect of the amplification.&lt;/p&gt;
+
+&lt;p&gt;➔ The amplification of the action of the target object is to modify the motion trajectory of the particle. Since the position of the particle changes, it is necessary to fill the original position of the particle, as there is a continuous flow in action and system is closed therefore some other particle will take the position. This increases the complexity of the algorithm.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;What is “change” — the trajectory of the pixel of interest over time, such pixels often need to be assisted by manual or other prior knowledge;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Amplify “change” — increase the amplitude of these pixels.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;euler-perspective&quot;&gt;Euler perspective&lt;/h2&gt;
+
+&lt;p&gt;Unlike the Lagrangian perspective, the Euler version of amplification does not explicitly track and estimate the motion of the particle but instead fixes the perspective in one place, such as the entire image.&lt;/p&gt;
+
+&lt;p&gt;After that, it is assumed that the &lt;strong&gt;entire image is changing,&lt;/strong&gt; but the characteristics of the signals like frequency, amplitude, etc. are varying. So we are interested in the change in the signals. In this way, the amplification of the “change” becomes the precipitation and enhancement of the frequency band of interest. For example, the same is to study the flow rate of river water. We can also sit on the shore and observe the change of the river when it passes through a fixed place. This change may contain many components that are not related to the water flow itself, such as the leaves falling off the water surface. Oh, but we only focus on the part that best reflects the water flow rate.&lt;/p&gt;
+
+&lt;figure&gt;&lt;figcaption&gt;Eulerian perspective of flow.&lt;/figcaption&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/1*P__1_fSDtjWqBWnvDNo3Ew.png&quot; /&gt;&lt;/figure&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;What is “change” — the whole scene is changing, and the change signals we are interested in are hidden in it;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Amplify “change” — Separate and enhance the signal of interest by means of signal processing.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;explanation&quot;&gt;Explanation&lt;/h2&gt;
+
+&lt;p&gt;Now, why are we able to extract heart rate from the sequence of the frame? It is because the heart pushes the blood to every part of the body and to the head particularly (towards the brain), so it changes the color and opacity of the skin. These changes can be detected by analyzing the average red or green component of the frames, taken from the camera. We learned the above concepts to be able to understand the different filters required to develop the said application. The analysis is done using the following approach :&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Spatial filtering.&lt;/strong&gt; Pyramid multiresolution decomposition of the video sequence; This is done to extract features/structures of interest, and to attenuate noise.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Time domain filtering.&lt;/strong&gt; Performing time-domain bandpass filtering on the images of each scale to obtain several frequency bands of interest; This is done using Fourier transform.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Amplify the filtering result.&lt;/strong&gt; The signal of each frequency band is differentially approximated by Taylor series, and the result of linear amplification is approximated; This is why we studied Euler amplification above.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Composite image.&lt;/strong&gt; The amplified image is synthesized.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The spatial and temporal processing is used to emphasize subtle temporal changes in a video.&lt;/p&gt;
+
+&lt;figure&gt;&lt;figcaption&gt;Figure 3: Architecture for Euler Video Magnification.&lt;/figcaption&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/1*PIbHq6tg6djUwnmelOhaDw.png&quot; /&gt;&lt;/figure&gt;
+
+&lt;p&gt;The video sequence is decomposed into different spatial frequency bands. These bands might be magnified differently due to the difference in their SNR (Signal To Noise Ratio). The goal of spatial processing is simply to increase the temporal signal-to-noise ratio by pooling multiple pixels, then for the purpose of &lt;strong&gt;computational efficiency and spatial filtering&lt;/strong&gt;, the low-pass filter is applied to the frames of the video spatially and then downsampled using &lt;strong&gt;Laplace Pyramid&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-is-the-laplace-pyramid&quot;&gt;What is the Laplace Pyramid?&lt;/h3&gt;
+
+&lt;p&gt;To understand this first of all we need to understand Gaussian Pyramid.&lt;/p&gt;
+
+&lt;p&gt;The original image is convolved with a Gaussian kernel. As described above the resulting image is a low pass filtered version of the original image. The cut-off frequency can be controlled using the parameter σ that is standard variation.&lt;/p&gt;
+
+&lt;figure&gt;&lt;figcaption&gt;Figure 4: Laplacian Pyramid Implementation. star represents convolution operation with Gaussian filter and downward arrow represent downsampling of the image.&lt;/figcaption&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/1*DvmPVVn8qAFibpwcmj_ybA.png&quot; /&gt;&lt;/figure&gt;
+
+&lt;p&gt;The Laplacian is then computed as the difference between the original image and the low pass filtered image i.e it’s the difference between successive gaussian pyramid levels. This process is continued to obtain a set of band-pass filtered images (since each is the difference between two levels of the Gaussian pyramid). Thus the Laplacian pyramid is a set of bandpass filters&lt;/p&gt;
+
+&lt;figure&gt;&lt;figcaption&gt;Figure 5: I,f represent Gaussian images and h represent laplacian images&lt;/figcaption&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/1*MFjKM3pJIBluxOvjDiyZJQ.png&quot; /&gt;&lt;/figure&gt;
+
+&lt;p&gt;The original image is repeatedly filtered and subsampled to generate the sequence of reduced resolution images. These comprise a set of low pass filtered copies of the original image in which the bandwidth decreases in one-octave steps.&lt;/p&gt;
+
+&lt;p&gt;So after using Laplace pyramid we then perform temporal processing on each spatial band. The time series corresponding to the value of a pixel in a frequency band is passed through a bandpass filter to extract the frequency bands of interest. For heart rate detection, I selected frequencies within 0.4–4Hz, corresponding to 24–240 beats per minute (this was specified in EVM paper itself) to magnify a pulse. The temporal processing is uniform for all spatial levels, and for all pixels within each level that is the time series of every pixel is passed through the same filter.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-is-it-done&quot;&gt;How is it done?&lt;/h2&gt;
+
+&lt;p&gt;Spatial Filtering: It is done to spatially filter the video sequence to obtain basebands of different spatial frequencies. The purpose of spatial filtering is simply to “spelt” multiple adjacent pixels into one piece, a low pass filter can be used. In fact, linear EVM uses Laplacian pyramids or Gaussian pyramids for multiresolution decomposition.&lt;/p&gt;
+
+&lt;p&gt;Time Domain Filtering: After obtaining the basebands of different spatial frequencies, bandpass filtering in the time domain is performed for each baseband in order to extract the part of the change signal we are interested in. For example, if we want to amplify the heart rate signal, we can choose bandpass filtering from 0.4 to 4 Hz (24 to 240 bpm). This band is the range of human heart rate.&lt;/p&gt;
+
+&lt;h2 id=&quot;amplification-&quot;&gt;Amplification :&lt;/h2&gt;
+
+\[\hat I(x,t) = f(x+(1+ \alpha)\delta(t)\]
+
+&lt;p&gt;This represents Color Intensity of the pixels at location x in time t. δ(t) represents the displacement function. α is the amplification factor.&lt;/p&gt;
+
+&lt;p&gt;\(f(x + δ(t))\) in a first-order Taylor expansion about x, can be represented as:&lt;/p&gt;
+
+\[I(x,t) \approx f(x) + \delta(t) \frac{\partial f(x)}{\partial x}\]
+
+\[f(x) = f(a) + f'(a)(x-a)\]
+
+&lt;p&gt;This is first order Taylor expansion. Here \((x-a)\) is displacement function.&lt;/p&gt;
+
+&lt;p&gt;The temporal bandpass filter is selected to pull out the motions or signals that we wish to be amplified.&lt;/p&gt;
+
+\[B(x,t) = \delta(t) \frac{\partial f(x)}{\partial x}\]
+
+&lt;p&gt;This is a temporal Bandpass filter which is a result of applying a broadband temporal bandpass filter to \(I(x, t)\) at every position x. For now, \(\delta(t)\), is within the passband of the temporal bandpass filter.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Tip: For color amplification of blood flow, a narrow passband produces a more noise-free result.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;figure&gt;&lt;figcaption&gt;Figure 6: The ideal filters (a) and (b) are implemented using DCT (Discrete Cosine Transform). The second- order IIR filter (d) have a broader passband than an ideal filter.&lt;/figcaption&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/1*ET0w7uEXFCneh4BMRVdkgQ.png&quot; /&gt;&lt;/figure&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Important: The Butterworth filter is used to convert a user-specified frequency band into a second-order IIR (infinite impulse response) and is used in our real-time application.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This shows that the frequency response of some of the temporal filters used in the paper. Ideal bandpass filters are used for color amplification as they have passbands with sharp cutoff frequencies.&lt;/p&gt;
+
+&lt;p&gt;For pulse detection, after computing Laplacian pyramid the magnification value or amplification factor α, for the finest two levels are set to 0. This causes downsampling and applies a spatial low pass filter to each frame to reduce both quantization and noise and to boost the subtle pulse signal that we are interested in. The incoming video frame is then passed through an ideal bandpass filter with a passband of 0.83 Hz to 1 Hz (50 bpm to 60 bpm). Finally, a large value of α ≈ 100 (amplification factor) and λc ≈ 1000 (&lt;strong&gt;cutoff frequency, beyond which an attenuated version of α is used that is either force α to zero for all λ &amp;lt; λc, or linearly scale α down to zero. This is important parameter in controlling noise&lt;/strong&gt;) was applied to the resulting spatially lowpass signal to emphasize the color change as much as possible. The final video was formed by adding this signal back to the original.&lt;/p&gt;
+
+&lt;figure&gt;&lt;figcaption&gt;Figure 6: The ideal filters (a) and (b) are implemented using DCT (Discrete Cosine Transform). The second- order IIR filter (d) have a broader passband than an ideal filter.&lt;/figcaption&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/1*ET0w7uEXFCneh4BMRVdkgQ.png&quot; /&gt;&lt;/figure&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;420&quot; src=&quot;http://www.youtube.com/embed/3rWycBEHn3s?color=white&amp;amp;theme=light&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;In this video, we can see periodic green to red variations at the heartbeat and how blood perfuses the face.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;“Higher α can exaggerate specific motions or color changes at the cost of increased noise.”&lt;/strong&gt; In some cases, one can account for color clipping artifacts by attenuating the chrominance components of each frame. This approach achieves this by doing all the processing in the YIQ space. Users can attenuate the chrominance components, I and Q, before conversion to the original color space.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;“The paper &lt;a href=&quot;http://people.csail.mit.edu/mrub/papers/vidmag.pdf&quot;&gt;Eulerian Video Magnification for Revealing Subtle Changes in the World&lt;/a&gt; is the work of the MIT CSAIL team.”&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;This algorithm can find its use in many aspects of our life like in pulse oximetry which is limited to certain application areas (usually the fingertip) and bears the risk of the probe failing due to the movement of the patient or low perfusion of the hands during long-time recordings. These limitations can be overcome by the analysis of video signals using this technique, which do not depend on contact-based measurement hardware and can be applied to well-circulated body areas (e.g. the head).&lt;/p&gt;
+
+&lt;p&gt;The world’s expanding and aging population has created a demand for inexpensive, unobtrusive, automated healthcare solutions. Eulerian Video Magnification (EVM) aids in the development of these solutions by allowing for the extraction of physiological signals from video data. This paper examines the potential of thermal video in conjunction with EVM to extract physiological measures, particularly heart rate.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 06 Apr 2019 00:00:00 -0500</pubDate>
+        <link>/articles/19/heartrate-detection</link>
+        <guid isPermaLink="true">/articles/19/heartrate-detection</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
         <title>Knowledge Distillation</title>
         <description>&lt;p&gt;The blog first appeared at Intel Devpost. &lt;a href=&quot;https://software.intel.com/content/www/us/en/develop/articles/knowledge-distillation-with-keras.html&quot;&gt;Here is the link&lt;/a&gt;&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;Hinton, Geoffrey, et al. “Distilling the Knowledge in a Neural Network.” arXiv, 9 Mar. 2015, arxiv.org/abs/1503.02531v1.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Hinton, Geoffrey, et al. “Distilling the Knowledge in a Neural Network.” arXiv, 9 Mar. 2015, arxiv.org/abs/1503.02531v1.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/1503.02531v1&quot;&gt;Link to paper&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Follow me on twitter &lt;a href=&quot;https://twitter.com/theujjwal9&quot;&gt;@theujjwal9&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Associated Code can be found at &lt;a href=&quot;https://github.com/Ujjwal-9/Knowledge-Distillation&quot;&gt;Github&lt;/a&gt;.&lt;/p&gt;
 
 &lt;script type=&quot;text/x-mathjax-config&quot;&gt;
 MathJax.Hub.Config({
@@ -351,13 +2004,11 @@ MathJax.Hub.Config({
 
 &lt;p&gt;Soft Targets or labels predicted from a model contain more information that binary hard labels due to the fact that they encode similarity measures between the classes.&lt;/p&gt;
 
-&lt;p&gt;Incorrect labels tagged by the model describe co-label similarities, and these similarities should be evident in future stages of learning, even if the effect is diminished. For example, imagine training a deep neural net on a classification dataset of various dog breeds. In the initial few stages of learning the model will not accurately distinguish between similar dog-breeds such as a Belgian Shepherd versus a German Shepherd. This same effect, although not so exaggerated, should appear in later stages of training. If given an image of a German Shepherd, the model predicts the class German Shepherd with a high-accuracy, the next highest predicted dog should still be a Belgian Shepherd or a similar looking dog. Over-fitting starts to occur when the majority of these co-label effects begin to disappear. By forcing the model to contain these effects in the later stages of training, we reduced the amount of over-fitting.&lt;/p&gt;
+&lt;p&gt;Incorrect labels tagged by the model describe co-label similarities, and these similarities should be evident in future stages of learning, even if the effect is diminished. For example, imagine training a deep neural net on a classification dataset of various dog breeds. In the initial few stages of learning the model will not accurately distinguish between similar dog-breeds such as a Belgian Shepherd versus a German Shepherd. This same effect, although not so exaggerated, should appear in later stages of training. If given an image of a German Shepherd, the model predicts the class German Shepherd with a high-accuracy, the next highest predicted dog should still be a Belgian Shepherd or a similar looking dog. Over-fitting starts to occur when the majority of these co-label effects begin to disappear. By forcing the model to contain these effects in the later stages of training, we reduced the amount of over-fitting. Though using soft targets as Regularizers is not considered very effective.&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Though using soft targets as Regularizers is not considered very effective.&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;Follow me on twitter &lt;a href=&quot;https://twitter.com/theujjwal9&quot;&gt;@theujjwal9&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-
-&lt;p&gt;Associated Code can be found at &lt;a href=&quot;https://github.com/Ujjwal-9/Knowledge-Distillation&quot;&gt;Github&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Fri, 04 May 2018 00:00:00 -0500</pubDate>
         <link>/articles/18/knowledge-distillation</link>

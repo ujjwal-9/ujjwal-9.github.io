@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Ujjwal Upadhyay - Introduction to Pydicom</title>
+  <meta name="description" content="PyDICOM WebsiteCode can be found @ Github. Checkout dicom-viewer.ipynbAbstractPydicom is a pure Python package for working with DICOM files. It lets you read...">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
+  
+    <link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+  
+  
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  <link rel="stylesheet" type="text/css" href="/css/tufte.css">
+  <link rel="stylesheet" type="text/css" href="/css/icomoon.css">
+  <!-- <link rel="stylesheet" type="text/css" href="/css/print.css" media="print"> -->
+
+  <link rel="canonical" href="/articles/20/pydicom-tutorial">
+
+  <link rel="alternate" type="application/rss+xml" title="Ujjwal Upadhyay" href="/feed.xml" />
+  <link rel="icon" type="image/svg" href="/assets/img/infinite.svg">
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Introduction to Pydicom" />
+<meta name="author" content="Ujjwal Upadhyay" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="PyDICOM Website Code can be found @ Github. Checkout dicom-viewer.ipynb Abstract Pydicom is a pure Python package for working with DICOM files. It lets you read, modify and write DICOM data in an easy “pythonic” way. Introduction Installation Using pip: $ pip install pydicom Using conda: $ conda install -c conda-forge pydicom Pydicom comes with its own set of dicom images which can be used to go through examples. They also give get_dataset.py file to download datasets, which is also included in the github repo. $ python get_datasets.py --show $ python get_datasets.py --output {path} Tutorial def load_scan(path): slices = [pydicom.dcmread(path + &#39;/&#39; + s) for s in os.listdir(path)] slices = [s for s in slices if &#39;SliceLocation&#39; in s] slices.sort(key = lambda x: int(x.InstanceNumber)) try: slice_thickness = np.abs(slices[0].ImagePositionPatient[2] - slices[1].ImagePositionPatient[2]) except: slice_thickness = np.abs(slices[0].SliceLocation - slices[1].SliceLocation) for s in slices: s.SliceThickness = slice_thickness return slices load_scan loads the dicom files and sorts them according to their Instance Number. It also extracts slice thickness which is a very important parameter in these scans as it is indicative of resolution of the scans. Lower the slice thickness, better the resolution. Slice Thickness Slice thickness directly impacts the precision of target localization during treatment. Slice Increment/Spacing refers to the movement of the table/scanner for scanning the next slice. If slice thickness is greater than slice increment than there is anatomical information loss. If there is overlap between 2 adjacent slices that is slice thickness &gt; slice increment than such cases acts as error correction. HU Scaling def get_pixels_hu(scans): image = np.stack([s.pixel_array for s in scans]) image = image.astype(np.int16) # Convert to Hounsfield units (HU) slope = scans[0].RescaleSlope if slope != 1: image = slope * image.astype(np.float64) image = image.astype(np.int16) image += np.int16(scans[0].RescaleIntercept) return np.array(image, dtype=np.int16) HU scaling is explained in my dicom standard blog. Multiplanar reconstruction Multiplanar view of brain. slices = sorted(patient_dicom, key=lambda s: s.SliceLocation) # pixel aspects, assuming all slices are the same pixel_spacing = slices[0].PixelSpacing slice_thickness = slices[0].SliceThickness ax_aspect = pixel_spacing[1]/pixel_spacing[0] sag_aspect = pixel_spacing[1]/slice_thickness cor_aspect = slice_thickness/pixel_spacing[0] # create 3D array img_shape = list(slices[0].pixel_array.shape) img_shape.append(len(slices)) img3d = np.zeros(img_shape) # fill 3D array with the images from the files for i, s in enumerate(slices): img2d = s.pixel_array img3d[:, :, i] = img2d # print(img3d.shape) # plot 3 orthogonal slices a1 = plt.subplot(1, 3, 1) a1.axis(&#39;off&#39;) plt.imshow(img3d[:, :, img_shape[2]//2], cmap=&#39;gray&#39;) a1.set_aspect(ax_aspect) a2 = plt.subplot(1, 3, 2) a2.axis(&#39;off&#39;) plt.imshow(img3d[:, img_shape[1]//2, :], cmap=&#39;gray&#39;) a2.set_aspect(sag_aspect) a3 = plt.subplot(1, 3, 3) a3.axis(&#39;off&#39;) plt.imshow(img3d[img_shape[0]//2, :, :].T, cmap=&#39;gray&#39;) a3.set_aspect(cor_aspect) Multiplanar reformation or reconstruction (MPR) involves the process of converting data from an imaging modality acquired in a certain plane, usually axial, into another plane. It is most commonly performed with thin-slice data from volumetric CT in the axial plane, but it may be accomplished with scanning in any plane and whichever modality capable of cross-sectional imaging, including magnetic resonance imaging (MRI), PET and SPECT.Source, https://radiopaedia.org/articles/multiplanar-reformation-mpr?lang=us Windowing level = dicom_file.WindowCenter width = dicom_file.WindowWidth # ...or set window/level manually to values you want vmin = level - width/2 vmax = level + width/2 plt.imshow(hu_pixels, cmap=&#39;gray&#39;, vmin=vmin, vmax=vmax) plt.show() Without Windowing. With Windowing. Windows for various scans. Brain windows are useful for evaluation of brain hemorrhage, fluid-filled structures including blood vessels and ventricles, and air-filled spaces. Bone windows are useful for evaluation in the setting of trauma. References “Martin J. Murphy. The importance of computed tomography slice thickness in radiographic patient positioning for radiosurgery. “ “What is the difference between slice thickness and slice increment?” “Hounsfield Scale” “Usefulness of hounsfield unit and density in the assessment and treatment of urinary stones” “Multiplanar reformation (MPR)”. Dr Daniel J Bell and Dr Francis Fortin et al. radiopaedia.org Follow me on twitter @theujjwal9" />
+<meta property="og:description" content="PyDICOM Website Code can be found @ Github. Checkout dicom-viewer.ipynb Abstract Pydicom is a pure Python package for working with DICOM files. It lets you read, modify and write DICOM data in an easy “pythonic” way. Introduction Installation Using pip: $ pip install pydicom Using conda: $ conda install -c conda-forge pydicom Pydicom comes with its own set of dicom images which can be used to go through examples. They also give get_dataset.py file to download datasets, which is also included in the github repo. $ python get_datasets.py --show $ python get_datasets.py --output {path} Tutorial def load_scan(path): slices = [pydicom.dcmread(path + &#39;/&#39; + s) for s in os.listdir(path)] slices = [s for s in slices if &#39;SliceLocation&#39; in s] slices.sort(key = lambda x: int(x.InstanceNumber)) try: slice_thickness = np.abs(slices[0].ImagePositionPatient[2] - slices[1].ImagePositionPatient[2]) except: slice_thickness = np.abs(slices[0].SliceLocation - slices[1].SliceLocation) for s in slices: s.SliceThickness = slice_thickness return slices load_scan loads the dicom files and sorts them according to their Instance Number. It also extracts slice thickness which is a very important parameter in these scans as it is indicative of resolution of the scans. Lower the slice thickness, better the resolution. Slice Thickness Slice thickness directly impacts the precision of target localization during treatment. Slice Increment/Spacing refers to the movement of the table/scanner for scanning the next slice. If slice thickness is greater than slice increment than there is anatomical information loss. If there is overlap between 2 adjacent slices that is slice thickness &gt; slice increment than such cases acts as error correction. HU Scaling def get_pixels_hu(scans): image = np.stack([s.pixel_array for s in scans]) image = image.astype(np.int16) # Convert to Hounsfield units (HU) slope = scans[0].RescaleSlope if slope != 1: image = slope * image.astype(np.float64) image = image.astype(np.int16) image += np.int16(scans[0].RescaleIntercept) return np.array(image, dtype=np.int16) HU scaling is explained in my dicom standard blog. Multiplanar reconstruction Multiplanar view of brain. slices = sorted(patient_dicom, key=lambda s: s.SliceLocation) # pixel aspects, assuming all slices are the same pixel_spacing = slices[0].PixelSpacing slice_thickness = slices[0].SliceThickness ax_aspect = pixel_spacing[1]/pixel_spacing[0] sag_aspect = pixel_spacing[1]/slice_thickness cor_aspect = slice_thickness/pixel_spacing[0] # create 3D array img_shape = list(slices[0].pixel_array.shape) img_shape.append(len(slices)) img3d = np.zeros(img_shape) # fill 3D array with the images from the files for i, s in enumerate(slices): img2d = s.pixel_array img3d[:, :, i] = img2d # print(img3d.shape) # plot 3 orthogonal slices a1 = plt.subplot(1, 3, 1) a1.axis(&#39;off&#39;) plt.imshow(img3d[:, :, img_shape[2]//2], cmap=&#39;gray&#39;) a1.set_aspect(ax_aspect) a2 = plt.subplot(1, 3, 2) a2.axis(&#39;off&#39;) plt.imshow(img3d[:, img_shape[1]//2, :], cmap=&#39;gray&#39;) a2.set_aspect(sag_aspect) a3 = plt.subplot(1, 3, 3) a3.axis(&#39;off&#39;) plt.imshow(img3d[img_shape[0]//2, :, :].T, cmap=&#39;gray&#39;) a3.set_aspect(cor_aspect) Multiplanar reformation or reconstruction (MPR) involves the process of converting data from an imaging modality acquired in a certain plane, usually axial, into another plane. It is most commonly performed with thin-slice data from volumetric CT in the axial plane, but it may be accomplished with scanning in any plane and whichever modality capable of cross-sectional imaging, including magnetic resonance imaging (MRI), PET and SPECT.Source, https://radiopaedia.org/articles/multiplanar-reformation-mpr?lang=us Windowing level = dicom_file.WindowCenter width = dicom_file.WindowWidth # ...or set window/level manually to values you want vmin = level - width/2 vmax = level + width/2 plt.imshow(hu_pixels, cmap=&#39;gray&#39;, vmin=vmin, vmax=vmax) plt.show() Without Windowing. With Windowing. Windows for various scans. Brain windows are useful for evaluation of brain hemorrhage, fluid-filled structures including blood vessels and ventricles, and air-filled spaces. Bone windows are useful for evaluation in the setting of trauma. References “Martin J. Murphy. The importance of computed tomography slice thickness in radiographic patient positioning for radiosurgery. “ “What is the difference between slice thickness and slice increment?” “Hounsfield Scale” “Usefulness of hounsfield unit and density in the assessment and treatment of urinary stones” “Multiplanar reformation (MPR)”. Dr Daniel J Bell and Dr Francis Fortin et al. radiopaedia.org Follow me on twitter @theujjwal9" />
+<meta property="og:site_name" content="Ujjwal Upadhyay" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-12-31T00:00:00-06:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Introduction to Pydicom" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","url":"/articles/20/pydicom-tutorial","headline":"Introduction to Pydicom","dateModified":"2020-12-31T00:00:00-06:00","datePublished":"2020-12-31T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"/articles/20/pydicom-tutorial"},"author":{"@type":"Person","name":"Ujjwal Upadhyay"},"description":"PyDICOM Website Code can be found @ Github. Checkout dicom-viewer.ipynb Abstract Pydicom is a pure Python package for working with DICOM files. It lets you read, modify and write DICOM data in an easy “pythonic” way. Introduction Installation Using pip: $ pip install pydicom Using conda: $ conda install -c conda-forge pydicom Pydicom comes with its own set of dicom images which can be used to go through examples. They also give get_dataset.py file to download datasets, which is also included in the github repo. $ python get_datasets.py --show $ python get_datasets.py --output {path} Tutorial def load_scan(path): slices = [pydicom.dcmread(path + &#39;/&#39; + s) for s in os.listdir(path)] slices = [s for s in slices if &#39;SliceLocation&#39; in s] slices.sort(key = lambda x: int(x.InstanceNumber)) try: slice_thickness = np.abs(slices[0].ImagePositionPatient[2] - slices[1].ImagePositionPatient[2]) except: slice_thickness = np.abs(slices[0].SliceLocation - slices[1].SliceLocation) for s in slices: s.SliceThickness = slice_thickness return slices load_scan loads the dicom files and sorts them according to their Instance Number. It also extracts slice thickness which is a very important parameter in these scans as it is indicative of resolution of the scans. Lower the slice thickness, better the resolution. Slice Thickness Slice thickness directly impacts the precision of target localization during treatment. Slice Increment/Spacing refers to the movement of the table/scanner for scanning the next slice. If slice thickness is greater than slice increment than there is anatomical information loss. If there is overlap between 2 adjacent slices that is slice thickness &gt; slice increment than such cases acts as error correction. HU Scaling def get_pixels_hu(scans): image = np.stack([s.pixel_array for s in scans]) image = image.astype(np.int16) # Convert to Hounsfield units (HU) slope = scans[0].RescaleSlope if slope != 1: image = slope * image.astype(np.float64) image = image.astype(np.int16) image += np.int16(scans[0].RescaleIntercept) return np.array(image, dtype=np.int16) HU scaling is explained in my dicom standard blog. Multiplanar reconstruction Multiplanar view of brain. slices = sorted(patient_dicom, key=lambda s: s.SliceLocation) # pixel aspects, assuming all slices are the same pixel_spacing = slices[0].PixelSpacing slice_thickness = slices[0].SliceThickness ax_aspect = pixel_spacing[1]/pixel_spacing[0] sag_aspect = pixel_spacing[1]/slice_thickness cor_aspect = slice_thickness/pixel_spacing[0] # create 3D array img_shape = list(slices[0].pixel_array.shape) img_shape.append(len(slices)) img3d = np.zeros(img_shape) # fill 3D array with the images from the files for i, s in enumerate(slices): img2d = s.pixel_array img3d[:, :, i] = img2d # print(img3d.shape) # plot 3 orthogonal slices a1 = plt.subplot(1, 3, 1) a1.axis(&#39;off&#39;) plt.imshow(img3d[:, :, img_shape[2]//2], cmap=&#39;gray&#39;) a1.set_aspect(ax_aspect) a2 = plt.subplot(1, 3, 2) a2.axis(&#39;off&#39;) plt.imshow(img3d[:, img_shape[1]//2, :], cmap=&#39;gray&#39;) a2.set_aspect(sag_aspect) a3 = plt.subplot(1, 3, 3) a3.axis(&#39;off&#39;) plt.imshow(img3d[img_shape[0]//2, :, :].T, cmap=&#39;gray&#39;) a3.set_aspect(cor_aspect) Multiplanar reformation or reconstruction (MPR) involves the process of converting data from an imaging modality acquired in a certain plane, usually axial, into another plane. It is most commonly performed with thin-slice data from volumetric CT in the axial plane, but it may be accomplished with scanning in any plane and whichever modality capable of cross-sectional imaging, including magnetic resonance imaging (MRI), PET and SPECT.Source, https://radiopaedia.org/articles/multiplanar-reformation-mpr?lang=us Windowing level = dicom_file.WindowCenter width = dicom_file.WindowWidth # ...or set window/level manually to values you want vmin = level - width/2 vmax = level + width/2 plt.imshow(hu_pixels, cmap=&#39;gray&#39;, vmin=vmin, vmax=vmax) plt.show() Without Windowing. With Windowing. Windows for various scans. Brain windows are useful for evaluation of brain hemorrhage, fluid-filled structures including blood vessels and ventricles, and air-filled spaces. Bone windows are useful for evaluation in the setting of trauma. References “Martin J. Murphy. The importance of computed tomography slice thickness in radiographic patient positioning for radiosurgery. “ “What is the difference between slice thickness and slice increment?” “Hounsfield Scale” “Usefulness of hounsfield unit and density in the assessment and treatment of urinary stones” “Multiplanar reformation (MPR)”. Dr Daniel J Bell and Dr Francis Fortin et al. radiopaedia.org Follow me on twitter @theujjwal9","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+  
+
+  
+
+  
+  <meta content="/assets/img/pydicom-tutorial/cover.png" property="og:image">
+  
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+<header>
+    <nav class="group">
+        <ul class="topnav" style="float:left">
+            <li><a style="padding-top:.5em" href="/"><strong>Ujjwal Upadhyay</strong></a></li>
+        </ul>
+	<ul class="topnav">    
+        
+	
+            
+            
+            
+  	
+            
+            
+	        
+                <li><a class="right" href="/research">Research</a></li>
+	        
+	    
+            
+  	
+            
+            
+	        
+                <li><a class="right" href="/writings">Writings</a></li>
+	        
+	    
+            
+  	
+            
+            
+            
+  	
+            
+  	
+            
+  	
+            
+  	
+        <li><a class="right" href="https://drive.google.com/file/d/1T3-bmXLxtnoR4x3_KS89RSL1-jLPsikA/view?usp=sharing">cv</a></li>
+	</ul>
+	</nav>
+        <hr class="slender">
+</header>
+
+    <article class="group">
+      <h1>Introduction to Pydicom</h1>
+<p class="subtitle">December 31, 2020</p>
+
+<p><a href="https://pydicom.github.io/">PyDICOM Website</a></p>
+
+<p>Code can be found @ <a href="https://github.com/Ujjwal-9/medical-training/tree/master/dicom-demo">Github</a>. Checkout <code class="language-plaintext highlighter-rouge">dicom-viewer.ipynb</code></p>
+
+<h1 id="abstract">Abstract</h1>
+
+<p>Pydicom is a pure Python package for working with DICOM files. It lets you read, modify and write DICOM data in an easy “pythonic” way.</p>
+
+<h1 id="introduction">Introduction</h1>
+
+<p><strong>Installation</strong></p>
+
+<p>Using pip:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>pip <span class="nb">install </span>pydicom
+</code></pre></div></div>
+
+<p>Using conda:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>conda <span class="nb">install</span> <span class="nt">-c</span> conda-forge pydicom
+</code></pre></div></div>
+
+<p>Pydicom comes with its own set of dicom images which can be used to go through examples.</p>
+
+<p>They also give <code class="language-plaintext highlighter-rouge">get_dataset.py</code> file to download datasets, which is also included in the <a href="https://github.com/Ujjwal-9/medical-training/tree/master/dicom-demo">github repo</a>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>python get_datasets.py <span class="nt">--show</span>
+<span class="nv">$ </span>python get_datasets.py <span class="nt">--output</span> <span class="o">{</span>path<span class="o">}</span>
+</code></pre></div></div>
+
+<h1 id="tutorial">Tutorial</h1>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">load_scan</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+    <span class="n">slices</span> <span class="o">=</span> <span class="p">[</span><span class="n">pydicom</span><span class="p">.</span><span class="n">dcmread</span><span class="p">(</span><span class="n">path</span> <span class="o">+</span> <span class="s">'/'</span> <span class="o">+</span> <span class="n">s</span><span class="p">)</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span>               
+              <span class="n">os</span><span class="p">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">path</span><span class="p">)]</span>
+    <span class="n">slices</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">slices</span> <span class="k">if</span> <span class="s">'SliceLocation'</span> <span class="ow">in</span> <span class="n">s</span><span class="p">]</span>
+    <span class="n">slices</span><span class="p">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">InstanceNumber</span><span class="p">))</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">slice_thickness</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nb">abs</span><span class="p">(</span><span class="n">slices</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">ImagePositionPatient</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">-</span>   
+                          <span class="n">slices</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="n">ImagePositionPatient</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+    <span class="k">except</span><span class="p">:</span>
+        <span class="n">slice_thickness</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nb">abs</span><span class="p">(</span><span class="n">slices</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">SliceLocation</span> <span class="o">-</span> 
+                          <span class="n">slices</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="n">SliceLocation</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">slices</span><span class="p">:</span>
+        <span class="n">s</span><span class="p">.</span><span class="n">SliceThickness</span> <span class="o">=</span> <span class="n">slice_thickness</span>
+    <span class="k">return</span> <span class="n">slices</span>
+</code></pre></div></div>
+<p><code class="language-plaintext highlighter-rouge">load_scan</code> loads the dicom files and sorts them according to their <code class="language-plaintext highlighter-rouge">Instance Number</code>. It also extracts slice thickness which is a very important parameter in these scans as it is indicative of resolution of the scans. Lower the slice thickness, better the resolution.</p>
+
+<p><strong>Slice Thickness</strong></p>
+
+<blockquote>
+  <p>Slice thickness directly impacts the precision of target localization during treatment.</p>
+</blockquote>
+
+<p><img src="https://www.materialise.com/sites/default/files/image-uploads/pages/academy/Medical/slice_increment.jpg" /></p>
+
+<p>Slice Increment/Spacing refers to the movement of the table/scanner for scanning the next slice.</p>
+
+<blockquote>
+  <p>If slice thickness is greater than slice increment than there is anatomical information loss.</p>
+</blockquote>
+
+<p>If there is overlap between 2 adjacent slices that is <code class="language-plaintext highlighter-rouge">slice thickness &gt; slice increment</code> than such cases acts as error correction.</p>
+
+<p><strong>HU Scaling</strong></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">get_pixels_hu</span><span class="p">(</span><span class="n">scans</span><span class="p">):</span>
+    <span class="n">image</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">stack</span><span class="p">([</span><span class="n">s</span><span class="p">.</span><span class="n">pixel_array</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">scans</span><span class="p">])</span>
+    <span class="n">image</span> <span class="o">=</span> <span class="n">image</span><span class="p">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">int16</span><span class="p">)</span>
+    
+    <span class="c1"># Convert to Hounsfield units (HU)
+</span>    <span class="n">slope</span> <span class="o">=</span> <span class="n">scans</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">RescaleSlope</span>
+    
+    <span class="k">if</span> <span class="n">slope</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">image</span> <span class="o">=</span> <span class="n">slope</span> <span class="o">*</span> <span class="n">image</span><span class="p">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">float64</span><span class="p">)</span>
+        <span class="n">image</span> <span class="o">=</span> <span class="n">image</span><span class="p">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">int16</span><span class="p">)</span>
+        
+    <span class="n">image</span> <span class="o">+=</span> <span class="n">np</span><span class="p">.</span><span class="n">int16</span><span class="p">(</span><span class="n">scans</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">RescaleIntercept</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">np</span><span class="p">.</span><span class="n">array</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="p">.</span><span class="n">int16</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>HU scaling is explained in my <a href="http://ujjwal9.ml/blog/medicine/2020/12/28/dicom-intro.html">dicom standard blog</a>.</p>
+
+<p><strong>Multiplanar reconstruction</strong></p>
+<figure><figcaption>Multiplanar view of brain.</figcaption><img src="https://images.ctfassets.net/cnu0m8re1exe/1k0YS9HKpsyurGlnI1Zlky/223cbf9b658b7068925ba7f944a9bb39/sagittal.jpg" /></figure>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">slices</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">patient_dicom</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">s</span><span class="p">:</span> <span class="n">s</span><span class="p">.</span><span class="n">SliceLocation</span><span class="p">)</span>
+
+<span class="c1"># pixel aspects, assuming all slices are the same
+</span><span class="n">pixel_spacing</span> <span class="o">=</span> <span class="n">slices</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">PixelSpacing</span>
+<span class="n">slice_thickness</span> <span class="o">=</span> <span class="n">slices</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">SliceThickness</span>
+<span class="n">ax_aspect</span> <span class="o">=</span> <span class="n">pixel_spacing</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="n">pixel_spacing</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">sag_aspect</span> <span class="o">=</span> <span class="n">pixel_spacing</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="n">slice_thickness</span>
+<span class="n">cor_aspect</span> <span class="o">=</span> <span class="n">slice_thickness</span><span class="o">/</span><span class="n">pixel_spacing</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="c1"># create 3D array
+</span><span class="n">img_shape</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">slices</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">pixel_array</span><span class="p">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="n">img_shape</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">slices</span><span class="p">))</span>
+<span class="n">img3d</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">img_shape</span><span class="p">)</span>
+
+<span class="c1"># fill 3D array with the images from the files
+</span><span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">s</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">slices</span><span class="p">):</span>
+    <span class="n">img2d</span> <span class="o">=</span> <span class="n">s</span><span class="p">.</span><span class="n">pixel_array</span>
+    <span class="n">img3d</span><span class="p">[:,</span> <span class="p">:,</span> <span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">img2d</span>
+    
+<span class="c1"># print(img3d.shape)
+</span>
+<span class="c1"># plot 3 orthogonal slices
+</span><span class="n">a1</span> <span class="o">=</span> <span class="n">plt</span><span class="p">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">a1</span><span class="p">.</span><span class="n">axis</span><span class="p">(</span><span class="s">'off'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img3d</span><span class="p">[:,</span> <span class="p">:,</span> <span class="n">img_shape</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">//</span><span class="mi">2</span><span class="p">],</span> <span class="n">cmap</span><span class="o">=</span><span class="s">'gray'</span><span class="p">)</span>
+<span class="n">a1</span><span class="p">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="n">ax_aspect</span><span class="p">)</span>
+
+<span class="n">a2</span> <span class="o">=</span> <span class="n">plt</span><span class="p">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">a2</span><span class="p">.</span><span class="n">axis</span><span class="p">(</span><span class="s">'off'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img3d</span><span class="p">[:,</span> <span class="n">img_shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">//</span><span class="mi">2</span><span class="p">,</span> <span class="p">:],</span> <span class="n">cmap</span><span class="o">=</span><span class="s">'gray'</span><span class="p">)</span>
+<span class="n">a2</span><span class="p">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="n">sag_aspect</span><span class="p">)</span>
+
+<span class="n">a3</span> <span class="o">=</span> <span class="n">plt</span><span class="p">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="n">a3</span><span class="p">.</span><span class="n">axis</span><span class="p">(</span><span class="s">'off'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img3d</span><span class="p">[</span><span class="n">img_shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">//</span><span class="mi">2</span><span class="p">,</span> <span class="p">:,</span> <span class="p">:].</span><span class="n">T</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s">'gray'</span><span class="p">)</span>
+<span class="n">a3</span><span class="p">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="n">cor_aspect</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><img src="/assets/img/pydicom-tutorial/mpr.png" /></p>
+
+<div class="epigraph"><blockquote><p>Multiplanar reformation or reconstruction (MPR) involves the process of converting data from an imaging modality acquired in a certain plane, usually axial, into another plane. It is most commonly performed with thin-slice data from volumetric CT in the axial plane, but it may be accomplished with scanning in any plane and whichever modality capable of cross-sectional imaging, including magnetic resonance imaging (MRI), PET and SPECT.</p><footer>Source, <cite>https://radiopaedia.org/articles/multiplanar-reformation-mpr?lang=us</cite></footer></blockquote></div>
+
+<p><strong>Windowing</strong></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">level</span> <span class="o">=</span> <span class="n">dicom_file</span><span class="p">.</span><span class="n">WindowCenter</span>
+<span class="n">width</span> <span class="o">=</span> <span class="n">dicom_file</span><span class="p">.</span><span class="n">WindowWidth</span>
+<span class="c1"># ...or set window/level manually to values you want
+</span><span class="n">vmin</span> <span class="o">=</span> <span class="n">level</span> <span class="o">-</span> <span class="n">width</span><span class="o">/</span><span class="mi">2</span>
+<span class="n">vmax</span> <span class="o">=</span> <span class="n">level</span> <span class="o">+</span> <span class="n">width</span><span class="o">/</span><span class="mi">2</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">hu_pixels</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s">'gray'</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="n">vmin</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="n">vmax</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<figure><figcaption>Without Windowing.</figcaption><img src="/assets/img/pydicom-tutorial/windowing-org.png" /></figure>
+<figure><figcaption>With Windowing.</figcaption><img src="/assets/img/pydicom-tutorial/windowing-new.png" /></figure>
+<figure><figcaption>Windows for various scans.</figcaption><img src="https://www.stepwards.com/wp-content/uploads/2019/12/Screen-Shot-2019-10-06-at-8.45.17-PM-e1577078248771.jpg" /></figure>
+
+<blockquote>
+  <p>Brain windows are useful for evaluation of brain hemorrhage, fluid-filled structures including blood vessels and ventricles, and air-filled spaces.</p>
+</blockquote>
+
+<blockquote>
+  <p>Bone windows are useful for evaluation in the setting of trauma.</p>
+</blockquote>
+
+<h1 id="references">References</h1>
+
+<p><a href="https://doi.org/10.1118/1.598500">“Martin J. Murphy. The importance of computed tomography slice thickness in radiographic patient positioning for radiosurgery. “</a></p>
+
+<p><a href="https://www.materialise.com/en/faq/what-difference-between-slice-thickness-and-slice-increment#:~:text=Slice%20thickness%20and%20slice%20increment%20are%20central%20concepts%20that%20surround,4%20mm%20in%20the%20illustration">“What is the difference between slice thickness and slice increment?”</a></p>
+
+<p><a href="https://www.sciencedirect.com/topics/medicine-and-dentistry/hounsfield-scale">“Hounsfield Scale”</a></p>
+
+<p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4220362/">“Usefulness of hounsfield unit and density in the assessment and treatment of urinary stones”</a></p>
+
+<p><a href="https://radiopaedia.org/articles/multiplanar-reformation-mpr?lang=us">“Multiplanar reformation (MPR)”. Dr Daniel J Bell and Dr Francis Fortin et al. radiopaedia.org</a></p>
+
+<blockquote>
+  <p><strong>Follow me on twitter <a href="https://twitter.com/theujjwal9">@theujjwal9</a></strong></p>
+</blockquote>
+
+
+
+    </article>
+    <span class="print-footer">Introduction to Pydicom - December 31, 2020 - Ujjwal Upadhyay</span>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+<footer>
+  <hr class="slender">
+  <ul class="footer-links" style="font-size: 1.6rem;">
+    <li><a href="mailto:ujjwalupadhyay8@gmail.com"><i class="fa fa-envelope"></i></a></li>
+    <li><a href="https://twitter.com/theujjwal9"><i class="fa fa-twitter"></i></a></li>
+    <li><a href="https://github.com/ujjwal-9"><i class="fa fa-github"></i></a></li>
+    <li><a href="https://www.linkedin.com/in/ujjwal-9/"><i class="fa fa-linkedin"></i></a></li>
+    <li><a href="https://scholar.google.com/citations?user=lvpaXdEAAAAJ&hl=en"><i class="ai ai-google-scholar"></i></li>
+    <li><a href="https://ujjwal-9.github.io/feed.xml"><i class="fa fa-rss"></i></a></li>
+    <!-- 
+      <li>
+        <a href="https://github.com/ujjwal-9"><span class="icon-github"></span></a>
+      </li>
+    
+      <li>
+        <a href="https://linkedin.com/in/ujjwal-9"><span class="icon-linkedin"></span></a>
+      </li>
+    
+      <li>
+        <a href="/feed.xml"><span class="icon-rss2"></span></a>
+      </li>
+       -->
+  </ul>
+<div class="credits">
+<span>&copy; 2021 &nbsp;&nbsp;UJJWAL UPADHYAY</span></br> <br>
+</div>  
+</footer>
+  </body>
+</html>
