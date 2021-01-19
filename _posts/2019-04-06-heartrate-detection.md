@@ -9,8 +9,6 @@ image_url: /assets/img/heartrate/cover.png
 
 Euler Video Magnification [Project Link](https://people.csail.mit.edu/mrub/evm/) at MIT CSAIL
 
-Follow me on twitter [@theujjwal9](https://twitter.com/theujjwal9)
-
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
   <!-- tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}, -->
@@ -189,3 +187,6 @@ In this video, we can see periodic green to red variations at the heartbeat and 
 This algorithm can find its use in many aspects of our life like in pulse oximetry which is limited to certain application areas (usually the fingertip) and bears the risk of the probe failing due to the movement of the patient or low perfusion of the hands during long-time recordings. These limitations can be overcome by the analysis of video signals using this technique, which do not depend on contact-based measurement hardware and can be applied to well-circulated body areas (e.g. the head).
 
 The world’s expanding and aging population has created a demand for inexpensive, unobtrusive, automated healthcare solutions. Eulerian Video Magnification (EVM) aids in the development of these solutions by allowing for the extraction of physiological signals from video data. This paper examines the potential of thermal video in conjunction with EVM to extract physiological measures, particularly heart rate.
+
+
+> **Follow me on twitter [@theujjwal9](https://twitter.com/theujjwal9)**

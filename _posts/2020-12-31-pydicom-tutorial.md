@@ -64,7 +64,10 @@ def load_scan(path):
 
 > Slice thickness directly impacts the precision of target localization during treatment.
 
+<figure>
 <img src="https://www.materialise.com/sites/default/files/image-uploads/pages/academy/Medical/slice_increment.jpg">
+<figcaption>Slice Increment and Slice Thickness</figcaption>
+</figure>
 
 Slice Increment/Spacing refers to the movement of the table/scanner for scanning the next slice.
 
@@ -135,8 +138,10 @@ a3.axis('off')
 plt.imshow(img3d[img_shape[0]//2, :, :].T, cmap='gray')
 a3.set_aspect(cor_aspect)
 ```
-
+<figure>
 <img src="/assets/img/pydicom-tutorial/mpr.png">
+<figcaption>Multiplanar reformation - axial, sagittal and coronal view</figcaption>
+</figure>
 
 {% epigraph "Multiplanar reformation or reconstruction (MPR) involves the process of converting data from an imaging modality acquired in a certain plane, usually axial, into another plane. It is most commonly performed with thin-slice data from volumetric CT in the axial plane, but it may be accomplished with scanning in any plane and whichever modality capable of cross-sectional imaging, including magnetic resonance imaging (MRI), PET and SPECT." "Source" "https://radiopaedia.org/articles/multiplanar-reformation-mpr?lang=us" %}
 

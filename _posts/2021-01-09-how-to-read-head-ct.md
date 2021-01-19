@@ -39,7 +39,8 @@ During examination of CT scans, it is important to review old scans as they may 
 
 **For example**:
 
-![](https://www.radiologymasterclass.co.uk/images/ct/ct-brain/pathology/previous.jpg)
+{% maincolumn 'https://www.radiologymasterclass.co.uk/images/ct/ct-brain/pathology/previous.jpg' 'Example of how past cases may influence diagnosis and treatment.' %}
+![]()
 
 > This elderly patient - who presented with acute confusion - has a large area of low density in the right frontal lobe seen on the current CT Review of a previous CT revealed that the abnormality in the brain was not new, but related to an infarct which occurred 5 months earlier The current CT appearances were not the cause of the acute confusion (urinary tract infection in this case)
 
@@ -73,9 +74,19 @@ B: bone
 
 
 To look for these neuropathology, there is a 3 step process:
-{% maincolumn 'assets/img/read-ct/step1.png' 'Step 1' %}
-{% maincolumn 'assets/img/read-ct/step2.png' 'Step 2' %}
-{% maincolumn 'assets/img/read-ct/step3.png' 'Step 3' %}
+<figure>
+<img src="/assets/img/read-ct/step1.png" width=400>
+<figcaption>Step 1</figcaption>
+</figure>
+<figure>
+<img src="/assets/img/read-ct/step2.png" width=400>
+<figcaption>Step 2</figcaption>
+</figure>
+<figure>
+<img src="/assets/img/read-ct/step3.png" width=400>
+<figcaption>Step 3</figcaption>
+</figure>
+
 
 **For this blog, we focus on bleeds/hemorrhage and its subtypes.**
 
@@ -167,6 +178,7 @@ Distribution that matches incidence of hypertensive hemorrhages:
 
 <figure>
 <img src="/assets/img/read-ct/hypertensive-dist.png" width=600>
+<figcaption>Hypertensive hemorrhages</figcaption>
 </figure>
 
 

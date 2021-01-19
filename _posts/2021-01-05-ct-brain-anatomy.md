@@ -160,6 +160,7 @@ It lies in midline and separates the left and right cerebral hemispheres.
 
 <figure>
 <img src="/assets/img/brain-anatomy-ct/flax.png" width=400>
+<figcaption>Falx cerebri</figcaption>
 </figure>
 
 A midline shift may occur when the pressure exerted by the buildup of blood and swelling around the damaged brain tissues is powerful enough to push the entire brain off-center.
@@ -198,7 +199,11 @@ These are components of brain which serperate the two halves of the brain.
 
 > Two **lobes** - frontal and temporal lobes are seperated by **Sylvian**
 
-![](/assets/img/brain-anatomy-ct/fissures.png "Interhemispheric fissure and Sylvian")
+<figure>
+<img src="/assets/img/brain-anatomy-ct/fissures.png" width=400>
+<figcaption>Interhemispheric fissure and Sylvian.</figcaption>
+</figure>
+
 
 ### Ventricles
 
