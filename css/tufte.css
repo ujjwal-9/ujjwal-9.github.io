@@ -397,6 +397,8 @@ ul, ol {
   width: 45%;
   -webkit-padding-start: 5%;
   -webkit-padding-end: 5%;
+  -moz-padding-start: 5%;
+  -moz-padding-end: 5%;
   list-style-type: none; }
 
 figure, figure img.maincolumn {

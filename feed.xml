@@ -5,8 +5,8 @@
     <description>Personal webpage</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 18 Jan 2021 16:01:02 -0600</pubDate>
-    <lastBuildDate>Mon, 18 Jan 2021 16:01:02 -0600</lastBuildDate>
+    <pubDate>Mon, 18 Jan 2021 21:00:57 -0600</pubDate>
+    <lastBuildDate>Mon, 18 Jan 2021 21:00:57 -0600</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -233,7 +233,7 @@
 
 &lt;script type=&quot;text/x-mathjax-config&quot;&gt;
 MathJax.Hub.Config({
-  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  &lt;!-- tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}, --&gt;
   jax: [&quot;input/TeX&quot;,&quot;output/HTML-CSS&quot;],
   displayAlign: &quot;left&quot;,
   &quot;HTML-CSS&quot;: { scale: 110}
@@ -247,6 +247,7 @@ MathJax.Hub.Config({
 &lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/1*vCILduBp-gylqOp7WUme0Q.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;So what’s the problem? We can train a small network that can run on the limited computational resource of our mobile device. But there is a problem in this approach. Small models can’t extract many complex features that can be handy in generating predictions unless you devise some elegant algorithm to do so. Though ensemble of small models gives good results but unfortunately making predictions using a whole ensemble of models is cumbersome and may be too computationally expensive to allow deployment to a large number of users. In this case, we resort to either of the 2 techniques:&lt;/p&gt;
+
 &lt;ul&gt;
   &lt;li&gt;Knowledge Distillation&lt;/li&gt;
   &lt;li&gt;Model Compression&lt;/li&gt;
@@ -259,7 +260,6 @@ MathJax.Hub.Config({
 &lt;p&gt;So knowledge distillation is a simple way to improve the performance of deep learning models on mobile devices. In this process, we train a large and complex network or an ensemble model which can extract important features from the given data and can, therefore, produce better predictions. Then we train a small network with the help of the cumbersome model. This small network will be able to produce comparable results, and in some cases, it can even be made capable of replicating the results of the cumbersome network.&lt;/p&gt;
 
 &lt;figure class=&quot;fullwidth&quot;&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2456/1*r_eguFXxHkAzDRu8tM-95g.jpeg&quot; /&gt;&lt;figcaption&gt;GoogleNet&lt;/figcaption&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;img src=&quot;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;For example, Since GoogLeNet is a very cumbersome (means deep and complex) network, its deepness gives the ability to extract and complex features and its complexity gives it the power to remain accurate. But the model is heavy enough that one for sure need a large amount of memory and a powerful GPU to perform large and complex calculations. So that’s why we need to transfer the knowledge learned by this model to a much smaller model which can easily be used in mobile.&lt;/p&gt;
 
@@ -296,7 +296,7 @@ MathJax.Hub.Config({
 
 &lt;p&gt;\(P_t(a) = \frac{\exp(q_t(a)/\tau)}{\sum_{i=1}^n\exp(q_t(i)/\tau)}\) &lt;label for=&quot;sidenote-id&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;sidenote-id&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;Softmax with Temperature &lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;For high temperatures ($\tau \rightarrow \infty$), all actions have nearly the same probability and at the lower the temperature ($\tau \rightarrow 0$), the more expected rewards affect the probability. For low temperature, the probability of the action with the highest expected reward tends to 1.&lt;/p&gt;
+&lt;p&gt;For high temperatures (\(\tau \rightarrow \infty\)), all actions have nearly the same probability and at the lower the temperature (\(\tau \rightarrow 0\)), the more expected rewards affect the probability. For low temperature, the probability of the action with the highest expected reward tends to 1.&lt;/p&gt;
 
 &lt;p&gt;In distillation, we raise the temperature of the final softmax until the cumbersome model produces a suitably soft set of targets. We then use the same high temperature when training the small model to match these soft targets.&lt;/p&gt;
 
@@ -340,15 +340,13 @@ MathJax.Hub.Config({
 
 &lt;p&gt;We then take all the specialist models, m, whose special subset of confusable classes, Sm, has a non-empty intersection with k and call this the active set of specialists Ak (note that this set may be empty). We then find the full probability distribution q over all the classes that minimizes:&lt;/p&gt;
 
-&lt;p&gt;\(KL(p^g, q) + \sum_{m \epsilon A_k} KL(p^m, q)\) &lt;label for=&quot;sidenote-id&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;sidenote-id&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;KL denotes the KL divergence, and $p^m$, $p^g$ denote the probability distribution of a specialist model or the generalist full model. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;\(KL(p^g, q) + \sum_{m \epsilon A_k} KL(p^m, q)\) &lt;label for=&quot;sidenote-id&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;sidenote-id&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;KL denotes the KL divergence. &lt;/span&gt;&lt;/p&gt;
 
-\[KL(p||q) = \sum_{i}p_i \log\frac{p_i}{q_i}\]
+&lt;p&gt;\(p^m\), \(p^g\) denote the probability distribution of a specialist model or the generalist full model.&lt;/p&gt;
 
-&lt;!-- &lt;center&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/1*NRXkBNMx4VE5xDYGl5aB-w.png&quot;&gt;&lt;/center&gt;
+\[KL(p||q) = \sum_{i}p_i \log {p_i \over q_i}\]
 
-&lt;center&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/1*MpnL9tKLfqAdhAJkY6hnwA.png&quot;&gt;&lt;/center&gt; --&gt;
-
-&lt;p&gt;The distribution $p^m$ is over all the specialist classes of $m$ plus a single dustbin class, so when computing its $KL$ divergence from the full $q$ distribution we sum all of the probabilities that the full $q$ distribution assigns to all the classes in $m$’s dustbin.&lt;/p&gt;
+&lt;p&gt;The distribution \(p^m\) is over all the specialist classes of \(m\) plus a single dustbin class, so when computing its \(KL\) divergence from the full \(q\) distribution we sum all of the probabilities that the full $q$ distribution assigns to all the classes in \(m\)’s dustbin.&lt;/p&gt;
 
 &lt;h1 id=&quot;soft-targets-as-regularizers&quot;&gt;Soft Targets as Regularizers&lt;/h1&gt;
 
