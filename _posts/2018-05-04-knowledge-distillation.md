@@ -10,11 +10,11 @@ image_url: "https://cdn-images-1.medium.com/max/2000/1*6G6HHityX_zBgrFfR_z-UQ.pn
 The blog first appeared at Intel Devpost. [Here is the link](https://software.intel.com/content/www/us/en/develop/articles/knowledge-distillation-with-keras.html)
 
 
-> Hinton, Geoffrey, et al. "Distilling the Knowledge in a Neural Network." arXiv, 9 Mar. 2015, arxiv.org/abs/1503.02531v1.
+Hinton, Geoffrey, et al. "Distilling the Knowledge in a Neural Network." arXiv, 9 Mar. 2015, arxiv.org/abs/1503.02531v1.
 
 [Link to paper](https://arxiv.org/abs/1503.02531v1)
 
-Follow me on twitter [@theujjwal9](https://twitter.com/theujjwal9)
+Associated Code can be found at [Github](https://github.com/Ujjwal-9/Knowledge-Distillation).
 
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
@@ -141,9 +141,6 @@ The distribution $$p^m$$ is over all the specialist classes of $$m$$ plus a sing
 
 Soft Targets or labels predicted from a model contain more information that binary hard labels due to the fact that they encode similarity measures between the classes.
 
-Incorrect labels tagged by the model describe co-label similarities, and these similarities should be evident in future stages of learning, even if the effect is diminished. For example, imagine training a deep neural net on a classification dataset of various dog breeds. In the initial few stages of learning the model will not accurately distinguish between similar dog-breeds such as a Belgian Shepherd versus a German Shepherd. This same effect, although not so exaggerated, should appear in later stages of training. If given an image of a German Shepherd, the model predicts the class German Shepherd with a high-accuracy, the next highest predicted dog should still be a Belgian Shepherd or a similar looking dog. Over-fitting starts to occur when the majority of these co-label effects begin to disappear. By forcing the model to contain these effects in the later stages of training, we reduced the amount of over-fitting.
+Incorrect labels tagged by the model describe co-label similarities, and these similarities should be evident in future stages of learning, even if the effect is diminished. For example, imagine training a deep neural net on a classification dataset of various dog breeds. In the initial few stages of learning the model will not accurately distinguish between similar dog-breeds such as a Belgian Shepherd versus a German Shepherd. This same effect, although not so exaggerated, should appear in later stages of training. If given an image of a German Shepherd, the model predicts the class German Shepherd with a high-accuracy, the next highest predicted dog should still be a Belgian Shepherd or a similar looking dog. Over-fitting starts to occur when the majority of these co-label effects begin to disappear. By forcing the model to contain these effects in the later stages of training, we reduced the amount of over-fitting. Though using soft targets as Regularizers is not considered very effective.
 
-> Though using soft targets as Regularizers is not considered very effective.
-
-
-Associated Code can be found at [Github](https://github.com/Ujjwal-9/Knowledge-Distillation).
+> **Follow me on twitter [@theujjwal9](https://twitter.com/theujjwal9)**
