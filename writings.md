@@ -5,17 +5,17 @@ weight: 1
 ---
 
 ## Blogs
-[*How to read HeadCT?*](https://ujjwal9.ml/blog/medicine/2021/01/09/how-to-read-head-ct.html)<br/>This blog reflects on how to read head CT scans and what are different types of bleeds?
+[*How to read HeadCT?*](articles/21/how-to-read-head-ct)<br/>This blog reflects on how to read head CT scans and what are different types of bleeds?
 
-[*Brain Anatomy using CT Scans*](https://ujjwal9.ml/blog/medicine/2021/01/05/ct-brain-anatomy.html)<br/> What is a CT scan? Brain components visible in CT scan and their relevance.
+[*Brain Anatomy using CT Scans*](articles/21/ct-brain-anatomy)<br/> What is a CT scan? Brain components visible in CT scan and their relevance.
 
-[*Introduction to Pydicom*](https://ujjwal9.ml/blog/medicine/library/2020/12/31/pydicom-tutorial.html)<br/>This blog is a tutorial on pydicom which is a pure Python package for working with DICOM files. It lets you read, modify and write DICOM data in an easy “pythonic” way.
+[*Introduction to Pydicom*](articles/20/pydicom-tutorial)<br/>This blog is a tutorial on pydicom which is a pure Python package for working with DICOM files. It lets you read, modify and write DICOM data in an easy “pythonic” way.
 
-[*DICOM Standards*](https://ujjwal9.ml/blog/medicine/2020/12/28/dicom-intro.html)<br/>What is dicom? What standards does it follow?OHIF Viewer Walkthrough.
+[*DICOM Standards*](articles/20/dicom-intro)<br/>What is dicom? What standards does it follow?OHIF Viewer Walkthrough.
 
 [*Docker Overview*](articles/20/docker)<br/>Leveraging docker to encourage reproducibility and easy maintainace of project.
 
-[*Heartrate detection using camera*](https://ujjwal9.ml/blog/maths/video/2019/04/06/heartrate-detection.html)<br/>How euler video magnification can be used to magnify motion and color.
+[*Heartrate detection using camera*](articles/19/heartrate-detection)<br/>How euler video magnification can be used to magnify motion and color.
 
 [*Knowledge Distillation*](articles/18/knowledge-distillation)<br/>Transforming large deep learning models to smaller models woith imporved perform.
 
