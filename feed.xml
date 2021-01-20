@@ -5,8 +5,8 @@
     <description>Personal webpage</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 20 Jan 2021 08:10:13 -0600</pubDate>
-    <lastBuildDate>Wed, 20 Jan 2021 08:10:13 -0600</lastBuildDate>
+    <pubDate>Wed, 20 Jan 2021 15:13:55 -0600</pubDate>
+    <lastBuildDate>Wed, 20 Jan 2021 15:13:55 -0600</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -477,7 +477,30 @@ MathJax.Hub.Config({
   &lt;li&gt;Develop new strategies to treat brain disorders&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;iframe width=&quot;560&quot; height=&quot;420&quot; src=&quot;http://www.youtube.com/embed/DdPRfPm9SI4?color=white&amp;amp;theme=light&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;label for=&quot;side-note-video&quot; class=&quot;margin-toggle&quot;&gt; ⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;side-note-video&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;Brain Imaging, Crash Course &lt;/span&gt;&lt;/p&gt;
+&lt;style&gt;
+  .embed-container {
+    position: relative;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    overflow: hidden;
+    max-width: 70%;
+    margin-bottom: -23%;
+  }
+  .embed-container iframe,
+  .embed-container object,
+  .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 55%;
+  }
+&lt;/style&gt;
+
+&lt;div class=&quot;embed-container&quot;&gt;
+  &lt;iframe title=&quot;YouTube video player&quot; width=&quot;480&quot; height=&quot;360&quot; src=&quot;http://www.youtube.com/embed/DdPRfPm9SI4&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 
 &lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
 
@@ -1707,7 +1730,7 @@ MathJax.Hub.Config({
   &lt;!-- tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}, --&gt;
   jax: [&quot;input/TeX&quot;,&quot;output/HTML-CSS&quot;],
   displayAlign: &quot;left&quot;,
-  &quot;HTML-CSS&quot;: { scale: 110}
+  &quot;HTML-CSS&quot;: { scale: 100}
 });
 &lt;/script&gt;
 
@@ -1751,7 +1774,30 @@ MathJax.Hub.Config({
 
 &lt;p&gt;Fourier transform decomposes (also called &lt;em&gt;analysis&lt;/em&gt;) a &lt;a href=&quot;https://en.wikipedia.org/wiki/Function_(mathematics)&quot;&gt;function&lt;/a&gt; of time (a &lt;em&gt;signal&lt;/em&gt;) into its constituent frequencies. The Fourier transform of a function of time is itself a &lt;a href=&quot;https://en.wikipedia.org/wiki/Complex_number&quot;&gt;complex&lt;/a&gt;-valued function of frequency, whose magnitude component represents the amount of that frequency present in the original function, and whose &lt;a href=&quot;https://en.wikipedia.org/wiki/Complex_argument&quot;&gt;complex argument&lt;/a&gt; is the &lt;a href=&quot;https://en.wikipedia.org/wiki/Phase_offset&quot;&gt;phase offset&lt;/a&gt; of the basic sinusoid in that frequency. You can learn the basics of Fourier transform from this video.&lt;/p&gt;
 
-&lt;iframe width=&quot;560&quot; height=&quot;420&quot; src=&quot;http://www.youtube.com/embed/spUNpyF58BY?color=white&amp;amp;theme=light&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;label for=&quot;side-note-video&quot; class=&quot;margin-toggle&quot;&gt; ⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;side-note-video&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;What is the Fourier Transform? A visual introduction. &lt;/span&gt;&lt;/p&gt;
+&lt;style&gt;
+  .embed-container {
+    position: relative;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    overflow: hidden;
+    max-width: 70%;
+    margin-bottom: -23%;
+  }
+  .embed-container iframe,
+  .embed-container object,
+  .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 55%;
+  }
+&lt;/style&gt;
+
+&lt;div class=&quot;embed-container&quot;&gt;
+  &lt;iframe title=&quot;YouTube video player&quot; width=&quot;480&quot; height=&quot;360&quot; src=&quot;http://www.youtube.com/embed/spUNpyF58BY&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Now let’s talk about some amplification techniques namely Lagrangian and Eulerian. These techniques will help us in amplifying the particular frequency so that we can see change happening at that rate, in our case heart rate.&lt;/p&gt;
 
@@ -1866,7 +1912,30 @@ MathJax.Hub.Config({
 
 &lt;p&gt;For pulse detection, after computing Laplacian pyramid the magnification value or amplification factor α, for the finest two levels are set to 0. This causes downsampling and applies a spatial low pass filter to each frame to reduce both quantization and noise and to boost the subtle pulse signal that we are interested in. The incoming video frame is then passed through an ideal bandpass filter with a passband of 0.83 Hz to 1 Hz (50 bpm to 60 bpm). Finally, a large value of α ≈ 100 (amplification factor) and λc ≈ 1000 (&lt;strong&gt;cutoff frequency, beyond which an attenuated version of α is used that is either force α to zero for all λ &amp;lt; λc, or linearly scale α down to zero. This is important parameter in controlling noise&lt;/strong&gt;) was applied to the resulting spatially lowpass signal to emphasize the color change as much as possible. The final video was formed by adding this signal back to the original.&lt;/p&gt;
 
-&lt;iframe width=&quot;560&quot; height=&quot;420&quot; src=&quot;http://www.youtube.com/embed/3rWycBEHn3s?color=white&amp;amp;theme=light&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;label for=&quot;side-note-video&quot; class=&quot;margin-toggle&quot;&gt; ⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;side-note-video&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;MIT Computer Program Reveals Invisible Motion in Video | The New York Times &lt;/span&gt;&lt;/p&gt;
+&lt;style&gt;
+  .embed-container {
+    position: relative;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    overflow: hidden;
+    max-width: 70%;
+    margin-bottom: -23%;
+  }
+  .embed-container iframe,
+  .embed-container object,
+  .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 55%;
+  }
+&lt;/style&gt;
+
+&lt;div class=&quot;embed-container&quot;&gt;
+  &lt;iframe title=&quot;YouTube video player&quot; width=&quot;480&quot; height=&quot;360&quot; src=&quot;http://www.youtube.com/embed/3rWycBEHn3s&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 
 &lt;p&gt;In this video, we can see periodic green to red variations at the heartbeat and how blood perfuses the face.&lt;/p&gt;
 
