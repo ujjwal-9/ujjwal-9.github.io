@@ -171,8 +171,6 @@ This shows that the frequency response of some of the temporal filters used in t
 
 For pulse detection, after computing Laplacian pyramid the magnification value or amplification factor α, for the finest two levels are set to 0. This causes downsampling and applies a spatial low pass filter to each frame to reduce both quantization and noise and to boost the subtle pulse signal that we are interested in. The incoming video frame is then passed through an ideal bandpass filter with a passband of 0.83 Hz to 1 Hz (50 bpm to 60 bpm). Finally, a large value of α ≈ 100 (amplification factor) and λc ≈ 1000 (**cutoff frequency, beyond which an attenuated version of α is used that is either force α to zero for all λ < λc, or linearly scale α down to zero. This is important parameter in controlling noise**) was applied to the resulting spatially lowpass signal to emphasize the color change as much as possible. The final video was formed by adding this signal back to the original.
 
-{% maincolumn 'https://cdn-images-1.medium.com/max/2000/1*ET0w7uEXFCneh4BMRVdkgQ.png' 'Figure 6: The ideal filters (a) and (b) are implemented using DCT (Discrete Cosine Transform). The second- order IIR filter (d) have a broader passband than an ideal filter.'%}
-
 {% youtube 3rWycBEHn3s %}
 
 In this video, we can see periodic green to red variations at the heartbeat and how blood perfuses the face.

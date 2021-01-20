@@ -128,13 +128,13 @@ We then take all the specialist models, m, whose special subset of confusable cl
 
 $$ KL(p^g, q) + \sum_{m \epsilon A_k} KL(p^m, q) $$
 
-$$ KL $$ denotes the KL-divergence. $$ p^m $$, $$ p^g $$ denote the probability distribution of a specialist model or the generalist full model.
+KL denotes the KL-divergence. $$ p^m $$, $$ p^g $$ denote the probability distribution of a specialist model or the generalist full model.
 
 
 $$ KL(p||q) = \sum_{i}p_i \log {p_i \over q_i} $$ 
 
 
-The distribution $$p^m$$ is over all the specialist classes of $$m$$ plus a single dustbin class, so when computing its $$KL$$ divergence from the full $$q$$ distribution we sum all of the probabilities that the full $q$ distribution assigns to all the classes in $$m$$’s dustbin.
+The distribution $$p^m$$ is over all the specialist classes of $$m$$ plus a single dustbin class, so when computing its $$KL$$ divergence from the full $$q$$ distribution we sum all of the probabilities that the full $$q$$ distribution assigns to all the classes in $$m$$’s dustbin.
 
 # Soft Targets as Regularizers
 
