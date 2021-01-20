@@ -5,8 +5,8 @@
     <description>Personal webpage</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 20 Jan 2021 15:13:55 -0600</pubDate>
-    <lastBuildDate>Wed, 20 Jan 2021 15:13:55 -0600</lastBuildDate>
+    <pubDate>Wed, 20 Jan 2021 15:19:24 -0600</pubDate>
+    <lastBuildDate>Wed, 20 Jan 2021 15:19:24 -0600</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -499,7 +499,7 @@ MathJax.Hub.Config({
 &lt;/style&gt;
 
 &lt;div class=&quot;embed-container&quot;&gt;
-  &lt;iframe title=&quot;YouTube video player&quot; width=&quot;480&quot; height=&quot;360&quot; src=&quot;http://www.youtube.com/embed/DdPRfPm9SI4&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+  &lt;iframe title=&quot;YouTube video player&quot; width=&quot;480&quot; height=&quot;360&quot; src=&quot;https://www.youtube.com/embed/DdPRfPm9SI4&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
@@ -1796,7 +1796,7 @@ MathJax.Hub.Config({
 &lt;/style&gt;
 
 &lt;div class=&quot;embed-container&quot;&gt;
-  &lt;iframe title=&quot;YouTube video player&quot; width=&quot;480&quot; height=&quot;360&quot; src=&quot;http://www.youtube.com/embed/spUNpyF58BY&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+  &lt;iframe title=&quot;YouTube video player&quot; width=&quot;480&quot; height=&quot;360&quot; src=&quot;https://www.youtube.com/embed/spUNpyF58BY&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Now let’s talk about some amplification techniques namely Lagrangian and Eulerian. These techniques will help us in amplifying the particular frequency so that we can see change happening at that rate, in our case heart rate.&lt;/p&gt;
@@ -1934,7 +1934,7 @@ MathJax.Hub.Config({
 &lt;/style&gt;
 
 &lt;div class=&quot;embed-container&quot;&gt;
-  &lt;iframe title=&quot;YouTube video player&quot; width=&quot;480&quot; height=&quot;360&quot; src=&quot;http://www.youtube.com/embed/3rWycBEHn3s&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+  &lt;iframe title=&quot;YouTube video player&quot; width=&quot;480&quot; height=&quot;360&quot; src=&quot;https://www.youtube.com/embed/3rWycBEHn3s&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;p&gt;In this video, we can see periodic green to red variations at the heartbeat and how blood perfuses the face.&lt;/p&gt;
