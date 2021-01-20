@@ -1947,8 +1947,6 @@ MathJax.Hub.Config({
 
 <p>For pulse detection, after computing Laplacian pyramid the magnification value or amplification factor α, for the finest two levels are set to 0. This causes downsampling and applies a spatial low pass filter to each frame to reduce both quantization and noise and to boost the subtle pulse signal that we are interested in. The incoming video frame is then passed through an ideal bandpass filter with a passband of 0.83 Hz to 1 Hz (50 bpm to 60 bpm). Finally, a large value of α ≈ 100 (amplification factor) and λc ≈ 1000 (<strong>cutoff frequency, beyond which an attenuated version of α is used that is either force α to zero for all λ &lt; λc, or linearly scale α down to zero. This is important parameter in controlling noise</strong>) was applied to the resulting spatially lowpass signal to emphasize the color change as much as possible. The final video was formed by adding this signal back to the original.</p>
 
-<figure><figcaption>Figure 6: The ideal filters (a) and (b) are implemented using DCT (Discrete Cosine Transform). The second- order IIR filter (d) have a broader passband than an ideal filter.</figcaption><img src="https://cdn-images-1.medium.com/max/2000/1*ET0w7uEXFCneh4BMRVdkgQ.png" /></figure>
-
 <iframe width="560" height="420" src="http://www.youtube.com/embed/3rWycBEHn3s?color=white&amp;theme=light"></iframe>
 
 <p>In this video, we can see periodic green to red variations at the heartbeat and how blood perfuses the face.</p>
@@ -2094,11 +2092,11 @@ MathJax.Hub.Config({
 
 \[KL(p^g, q) + \sum_{m \epsilon A_k} KL(p^m, q)\]
 
-<p>\(KL\) denotes the KL-divergence. \(p^m\), \(p^g\) denote the probability distribution of a specialist model or the generalist full model.</p>
+<p>KL denotes the KL-divergence. \(p^m\), \(p^g\) denote the probability distribution of a specialist model or the generalist full model.</p>
 
 \[KL(p||q) = \sum_{i}p_i \log {p_i \over q_i}\]
 
-<p>The distribution \(p^m\) is over all the specialist classes of \(m\) plus a single dustbin class, so when computing its \(KL\) divergence from the full \(q\) distribution we sum all of the probabilities that the full $q$ distribution assigns to all the classes in \(m\)’s dustbin.</p>
+<p>The distribution \(p^m\) is over all the specialist classes of \(m\) plus a single dustbin class, so when computing its \(KL\) divergence from the full \(q\) distribution we sum all of the probabilities that the full \(q\) distribution assigns to all the classes in \(m\)’s dustbin.</p>
 
 <h1 id="soft-targets-as-regularizers">Soft Targets as Regularizers</h1>
 
