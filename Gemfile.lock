@@ -33,6 +33,8 @@ GEM
       jekyll (>= 3.8, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
+    jekyll-youtube (1.0.0)
+      jekyll
     jgd (1.12)
       jekyll (>= 1.5.1)
       trollop (= 2.9.9)
@@ -68,10 +70,11 @@ PLATFORMS
 DEPENDENCIES
   jekyll (= 3.9.0)
   jekyll-seo-tag
+  jekyll-youtube
   jgd
   json
   kramdown-parser-gfm
   rouge
 
 BUNDLED WITH
-   2.1.4
+   2.2.5

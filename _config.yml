@@ -19,6 +19,7 @@ post:
 editor: vim
 plugins:
     - jekyll-seo-tag
+    - jekyll-youtube
 git:
   branch: master
 transfer:

@@ -6,3 +6,4 @@ gem 'jekyll-seo-tag'
 gem "kramdown-parser-gfm"
 gem 'json'
 gem 'jgd'
+gem 'jekyll-youtube'

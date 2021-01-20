@@ -20,7 +20,8 @@ Brain imaging methods allow neuroscientists to see inside the living brain. Thes
 - Locate the areas of the brain that are affected by neurological disorders.
 - Develop new strategies to treat brain disorders
 
-{% youtube DdPRfPm9SI4 %}
+{% marginnote "side-note-video" "Brain Imaging, Crash Course" %}
+{% youtube "https://www.youtube.com/watch?v=DdPRfPm9SI4" %}
 
 
 # Introduction
