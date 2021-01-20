@@ -12,7 +12,7 @@ MathJax.Hub.Config({
   <!-- tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}, -->
   jax: ["input/TeX","output/HTML-CSS"],
   displayAlign: "left",
-  "HTML-CSS": { scale: 110}
+  "HTML-CSS": { scale: 100}
 });
 </script>
 
@@ -356,11 +356,9 @@ Small amounts of blood can sometimes be appreciated pooling in the interpeduncul
 
 Intraventricular hemorrhage (IVH) denotes the presence of blood within the cerebral ventricular system.
 
-IVH is divided in 2 types:
+IVH is divided in 2 types: {% sidenote "side-note-3" '$$ P(primary) < P(secondary) \rightarrow $$ P being probablity' %}
 1. Primary - blood in the ventricles with little (if any) parenchymal blood
 2. Secondary - a large extraventricular component is present (e.g. parenchymal or subarachnoid) with secondary extension into the ventricles
-
-$$ P(Primary) < P(Secondary) \rightarrow $$ P being Probablity 
 
 In above sections on hypertensive hemorrhage and subarachnoid hemorrhage, IVH CT scan is shown.
 
