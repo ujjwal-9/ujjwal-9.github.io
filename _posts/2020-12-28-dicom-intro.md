@@ -1,11 +1,10 @@
 ---
-toc: true
 layout: post
-use_math: true
-description: What is dicom? And OHIF Viewer Walkthrough.
-categories: [medicine]
-title:  DICOM Standards
-image: /assets/img/dicom-intro/dicom-arch.png
+title:  "DICOM Standards"
+date:   2020-12-28
+title_include: true
+categories: blog
+image_url: /assets/img/dicom-intro/dicom-arch.png
 ---
 [Dicom Website!](https://www.dicomstandard.org/)
 
