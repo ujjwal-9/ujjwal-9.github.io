@@ -5,8 +5,8 @@
     <description>Personal webpage</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 20 Jan 2021 07:40:49 -0600</pubDate>
-    <lastBuildDate>Wed, 20 Jan 2021 07:40:49 -0600</lastBuildDate>
+    <pubDate>Wed, 20 Jan 2021 08:10:13 -0600</pubDate>
+    <lastBuildDate>Wed, 20 Jan 2021 08:10:13 -0600</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -16,7 +16,7 @@ MathJax.Hub.Config({
   &lt;!-- tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}, --&gt;
   jax: [&quot;input/TeX&quot;,&quot;output/HTML-CSS&quot;],
   displayAlign: &quot;left&quot;,
-  &quot;HTML-CSS&quot;: { scale: 110}
+  &quot;HTML-CSS&quot;: { scale: 100}
 });
 &lt;/script&gt;
 
@@ -374,13 +374,11 @@ MathJax.Hub.Config({
 
 &lt;p&gt;Intraventricular hemorrhage (IVH) denotes the presence of blood within the cerebral ventricular system.&lt;/p&gt;
 
-&lt;p&gt;IVH is divided in 2 types:&lt;/p&gt;
+&lt;p&gt;IVH is divided in 2 types: &lt;label for=&quot;side-note-3&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;side-note-3&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;\(P(primary) &amp;lt; P(secondary) \rightarrow\) P being probablity &lt;/span&gt;&lt;/p&gt;
 &lt;ol&gt;
   &lt;li&gt;Primary - blood in the ventricles with little (if any) parenchymal blood&lt;/li&gt;
   &lt;li&gt;Secondary - a large extraventricular component is present (e.g. parenchymal or subarachnoid) with secondary extension into the ventricles&lt;/li&gt;
 &lt;/ol&gt;
-
-&lt;p&gt;\(P(Primary) &amp;lt; P(Secondary) \rightarrow\) P being Probablity&lt;/p&gt;
 
 &lt;p&gt;In above sections on hypertensive hemorrhage and subarachnoid hemorrhage, IVH CT scan is shown.&lt;/p&gt;
 
