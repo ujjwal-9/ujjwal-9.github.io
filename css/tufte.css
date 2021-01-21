@@ -398,7 +398,9 @@ ul, ol {
   -webkit-padding-start: 5%;
   -webkit-padding-end: 5%;
   -moz-padding-start: 5%;
-  -moz-padding-end: 5%;
+  -moz-padding-end: 5%; }
+
+ul {
   list-style-type: none; }
 
 figure, figure img.maincolumn {
@@ -472,6 +474,7 @@ p, footer, div.table-wrapper, .MJXc-display {
   width: 55%; }
 
 div.table-wrapper, table {
+  margin-top: 1rem;
   overflow-x: auto; }
 
 @media screen and (max-width: 760px) {
