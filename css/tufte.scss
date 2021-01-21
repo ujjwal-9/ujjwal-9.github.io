@@ -243,7 +243,10 @@ ul,ol { width: 45%;
      -webkit-padding-end: 5%;
      -moz-padding-start: 5%;
      -moz-padding-end: 5%;
-     list-style-type: none; }
+     }
+ul{
+  list-style-type: none; 
+}
 
 //li { padding: 0.5em 0; } //vertical padding on list items screws up vertical rhythym
 
@@ -303,7 +306,8 @@ blockquote .sidenote, blockquote .marginnote { margin-right: -79% }
 
 p, footer, div.table-wrapper,  .MJXc-display { width: 55%; }
 
-div.table-wrapper, table { overflow-x: auto; } //changed all overflow values to 'auto' so scroll bars appear only as needed
+div.table-wrapper, table { margin-top: 1rem;
+                           overflow-x: auto; } //changed all overflow values to 'auto' so scroll bars appear only as needed
 
 @media screen and (max-width: 760px) { p, footer { width: 90%; }
                                        pre code { width: 87.5%; }
