@@ -5,8 +5,8 @@
     <description>Personal webpage</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 21 Jan 2021 03:58:17 -0600</pubDate>
-    <lastBuildDate>Thu, 21 Jan 2021 03:58:17 -0600</lastBuildDate>
+    <pubDate>Sat, 23 Jan 2021 14:27:33 -0600</pubDate>
+    <lastBuildDate>Sat, 23 Jan 2021 14:27:33 -0600</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -1576,7 +1576,7 @@ MathJax.Hub.Config({
 
 &lt;p&gt;Container Image is built using&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker build &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; &amp;lt;app_name&amp;gt;:&amp;lt;label_name&amp;gt; &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker build &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; &amp;lt;app_name&amp;gt;:&amp;lt;label_name&amp;gt; &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;To make sure certain package is installed we can add,&lt;/p&gt;
@@ -1587,8 +1587,8 @@ MathJax.Hub.Config({
 
 &lt;p&gt;The image defined by your Dockerfile generate containers that have &lt;strong&gt;ephemeral&lt;/strong&gt; states. It gets destroyed as soon as process is over. To access files in container we may either bash into container to run the command which generates a new file which we need on our local file system and then use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$docker cp&lt;/code&gt; to tranfer to local file system. And if we wish to use files from our local system in docker container we may mount those files either using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;COPY&lt;/code&gt; when generating container or we may mount it at runtime using volume. We can also specify volume which can be utilized by both local file system and docker.&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker build &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; dockerized-run &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker run &lt;span class=&quot;nt&quot;&gt;--rm&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-it&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; &amp;lt;PATH-TO_IMAGES&amp;gt;/images:/app/images &lt;span class=&quot;nt&quot;&gt;--entrypoint&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/bin/bash dockerized-run
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker build &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; dockerized-run &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker run &lt;span class=&quot;nt&quot;&gt;--rm&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-it&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; &amp;lt;PATH-TO_IMAGES&amp;gt;/images:/app/images &lt;span class=&quot;nt&quot;&gt;--entrypoint&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/bin/bash dockerized-run
 
 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;base&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; root@b74706db6f68:/app# &lt;span class=&quot;nb&quot;&gt;ls
 &lt;/span&gt;environment.yml  images
@@ -1603,7 +1603,7 @@ MathJax.Hub.Config({
   &lt;li&gt;Mounting volume at runtime.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker run &lt;span class=&quot;nt&quot;&gt;--rm&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-it&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; &amp;lt;source-path&amp;gt;:&amp;lt;target-path&amp;gt; &amp;lt;docker-container-name&amp;gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker run &lt;span class=&quot;nt&quot;&gt;--rm&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-it&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; &amp;lt;source-path&amp;gt;:&amp;lt;target-path&amp;gt; &amp;lt;docker-container-name&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;The above command will run docker with specified volume (-v) mounted in the&lt;/p&gt;

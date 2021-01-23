@@ -1658,7 +1658,7 @@ MathJax.Hub.Config({
 
 <p>Container Image is built using</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>docker build <span class="nt">-t</span> &lt;app_name&gt;:&lt;label_name&gt; <span class="nb">.</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>docker build <span class="nt">-t</span> &lt;app_name&gt;:&lt;label_name&gt; <span class="nb">.</span>
 </code></pre></div></div>
 
 <p>To make sure certain package is installed we can add,</p>
@@ -1669,8 +1669,8 @@ MathJax.Hub.Config({
 
 <p>The image defined by your Dockerfile generate containers that have <strong>ephemeral</strong> states. It gets destroyed as soon as process is over. To access files in container we may either bash into container to run the command which generates a new file which we need on our local file system and then use <code class="language-plaintext highlighter-rouge">$docker cp</code> to tranfer to local file system. And if we wish to use files from our local system in docker container we may mount those files either using <code class="language-plaintext highlighter-rouge">COPY</code> when generating container or we may mount it at runtime using volume. We can also specify volume which can be utilized by both local file system and docker.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>docker build <span class="nt">-t</span> dockerized-run <span class="nb">.</span>
-<span class="nv">$ </span><span class="nb">sudo </span>docker run <span class="nt">--rm</span> <span class="nt">-it</span> <span class="nt">-v</span> &lt;PATH-TO_IMAGES&gt;/images:/app/images <span class="nt">--entrypoint</span><span class="o">=</span>/bin/bash dockerized-run
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>docker build <span class="nt">-t</span> dockerized-run <span class="nb">.</span>
+<span class="nv">$ </span>docker run <span class="nt">--rm</span> <span class="nt">-it</span> <span class="nt">-v</span> &lt;PATH-TO_IMAGES&gt;/images:/app/images <span class="nt">--entrypoint</span><span class="o">=</span>/bin/bash dockerized-run
 
 <span class="o">(</span>base<span class="o">)</span> root@b74706db6f68:/app# <span class="nb">ls
 </span>environment.yml  images
@@ -1685,7 +1685,7 @@ MathJax.Hub.Config({
   <li>Mounting volume at runtime.</li>
 </ul>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>docker run <span class="nt">--rm</span> <span class="nt">-it</span> <span class="nt">-v</span> &lt;source-path&gt;:&lt;target-path&gt; &lt;docker-container-name&gt;
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>docker run <span class="nt">--rm</span> <span class="nt">-it</span> <span class="nt">-v</span> &lt;source-path&gt;:&lt;target-path&gt; &lt;docker-container-name&gt;
 </code></pre></div></div>
 
 <p>The above command will run docker with specified volume (-v) mounted in the</p>
