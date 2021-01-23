@@ -35,17 +35,14 @@ The contents of the DICOM standard go far beyond a definition of an exchange for
 
 DICOM defines:
 
-➔ data structures (formats) for medical images and related data,
-
-➔ network oriented services, e. g.
+1. data structures (formats) for medical images and related data,
+2. network oriented services, e. g.
 + image transmission
 + query of an image archive (PACS)
 + print (hardcopy)
 + RIS - PACS - modality integration
-
-➔ formats for storage media exchange
-
-➔ requirements for conforming devices and programs
+3. formats for storage media exchange
+4.requirements for conforming devices and programs
 
 <img src="/assets/img/dicom-intro/dicom-workflow.png" width=600> {% marginnote "sidenote-id" "[[Image Source]](https://www.softneta.com/solutions/dicom-anonymization-for-medical-education-and-research/)" %}
 
