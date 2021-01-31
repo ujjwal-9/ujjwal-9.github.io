@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Ujjwal Upadhyay - Lean Proof Assistant</title>
+  <meta name="description" content="">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
+  
+    <link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+  
+  
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  <link rel="stylesheet" type="text/css" href="/css/tufte.css">
+  <link rel="stylesheet" type="text/css" href="/css/icomoon.css">
+  <!-- <link rel="stylesheet" type="text/css" href="/css/print.css" media="print"> -->
+
+  <link rel="canonical" href="/articles/21/a-test-draft">
+
+  <link rel="alternate" type="application/rss+xml" title="Ujjwal Upadhyay" href="/feed.xml" />
+  <link rel="icon" type="image/svg" href="/assets/img/infinite.svg">
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Lean Proof Assistant" />
+<meta name="author" content="Ujjwal Upadhyay" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Personal webpage" />
+<meta property="og:description" content="Personal webpage" />
+<meta property="og:site_name" content="Ujjwal Upadhyay" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-01-21T00:00:00-06:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Lean Proof Assistant" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","url":"/articles/21/a-test-draft","headline":"Lean Proof Assistant","dateModified":"2021-01-21T00:00:00-06:00","datePublished":"2021-01-21T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"/articles/21/a-test-draft"},"author":{"@type":"Person","name":"Ujjwal Upadhyay"},"description":"Personal webpage","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+  
+
+  
+
+  
+  <meta content="/assets/img/intro-lean/cover.png" property="og:image">
+  
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+<header>
+    <nav class="group">
+        <ul class="topnav" style="float:left">
+            <li><a style="padding-top:.5em" href="/"><strong>Ujjwal Upadhyay</strong></a></li>
+        </ul>
+	<ul class="topnav">    
+        
+	
+            
+            
+            
+  	
+            
+            
+	        
+                <li><a class="right" href="/research">Research</a></li>
+	        
+	    
+            
+  	
+            
+            
+	        
+                <li><a class="right" href="/writings">Writings</a></li>
+	        
+	    
+            
+  	
+            
+            
+            
+  	
+            
+  	
+            
+  	
+            
+  	
+        <li><a class="right" href="https://drive.google.com/file/d/1T3-bmXLxtnoR4x3_KS89RSL1-jLPsikA/view?usp=sharing">cv</a></li>
+	</ul>
+	</nav>
+        <hr class="slender">
+</header>
+
+    <article class="group">
+      <h1>Lean Proof Assistant</h1>
+<p class="subtitle">January 21, 2021</p>
+
+
+
+
+
+    </article>
+    <span class="print-footer">Lean Proof Assistant - January 21, 2021 - Ujjwal Upadhyay</span>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+<style>
+
+i:hover{
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+
+</style>
+
+<footer>
+  <hr class="slender">
+  <ul class="footer-links" style="font-size: 1.6rem;">
+    <li><a href="mailto:ujjwalupadhyay8@gmail.com"><i class="fa fa-envelope"></i></a></li>
+    <li><a href="https://twitter.com/theujjwal9"><i class="fa fa-twitter"></i></a></li>
+    <li><a href="https://github.com/ujjwal-9"><i class="fa fa-github"></i></a></li>
+    <li><a href="https://www.linkedin.com/in/ujjwal-9/"><i class="fa fa-linkedin"></i></a></li>
+    <!-- <li><a href="https://scholar.google.com/citations?user=lvpaXdEAAAAJ&hl=en"><i class="ai ai-google-scholar"></i></li> -->
+    <li><a href="https://scholar.google.com/citations?user=lvpaXdEAAAAJ&hl=en"><i class="fa fa-graduation-cap"></i></li>
+    <li><a href="https://ujjwal-9.github.io/feed.xml"><i class="fa fa-rss"></i></a></li>
+    <!-- 
+      <li>
+        <a href="https://github.com/ujjwal-9"><span class="icon-github"></span></a>
+      </li>
+    
+      <li>
+        <a href="https://linkedin.com/in/ujjwal-9"><span class="icon-linkedin"></span></a>
+      </li>
+    
+      <li>
+        <a href="/feed.xml"><span class="icon-rss2"></span></a>
+      </li>
+       -->
+  </ul>
+<div class="credits">
+<span>&copy; 2021 &nbsp;&nbsp;UJJWAL UPADHYAY</span></br> <br>
+</div>  
+</footer>
+  </body>
+</html>

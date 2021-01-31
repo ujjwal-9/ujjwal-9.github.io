@@ -5,9 +5,328 @@
     <description>Personal webpage</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 25 Jan 2021 07:30:04 -0600</pubDate>
-    <lastBuildDate>Mon, 25 Jan 2021 07:30:04 -0600</lastBuildDate>
+    <pubDate>Sun, 31 Jan 2021 15:04:38 -0600</pubDate>
+    <lastBuildDate>Sun, 31 Jan 2021 15:04:38 -0600</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>Thinking, Fast and Slow</title>
+        <description>&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
+MathJax.Hub.Config({
+  &lt;!-- tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}, --&gt;
+  jax: [&quot;input/TeX&quot;,&quot;output/HTML-CSS&quot;],
+  displayAlign: &quot;left&quot;,
+  &quot;HTML-CSS&quot;: { scale: 100}
+});
+&lt;/script&gt;
+
+&lt;p&gt;There are my notes for the book: Thinking, Fast and Slow by Denial Kehnaman.&lt;/p&gt;
+
+&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;Availabilty of a label for bias makes it easier to anticipate, recognize, and understand. Example. previously many mental problems weren’t labeled like say depression but once it was labeled as such it became easier to perform diagnosis and treat. On the similar lines, author talks about halo effect &lt;label for=&quot;halo-effect&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;halo-effect&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;Halo effect is the tendency for positive impressions of someone in one area to positively influence one’s opinion or feelings in other areas. &lt;/span&gt;,&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Follow me on twitter &lt;a href=&quot;https://twitter.com/@theujjwal9&quot;&gt;@theujjwal9&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Mon, 01 Feb 2021 00:00:00 -0600</pubDate>
+        <link>/articles/21/thinking-fast-and-slow</link>
+        <guid isPermaLink="true">/articles/21/thinking-fast-and-slow</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Lean Proof Assistant</title>
+        <description>
+</description>
+        <pubDate>Thu, 21 Jan 2021 00:00:00 -0600</pubDate>
+        <link>/articles/21/a-test-draft</link>
+        <guid isPermaLink="true">/articles/21/a-test-draft</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Lean Proof Assistant</title>
+        <description>&lt;p&gt;Lean is an open source proof assistant developed by Microsoft Research.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/leanprover/lean&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;Mathematics is characterised by the inferences allowed in the justification for the statements. The justification of one mathematician can be checked by
+another by checking that each inference is between those allowed.&lt;/p&gt;
+
+&lt;p&gt;Mathematicians usually write proofs in natural languages using some special symbols to denote mathematical operations ($\int$ - Integration) and objects ($e$ - Euler’s number). Logicians have agreed upon &lt;a href=&quot;https://en.wikipedia.org/wiki/List_of_rules_of_inference&quot;&gt;rules of inference&lt;/a&gt; which supports validity of proof.&lt;/p&gt;
+
+&lt;p&gt;Since these rules are mechanical, the process of checking is also mechanical as of now. But with advent of interactive theorem proving assistant it is possible to represent these proof in a manner that a machine can verify. One such proof assistant is lean (among other like Coq).&lt;/p&gt;
+
+&lt;h1 id=&quot;background-on-lean&quot;&gt;Background on Lean&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Lean = Functional Programming + Logic&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Lean encodes formal language in a version of &lt;strong&gt;dependent type theory&lt;/strong&gt; (alternative to set theory) called &lt;em&gt;Calculus of Constructions&lt;/em&gt;, with a countable hierarchy of non-cumulative universes and inductive types.&lt;/p&gt;
+
+&lt;p&gt;The only two things Lean can do is:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;create terms&lt;/li&gt;
+  &lt;li&gt;check their types&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;By iterating these two operations one can teach Lean to verify complex mathematical proofs.&lt;/p&gt;
+
+&lt;p&gt;Lets first look at simple type theory.&lt;/p&gt;
+
+&lt;h2 id=&quot;simple-type-theory&quot;&gt;Simple Type Theory&lt;/h2&gt;
+
+&lt;p&gt;Everything is a set, including numbers, functions, triangles, stochastic processes, and Riemannian manifolds. Using these sets we can construct rich mathematical intutions. But it will be helpful if we can manage and keep track of the various kinds of mathematical objects we are working with.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Type theory&lt;/em&gt; states that every mathematical expression has a type. For example, $x$ may denote natural numbers and $f(x)$ may denote function on natural numbers maping them to lets say complex numbers. Such types conversions also make simple type theory even more powerful.&lt;/p&gt;
+
+&lt;p&gt;Lets see how we declare mathematical objects in lean and declare their types.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-lean&quot;&gt;constant m : nat        -- m is a natural number
+constants b1 b2 : bool  -- declare two constants at once
+
+#check m                -- output: nat
+#check b1               -- bool
+#check b1 &amp;amp;&amp;amp; b2         -- &quot;&amp;amp;&amp;amp;&quot; is boolean and
+#check b1 || b2         -- boolean or
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;constant&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;constants&lt;/code&gt; commands introduce new constant symbols into the working environment. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#check&lt;/code&gt; command asks Lean to report their types.&lt;/p&gt;
+
+&lt;p&gt;Lets see how we convert make new types out of others.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-lean&quot;&gt;constants m n : nat
+constant g : nat → nat → nat
+constant g': nat → (nat → nat)   -- has the same type as g!
+constant f : nat → nat           -- type the arrow as &quot;\to&quot; or &quot;\r&quot;
+constant F : (nat → nat) → nat   -- a &quot;functional&quot;
+
+#check g m n                     -- ℕ
+#check g m                       -- ℕ → ℕ
+#check F f                       -- ℕ
+#check g m n                     -- ℕ
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Thing to note from above example:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Application of a function f to a value x is denoted &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;f x&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Arrows associate to the right, example. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;the type of g is nat → (nat → nat)&lt;/code&gt;. Thus g is a function that takes natural numbers and returns another function that takes a natural number and returns a natural number.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Type theory also allows for partial application of a function where, as told in point 2 above, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;g m&lt;/code&gt; is a function that waits for argument &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;n&lt;/code&gt; to return &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;g m n&lt;/code&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Currying&lt;/strong&gt;, redefining a function to look like other.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;types-as-objects&quot;&gt;Types as Objects&lt;/h2&gt;
+
+&lt;p&gt;Leans dependent type theory extends simple type theory by making types as object of study themselves. We can also declare new constants and constructors for types.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-lean&quot;&gt;constants α β : Type
+constant F : Type → Type
+constant G : Type → Type → Type
+
+#check nat               -- Type
+#check bool              -- Type
+#check nat → bool        -- Type
+#check nat × bool        -- Type
+#check α                 -- Type
+#check F α               -- Type
+#check F nat             -- Type
+#check G α               -- Type → Type
+#check G α β             -- Type
+#check G α nat           -- Type
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Type list α denotes the type of lists of elements of type α.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-lean&quot;&gt;constant α : Type
+
+#check list α    -- Type
+#check list nat  -- Type
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Lean has an infinite hierarchy of types. It’s type also has type.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-lean&quot;&gt;#check Type     -- Type 1
+#check Type 1   -- Type 2
+#check Type 2   -- Type 3
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;functions&quot;&gt;Functions&lt;/h2&gt;
+
+&lt;p&gt;How do we create a function from another expression? We use process known as &lt;em&gt;abstraction&lt;/em&gt;, or &lt;em&gt;lambda abstraction&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;x: α&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;t: β&lt;/code&gt;. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fun x : α, t&lt;/code&gt; is equivalent with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;λ x : α, t&lt;/code&gt;. Both are object of type α → β.&lt;/p&gt;
+
+&lt;p&gt;Example. $f(x) = x + 5$, where $x$ is natural number. It is translated in lean as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;λ x : nat, x + 5&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-lean&quot;&gt;constants α β  : Type
+constants a1 a2 : α
+constants b1 b2 : β
+
+constant f : α → α
+constant g : α → β
+constant h : α → β → α
+constant p : α → α → bool
+
+#check fun x : α, f x                      -- α → α
+#check λ x : α, f x                        -- α → α
+#check λ x : α, f (f x)                    -- α → α
+#check λ x : α, h x b1                     -- α → α
+#check λ y : β, h a1 y                     -- β → α
+#check λ x : α, p (f (f x)) (h (f a1) b2)  -- α → bool
+#check λ x : α, λ y : β, h (f x) y         -- α → β → α
+#check λ (x : α) (y : β), h (f x) y        -- α → β → α
+#check λ x y, h (f x) y                    -- α → β → α
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Expression &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;λ x : α, x&lt;/code&gt; denotes the identity function on α&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;We can leave type annotations on the variable, lean will infer it.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;λ x, g (f x)&lt;/code&gt; == &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;λ x : α, g (f x)&lt;/code&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;example&quot;&gt;Example&lt;/h1&gt;
+
+&lt;p&gt;Here we prove that &lt;strong&gt;prime numbers are more than any assigned multitude of prime numbers&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This proposition states that there are more than any finite number of prime numbers, that is to say, there are infinitely many primes.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;outline-of-proof&quot;&gt;Outline of proof&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://mathcs.clarku.edu/~djoyce/java/elements/bookIX/propIX20.html&quot;&gt;Source&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Suppose that there are n primes, a1, a2, …, an. Euclid, as usual, takes an specific small number, n = 3, of primes to illustrate the general case. Let m be the least common multiple of all of them.
+    &lt;blockquote&gt;
+      &lt;p&gt;The least common multiple was also considered in proposition &lt;a href=&quot;https://mathcs.clarku.edu/~djoyce/java/elements/bookIX/propIX14.html&quot;&gt;IX.14&lt;/a&gt;. It wasn’t noted in the proof of that proposition that the least common multiple of primes is their product, and it isn’t noted in this proof, either.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Consider the number m + 1. If it’s prime, then there are at least n + 1 primes.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;So suppose m + 1 is not prime. Then according to &lt;a href=&quot;https://mathcs.clarku.edu/~djoyce/java/elements/bookVII/propVII31.html&quot;&gt;VII.31&lt;/a&gt;, some prime g divides it. But g cannot be any of the primes a1, a2, …, an, since they all divide m and do not divide m + 1. Therefore, there are at least n + 1 primes. Q.E.D.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;This proposition is not used in the rest of the Elements.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;lean-proof&quot;&gt;Lean Proof&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-lean&quot;&gt;-- Definitions about natural numbers and primes
+import data.nat.prime
+
+-- Library on linear arithmatic
+import tactic.linarith
+
+-- Define namespace, which is natural numbers in this case
+open nat 
+
+
+-- Define theorem or goal to prove
+theorem infinitude_of_primes: ∀ N, ∃ p &amp;gt;= N, prime p :=
+-- between begin-end block we write tactics
+begin
+  -- define N to be a natural number as a part of our local hypothesis
+  intro N,
+
+  -- Continue with proof as mentioned in link provided in header
+  -- let M to be N! + 1 : local definition
+  let M := factorial N + 1,
+  
+  -- let p be smallest prime factor of M which is not 1
+  let p := min_fac M,
+
+
+  -- define supporting hypothesis pp, p is prime
+  have pp : prime p := 
+  -- begin proof for supporting p being prime
+  begin
+    -- minimum factor of a number is prime, but what about if M = 1
+    refine min_fac_prime _,
+    -- so here we prove M != 1 (or M &amp;gt; 1)
+    have : factorial N &amp;gt; 0 := factorial_pos N,
+    -- this just automatically takes care of linear arithmatic required for proof
+    linarith,
+  end,
+
+  -- before this we had existenial statement but now we have condition in p
+  use p,
+
+  -- split our goal in  2 subgoals
+  split,
+
+  -- proof by contradiction so it should output False
+  {by_contradiction,
+   
+   /- hypothesis h1, p divides N! + 1 proved by  
+   min_fac_dvd : ∀ (n : ℕ), n.min_fac ∣ n
+   -/
+   have h₁ : p ∣ factorial N + 1 := min_fac_dvd M, 
+   
+   -- hypothesis h2, p divides N!
+   have h₂ : p ∣  factorial N := 
+   begin
+     refine pp.dvd_factorial.mpr _,
+     -- proved p &amp;lt;= N, using hypothsis h
+     exact le_of_not_ge h,
+   end,
+   /-
+   proved using dvd_add_right with support from local hypothesis h₂ and h₁
+   -/
+   have h : p ∣ 1 := (nat.dvd_add_right h₂).mp h₁,
+   -- prime not dividing one using local hypothesis pp and h
+   exact prime.not_dvd_one pp h, },
+   -- second part of proof is just our hypothesis pp that we already proved
+  {exact pp, },
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;!-- &lt;script src=&quot;https://gist.github.com/Ujjwal-9/36967b848bd1fa8c21b6e20b35a680b9.js&quot;&gt;&lt;/script&gt; --&gt;
+
+&lt;h1 id=&quot;reference&quot;&gt;Reference&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://leanprover.github.io/theorem_proving_in_lean/&quot;&gt;Theorem proving in lean&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://lean-forward.github.io/logical-verification/2020/&quot;&gt;lean-forward.github.io&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://wwwf.imperial.ac.uk/~buzzard/xena/natural_number_game/&quot;&gt;Natural Number Game By Kevin Buzzard and Mohammad Pedramfar.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.cs.ru.nl/~freek/100/index.html&quot;&gt;Formalizing 100 theorems&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://xenaproject.wordpress.com/&quot;&gt;Xena Project&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Dp-mQ3HxgDE&amp;amp;ab_channel=MicrosoftResearch&quot;&gt;The Future of Mathematics?&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 21 Jan 2021 00:00:00 -0600</pubDate>
+        <link>/articles/21/intro-to-lean</link>
+        <guid isPermaLink="true">/articles/21/intro-to-lean</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>How to read HeadCT?</title>

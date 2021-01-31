@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Ujjwal Upadhyay - Lean Proof Assistant</title>
+  <meta name="description" content="Lean is an open source proof assistant developed by Microsoft Research.GithubIntroductionMathematics is characterised by the inferences allowed in the justif...">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
+  
+    <link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+  
+  
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  <link rel="stylesheet" type="text/css" href="/css/tufte.css">
+  <link rel="stylesheet" type="text/css" href="/css/icomoon.css">
+  <!-- <link rel="stylesheet" type="text/css" href="/css/print.css" media="print"> -->
+
+  <link rel="canonical" href="/articles/21/intro-to-lean">
+
+  <link rel="alternate" type="application/rss+xml" title="Ujjwal Upadhyay" href="/feed.xml" />
+  <link rel="icon" type="image/svg" href="/assets/img/infinite.svg">
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Lean Proof Assistant" />
+<meta name="author" content="Ujjwal Upadhyay" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Lean is an open source proof assistant developed by Microsoft Research. Github Introduction Mathematics is characterised by the inferences allowed in the justification for the statements. The justification of one mathematician can be checked by another by checking that each inference is between those allowed. Mathematicians usually write proofs in natural languages using some special symbols to denote mathematical operations ($\int$ - Integration) and objects ($e$ - Euler’s number). Logicians have agreed upon rules of inference which supports validity of proof. Since these rules are mechanical, the process of checking is also mechanical as of now. But with advent of interactive theorem proving assistant it is possible to represent these proof in a manner that a machine can verify. One such proof assistant is lean (among other like Coq). Background on Lean Lean = Functional Programming + Logic Lean encodes formal language in a version of dependent type theory (alternative to set theory) called Calculus of Constructions, with a countable hierarchy of non-cumulative universes and inductive types. The only two things Lean can do is: create terms check their types By iterating these two operations one can teach Lean to verify complex mathematical proofs. Lets first look at simple type theory. Simple Type Theory Everything is a set, including numbers, functions, triangles, stochastic processes, and Riemannian manifolds. Using these sets we can construct rich mathematical intutions. But it will be helpful if we can manage and keep track of the various kinds of mathematical objects we are working with. Type theory states that every mathematical expression has a type. For example, $x$ may denote natural numbers and $f(x)$ may denote function on natural numbers maping them to lets say complex numbers. Such types conversions also make simple type theory even more powerful. Lets see how we declare mathematical objects in lean and declare their types. constant m : nat -- m is a natural number constants b1 b2 : bool -- declare two constants at once #check m -- output: nat #check b1 -- bool #check b1 &amp;&amp; b2 -- &quot;&amp;&amp;&quot; is boolean and #check b1 || b2 -- boolean or constant and constants commands introduce new constant symbols into the working environment. #check command asks Lean to report their types. Lets see how we convert make new types out of others. constants m n : nat constant g : nat → nat → nat constant g&#39;: nat → (nat → nat) -- has the same type as g! constant f : nat → nat -- type the arrow as &quot;\to&quot; or &quot;\r&quot; constant F : (nat → nat) → nat -- a &quot;functional&quot; #check g m n -- ℕ #check g m -- ℕ → ℕ #check F f -- ℕ #check g m n -- ℕ Thing to note from above example: Application of a function f to a value x is denoted f x. Arrows associate to the right, example. the type of g is nat → (nat → nat). Thus g is a function that takes natural numbers and returns another function that takes a natural number and returns a natural number. Type theory also allows for partial application of a function where, as told in point 2 above, g m is a function that waits for argument n to return g m n. Currying, redefining a function to look like other. Types as Objects Leans dependent type theory extends simple type theory by making types as object of study themselves. We can also declare new constants and constructors for types. constants α β : Type constant F : Type → Type constant G : Type → Type → Type #check nat -- Type #check bool -- Type #check nat → bool -- Type #check nat × bool -- Type #check α -- Type #check F α -- Type #check F nat -- Type #check G α -- Type → Type #check G α β -- Type #check G α nat -- Type Type list α denotes the type of lists of elements of type α. constant α : Type #check list α -- Type #check list nat -- Type Lean has an infinite hierarchy of types. It’s type also has type. #check Type -- Type 1 #check Type 1 -- Type 2 #check Type 2 -- Type 3 Functions How do we create a function from another expression? We use process known as abstraction, or lambda abstraction. x: α and t: β. fun x : α, t is equivalent with λ x : α, t. Both are object of type α → β. Example. $f(x) = x + 5$, where $x$ is natural number. It is translated in lean as λ x : nat, x + 5 constants α β : Type constants a1 a2 : α constants b1 b2 : β constant f : α → α constant g : α → β constant h : α → β → α constant p : α → α → bool #check fun x : α, f x -- α → α #check λ x : α, f x -- α → α #check λ x : α, f (f x) -- α → α #check λ x : α, h x b1 -- α → α #check λ y : β, h a1 y -- β → α #check λ x : α, p (f (f x)) (h (f a1) b2) -- α → bool #check λ x : α, λ y : β, h (f x) y -- α → β → α #check λ (x : α) (y : β), h (f x) y -- α → β → α #check λ x y, h (f x) y -- α → β → α Expression λ x : α, x denotes the identity function on α We can leave type annotations on the variable, lean will infer it. λ x, g (f x) == λ x : α, g (f x) Example Here we prove that prime numbers are more than any assigned multitude of prime numbers. This proposition states that there are more than any finite number of prime numbers, that is to say, there are infinitely many primes. Outline of proof Source Suppose that there are n primes, a1, a2, …, an. Euclid, as usual, takes an specific small number, n = 3, of primes to illustrate the general case. Let m be the least common multiple of all of them. The least common multiple was also considered in proposition IX.14. It wasn’t noted in the proof of that proposition that the least common multiple of primes is their product, and it isn’t noted in this proof, either. Consider the number m + 1. If it’s prime, then there are at least n + 1 primes. So suppose m + 1 is not prime. Then according to VII.31, some prime g divides it. But g cannot be any of the primes a1, a2, …, an, since they all divide m and do not divide m + 1. Therefore, there are at least n + 1 primes. Q.E.D. This proposition is not used in the rest of the Elements. Lean Proof -- Definitions about natural numbers and primes import data.nat.prime -- Library on linear arithmatic import tactic.linarith -- Define namespace, which is natural numbers in this case open nat -- Define theorem or goal to prove theorem infinitude_of_primes: ∀ N, ∃ p &gt;= N, prime p := -- between begin-end block we write tactics begin -- define N to be a natural number as a part of our local hypothesis intro N, -- Continue with proof as mentioned in link provided in header -- let M to be N! + 1 : local definition let M := factorial N + 1, -- let p be smallest prime factor of M which is not 1 let p := min_fac M, -- define supporting hypothesis pp, p is prime have pp : prime p := -- begin proof for supporting p being prime begin -- minimum factor of a number is prime, but what about if M = 1 refine min_fac_prime _, -- so here we prove M != 1 (or M &gt; 1) have : factorial N &gt; 0 := factorial_pos N, -- this just automatically takes care of linear arithmatic required for proof linarith, end, -- before this we had existenial statement but now we have condition in p use p, -- split our goal in 2 subgoals split, -- proof by contradiction so it should output False {by_contradiction, /- hypothesis h1, p divides N! + 1 proved by min_fac_dvd : ∀ (n : ℕ), n.min_fac ∣ n -/ have h₁ : p ∣ factorial N + 1 := min_fac_dvd M, -- hypothesis h2, p divides N! have h₂ : p ∣ factorial N := begin refine pp.dvd_factorial.mpr _, -- proved p &lt;= N, using hypothsis h exact le_of_not_ge h, end, /- proved using dvd_add_right with support from local hypothesis h₂ and h₁ -/ have h : p ∣ 1 := (nat.dvd_add_right h₂).mp h₁, -- prime not dividing one using local hypothesis pp and h exact prime.not_dvd_one pp h, }, -- second part of proof is just our hypothesis pp that we already proved {exact pp, }, end Reference Theorem proving in lean lean-forward.github.io Natural Number Game By Kevin Buzzard and Mohammad Pedramfar. Formalizing 100 theorems Xena Project The Future of Mathematics?" />
+<meta property="og:description" content="Lean is an open source proof assistant developed by Microsoft Research. Github Introduction Mathematics is characterised by the inferences allowed in the justification for the statements. The justification of one mathematician can be checked by another by checking that each inference is between those allowed. Mathematicians usually write proofs in natural languages using some special symbols to denote mathematical operations ($\int$ - Integration) and objects ($e$ - Euler’s number). Logicians have agreed upon rules of inference which supports validity of proof. Since these rules are mechanical, the process of checking is also mechanical as of now. But with advent of interactive theorem proving assistant it is possible to represent these proof in a manner that a machine can verify. One such proof assistant is lean (among other like Coq). Background on Lean Lean = Functional Programming + Logic Lean encodes formal language in a version of dependent type theory (alternative to set theory) called Calculus of Constructions, with a countable hierarchy of non-cumulative universes and inductive types. The only two things Lean can do is: create terms check their types By iterating these two operations one can teach Lean to verify complex mathematical proofs. Lets first look at simple type theory. Simple Type Theory Everything is a set, including numbers, functions, triangles, stochastic processes, and Riemannian manifolds. Using these sets we can construct rich mathematical intutions. But it will be helpful if we can manage and keep track of the various kinds of mathematical objects we are working with. Type theory states that every mathematical expression has a type. For example, $x$ may denote natural numbers and $f(x)$ may denote function on natural numbers maping them to lets say complex numbers. Such types conversions also make simple type theory even more powerful. Lets see how we declare mathematical objects in lean and declare their types. constant m : nat -- m is a natural number constants b1 b2 : bool -- declare two constants at once #check m -- output: nat #check b1 -- bool #check b1 &amp;&amp; b2 -- &quot;&amp;&amp;&quot; is boolean and #check b1 || b2 -- boolean or constant and constants commands introduce new constant symbols into the working environment. #check command asks Lean to report their types. Lets see how we convert make new types out of others. constants m n : nat constant g : nat → nat → nat constant g&#39;: nat → (nat → nat) -- has the same type as g! constant f : nat → nat -- type the arrow as &quot;\to&quot; or &quot;\r&quot; constant F : (nat → nat) → nat -- a &quot;functional&quot; #check g m n -- ℕ #check g m -- ℕ → ℕ #check F f -- ℕ #check g m n -- ℕ Thing to note from above example: Application of a function f to a value x is denoted f x. Arrows associate to the right, example. the type of g is nat → (nat → nat). Thus g is a function that takes natural numbers and returns another function that takes a natural number and returns a natural number. Type theory also allows for partial application of a function where, as told in point 2 above, g m is a function that waits for argument n to return g m n. Currying, redefining a function to look like other. Types as Objects Leans dependent type theory extends simple type theory by making types as object of study themselves. We can also declare new constants and constructors for types. constants α β : Type constant F : Type → Type constant G : Type → Type → Type #check nat -- Type #check bool -- Type #check nat → bool -- Type #check nat × bool -- Type #check α -- Type #check F α -- Type #check F nat -- Type #check G α -- Type → Type #check G α β -- Type #check G α nat -- Type Type list α denotes the type of lists of elements of type α. constant α : Type #check list α -- Type #check list nat -- Type Lean has an infinite hierarchy of types. It’s type also has type. #check Type -- Type 1 #check Type 1 -- Type 2 #check Type 2 -- Type 3 Functions How do we create a function from another expression? We use process known as abstraction, or lambda abstraction. x: α and t: β. fun x : α, t is equivalent with λ x : α, t. Both are object of type α → β. Example. $f(x) = x + 5$, where $x$ is natural number. It is translated in lean as λ x : nat, x + 5 constants α β : Type constants a1 a2 : α constants b1 b2 : β constant f : α → α constant g : α → β constant h : α → β → α constant p : α → α → bool #check fun x : α, f x -- α → α #check λ x : α, f x -- α → α #check λ x : α, f (f x) -- α → α #check λ x : α, h x b1 -- α → α #check λ y : β, h a1 y -- β → α #check λ x : α, p (f (f x)) (h (f a1) b2) -- α → bool #check λ x : α, λ y : β, h (f x) y -- α → β → α #check λ (x : α) (y : β), h (f x) y -- α → β → α #check λ x y, h (f x) y -- α → β → α Expression λ x : α, x denotes the identity function on α We can leave type annotations on the variable, lean will infer it. λ x, g (f x) == λ x : α, g (f x) Example Here we prove that prime numbers are more than any assigned multitude of prime numbers. This proposition states that there are more than any finite number of prime numbers, that is to say, there are infinitely many primes. Outline of proof Source Suppose that there are n primes, a1, a2, …, an. Euclid, as usual, takes an specific small number, n = 3, of primes to illustrate the general case. Let m be the least common multiple of all of them. The least common multiple was also considered in proposition IX.14. It wasn’t noted in the proof of that proposition that the least common multiple of primes is their product, and it isn’t noted in this proof, either. Consider the number m + 1. If it’s prime, then there are at least n + 1 primes. So suppose m + 1 is not prime. Then according to VII.31, some prime g divides it. But g cannot be any of the primes a1, a2, …, an, since they all divide m and do not divide m + 1. Therefore, there are at least n + 1 primes. Q.E.D. This proposition is not used in the rest of the Elements. Lean Proof -- Definitions about natural numbers and primes import data.nat.prime -- Library on linear arithmatic import tactic.linarith -- Define namespace, which is natural numbers in this case open nat -- Define theorem or goal to prove theorem infinitude_of_primes: ∀ N, ∃ p &gt;= N, prime p := -- between begin-end block we write tactics begin -- define N to be a natural number as a part of our local hypothesis intro N, -- Continue with proof as mentioned in link provided in header -- let M to be N! + 1 : local definition let M := factorial N + 1, -- let p be smallest prime factor of M which is not 1 let p := min_fac M, -- define supporting hypothesis pp, p is prime have pp : prime p := -- begin proof for supporting p being prime begin -- minimum factor of a number is prime, but what about if M = 1 refine min_fac_prime _, -- so here we prove M != 1 (or M &gt; 1) have : factorial N &gt; 0 := factorial_pos N, -- this just automatically takes care of linear arithmatic required for proof linarith, end, -- before this we had existenial statement but now we have condition in p use p, -- split our goal in 2 subgoals split, -- proof by contradiction so it should output False {by_contradiction, /- hypothesis h1, p divides N! + 1 proved by min_fac_dvd : ∀ (n : ℕ), n.min_fac ∣ n -/ have h₁ : p ∣ factorial N + 1 := min_fac_dvd M, -- hypothesis h2, p divides N! have h₂ : p ∣ factorial N := begin refine pp.dvd_factorial.mpr _, -- proved p &lt;= N, using hypothsis h exact le_of_not_ge h, end, /- proved using dvd_add_right with support from local hypothesis h₂ and h₁ -/ have h : p ∣ 1 := (nat.dvd_add_right h₂).mp h₁, -- prime not dividing one using local hypothesis pp and h exact prime.not_dvd_one pp h, }, -- second part of proof is just our hypothesis pp that we already proved {exact pp, }, end Reference Theorem proving in lean lean-forward.github.io Natural Number Game By Kevin Buzzard and Mohammad Pedramfar. Formalizing 100 theorems Xena Project The Future of Mathematics?" />
+<meta property="og:site_name" content="Ujjwal Upadhyay" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-01-21T00:00:00-06:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Lean Proof Assistant" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","url":"/articles/21/intro-to-lean","headline":"Lean Proof Assistant","dateModified":"2021-01-21T00:00:00-06:00","datePublished":"2021-01-21T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"/articles/21/intro-to-lean"},"author":{"@type":"Person","name":"Ujjwal Upadhyay"},"description":"Lean is an open source proof assistant developed by Microsoft Research. Github Introduction Mathematics is characterised by the inferences allowed in the justification for the statements. The justification of one mathematician can be checked by another by checking that each inference is between those allowed. Mathematicians usually write proofs in natural languages using some special symbols to denote mathematical operations ($\\int$ - Integration) and objects ($e$ - Euler’s number). Logicians have agreed upon rules of inference which supports validity of proof. Since these rules are mechanical, the process of checking is also mechanical as of now. But with advent of interactive theorem proving assistant it is possible to represent these proof in a manner that a machine can verify. One such proof assistant is lean (among other like Coq). Background on Lean Lean = Functional Programming + Logic Lean encodes formal language in a version of dependent type theory (alternative to set theory) called Calculus of Constructions, with a countable hierarchy of non-cumulative universes and inductive types. The only two things Lean can do is: create terms check their types By iterating these two operations one can teach Lean to verify complex mathematical proofs. Lets first look at simple type theory. Simple Type Theory Everything is a set, including numbers, functions, triangles, stochastic processes, and Riemannian manifolds. Using these sets we can construct rich mathematical intutions. But it will be helpful if we can manage and keep track of the various kinds of mathematical objects we are working with. Type theory states that every mathematical expression has a type. For example, $x$ may denote natural numbers and $f(x)$ may denote function on natural numbers maping them to lets say complex numbers. Such types conversions also make simple type theory even more powerful. Lets see how we declare mathematical objects in lean and declare their types. constant m : nat -- m is a natural number constants b1 b2 : bool -- declare two constants at once #check m -- output: nat #check b1 -- bool #check b1 &amp;&amp; b2 -- &quot;&amp;&amp;&quot; is boolean and #check b1 || b2 -- boolean or constant and constants commands introduce new constant symbols into the working environment. #check command asks Lean to report their types. Lets see how we convert make new types out of others. constants m n : nat constant g : nat → nat → nat constant g&#39;: nat → (nat → nat) -- has the same type as g! constant f : nat → nat -- type the arrow as &quot;\\to&quot; or &quot;\\r&quot; constant F : (nat → nat) → nat -- a &quot;functional&quot; #check g m n -- ℕ #check g m -- ℕ → ℕ #check F f -- ℕ #check g m n -- ℕ Thing to note from above example: Application of a function f to a value x is denoted f x. Arrows associate to the right, example. the type of g is nat → (nat → nat). Thus g is a function that takes natural numbers and returns another function that takes a natural number and returns a natural number. Type theory also allows for partial application of a function where, as told in point 2 above, g m is a function that waits for argument n to return g m n. Currying, redefining a function to look like other. Types as Objects Leans dependent type theory extends simple type theory by making types as object of study themselves. We can also declare new constants and constructors for types. constants α β : Type constant F : Type → Type constant G : Type → Type → Type #check nat -- Type #check bool -- Type #check nat → bool -- Type #check nat × bool -- Type #check α -- Type #check F α -- Type #check F nat -- Type #check G α -- Type → Type #check G α β -- Type #check G α nat -- Type Type list α denotes the type of lists of elements of type α. constant α : Type #check list α -- Type #check list nat -- Type Lean has an infinite hierarchy of types. It’s type also has type. #check Type -- Type 1 #check Type 1 -- Type 2 #check Type 2 -- Type 3 Functions How do we create a function from another expression? We use process known as abstraction, or lambda abstraction. x: α and t: β. fun x : α, t is equivalent with λ x : α, t. Both are object of type α → β. Example. $f(x) = x + 5$, where $x$ is natural number. It is translated in lean as λ x : nat, x + 5 constants α β : Type constants a1 a2 : α constants b1 b2 : β constant f : α → α constant g : α → β constant h : α → β → α constant p : α → α → bool #check fun x : α, f x -- α → α #check λ x : α, f x -- α → α #check λ x : α, f (f x) -- α → α #check λ x : α, h x b1 -- α → α #check λ y : β, h a1 y -- β → α #check λ x : α, p (f (f x)) (h (f a1) b2) -- α → bool #check λ x : α, λ y : β, h (f x) y -- α → β → α #check λ (x : α) (y : β), h (f x) y -- α → β → α #check λ x y, h (f x) y -- α → β → α Expression λ x : α, x denotes the identity function on α We can leave type annotations on the variable, lean will infer it. λ x, g (f x) == λ x : α, g (f x) Example Here we prove that prime numbers are more than any assigned multitude of prime numbers. This proposition states that there are more than any finite number of prime numbers, that is to say, there are infinitely many primes. Outline of proof Source Suppose that there are n primes, a1, a2, …, an. Euclid, as usual, takes an specific small number, n = 3, of primes to illustrate the general case. Let m be the least common multiple of all of them. The least common multiple was also considered in proposition IX.14. It wasn’t noted in the proof of that proposition that the least common multiple of primes is their product, and it isn’t noted in this proof, either. Consider the number m + 1. If it’s prime, then there are at least n + 1 primes. So suppose m + 1 is not prime. Then according to VII.31, some prime g divides it. But g cannot be any of the primes a1, a2, …, an, since they all divide m and do not divide m + 1. Therefore, there are at least n + 1 primes. Q.E.D. This proposition is not used in the rest of the Elements. Lean Proof -- Definitions about natural numbers and primes import data.nat.prime -- Library on linear arithmatic import tactic.linarith -- Define namespace, which is natural numbers in this case open nat -- Define theorem or goal to prove theorem infinitude_of_primes: ∀ N, ∃ p &gt;= N, prime p := -- between begin-end block we write tactics begin -- define N to be a natural number as a part of our local hypothesis intro N, -- Continue with proof as mentioned in link provided in header -- let M to be N! + 1 : local definition let M := factorial N + 1, -- let p be smallest prime factor of M which is not 1 let p := min_fac M, -- define supporting hypothesis pp, p is prime have pp : prime p := -- begin proof for supporting p being prime begin -- minimum factor of a number is prime, but what about if M = 1 refine min_fac_prime _, -- so here we prove M != 1 (or M &gt; 1) have : factorial N &gt; 0 := factorial_pos N, -- this just automatically takes care of linear arithmatic required for proof linarith, end, -- before this we had existenial statement but now we have condition in p use p, -- split our goal in 2 subgoals split, -- proof by contradiction so it should output False {by_contradiction, /- hypothesis h1, p divides N! + 1 proved by min_fac_dvd : ∀ (n : ℕ), n.min_fac ∣ n -/ have h₁ : p ∣ factorial N + 1 := min_fac_dvd M, -- hypothesis h2, p divides N! have h₂ : p ∣ factorial N := begin refine pp.dvd_factorial.mpr _, -- proved p &lt;= N, using hypothsis h exact le_of_not_ge h, end, /- proved using dvd_add_right with support from local hypothesis h₂ and h₁ -/ have h : p ∣ 1 := (nat.dvd_add_right h₂).mp h₁, -- prime not dividing one using local hypothesis pp and h exact prime.not_dvd_one pp h, }, -- second part of proof is just our hypothesis pp that we already proved {exact pp, }, end Reference Theorem proving in lean lean-forward.github.io Natural Number Game By Kevin Buzzard and Mohammad Pedramfar. Formalizing 100 theorems Xena Project The Future of Mathematics?","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+  
+
+  
+
+  
+  <meta content="/assets/img/intro-lean/cover.png" property="og:image">
+  
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+<header>
+    <nav class="group">
+        <ul class="topnav" style="float:left">
+            <li><a style="padding-top:.5em" href="/"><strong>Ujjwal Upadhyay</strong></a></li>
+        </ul>
+	<ul class="topnav">    
+        
+	
+            
+            
+            
+  	
+            
+            
+	        
+                <li><a class="right" href="/research">Research</a></li>
+	        
+	    
+            
+  	
+            
+            
+	        
+                <li><a class="right" href="/writings">Writings</a></li>
+	        
+	    
+            
+  	
+            
+            
+            
+  	
+            
+  	
+            
+  	
+            
+  	
+        <li><a class="right" href="https://drive.google.com/file/d/1T3-bmXLxtnoR4x3_KS89RSL1-jLPsikA/view?usp=sharing">cv</a></li>
+	</ul>
+	</nav>
+        <hr class="slender">
+</header>
+
+    <article class="group">
+      <h1>Lean Proof Assistant</h1>
+<p class="subtitle">January 21, 2021</p>
+
+<p>Lean is an open source proof assistant developed by Microsoft Research.</p>
+
+<p><a href="https://github.com/leanprover/lean">Github</a></p>
+
+<h1 id="introduction">Introduction</h1>
+
+<p>Mathematics is characterised by the inferences allowed in the justification for the statements. The justification of one mathematician can be checked by
+another by checking that each inference is between those allowed.</p>
+
+<p>Mathematicians usually write proofs in natural languages using some special symbols to denote mathematical operations ($\int$ - Integration) and objects ($e$ - Euler’s number). Logicians have agreed upon <a href="https://en.wikipedia.org/wiki/List_of_rules_of_inference">rules of inference</a> which supports validity of proof.</p>
+
+<p>Since these rules are mechanical, the process of checking is also mechanical as of now. But with advent of interactive theorem proving assistant it is possible to represent these proof in a manner that a machine can verify. One such proof assistant is lean (among other like Coq).</p>
+
+<h1 id="background-on-lean">Background on Lean</h1>
+
+<blockquote>
+  <p>Lean = Functional Programming + Logic</p>
+</blockquote>
+
+<p>Lean encodes formal language in a version of <strong>dependent type theory</strong> (alternative to set theory) called <em>Calculus of Constructions</em>, with a countable hierarchy of non-cumulative universes and inductive types.</p>
+
+<p>The only two things Lean can do is:</p>
+<ol>
+  <li>create terms</li>
+  <li>check their types</li>
+</ol>
+
+<p>By iterating these two operations one can teach Lean to verify complex mathematical proofs.</p>
+
+<p>Lets first look at simple type theory.</p>
+
+<h2 id="simple-type-theory">Simple Type Theory</h2>
+
+<p>Everything is a set, including numbers, functions, triangles, stochastic processes, and Riemannian manifolds. Using these sets we can construct rich mathematical intutions. But it will be helpful if we can manage and keep track of the various kinds of mathematical objects we are working with.</p>
+
+<p><em>Type theory</em> states that every mathematical expression has a type. For example, $x$ may denote natural numbers and $f(x)$ may denote function on natural numbers maping them to lets say complex numbers. Such types conversions also make simple type theory even more powerful.</p>
+
+<p>Lets see how we declare mathematical objects in lean and declare their types.</p>
+
+<pre><code class="language-lean">constant m : nat        -- m is a natural number
+constants b1 b2 : bool  -- declare two constants at once
+
+#check m                -- output: nat
+#check b1               -- bool
+#check b1 &amp;&amp; b2         -- "&amp;&amp;" is boolean and
+#check b1 || b2         -- boolean or
+</code></pre>
+
+<p><code class="language-plaintext highlighter-rouge">constant</code> and <code class="language-plaintext highlighter-rouge">constants</code> commands introduce new constant symbols into the working environment. <code class="language-plaintext highlighter-rouge">#check</code> command asks Lean to report their types.</p>
+
+<p>Lets see how we convert make new types out of others.</p>
+
+<pre><code class="language-lean">constants m n : nat
+constant g : nat → nat → nat
+constant g': nat → (nat → nat)   -- has the same type as g!
+constant f : nat → nat           -- type the arrow as "\to" or "\r"
+constant F : (nat → nat) → nat   -- a "functional"
+
+#check g m n                     -- ℕ
+#check g m                       -- ℕ → ℕ
+#check F f                       -- ℕ
+#check g m n                     -- ℕ
+</code></pre>
+
+<p>Thing to note from above example:</p>
+<ol>
+  <li>Application of a function f to a value x is denoted <code class="language-plaintext highlighter-rouge">f x</code>.</li>
+  <li>Arrows associate to the right, example. <code class="language-plaintext highlighter-rouge">the type of g is nat → (nat → nat)</code>. Thus g is a function that takes natural numbers and returns another function that takes a natural number and returns a natural number.</li>
+</ol>
+
+<p>Type theory also allows for partial application of a function where, as told in point 2 above, <code class="language-plaintext highlighter-rouge">g m</code> is a function that waits for argument <code class="language-plaintext highlighter-rouge">n</code> to return <code class="language-plaintext highlighter-rouge">g m n</code>.</p>
+
+<blockquote>
+  <p><strong>Currying</strong>, redefining a function to look like other.</p>
+</blockquote>
+
+<h2 id="types-as-objects">Types as Objects</h2>
+
+<p>Leans dependent type theory extends simple type theory by making types as object of study themselves. We can also declare new constants and constructors for types.</p>
+
+<pre><code class="language-lean">constants α β : Type
+constant F : Type → Type
+constant G : Type → Type → Type
+
+#check nat               -- Type
+#check bool              -- Type
+#check nat → bool        -- Type
+#check nat × bool        -- Type
+#check α                 -- Type
+#check F α               -- Type
+#check F nat             -- Type
+#check G α               -- Type → Type
+#check G α β             -- Type
+#check G α nat           -- Type
+</code></pre>
+
+<p>Type list α denotes the type of lists of elements of type α.</p>
+
+<pre><code class="language-lean">constant α : Type
+
+#check list α    -- Type
+#check list nat  -- Type
+</code></pre>
+
+<blockquote>
+  <p>Lean has an infinite hierarchy of types. It’s type also has type.</p>
+</blockquote>
+
+<pre><code class="language-lean">#check Type     -- Type 1
+#check Type 1   -- Type 2
+#check Type 2   -- Type 3
+</code></pre>
+
+<h2 id="functions">Functions</h2>
+
+<p>How do we create a function from another expression? We use process known as <em>abstraction</em>, or <em>lambda abstraction</em>.</p>
+
+<p><code class="language-plaintext highlighter-rouge">x: α</code> and <code class="language-plaintext highlighter-rouge">t: β</code>. <code class="language-plaintext highlighter-rouge">fun x : α, t</code> is equivalent with <code class="language-plaintext highlighter-rouge">λ x : α, t</code>. Both are object of type α → β.</p>
+
+<p>Example. $f(x) = x + 5$, where $x$ is natural number. It is translated in lean as <code class="language-plaintext highlighter-rouge">λ x : nat, x + 5</code></p>
+
+<pre><code class="language-lean">constants α β  : Type
+constants a1 a2 : α
+constants b1 b2 : β
+
+constant f : α → α
+constant g : α → β
+constant h : α → β → α
+constant p : α → α → bool
+
+#check fun x : α, f x                      -- α → α
+#check λ x : α, f x                        -- α → α
+#check λ x : α, f (f x)                    -- α → α
+#check λ x : α, h x b1                     -- α → α
+#check λ y : β, h a1 y                     -- β → α
+#check λ x : α, p (f (f x)) (h (f a1) b2)  -- α → bool
+#check λ x : α, λ y : β, h (f x) y         -- α → β → α
+#check λ (x : α) (y : β), h (f x) y        -- α → β → α
+#check λ x y, h (f x) y                    -- α → β → α
+</code></pre>
+
+<blockquote>
+  <p>Expression <code class="language-plaintext highlighter-rouge">λ x : α, x</code> denotes the identity function on α</p>
+</blockquote>
+
+<blockquote>
+  <p>We can leave type annotations on the variable, lean will infer it.</p>
+</blockquote>
+
+<p><code class="language-plaintext highlighter-rouge">λ x, g (f x)</code> == <code class="language-plaintext highlighter-rouge">λ x : α, g (f x)</code></p>
+
+<h1 id="example">Example</h1>
+
+<p>Here we prove that <strong>prime numbers are more than any assigned multitude of prime numbers</strong>.</p>
+
+<blockquote>
+  <p>This proposition states that there are more than any finite number of prime numbers, that is to say, there are infinitely many primes.</p>
+</blockquote>
+
+<h2 id="outline-of-proof">Outline of proof</h2>
+
+<p><a href="https://mathcs.clarku.edu/~djoyce/java/elements/bookIX/propIX20.html">Source</a></p>
+
+<ul>
+  <li>Suppose that there are n primes, a1, a2, …, an. Euclid, as usual, takes an specific small number, n = 3, of primes to illustrate the general case. Let m be the least common multiple of all of them.
+    <blockquote>
+      <p>The least common multiple was also considered in proposition <a href="https://mathcs.clarku.edu/~djoyce/java/elements/bookIX/propIX14.html">IX.14</a>. It wasn’t noted in the proof of that proposition that the least common multiple of primes is their product, and it isn’t noted in this proof, either.</p>
+    </blockquote>
+  </li>
+  <li>
+    <p>Consider the number m + 1. If it’s prime, then there are at least n + 1 primes.</p>
+  </li>
+  <li>
+    <p>So suppose m + 1 is not prime. Then according to <a href="https://mathcs.clarku.edu/~djoyce/java/elements/bookVII/propVII31.html">VII.31</a>, some prime g divides it. But g cannot be any of the primes a1, a2, …, an, since they all divide m and do not divide m + 1. Therefore, there are at least n + 1 primes. Q.E.D.</p>
+  </li>
+  <li>This proposition is not used in the rest of the Elements.</li>
+</ul>
+
+<h2 id="lean-proof">Lean Proof</h2>
+
+<pre><code class="language-lean">-- Definitions about natural numbers and primes
+import data.nat.prime
+
+-- Library on linear arithmatic
+import tactic.linarith
+
+-- Define namespace, which is natural numbers in this case
+open nat 
+
+
+-- Define theorem or goal to prove
+theorem infinitude_of_primes: ∀ N, ∃ p &gt;= N, prime p :=
+-- between begin-end block we write tactics
+begin
+  -- define N to be a natural number as a part of our local hypothesis
+  intro N,
+
+  -- Continue with proof as mentioned in link provided in header
+  -- let M to be N! + 1 : local definition
+  let M := factorial N + 1,
+  
+  -- let p be smallest prime factor of M which is not 1
+  let p := min_fac M,
+
+
+  -- define supporting hypothesis pp, p is prime
+  have pp : prime p := 
+  -- begin proof for supporting p being prime
+  begin
+    -- minimum factor of a number is prime, but what about if M = 1
+    refine min_fac_prime _,
+    -- so here we prove M != 1 (or M &gt; 1)
+    have : factorial N &gt; 0 := factorial_pos N,
+    -- this just automatically takes care of linear arithmatic required for proof
+    linarith,
+  end,
+
+  -- before this we had existenial statement but now we have condition in p
+  use p,
+
+  -- split our goal in  2 subgoals
+  split,
+
+  -- proof by contradiction so it should output False
+  {by_contradiction,
+   
+   /- hypothesis h1, p divides N! + 1 proved by  
+   min_fac_dvd : ∀ (n : ℕ), n.min_fac ∣ n
+   -/
+   have h₁ : p ∣ factorial N + 1 := min_fac_dvd M, 
+   
+   -- hypothesis h2, p divides N!
+   have h₂ : p ∣  factorial N := 
+   begin
+     refine pp.dvd_factorial.mpr _,
+     -- proved p &lt;= N, using hypothsis h
+     exact le_of_not_ge h,
+   end,
+   /-
+   proved using dvd_add_right with support from local hypothesis h₂ and h₁
+   -/
+   have h : p ∣ 1 := (nat.dvd_add_right h₂).mp h₁,
+   -- prime not dividing one using local hypothesis pp and h
+   exact prime.not_dvd_one pp h, },
+   -- second part of proof is just our hypothesis pp that we already proved
+  {exact pp, },
+end
+</code></pre>
+
+<!-- <script src="https://gist.github.com/Ujjwal-9/36967b848bd1fa8c21b6e20b35a680b9.js"></script> -->
+
+<h1 id="reference">Reference</h1>
+
+<p><a href="https://leanprover.github.io/theorem_proving_in_lean/">Theorem proving in lean</a></p>
+
+<p><a href="https://lean-forward.github.io/logical-verification/2020/">lean-forward.github.io</a></p>
+
+<p><a href="https://wwwf.imperial.ac.uk/~buzzard/xena/natural_number_game/">Natural Number Game By Kevin Buzzard and Mohammad Pedramfar.</a></p>
+
+<p><a href="http://www.cs.ru.nl/~freek/100/index.html">Formalizing 100 theorems</a></p>
+
+<p><a href="https://xenaproject.wordpress.com/">Xena Project</a></p>
+
+<p><a href="https://www.youtube.com/watch?v=Dp-mQ3HxgDE&amp;ab_channel=MicrosoftResearch">The Future of Mathematics?</a></p>
+
+
+
+    </article>
+    <span class="print-footer">Lean Proof Assistant - January 21, 2021 - Ujjwal Upadhyay</span>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+<style>
+
+i:hover{
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+
+</style>
+
+<footer>
+  <hr class="slender">
+  <ul class="footer-links" style="font-size: 1.6rem;">
+    <li><a href="mailto:ujjwalupadhyay8@gmail.com"><i class="fa fa-envelope"></i></a></li>
+    <li><a href="https://twitter.com/theujjwal9"><i class="fa fa-twitter"></i></a></li>
+    <li><a href="https://github.com/ujjwal-9"><i class="fa fa-github"></i></a></li>
+    <li><a href="https://www.linkedin.com/in/ujjwal-9/"><i class="fa fa-linkedin"></i></a></li>
+    <!-- <li><a href="https://scholar.google.com/citations?user=lvpaXdEAAAAJ&hl=en"><i class="ai ai-google-scholar"></i></li> -->
+    <li><a href="https://scholar.google.com/citations?user=lvpaXdEAAAAJ&hl=en"><i class="fa fa-graduation-cap"></i></li>
+    <li><a href="https://ujjwal-9.github.io/feed.xml"><i class="fa fa-rss"></i></a></li>
+    <!-- 
+      <li>
+        <a href="https://github.com/ujjwal-9"><span class="icon-github"></span></a>
+      </li>
+    
+      <li>
+        <a href="https://linkedin.com/in/ujjwal-9"><span class="icon-linkedin"></span></a>
+      </li>
+    
+      <li>
+        <a href="/feed.xml"><span class="icon-rss2"></span></a>
+      </li>
+       -->
+  </ul>
+<div class="credits">
+<span>&copy; 2021 &nbsp;&nbsp;UJJWAL UPADHYAY</span></br> <br>
+</div>  
+</footer>
+  </body>
+</html>
