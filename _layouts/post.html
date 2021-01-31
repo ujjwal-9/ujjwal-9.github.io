@@ -6,3 +6,7 @@ layout: default
 
 {{ content }}
 
+{% if page.last_update %}
+<br/><br/>
+Last updated: {{ page.last_update | date: "%B %-d, %Y" }}
+{% endif %}

@@ -65,7 +65,7 @@ GEM
     trollop (2.9.9)
 
 PLATFORMS
-  ruby
+  x86_64-linux
 
 DEPENDENCIES
   jekyll (= 3.9.0)

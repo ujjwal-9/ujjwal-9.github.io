@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Thinking, Fast and Slow"
-date: 2021-01-31
-last_update: 2021-02-01
+title:  "Never Split the Difference"
+date: 2021-02-01
+# last_update: 2021-02-01
 title_include: true
 categories: book
 ---
@@ -16,7 +16,7 @@ MathJax.Hub.Config({
 });
 </script>
 
-There are my notes for the book: Thinking, Fast and Slow by Denial Kehnaman.
+There are my notes for the book: Never Split the Difference: Negotiate as if your life depended on it by **Chris Voss**.
 
 # Introduction
 
