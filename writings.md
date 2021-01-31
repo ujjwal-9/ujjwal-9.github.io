@@ -22,7 +22,7 @@ weight: 1
 
 ## Book Recommendations
 
-[*Thinking, Fast and Slow*]()<br/>Daniel Kahneman
+[*Thinking, Fast and Slow*](articles/21/thinking-fast-and-slow)<br/>Daniel Kahneman
 
 [*The Concise Laws of Human Nature*]()<br/>Robert Greene
 

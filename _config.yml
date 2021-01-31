@@ -16,6 +16,8 @@ post:
 #page:
 #  template: _page.txt
 #  extension: md
+future: TRUE
+show_drafts: TRUE
 editor: vim
 plugins:
     - jekyll-seo-tag
