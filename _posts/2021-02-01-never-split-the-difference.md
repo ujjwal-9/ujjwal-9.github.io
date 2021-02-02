@@ -44,9 +44,9 @@ Answering such question demand that you possess deep emotional strength i.e you 
 
 > In negotiation, one should follow a strict sequence of actions (like in [Banta & Zopa](/notes/banta-zopa)) rather play around as per the psychology and nature of your counterpart.
 
-Other mistake in negotiation is to think that your counterpart is fully rational and selfish and is not affected by emotions, rather its found in studies that emotion plays a very important role in negotiation which has the power to influence the rational thinking and logical mind. {%sidenote 'thinking-fast-and-slow' "Thinking, fast and slow by denial kehnaman"%}
+Other mistake in negotiation is to think that your counterpart is fully rational and selfish and is not affected by emotions, rather its found in studies that emotion plays a very important role in negotiation which has the power to influence the rational thinking and logical mind. {%sidenote 'thinking-fast-and-slow' "<a href='https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow'>Thinking, Fast and Slow</a>  by Daniel Kahneman."%}
 
-Fisher and Ury’s approach was introduced with acceptance of the above stated idea, and to mitigate or remove these emotions from the negotiation to collectively solve the problem in a more rational manner. The core principle of the approach was:
+Fisher and Ury’s approach {% sidenote 'getting-to-say-yes' 'Talked about in the book <a href="https://en.wikipedia.org/wiki/Getting_to_Yes">getting to say yes</a>.'%} was introduced with acceptance of the above stated idea, and to mitigate or remove these emotions from the negotiation to collectively solve the problem in a more rational manner. The core principle of the approach was:
 1. Seperate the emotions in negotiation
 2. Not to target the *what they are asking for* and rather look for *why they are asking for it*
 3. Work in co-operation to reach a win-win deal
