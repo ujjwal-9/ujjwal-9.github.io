@@ -2,7 +2,7 @@
 layout: post
 title:  "Never Split the Difference"
 date: 2021-02-01
-last_update: 2021-02-02
+last_update: 2021-02-03
 title_include: true
 categories: book
 ---
