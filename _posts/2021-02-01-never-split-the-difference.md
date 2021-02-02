@@ -22,7 +22,7 @@ Negotitaion = Information Gathering + Behavior Influence
 
 These are my notes for this book by **Chris Voss**.
 
-# Chapter 1: The New Rules
+## Chapter 1: The New Rules
 
 Book starts with a very niche technique to consider during negotiation to get out of a tight spot. Below is an excerpt from the book which illustrates the technique.
 
@@ -64,6 +64,6 @@ From the above experiment, it quite evident that people are not fully rational a
 
 When people think they are being listened attentively they listen to themselves in much more constructive manner lower their defenses on their point of view and become willing to accept other's opinion. This whole technique is refered as **Tactical Empathy**. This technique imparts the power of influence while balancing the emotions of your counterpart during a negotiation.
 
-
+<!-- ## Chapter 2: Be a Mirror -->
 
 > **Follow me on twitter [@theujjwal9](https://twitter.com/@theujjwal9)**
