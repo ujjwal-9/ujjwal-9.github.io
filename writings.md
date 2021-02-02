@@ -30,7 +30,7 @@ weight: 1
 
 [*Predictably Irrational*]()<br/>Dan Ariely
 
-[*Never Split the Difference: Negotiating As If Your Life Depended On It*]()<br />Christopher Voss and Tahl Raz
+[*Never Split the Difference: Negotiating As If Your Life Depended On It*](articles/21/never-split-the-difference)<br />Christopher Voss and Tahl Raz
 
 [*The Power of your Subconscious Mind*]()<br />Joseph Murphy
 
