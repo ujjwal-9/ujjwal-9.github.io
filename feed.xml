@@ -5,51 +5,9 @@
     <description>Personal webpage</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 02 Feb 2021 14:59:39 -0600</pubDate>
-    <lastBuildDate>Tue, 02 Feb 2021 14:59:39 -0600</lastBuildDate>
+    <pubDate>Thu, 04 Feb 2021 15:39:06 -0600</pubDate>
+    <lastBuildDate>Thu, 04 Feb 2021 15:39:06 -0600</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
-    
-      <item>
-        <title>BANTA &amp; ZOPA</title>
-        <description>&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
-MathJax.Hub.Config({
-  &lt;!-- tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}, --&gt;
-  jax: [&quot;input/TeX&quot;,&quot;output/HTML-CSS&quot;],
-  displayAlign: &quot;left&quot;,
-  &quot;HTML-CSS&quot;: { scale: 100}
-});
-&lt;/script&gt;
-
-&lt;h2 id=&quot;banta&quot;&gt;Banta&lt;/h2&gt;
-
-&lt;p&gt;“BATNA” is an acronym which stands for ‘Best Alternative to a Negotiated Agreement. It helps you in making a guess about your options if you are unsuccessful in agreeing on a deal.&lt;/p&gt;
-
-&lt;p&gt;During negotiation, you not only need to access your BANTA but also of your negotiation counterparts. If your counterpart doesn’t have options then your BANTA doesn’t hold too much significance and same goes for you.&lt;/p&gt;
-
-&lt;p&gt;Apart from establishing a BANTA, it is also advised to establish a &lt;strong&gt;Reservation Value&lt;/strong&gt;, which is least favourable number on which you will agree.&lt;/p&gt;
-
-&lt;p&gt;Example: If you are in a condition where you already have a initial offer on a piece of hardware, say $1900, then such offer can act as BANTA as long as you are comfortable with it and willing to accept it. Then you might want to set a bit higher reservation value, let say $2000, for your other negotitions.&lt;/p&gt;
-
-&lt;h2 id=&quot;zopa&quot;&gt;Zopa&lt;/h2&gt;
-
-&lt;p&gt;&quot;”ZOPA” stands for Zone of Possible Agreement. As the name suggests, it is range which both parties consider favourable as per their established BANTA.&lt;/p&gt;
-
-&lt;figure&gt;&lt;figcaption&gt;&lt;a href=&quot;http://www.successfulnegotiators.com/negotiators-blog/2017/1/16/basic-negotiation-terminology-batna-reservation-value-zopa&quot;&gt;Source&lt;/a&gt;&lt;/figcaption&gt;&lt;img src=&quot;/assets/img/banta-zopa/banta-zopa.png&quot; /&gt;&lt;/figure&gt;
-
-&lt;p&gt;We generally are more interested in knowing our counterpart’s BANTA and reservation value. It is found out which some certainity during the negotition. But before the negotiation, we need to collect some open information like if you can get his/her bid for similar item, etc. Then using such information, we make our initial estimate.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Follow me on twitter &lt;a href=&quot;https://twitter.com/@theujjwal9&quot;&gt;@theujjwal9&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-        <pubDate>Tue, 02 Feb 2021 00:00:00 -0600</pubDate>
-        <link>/notes/banta-zopa</link>
-        <guid isPermaLink="true">/notes/banta-zopa</guid>
-        
-        
-        <category>book</category>
-        
-      </item>
     
       <item>
         <title>Never Split the Difference</title>
@@ -142,9 +100,51 @@ I gave him a long, slow stare. Then I smiled.
   &lt;p&gt;&lt;strong&gt;Follow me on twitter &lt;a href=&quot;https://twitter.com/@theujjwal9&quot;&gt;@theujjwal9&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
-        <pubDate>Mon, 01 Feb 2021 00:00:00 -0600</pubDate>
+        <pubDate>Fri, 05 Feb 2021 00:00:00 -0600</pubDate>
         <link>/articles/21/never-split-the-difference</link>
         <guid isPermaLink="true">/articles/21/never-split-the-difference</guid>
+        
+        
+        <category>book</category>
+        
+      </item>
+    
+      <item>
+        <title>BANTA &amp; ZOPA</title>
+        <description>&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
+MathJax.Hub.Config({
+  &lt;!-- tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}, --&gt;
+  jax: [&quot;input/TeX&quot;,&quot;output/HTML-CSS&quot;],
+  displayAlign: &quot;left&quot;,
+  &quot;HTML-CSS&quot;: { scale: 100}
+});
+&lt;/script&gt;
+
+&lt;h2 id=&quot;banta&quot;&gt;Banta&lt;/h2&gt;
+
+&lt;p&gt;“BATNA” is an acronym which stands for ‘Best Alternative to a Negotiated Agreement. It helps you in making a guess about your options if you are unsuccessful in agreeing on a deal.&lt;/p&gt;
+
+&lt;p&gt;During negotiation, you not only need to access your BANTA but also of your negotiation counterparts. If your counterpart doesn’t have options then your BANTA doesn’t hold too much significance and same goes for you.&lt;/p&gt;
+
+&lt;p&gt;Apart from establishing a BANTA, it is also advised to establish a &lt;strong&gt;Reservation Value&lt;/strong&gt;, which is least favourable number on which you will agree.&lt;/p&gt;
+
+&lt;p&gt;Example: If you are in a condition where you already have a initial offer on a piece of hardware, say $1900, then such offer can act as BANTA as long as you are comfortable with it and willing to accept it. Then you might want to set a bit higher reservation value, let say $2000, for your other negotitions.&lt;/p&gt;
+
+&lt;h2 id=&quot;zopa&quot;&gt;Zopa&lt;/h2&gt;
+
+&lt;p&gt;&quot;”ZOPA” stands for Zone of Possible Agreement. As the name suggests, it is range which both parties consider favourable as per their established BANTA.&lt;/p&gt;
+
+&lt;figure&gt;&lt;figcaption&gt;&lt;a href=&quot;http://www.successfulnegotiators.com/negotiators-blog/2017/1/16/basic-negotiation-terminology-batna-reservation-value-zopa&quot;&gt;Source&lt;/a&gt;&lt;/figcaption&gt;&lt;img src=&quot;/assets/img/banta-zopa/banta-zopa.png&quot; /&gt;&lt;/figure&gt;
+
+&lt;p&gt;We generally are more interested in knowing our counterpart’s BANTA and reservation value. It is found out which some certainity during the negotition. But before the negotiation, we need to collect some open information like if you can get his/her bid for similar item, etc. Then using such information, we make our initial estimate.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Follow me on twitter &lt;a href=&quot;https://twitter.com/@theujjwal9&quot;&gt;@theujjwal9&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Tue, 02 Feb 2021 00:00:00 -0600</pubDate>
+        <link>/notes/banta-zopa</link>
+        <guid isPermaLink="true">/notes/banta-zopa</guid>
         
         
         <category>book</category>
@@ -182,20 +182,7 @@ MathJax.Hub.Config({
       </item>
     
       <item>
-        <title>Lean Proof Assistant</title>
-        <description>
-</description>
-        <pubDate>Thu, 21 Jan 2021 00:00:00 -0600</pubDate>
-        <link>/articles/21/a-test-draft</link>
-        <guid isPermaLink="true">/articles/21/a-test-draft</guid>
-        
-        
-        <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>Lean Proof Assistant</title>
+        <title>Introduction to Lean</title>
         <description>&lt;p&gt;Lean is an open source proof assistant developed by Microsoft Research.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/leanprover/lean&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
@@ -359,7 +346,7 @@ constant p : α → α → bool
 
 &lt;p&gt;&lt;a href=&quot;https://mathcs.clarku.edu/~djoyce/java/elements/bookIX/propIX20.html&quot;&gt;Source&lt;/a&gt;&lt;/p&gt;
 
-&lt;ul&gt;
+&lt;ol&gt;
   &lt;li&gt;Suppose that there are n primes, a1, a2, …, an. Euclid, as usual, takes an specific small number, n = 3, of primes to illustrate the general case. Let m be the least common multiple of all of them.
     &lt;blockquote&gt;
       &lt;p&gt;The least common multiple was also considered in proposition &lt;a href=&quot;https://mathcs.clarku.edu/~djoyce/java/elements/bookIX/propIX14.html&quot;&gt;IX.14&lt;/a&gt;. It wasn’t noted in the proof of that proposition that the least common multiple of primes is their product, and it isn’t noted in this proof, either.&lt;/p&gt;
@@ -372,7 +359,7 @@ constant p : α → α → bool
     &lt;p&gt;So suppose m + 1 is not prime. Then according to &lt;a href=&quot;https://mathcs.clarku.edu/~djoyce/java/elements/bookVII/propVII31.html&quot;&gt;VII.31&lt;/a&gt;, some prime g divides it. But g cannot be any of the primes a1, a2, …, an, since they all divide m and do not divide m + 1. Therefore, there are at least n + 1 primes. Q.E.D.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;This proposition is not used in the rest of the Elements.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/ol&gt;
 
 &lt;h2 id=&quot;lean-proof&quot;&gt;Lean Proof&lt;/h2&gt;
 
@@ -445,8 +432,6 @@ begin
 end
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;!-- &lt;script src=&quot;https://gist.github.com/Ujjwal-9/36967b848bd1fa8c21b6e20b35a680b9.js&quot;&gt;&lt;/script&gt; --&gt;
-
 &lt;h1 id=&quot;reference&quot;&gt;Reference&lt;/h1&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://leanprover.github.io/theorem_proving_in_lean/&quot;&gt;Theorem proving in lean&lt;/a&gt;&lt;/p&gt;
@@ -464,6 +449,19 @@ end
         <pubDate>Thu, 21 Jan 2021 00:00:00 -0600</pubDate>
         <link>/articles/21/intro-to-lean</link>
         <guid isPermaLink="true">/articles/21/intro-to-lean</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Lean Proof Assistant</title>
+        <description>
+</description>
+        <pubDate>Thu, 21 Jan 2021 00:00:00 -0600</pubDate>
+        <link>/articles/21/a-test-draft</link>
+        <guid isPermaLink="true">/articles/21/a-test-draft</guid>
         
         
         <category>blog</category>
