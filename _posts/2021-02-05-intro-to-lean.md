@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Lean Proof Assistant"
+title:  "Introduction to Lean"
 date:   2021-01-21
 title_include: true
 categories: blog
@@ -163,14 +163,14 @@ Here we prove that **prime numbers are more than any assigned multitude of prime
 
 [Source](https://mathcs.clarku.edu/~djoyce/java/elements/bookIX/propIX20.html)
 
-- Suppose that there are n primes, a1, a2, ..., an. Euclid, as usual, takes an specific small number, n = 3, of primes to illustrate the general case. Let m be the least common multiple of all of them. 
+1. Suppose that there are n primes, a1, a2, ..., an. Euclid, as usual, takes an specific small number, n = 3, of primes to illustrate the general case. Let m be the least common multiple of all of them. 
 > The least common multiple was also considered in proposition [IX.14](https://mathcs.clarku.edu/~djoyce/java/elements/bookIX/propIX14.html). It wasn’t noted in the proof of that proposition that the least common multiple of primes is their product, and it isn't noted in this proof, either.
 
-- Consider the number m + 1. If it’s prime, then there are at least n + 1 primes.
+2. Consider the number m + 1. If it’s prime, then there are at least n + 1 primes.
 
-- So suppose m + 1 is not prime. Then according to [VII.31](https://mathcs.clarku.edu/~djoyce/java/elements/bookVII/propVII31.html), some prime g divides it. But g cannot be any of the primes a1, a2, ..., an, since they all divide m and do not divide m + 1. Therefore, there are at least n + 1 primes. Q.E.D.
+3. So suppose m + 1 is not prime. Then according to [VII.31](https://mathcs.clarku.edu/~djoyce/java/elements/bookVII/propVII31.html), some prime g divides it. But g cannot be any of the primes a1, a2, ..., an, since they all divide m and do not divide m + 1. Therefore, there are at least n + 1 primes. Q.E.D.
 
-- This proposition is not used in the rest of the Elements.
+4. This proposition is not used in the rest of the Elements.
 
 
 ## Lean Proof
@@ -244,8 +244,6 @@ begin
   {exact pp, },
 end
 ```
-
-<!-- <script src="https://gist.github.com/Ujjwal-9/36967b848bd1fa8c21b6e20b35a680b9.js"></script> -->
 
 # Reference
 
