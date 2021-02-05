@@ -5,181 +5,9 @@
     <description>Personal webpage</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 04 Feb 2021 15:39:06 -0600</pubDate>
-    <lastBuildDate>Thu, 04 Feb 2021 15:39:06 -0600</lastBuildDate>
+    <pubDate>Fri, 05 Feb 2021 14:58:48 -0600</pubDate>
+    <lastBuildDate>Fri, 05 Feb 2021 14:58:48 -0600</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
-    
-      <item>
-        <title>Never Split the Difference</title>
-        <description>&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
-MathJax.Hub.Config({
-  &lt;!-- tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}, --&gt;
-  jax: [&quot;input/TeX&quot;,&quot;output/HTML-CSS&quot;],
-  displayAlign: &quot;left&quot;,
-  &quot;HTML-CSS&quot;: { scale: 100}
-});
-&lt;/script&gt;
-
-&lt;p&gt;Negotiation is everywhere from finalizing a time and location to meet with friends to buying a gym membership at a reasonable price. This is a self help book for anyone who wants to hone their negotation skill.&lt;/p&gt;
-
-&lt;p&gt;Negotitaion = Information Gathering + Behavior Influence&lt;/p&gt;
-
-&lt;p&gt;These are my notes for this book by &lt;strong&gt;Chris Voss&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;chapter-1-the-new-rules&quot;&gt;Chapter 1: The New Rules&lt;/h2&gt;
-
-&lt;p&gt;Book starts with a very niche technique to consider during negotiation to get out of a tight spot. Below is an excerpt from the book which illustrates the technique.&lt;/p&gt;
-
-&lt;div class=&quot;epigraph&quot;&gt;&lt;blockquote&gt;&lt;p&gt; “C’mon. Get me the money or I cut your son’s throat right now,” Mnookin said. Testy.
-I gave him a long, slow stare. Then I smiled.
-“How am I supposed to do that?” &lt;/p&gt;&lt;footer&gt;, &lt;cite&gt;Open-ended questions&lt;/cite&gt;&lt;/footer&gt;&lt;/blockquote&gt;&lt;/div&gt;
-
-&lt;p&gt;Such open-ended questioning gives your counterparts &lt;em&gt;illusion of control&lt;/em&gt;. They start thinking that they possess the key to this negotiation. All this gives you one of the most important thing during negotiation &lt;strong&gt;the time to think&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;epigraph&quot;&gt;&lt;blockquote&gt;&lt;p&gt; “I’m sorry, Robert, how do I know he’s even alive?” I said, using an apology and his first name, seeding more warmth into the interaction in order to complicate his gambit to bulldoze me. “I really am sorry, but how can I get you any money right now, much less one million dollars, if I don’t even know he’s alive?”&lt;/p&gt;&lt;footer&gt;, &lt;cite&gt;Presenting problem in negotation with touch of friendliness.&lt;/cite&gt;&lt;/footer&gt;&lt;/blockquote&gt;&lt;/div&gt;
-
-&lt;p&gt;Presenting the problem with the terms of negotition in question form (and not straight away pointing out the issue) may compels your counterparts in negotitaion to understand the unreasonable nature of the terms.&lt;/p&gt;
-
-&lt;p&gt;Apologetic tone coupled with friendly use of words during address eases the conversation. This technique can be used when you aren’t getting any authority in negotiation. This technique will give you some chances to steer the negotitaion your way.&lt;/p&gt;
-
-&lt;p&gt;Both of the above examples correspond to tactics called &lt;strong&gt;calibrated questions&lt;/strong&gt;: queries that the other side can respond to but that have no fixed answers. Main purpose of this tactics to buy you some time to think.&lt;/p&gt;
-
-&lt;p&gt;Answering such question demand that you possess deep emotional strength i.e you need to keep aside your emotions and your feeling about what other side means and from my point of view, you could even raise a counter question, like &lt;em&gt;what seems to be the problem with which you think I can help you&lt;/em&gt;. This will give us insights into line of thinking of your counterpart about why he/she needs time to think through our offer or what bothers him/her. Once you get the information which your counterpart is hiding like the motive of negotitaion or even some small information which can help with your terms, you can gain authority without letting the other party know.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;In negotiation, one should follow a strict sequence of actions (like in &lt;a href=&quot;/notes/banta-zopa&quot;&gt;Banta &amp;amp; Zopa&lt;/a&gt;) rather play around as per the psychology and nature of your counterpart.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Other mistake in negotiation is to think that your counterpart is fully rational and selfish and is not affected by emotions, rather its found in studies that emotion plays a very important role in negotiation which has the power to influence the rational thinking and logical mind. &lt;label for=&quot;thinking-fast-and-slow&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;thinking-fast-and-slow&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow&quot;&gt;Thinking, Fast and Slow&lt;/a&gt;  by Daniel Kahneman. &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Fisher and Ury’s approach &lt;label for=&quot;getting-to-say-yes&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;getting-to-say-yes&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;Talked about in the book &lt;a href=&quot;https://en.wikipedia.org/wiki/Getting_to_Yes&quot;&gt;getting to say yes&lt;/a&gt;. &lt;/span&gt; was introduced with acceptance of the above stated idea, and to mitigate or remove these emotions from the negotiation to collectively solve the problem in a more rational manner. The core principle of the approach was:&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Seperate the emotions in negotiation&lt;/li&gt;
-  &lt;li&gt;Not to target the &lt;em&gt;what they are asking for&lt;/em&gt; and rather look for &lt;em&gt;why they are asking for it&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;Work in co-operation to reach a win-win deal&lt;/li&gt;
-  &lt;li&gt;Establish some standards for the negotiation which should be agreed by both parties&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Decision made by people can be influenced by \(n\) number of ways. One of which is &lt;em&gt;framing effect&lt;/em&gt;. It is a proven technique showcasing that people respond differently to same question framed in different way - positive or negative connotations; e.g. as a loss or as a gain. People tend to avoid risk when a positive frame is presented but seek risks when a negative frame is presented. &lt;label for=&quot;prospect-theory&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;prospect-theory&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;Such behaviour is caused due to people being more sensitivity towards loss than for gain when things are uncertain. &lt;a href=&quot;https://en.wikipedia.org/wiki/Loss_aversion&quot;&gt; [Loss Aversion]&lt;/a&gt; but when the loss becomes more and more uncertain people tend to take more risks. &lt;/span&gt;&lt;/p&gt;
-
-&lt;style&gt;
-  .embed-container {
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    overflow: hidden;
-    max-width: 70%;
-    margin-bottom: -23%;
-  }
-  .embed-container iframe,
-  .embed-container object,
-  .embed-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 80%;
-    height: 55%;
-  }
-&lt;/style&gt;
-
-&lt;div class=&quot;embed-container&quot;&gt;
-  &lt;iframe title=&quot;YouTube video player&quot; width=&quot;480&quot; height=&quot;360&quot; src=&quot;https://www.youtube.com/embed/vBX-KulgJ1o&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Example: Bet, if I win, you give me $10 and if you win I give you $10. This will be decided with a flip of coin. Most people avert the risk and decline to play. But when same experiment is conducted with more number of trials coupled more payoff when you win, say I give you $20 but when you lose you only give $10 on each trail, people tend to take interest. This is due uncertainity of loss mathematically. \(P(heads) = 0.5\) and \(P(tails) = 0.5\). So mathematically speaking, you will win in 50% of cases and get paid with $20.&lt;/p&gt;
-
-&lt;p&gt;From the above experiment, it quite evident that people are not fully rational and rely on their gut feeling or lets say emotion to make decision. So developing a positive relationship with your counterpart is important to influence their emotions.&lt;/p&gt;
-
-&lt;div class=&quot;epigraph&quot;&gt;&lt;blockquote&gt;&lt;p&gt; It all starts with the universally applicable premise that people want to be understood and accepted. Listening is the cheapest, yet most effective concession we can make to get there. &lt;/p&gt;&lt;footer&gt;, &lt;cite&gt;Active Listening&lt;/cite&gt;&lt;/footer&gt;&lt;/blockquote&gt;&lt;/div&gt;
-
-&lt;p&gt;When people think they are being listened attentively they listen to themselves in much more constructive manner lower their defenses on their point of view and become willing to accept other’s opinion. This whole technique is refered as &lt;strong&gt;Tactical Empathy&lt;/strong&gt;. This technique imparts the power of influence while balancing the emotions of your counterpart during a negotiation.&lt;/p&gt;
-
-&lt;!-- ## Chapter 2: Be a Mirror --&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Follow me on twitter &lt;a href=&quot;https://twitter.com/@theujjwal9&quot;&gt;@theujjwal9&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-        <pubDate>Fri, 05 Feb 2021 00:00:00 -0600</pubDate>
-        <link>/articles/21/never-split-the-difference</link>
-        <guid isPermaLink="true">/articles/21/never-split-the-difference</guid>
-        
-        
-        <category>book</category>
-        
-      </item>
-    
-      <item>
-        <title>BANTA &amp; ZOPA</title>
-        <description>&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
-MathJax.Hub.Config({
-  &lt;!-- tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}, --&gt;
-  jax: [&quot;input/TeX&quot;,&quot;output/HTML-CSS&quot;],
-  displayAlign: &quot;left&quot;,
-  &quot;HTML-CSS&quot;: { scale: 100}
-});
-&lt;/script&gt;
-
-&lt;h2 id=&quot;banta&quot;&gt;Banta&lt;/h2&gt;
-
-&lt;p&gt;“BATNA” is an acronym which stands for ‘Best Alternative to a Negotiated Agreement. It helps you in making a guess about your options if you are unsuccessful in agreeing on a deal.&lt;/p&gt;
-
-&lt;p&gt;During negotiation, you not only need to access your BANTA but also of your negotiation counterparts. If your counterpart doesn’t have options then your BANTA doesn’t hold too much significance and same goes for you.&lt;/p&gt;
-
-&lt;p&gt;Apart from establishing a BANTA, it is also advised to establish a &lt;strong&gt;Reservation Value&lt;/strong&gt;, which is least favourable number on which you will agree.&lt;/p&gt;
-
-&lt;p&gt;Example: If you are in a condition where you already have a initial offer on a piece of hardware, say $1900, then such offer can act as BANTA as long as you are comfortable with it and willing to accept it. Then you might want to set a bit higher reservation value, let say $2000, for your other negotitions.&lt;/p&gt;
-
-&lt;h2 id=&quot;zopa&quot;&gt;Zopa&lt;/h2&gt;
-
-&lt;p&gt;&quot;”ZOPA” stands for Zone of Possible Agreement. As the name suggests, it is range which both parties consider favourable as per their established BANTA.&lt;/p&gt;
-
-&lt;figure&gt;&lt;figcaption&gt;&lt;a href=&quot;http://www.successfulnegotiators.com/negotiators-blog/2017/1/16/basic-negotiation-terminology-batna-reservation-value-zopa&quot;&gt;Source&lt;/a&gt;&lt;/figcaption&gt;&lt;img src=&quot;/assets/img/banta-zopa/banta-zopa.png&quot; /&gt;&lt;/figure&gt;
-
-&lt;p&gt;We generally are more interested in knowing our counterpart’s BANTA and reservation value. It is found out which some certainity during the negotition. But before the negotiation, we need to collect some open information like if you can get his/her bid for similar item, etc. Then using such information, we make our initial estimate.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Follow me on twitter &lt;a href=&quot;https://twitter.com/@theujjwal9&quot;&gt;@theujjwal9&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-        <pubDate>Tue, 02 Feb 2021 00:00:00 -0600</pubDate>
-        <link>/notes/banta-zopa</link>
-        <guid isPermaLink="true">/notes/banta-zopa</guid>
-        
-        
-        <category>book</category>
-        
-      </item>
-    
-      <item>
-        <title>Thinking, Fast and Slow</title>
-        <description>&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
-MathJax.Hub.Config({
-  &lt;!-- tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}, --&gt;
-  jax: [&quot;input/TeX&quot;,&quot;output/HTML-CSS&quot;],
-  displayAlign: &quot;left&quot;,
-  &quot;HTML-CSS&quot;: { scale: 100}
-});
-&lt;/script&gt;
-
-&lt;p&gt;There are my notes for the book: Thinking, Fast and Slow by Denial Kehnaman.&lt;/p&gt;
-
-&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
-
-&lt;p&gt;Availabilty of a label for bias makes it easier to anticipate, recognize, and understand. Example. previously many mental problems weren’t labeled like say depression but once it was labeled as such it became easier to perform diagnosis and treat. On the similar lines, author talks about halo effect &lt;label for=&quot;halo-effect&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;halo-effect&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;Halo effect is the tendency for positive impressions of someone in one area to positively influence one’s opinion or feelings in other areas. &lt;/span&gt;,&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Follow me on twitter &lt;a href=&quot;https://twitter.com/@theujjwal9&quot;&gt;@theujjwal9&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-        <pubDate>Sun, 31 Jan 2021 00:00:00 -0600</pubDate>
-        <link>/articles/21/thinking-fast-and-slow</link>
-        <guid isPermaLink="true">/articles/21/thinking-fast-and-slow</guid>
-        
-        
-        <category>book</category>
-        
-      </item>
     
       <item>
         <title>Introduction to Lean</title>
@@ -446,12 +274,184 @@ end
 
 &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Dp-mQ3HxgDE&amp;amp;ab_channel=MicrosoftResearch&quot;&gt;The Future of Mathematics?&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Thu, 21 Jan 2021 00:00:00 -0600</pubDate>
+        <pubDate>Fri, 05 Feb 2021 00:00:00 -0600</pubDate>
         <link>/articles/21/intro-to-lean</link>
         <guid isPermaLink="true">/articles/21/intro-to-lean</guid>
         
         
         <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Never Split the Difference</title>
+        <description>&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
+MathJax.Hub.Config({
+  &lt;!-- tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}, --&gt;
+  jax: [&quot;input/TeX&quot;,&quot;output/HTML-CSS&quot;],
+  displayAlign: &quot;left&quot;,
+  &quot;HTML-CSS&quot;: { scale: 100}
+});
+&lt;/script&gt;
+
+&lt;p&gt;Negotiation is everywhere from finalizing a time and location to meet with friends to buying a gym membership at a reasonable price. This is a self help book for anyone who wants to hone their negotation skill.&lt;/p&gt;
+
+&lt;p&gt;Negotitaion = Information Gathering + Behavior Influence&lt;/p&gt;
+
+&lt;p&gt;These are my notes for this book by &lt;strong&gt;Chris Voss&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;chapter-1-the-new-rules&quot;&gt;Chapter 1: The New Rules&lt;/h2&gt;
+
+&lt;p&gt;Book starts with a very niche technique to consider during negotiation to get out of a tight spot. Below is an excerpt from the book which illustrates the technique.&lt;/p&gt;
+
+&lt;div class=&quot;epigraph&quot;&gt;&lt;blockquote&gt;&lt;p&gt; “C’mon. Get me the money or I cut your son’s throat right now,” Mnookin said. Testy.
+I gave him a long, slow stare. Then I smiled.
+“How am I supposed to do that?” &lt;/p&gt;&lt;footer&gt;, &lt;cite&gt;Open-ended questions&lt;/cite&gt;&lt;/footer&gt;&lt;/blockquote&gt;&lt;/div&gt;
+
+&lt;p&gt;Such open-ended questioning gives your counterparts &lt;em&gt;illusion of control&lt;/em&gt;. They start thinking that they possess the key to this negotiation. All this gives you one of the most important thing during negotiation &lt;strong&gt;the time to think&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;epigraph&quot;&gt;&lt;blockquote&gt;&lt;p&gt; “I’m sorry, Robert, how do I know he’s even alive?” I said, using an apology and his first name, seeding more warmth into the interaction in order to complicate his gambit to bulldoze me. “I really am sorry, but how can I get you any money right now, much less one million dollars, if I don’t even know he’s alive?”&lt;/p&gt;&lt;footer&gt;, &lt;cite&gt;Presenting problem in negotation with touch of friendliness.&lt;/cite&gt;&lt;/footer&gt;&lt;/blockquote&gt;&lt;/div&gt;
+
+&lt;p&gt;Presenting the problem with the terms of negotition in question form (and not straight away pointing out the issue) may compels your counterparts in negotitaion to understand the unreasonable nature of the terms.&lt;/p&gt;
+
+&lt;p&gt;Apologetic tone coupled with friendly use of words during address eases the conversation. This technique can be used when you aren’t getting any authority in negotiation. This technique will give you some chances to steer the negotitaion your way.&lt;/p&gt;
+
+&lt;p&gt;Both of the above examples correspond to tactics called &lt;strong&gt;calibrated questions&lt;/strong&gt;: queries that the other side can respond to but that have no fixed answers. Main purpose of this tactics to buy you some time to think.&lt;/p&gt;
+
+&lt;p&gt;Answering such question demand that you possess deep emotional strength i.e you need to keep aside your emotions and your feeling about what other side means and from my point of view, you could even raise a counter question, like &lt;em&gt;what seems to be the problem with which you think I can help you&lt;/em&gt;. This will give us insights into line of thinking of your counterpart about why he/she needs time to think through our offer or what bothers him/her. Once you get the information which your counterpart is hiding like the motive of negotitaion or even some small information which can help with your terms, you can gain authority without letting the other party know.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;In negotiation, one should follow a strict sequence of actions (like in &lt;a href=&quot;/notes/banta-zopa&quot;&gt;Banta &amp;amp; Zopa&lt;/a&gt;) rather play around as per the psychology and nature of your counterpart.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Other mistake in negotiation is to think that your counterpart is fully rational and selfish and is not affected by emotions, rather its found in studies that emotion plays a very important role in negotiation which has the power to influence the rational thinking and logical mind. &lt;label for=&quot;thinking-fast-and-slow&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;thinking-fast-and-slow&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow&quot;&gt;Thinking, Fast and Slow&lt;/a&gt;  by Daniel Kahneman. &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Fisher and Ury’s approach &lt;label for=&quot;getting-to-say-yes&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;getting-to-say-yes&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;Talked about in the book &lt;a href=&quot;https://en.wikipedia.org/wiki/Getting_to_Yes&quot;&gt;getting to say yes&lt;/a&gt;. &lt;/span&gt; was introduced with acceptance of the above stated idea, and to mitigate or remove these emotions from the negotiation to collectively solve the problem in a more rational manner. The core principle of the approach was:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Seperate the emotions in negotiation&lt;/li&gt;
+  &lt;li&gt;Not to target the &lt;em&gt;what they are asking for&lt;/em&gt; and rather look for &lt;em&gt;why they are asking for it&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;Work in co-operation to reach a win-win deal&lt;/li&gt;
+  &lt;li&gt;Establish some standards for the negotiation which should be agreed by both parties&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Decision made by people can be influenced by \(n\) number of ways. One of which is &lt;em&gt;framing effect&lt;/em&gt;. It is a proven technique showcasing that people respond differently to same question framed in different way - positive or negative connotations; e.g. as a loss or as a gain. People tend to avoid risk when a positive frame is presented but seek risks when a negative frame is presented. &lt;label for=&quot;prospect-theory&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;prospect-theory&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;Such behaviour is caused due to people being more sensitivity towards loss than for gain when things are uncertain. &lt;a href=&quot;https://en.wikipedia.org/wiki/Loss_aversion&quot;&gt; [Loss Aversion]&lt;/a&gt; but when the loss becomes more and more uncertain people tend to take more risks. &lt;/span&gt;&lt;/p&gt;
+
+&lt;style&gt;
+  .embed-container {
+    position: relative;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    overflow: hidden;
+    max-width: 70%;
+    margin-bottom: -23%;
+  }
+  .embed-container iframe,
+  .embed-container object,
+  .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 55%;
+  }
+&lt;/style&gt;
+
+&lt;div class=&quot;embed-container&quot;&gt;
+  &lt;iframe title=&quot;YouTube video player&quot; width=&quot;480&quot; height=&quot;360&quot; src=&quot;https://www.youtube.com/embed/vBX-KulgJ1o&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Example: Bet, if I win, you give me $10 and if you win I give you $10. This will be decided with a flip of coin. Most people avert the risk and decline to play. But when same experiment is conducted with more number of trials coupled more payoff when you win, say I give you $20 but when you lose you only give $10 on each trail, people tend to take interest. This is due uncertainity of loss mathematically. \(P(heads) = 0.5\) and \(P(tails) = 0.5\). So mathematically speaking, you will win in 50% of cases and get paid with $20.&lt;/p&gt;
+
+&lt;p&gt;From the above experiment, it quite evident that people are not fully rational and rely on their gut feeling or lets say emotion to make decision. So developing a positive relationship with your counterpart is important to influence their emotions.&lt;/p&gt;
+
+&lt;div class=&quot;epigraph&quot;&gt;&lt;blockquote&gt;&lt;p&gt; It all starts with the universally applicable premise that people want to be understood and accepted. Listening is the cheapest, yet most effective concession we can make to get there. &lt;/p&gt;&lt;footer&gt;, &lt;cite&gt;Active Listening&lt;/cite&gt;&lt;/footer&gt;&lt;/blockquote&gt;&lt;/div&gt;
+
+&lt;p&gt;When people think they are being listened attentively they listen to themselves in much more constructive manner lower their defenses on their point of view and become willing to accept other’s opinion. This whole technique is refered as &lt;strong&gt;Tactical Empathy&lt;/strong&gt;. This technique imparts the power of influence while balancing the emotions of your counterpart during a negotiation.&lt;/p&gt;
+
+&lt;!-- ## Chapter 2: Be a Mirror --&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Follow me on twitter &lt;a href=&quot;https://twitter.com/@theujjwal9&quot;&gt;@theujjwal9&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Fri, 05 Feb 2021 00:00:00 -0600</pubDate>
+        <link>/articles/21/never-split-the-difference</link>
+        <guid isPermaLink="true">/articles/21/never-split-the-difference</guid>
+        
+        
+        <category>book</category>
+        
+      </item>
+    
+      <item>
+        <title>BANTA &amp; ZOPA</title>
+        <description>&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
+MathJax.Hub.Config({
+  &lt;!-- tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}, --&gt;
+  jax: [&quot;input/TeX&quot;,&quot;output/HTML-CSS&quot;],
+  displayAlign: &quot;left&quot;,
+  &quot;HTML-CSS&quot;: { scale: 100}
+});
+&lt;/script&gt;
+
+&lt;h2 id=&quot;banta&quot;&gt;Banta&lt;/h2&gt;
+
+&lt;p&gt;“BATNA” is an acronym which stands for ‘Best Alternative to a Negotiated Agreement. It helps you in making a guess about your options if you are unsuccessful in agreeing on a deal.&lt;/p&gt;
+
+&lt;p&gt;During negotiation, you not only need to access your BANTA but also of your negotiation counterparts. If your counterpart doesn’t have options then your BANTA doesn’t hold too much significance and same goes for you.&lt;/p&gt;
+
+&lt;p&gt;Apart from establishing a BANTA, it is also advised to establish a &lt;strong&gt;Reservation Value&lt;/strong&gt;, which is least favourable number on which you will agree.&lt;/p&gt;
+
+&lt;p&gt;Example: If you are in a condition where you already have a initial offer on a piece of hardware, say $1900, then such offer can act as BANTA as long as you are comfortable with it and willing to accept it. Then you might want to set a bit higher reservation value, let say $2000, for your other negotitions.&lt;/p&gt;
+
+&lt;h2 id=&quot;zopa&quot;&gt;Zopa&lt;/h2&gt;
+
+&lt;p&gt;&quot;”ZOPA” stands for Zone of Possible Agreement. As the name suggests, it is range which both parties consider favourable as per their established BANTA.&lt;/p&gt;
+
+&lt;figure&gt;&lt;figcaption&gt;&lt;a href=&quot;http://www.successfulnegotiators.com/negotiators-blog/2017/1/16/basic-negotiation-terminology-batna-reservation-value-zopa&quot;&gt;Source&lt;/a&gt;&lt;/figcaption&gt;&lt;img src=&quot;/assets/img/banta-zopa/banta-zopa.png&quot; /&gt;&lt;/figure&gt;
+
+&lt;p&gt;We generally are more interested in knowing our counterpart’s BANTA and reservation value. It is found out which some certainity during the negotition. But before the negotiation, we need to collect some open information like if you can get his/her bid for similar item, etc. Then using such information, we make our initial estimate.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Follow me on twitter &lt;a href=&quot;https://twitter.com/@theujjwal9&quot;&gt;@theujjwal9&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Tue, 02 Feb 2021 00:00:00 -0600</pubDate>
+        <link>/notes/banta-zopa</link>
+        <guid isPermaLink="true">/notes/banta-zopa</guid>
+        
+        
+        <category>book</category>
+        
+      </item>
+    
+      <item>
+        <title>Thinking, Fast and Slow</title>
+        <description>&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
+MathJax.Hub.Config({
+  &lt;!-- tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}, --&gt;
+  jax: [&quot;input/TeX&quot;,&quot;output/HTML-CSS&quot;],
+  displayAlign: &quot;left&quot;,
+  &quot;HTML-CSS&quot;: { scale: 100}
+});
+&lt;/script&gt;
+
+&lt;p&gt;There are my notes for the book: Thinking, Fast and Slow by Denial Kehnaman.&lt;/p&gt;
+
+&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;Availabilty of a label for bias makes it easier to anticipate, recognize, and understand. Example. previously many mental problems weren’t labeled like say depression but once it was labeled as such it became easier to perform diagnosis and treat. On the similar lines, author talks about halo effect &lt;label for=&quot;halo-effect&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;halo-effect&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;Halo effect is the tendency for positive impressions of someone in one area to positively influence one’s opinion or feelings in other areas. &lt;/span&gt;,&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Follow me on twitter &lt;a href=&quot;https://twitter.com/@theujjwal9&quot;&gt;@theujjwal9&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Sun, 31 Jan 2021 00:00:00 -0600</pubDate>
+        <link>/articles/21/thinking-fast-and-slow</link>
+        <guid isPermaLink="true">/articles/21/thinking-fast-and-slow</guid>
+        
+        
+        <category>book</category>
         
       </item>
     
