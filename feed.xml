@@ -5,22 +5,22 @@
     <description>Personal webpage</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 05 Feb 2021 14:58:48 -0600</pubDate>
-    <lastBuildDate>Fri, 05 Feb 2021 14:58:48 -0600</lastBuildDate>
+    <pubDate>Fri, 05 Feb 2021 15:05:17 -0600</pubDate>
+    <lastBuildDate>Fri, 05 Feb 2021 15:05:17 -0600</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
         <title>Introduction to Lean</title>
         <description>&lt;p&gt;Lean is an open source proof assistant developed by Microsoft Research.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/leanprover/lean&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/ujjwal-9/theorems&quot;&gt;[Github repo for this blog series]&lt;/a&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
 
 &lt;p&gt;Mathematics is characterised by the inferences allowed in the justification for the statements. The justification of one mathematician can be checked by
 another by checking that each inference is between those allowed.&lt;/p&gt;
 
-&lt;p&gt;Mathematicians usually write proofs in natural languages using some special symbols to denote mathematical operations ($\int$ - Integration) and objects ($e$ - Euler’s number). Logicians have agreed upon &lt;a href=&quot;https://en.wikipedia.org/wiki/List_of_rules_of_inference&quot;&gt;rules of inference&lt;/a&gt; which supports validity of proof.&lt;/p&gt;
+&lt;p&gt;Mathematicians usually write proofs in natural languages using some special symbols to denote mathematical operations (\(\int\) - Integration) and objects (\(e\) - Euler’s number). Logicians have agreed upon &lt;a href=&quot;https://en.wikipedia.org/wiki/List_of_rules_of_inference&quot;&gt;rules of inference&lt;/a&gt; which supports validity of proof.&lt;/p&gt;
 
 &lt;p&gt;Since these rules are mechanical, the process of checking is also mechanical as of now. But with advent of interactive theorem proving assistant it is possible to represent these proof in a manner that a machine can verify. One such proof assistant is lean (among other like Coq).&lt;/p&gt;
 
@@ -46,7 +46,7 @@ another by checking that each inference is between those allowed.&lt;/p&gt;
 
 &lt;p&gt;Everything is a set, including numbers, functions, triangles, stochastic processes, and Riemannian manifolds. Using these sets we can construct rich mathematical intutions. But it will be helpful if we can manage and keep track of the various kinds of mathematical objects we are working with.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;Type theory&lt;/em&gt; states that every mathematical expression has a type. For example, $x$ may denote natural numbers and $f(x)$ may denote function on natural numbers maping them to lets say complex numbers. Such types conversions also make simple type theory even more powerful.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Type theory&lt;/em&gt; states that every mathematical expression has a type. For example, \(x\) may denote natural numbers and \(f(x)\) may denote function on natural numbers maping them to lets say complex numbers. Such types conversions also make simple type theory even more powerful.&lt;/p&gt;
 
 &lt;p&gt;Lets see how we declare mathematical objects in lean and declare their types.&lt;/p&gt;
 
@@ -78,7 +78,7 @@ constant F : (nat → nat) → nat   -- a &quot;functional&quot;
 &lt;p&gt;Thing to note from above example:&lt;/p&gt;
 &lt;ol&gt;
   &lt;li&gt;Application of a function f to a value x is denoted &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;f x&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;Arrows associate to the right, example. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;the type of g is nat → (nat → nat)&lt;/code&gt;. Thus g is a function that takes natural numbers and returns another function that takes a natural number and returns a natural number.&lt;/li&gt;
+  &lt;li&gt;Arrows associate to the right, example. &lt;em&gt;the type of g is nat → (nat → nat)&lt;/em&gt;. Thus g is a function that takes natural numbers and returns another function that takes a natural number and returns a natural number.&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;Type theory also allows for partial application of a function where, as told in point 2 above, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;g m&lt;/code&gt; is a function that waits for argument &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;n&lt;/code&gt; to return &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;g m n&lt;/code&gt;.&lt;/p&gt;
@@ -130,7 +130,7 @@ constant G : Type → Type → Type
 
 &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;x: α&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;t: β&lt;/code&gt;. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fun x : α, t&lt;/code&gt; is equivalent with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;λ x : α, t&lt;/code&gt;. Both are object of type α → β.&lt;/p&gt;
 
-&lt;p&gt;Example. $f(x) = x + 5$, where $x$ is natural number. It is translated in lean as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;λ x : nat, x + 5&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Example. \(f(x) = x + 5\), where \(x\) is natural number. It is translated in lean as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;λ x : nat, x + 5&lt;/code&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-lean&quot;&gt;constants α β  : Type
 constants a1 a2 : α
