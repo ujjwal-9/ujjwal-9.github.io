@@ -9,7 +9,7 @@ image_url: /assets/img/intro-lean/cover.png
 
 Lean is an open source proof assistant developed by Microsoft Research. 
 
-[Github](https://github.com/leanprover/lean)
+[[Github repo for this blog series]](https://github.com/ujjwal-9/theorems)
 
 
 
@@ -18,7 +18,7 @@ Lean is an open source proof assistant developed by Microsoft Research.
 Mathematics is characterised by the inferences allowed in the justification for the statements. The justification of one mathematician can be checked by
 another by checking that each inference is between those allowed. 
 
-Mathematicians usually write proofs in natural languages using some special symbols to denote mathematical operations ($\int$ - Integration) and objects ($e$ - Euler's number). Logicians have agreed upon [rules of inference](https://en.wikipedia.org/wiki/List_of_rules_of_inference) which supports validity of proof.
+Mathematicians usually write proofs in natural languages using some special symbols to denote mathematical operations ($$\int$$ - Integration) and objects ($$e$$ - Euler's number). Logicians have agreed upon [rules of inference](https://en.wikipedia.org/wiki/List_of_rules_of_inference) which supports validity of proof.
 
 Since these rules are mechanical, the process of checking is also mechanical as of now. But with advent of interactive theorem proving assistant it is possible to represent these proof in a manner that a machine can verify. One such proof assistant is lean (among other like Coq).
 
@@ -40,7 +40,7 @@ Lets first look at simple type theory.
 
 Everything is a set, including numbers, functions, triangles, stochastic processes, and Riemannian manifolds. Using these sets we can construct rich mathematical intutions. But it will be helpful if we can manage and keep track of the various kinds of mathematical objects we are working with.
 
-*Type theory* states that every mathematical expression has a type. For example, $x$ may denote natural numbers and $f(x)$ may denote function on natural numbers maping them to lets say complex numbers. Such types conversions also make simple type theory even more powerful.
+*Type theory* states that every mathematical expression has a type. For example, $$x$$ may denote natural numbers and $$f(x)$$ may denote function on natural numbers maping them to lets say complex numbers. Such types conversions also make simple type theory even more powerful.
 
 Lets see how we declare mathematical objects in lean and declare their types.
 
@@ -73,7 +73,7 @@ constant F : (nat → nat) → nat   -- a "functional"
 
 Thing to note from above example: 
 1. Application of a function f to a value x is denoted `f x`. 
-2. Arrows associate to the right, example. `the type of g is nat → (nat → nat)`. Thus g is a function that takes natural numbers and returns another function that takes a natural number and returns a natural number. 
+2. Arrows associate to the right, example. *the type of g is nat → (nat → nat)*. Thus g is a function that takes natural numbers and returns another function that takes a natural number and returns a natural number. 
 
 Type theory also allows for partial application of a function where, as told in point 2 above, `g m` is a function that waits for argument `n` to return `g m n`.
 
@@ -123,7 +123,7 @@ How do we create a function from another expression? We use process known as *ab
 
 `x: α` and `t: β`. `fun x : α, t` is equivalent with `λ x : α, t`. Both are object of type α → β.
 
-Example. $f(x) = x + 5$, where $x$ is natural number. It is translated in lean as `λ x : nat, x + 5`
+Example. $$f(x) = x + 5$$, where $$x$$ is natural number. It is translated in lean as `λ x : nat, x + 5`
 
 ```lean
 constants α β  : Type
