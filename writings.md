@@ -25,15 +25,15 @@ weight: 1
 
 ## Book Recommendations
 
-[*Thinking, Fast and Slow*](articles/21/thinking-fast-and-slow)<br/>Daniel Kahneman
+[*Thinking, Fast and Slow*](articles/21/thinking-fast-and-slow)<br />Daniel Kahneman
 
-[*The Concise Laws of Human Nature*]()<br/>Robert Greene
-
-[*The Psychology of Money: Timeless Lessons on Wealth, Greed, and Happiness*]()<br/>Morgan Housel 
-
-[*Predictably Irrational*]()<br/>Dan Ariely
+[*Predictably Irrational*]()<br />Dan Ariely
 
 [*Never Split the Difference: Negotiating As If Your Life Depended On It*](articles/21/never-split-the-difference)<br />Christopher Voss and Tahl Raz
+
+[*The Concise Laws of Human Nature*]()<br />Robert Greene
+
+[*The Psychology of Money: Timeless Lessons on Wealth, Greed, and Happiness*]()<br />Morgan Housel 
 
 [*The Power of your Subconscious Mind*]()<br />Joseph Murphy
 

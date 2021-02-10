@@ -22,7 +22,6 @@ Negotitaion = Information Gathering + Behavior Influence
 
 > Great negotiation is when you win but make it seem like your counterpart won. Great negotiation is about great collaboration.
 
-These are my notes for this book by **Chris Voss**.
 
 ## Chapter 1: The New Rules
 
