@@ -144,6 +144,6 @@ Use mirrors to create a bond, keep people talking, buy time, and encourage your 
 
 
 
-## Chapter 3: Don’t Feel Their Pain, Label It
+<!-- ## Chapter 3: Don’t Feel Their Pain, Label It -->
 
 > **Follow me on twitter [@theujjwal9](https://twitter.com/@theujjwal9)**
