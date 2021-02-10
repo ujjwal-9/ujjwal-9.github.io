@@ -5,9 +5,22 @@
     <description>Personal webpage</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 09 Feb 2021 02:19:50 -0600</pubDate>
-    <lastBuildDate>Tue, 09 Feb 2021 02:19:50 -0600</lastBuildDate>
+    <pubDate>Tue, 09 Feb 2021 19:11:21 -0600</pubDate>
+    <lastBuildDate>Tue, 09 Feb 2021 19:11:21 -0600</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>Fallacy</title>
+        <description>
+</description>
+        <pubDate>Wed, 10 Feb 2021 00:00:00 -0600</pubDate>
+        <link>/articles/21/fallacy</link>
+        <guid isPermaLink="true">/articles/21/fallacy</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>Introduction to Lean</title>
@@ -298,6 +311,10 @@ MathJax.Hub.Config({
 
 &lt;p&gt;Negotitaion = Information Gathering + Behavior Influence&lt;/p&gt;
 
+&lt;blockquote&gt;
+  &lt;p&gt;Great negotiation is when you win but make it seem like your counterpart won. Great negotiation is about great collaboration.&lt;/p&gt;
+&lt;/blockquote&gt;
+
 &lt;p&gt;These are my notes for this book by &lt;strong&gt;Chris Voss&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;chapter-1-the-new-rules&quot;&gt;Chapter 1: The New Rules&lt;/h2&gt;
@@ -368,7 +385,84 @@ I gave him a long, slow stare. Then I smiled.
 
 &lt;p&gt;When people think they are being listened attentively they listen to themselves in much more constructive manner lower their defenses on their point of view and become willing to accept other’s opinion. This whole technique is refered as &lt;strong&gt;Tactical Empathy&lt;/strong&gt;. This technique imparts the power of influence while balancing the emotions of your counterpart during a negotiation.&lt;/p&gt;
 
-&lt;!-- ## Chapter 2: Be a Mirror --&gt;
+&lt;h2 id=&quot;chapter-2-be-a-mirror&quot;&gt;Chapter 2: Be a Mirror&lt;/h2&gt;
+
+&lt;div class=&quot;epigraph&quot;&gt;&lt;blockquote&gt;&lt;p&gt; Good negotiators, going in, know they have to be ready for possible surprises; great negotiators aim to use their skills to reveal the surprises they are certain exist. &lt;/p&gt;&lt;footer&gt;, &lt;cite&gt;Surprise Surprise&lt;/cite&gt;&lt;/footer&gt;&lt;/blockquote&gt;&lt;/div&gt;
+
+&lt;p&gt;The moment seasoned negotiators enters a negotiation, they start forming various hypothesis about various factors affecting the negotiation. Then they use their secret weapons, i.e listening, calibrated questioning or mirroring, and narrow down the variables in negotiation. Here listening not only removes element of surprise from your counterpart’s end but also gives you enough intel to form your own arsenal of surprise.&lt;/p&gt;
+
+&lt;div class=&quot;epigraph&quot;&gt;&lt;blockquote&gt;&lt;p&gt; You should engage the process with a mindset of discovery. &lt;/p&gt;&lt;footer&gt;, &lt;cite&gt;Explore then exploit&lt;/cite&gt;&lt;/footer&gt;&lt;/blockquote&gt;&lt;/div&gt;
+
+&lt;p&gt;You try forego any bias and explore uncharted territories of your counterpart’s mind as farther as you can. This is a systematic approach so never delve in any negotiation with preconcieved notions or conclusions. You can only form conclusions once you know what and who are dealing with.&lt;/p&gt;
+
+&lt;div class=&quot;epigraph&quot;&gt;&lt;blockquote&gt;&lt;p&gt; Great negotiators are able to question the assumptions that the rest of the involved players accept on faith or in arrogance, and thus remain more emotionally open to all possibilities, and more intellectually agile to a fluid situation. &lt;/p&gt;&lt;footer&gt;, &lt;cite&gt;Assumptions are big no.&lt;/cite&gt;&lt;/footer&gt;&lt;/blockquote&gt;&lt;/div&gt;
+
+&lt;p&gt;You come across an assumption, next time question it right away. Extract intel, get to the your counterparts basis of assumption, what that assumption accomplish. For example. You are at a basketball court and the maintainance staff says its maintainance day. Its normal to assume that its under maintainance, but if you really want to play question them and ask if its undergoing maintainance at the very moment. If that is case, wish good bye and walk home and if not then politely ask, “can you play for sometime until they start with work?”, giving them sence of authority. You can always persist and extract more information with “How am I supposed to do that, we walked 3-5miles to come here” yada yada yada. You get my point.&lt;/p&gt;
+
+&lt;div class=&quot;epigraph&quot;&gt;&lt;blockquote&gt;&lt;p&gt; until you know what you’re dealing with, you don’t know what you’re dealing with. &lt;/p&gt;&lt;footer&gt;, &lt;cite&gt;Know better&lt;/cite&gt;&lt;/footer&gt;&lt;/blockquote&gt;&lt;/div&gt;
+
+&lt;p&gt;Apart from the content and context of mind set revealed by your counterpart during your covert interogation, do not just relax with you copy pen in hand, try and match content with tone of voice, body language as they might be trying to through you off feeding you false information. You dont help the one you want to make a deal with by assuming pieces of information make his story consistent for you brain. In short. &lt;em&gt;Look for inconsistencies&lt;/em&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;epigraph&quot;&gt;&lt;blockquote&gt;&lt;p&gt; state of schizophrenia: everyone just listening to the voice in their head. &lt;/p&gt;&lt;footer&gt;, &lt;cite&gt;Am I schizophrenic&lt;/cite&gt;&lt;/footer&gt;&lt;/blockquote&gt;&lt;/div&gt;
+
+&lt;p&gt;Its quite often the case that once you get hold of some key information which can act as pivot for your argument we go on to solidify it in our head. Essentially converting the negotiation an incomplete and futile assault towards &lt;em&gt;your way&lt;/em&gt;. You dont indulge in such pedastrian tactics. You go steps and steps untill your counterpart has nothing else to give you. You dont attack early, you have secrets use then when you are certain of a win.&lt;/p&gt;
+
+&lt;div class=&quot;epigraph&quot;&gt;&lt;blockquote&gt;&lt;p&gt; Wants are easy to talk about, representing the aspiration of getting our way, and sustaining any illusion of control we have as we begin to negotiate; needs imply survival, the very minimum required to make us act, and so make us vulnerable. But neither wants nor needs are where we start; it begins with listening, making it about the other people, validating their emotions, and creating enough trust and safety for a real conversation to begin. &lt;/p&gt;&lt;footer&gt;, &lt;cite&gt;I want to listen&lt;/cite&gt;&lt;/footer&gt;&lt;/blockquote&gt;&lt;/div&gt;
+
+&lt;p&gt;The above excerpt really sums up why to listen. &lt;strong&gt;Start with listening, breach thier defences, let them reveal, dont stop them, let them reveal, punch when you have weak points&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;epigraph&quot;&gt;&lt;blockquote&gt;&lt;p&gt; Going too fast is one of the mistakes all negotiators are prone to making. &lt;/p&gt;&lt;footer&gt;, &lt;cite&gt;Fast &amp;amp; Furious&lt;/cite&gt;&lt;/footer&gt;&lt;/blockquote&gt;&lt;/div&gt;
+
+&lt;p&gt;You go on fast, you feel everything is under control. Stop! The very thing letting it be under control is the rapport you have established with your counterpart listening to him and investing time. Keep things slow and calm.&lt;/p&gt;
+
+&lt;div class=&quot;epigraph&quot;&gt;&lt;blockquote&gt;&lt;p&gt; My job was to find a way to keep him talking. I switched into my Late-Night, FM DJ Voice: deep, soft, slow, and reassuring. &lt;/p&gt;&lt;footer&gt;, &lt;cite&gt;Legendary FM DJ Voice&lt;/cite&gt;&lt;/footer&gt;&lt;/blockquote&gt;&lt;/div&gt;
+
+&lt;p&gt;FM DJ Voice is a downward lilt voice. It’s best employed when establishing points of negotiation that are immovable. It is to be used in conversation no more than 20% of the time. This maintains integrity of its effect and let it convey the immovable points in arguments.&lt;/p&gt;
+
+&lt;div class=&quot;epigraph&quot;&gt;&lt;blockquote&gt;&lt;p&gt; “Hey, what happened to Joe?”
+I said, “Joe’s gone. This is Chris. You’re talking to me now.”
+I didn’t put it like a question. I made a downward-inflecting statement, in a downward-inflecting tone of voice.
+ &lt;/p&gt;&lt;footer&gt;, &lt;cite&gt;Its not up for discussion&lt;/cite&gt;&lt;/footer&gt;&lt;/blockquote&gt;&lt;/div&gt;
+
+&lt;p&gt;Above is an excerpt from the book depicting the effect of FM DJ Voice. But for major part of the conversation try to be more playful and accomodating. This helps in taking negotation forward. Try to radiate good emotions, this will make your counterpart assume that emotion. Just like when we wave and say good morning to a by stander at bus stop they replicate your emotion and action. This is how you control emotions apart from usual conversational aspects. This will get you through people of different cultures as emotions are same across the earth.&lt;/p&gt;
+
+&lt;p&gt;There is another tone called assertive. This voice is declarative, straight up, and delivered like a punch in the nose. And it converts negotiation in boxing. Dont use it until and unless absolutely necessary. It breaks more than it makes.&lt;/p&gt;
+
+&lt;div class=&quot;epigraph&quot;&gt;&lt;blockquote&gt;&lt;p&gt; “The other vehicle’s not out there because you guys chased my driver away . . .” he blurted.
+“We chased your driver away?” I mirrored.
+“Well, when he seen the police he cut.”
+“We don’t know anything about this guy; is he the one who was driving the van?” I asked.
+ &lt;/p&gt;&lt;footer&gt;, &lt;cite&gt;You answer, I question.&lt;/cite&gt;&lt;/footer&gt;&lt;/blockquote&gt;&lt;/div&gt;
+
+&lt;p&gt;Mirroring is where you try to comfort your counterpart by imitating &lt;label for=&quot;mirror-imitate&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;mirror-imitate&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;Humans copy each other to comfort each other. We can copy content like using their words on them as a question or imitate their body language or tone. &lt;/span&gt; them.&lt;/p&gt;
+
+&lt;p&gt;As per FBI, you repeat last one to three words of what someone has just said to create a mirror. This gives you superpower to seem agreeable while disagreeing to someones point.&lt;/p&gt;
+
+&lt;p&gt;Now you might be thinking how to deal with someone who is just throwing punches, talking assertive. Obviously, you can’t mirror him there. So you first of all summon your &lt;em&gt;Late Night FM DJ Voice&lt;/em&gt;. Then do following:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Start with apology to comfort&lt;/li&gt;
+  &lt;li&gt;Mirror&lt;/li&gt;
+  &lt;li&gt;Be silence, 3-4 seconds to let mirror have effect&lt;/li&gt;
+  &lt;li&gt;Repeat&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Below is a small conversation on how to take on assetive person.&lt;/p&gt;
+
+&lt;div class=&quot;epigraph&quot;&gt;&lt;blockquote&gt;&lt;p&gt; “Let’s make two copies of all the paperwork.” boss said&lt;br /&gt;
+“I’m sorry, two copies?” she mirrored in FM DJ voice + inquisitive tone (meaning to ask for help)&lt;br /&gt;
+“Yes,” her boss responded, “one for us and one for the customer.” &lt;br /&gt;
+“I’m sorry, so you are saying that the client is asking for a copy and we need a copy for internal use?” She asked&lt;br /&gt;
+“Actually, I’ll check with the client—they haven’t asked for anything. But I definitely want a copy. That’s just how I do business.” boss replied&lt;br /&gt;
+“Absolutely,” she responded. “Thanks for checking with the customer. Where would you like to store the in-house copy? There’s no more space in the file room here.” She asked &lt;br /&gt;
+“It’s fine. You can store it anywhere,” he said, slightly perturbed now.&lt;br /&gt;
+“Anywhere?” she mirrored again, with calm concern.&lt;br /&gt;
+“As a matter of fact, you can put them in my office,” he said, with more composure than he’d had the whole conversation.&lt;br /&gt;
+“I’ll get the new assistant to print it for me after the project is done. For now, just create two digital backups.” Boss said &lt;/p&gt;&lt;footer&gt;, &lt;cite&gt;Sorry but I will mirror&lt;/cite&gt;&lt;/footer&gt;&lt;/blockquote&gt;&lt;/div&gt;
+
+&lt;p&gt;Use mirrors to create a bond, keep people talking, buy time, and encourage your counterparts to reveal their strategy.&lt;/p&gt;
+
+&lt;h2 id=&quot;chapter-3-dont-feel-their-pain-label-it&quot;&gt;Chapter 3: Don’t Feel Their Pain, Label It&lt;/h2&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;&lt;strong&gt;Follow me on twitter &lt;a href=&quot;https://twitter.com/@theujjwal9&quot;&gt;@theujjwal9&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -1963,217 +2057,6 @@ MathJax.Hub.Config({
         <pubDate>Mon, 28 Dec 2020 00:00:00 -0600</pubDate>
         <link>/articles/20/dicom-intro</link>
         <guid isPermaLink="true">/articles/20/dicom-intro</guid>
-        
-        
-        <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>Docker Overview</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://docker.com/&quot;&gt;Docker Website!&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Checkout my project code @ &lt;a href=&quot;https://github.com/Ujjwal-9/medical-training/tree/master/dockerized-run&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;abstract&quot;&gt;Abstract&lt;/h1&gt;
-&lt;p&gt;We often try to simplify things but usually end up making it much more difficult. Similar is the case with code. We code, install additional dependencies, and remove redundancies. With this 3 step process, we sometimes end up with very difficult process to explain on how to reproduce the results and rerun the experiments. This blog explains about docker which is a tool designed to make it easier to create, deploy, and run applications by using containers.&lt;/p&gt;
-
-&lt;h1 id=&quot;earlier-work&quot;&gt;Earlier Work&lt;/h1&gt;
-&lt;p&gt;Before docker was introduced, virtualization of resources was used which provided independent virtual machines for clients to work upon. But this came with a price of heavy operating systems which may easily exceed over &lt;em&gt;1GB&lt;/em&gt; despite supporting light applications (like 300MB). So, this drawback led to advent of containers (dockers).&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;/assets/img/docker/docker-vs-vm.png&quot; width=&quot;600&quot; style=&quot;margin-top: 2rem;&quot; /&gt;
-  &lt;figcaption style=&quot;margin-top: 2rem;&quot;&gt;Docker and Virtual Machine Architecture&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;h1 id=&quot;what-is-docker&quot;&gt;What is docker?&lt;/h1&gt;
-&lt;p&gt;Docker is based on containers which run on shared resources of your PC but in isolation as shown in the following architecture. Container is an efficient mechanism to keep your software components together and maintainable. You can also run multiple containers at the same time to support a serive. Docker also provides with a mechanism to start all the containers concerned with that service with one command using docker compose. We will talk about it later.&lt;/p&gt;
-
-&lt;h1 id=&quot;dockerfile&quot;&gt;Dockerfile&lt;/h1&gt;
-
-&lt;p&gt;A Dockerfile is a simple text file that contains a list of commands that the Docker client calls while creating an image.&lt;/p&gt;
-
-&lt;p&gt;Working Dockerfile for conda environemnt.&lt;/p&gt;
-
-&lt;div class=&quot;language-dockerfile highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; continuumio/miniconda3&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;WORKDIR&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; /app&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# Create the environment:&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;COPY&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; environment.yml .&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;RUN &lt;/span&gt;conda &lt;span class=&quot;nb&quot;&gt;env &lt;/span&gt;create &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; environment.yml
-
-&lt;span class=&quot;c&quot;&gt;# Make RUN commands use the new environment:&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;SHELL&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; [&quot;conda&quot;, &quot;run&quot;, &quot;-n&quot;, &quot;myenv&quot;, &quot;/bin/bash&quot;, &quot;-c&quot;]&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;RUN &lt;/span&gt;python &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;import numpy&quot;&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# The code to run when container is started:&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;COPY&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; run.py .&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;ENTRYPOINT&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; [&quot;conda&quot;, &quot;run&quot;, &quot;-n&quot;, &quot;myenv&quot;, &quot;python&quot;, &quot;run.py&quot;]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-&lt;li&gt;FROM creates a layer from the continuumio/miniconda3 Docker image.&lt;/li&gt;
-&lt;li&gt;COPY adds files from your Docker client’s current directory.&lt;/li&gt;
-&lt;li&gt;RUN builds your application with make.&lt;/li&gt;
-&lt;li&gt;CMD specifies what command to run within the container.&lt;/li&gt;
-&lt;li&gt;ENTRYPOINT is to set the image’s main command, allowing that image to be run as though it was that command.&lt;/li&gt;
-&lt;li&gt;SHELL instruction allows the default shell used for the shell form of commands to be overridden. The default shell on Linux is [&quot;/bin/sh&quot;, &quot;-c&quot;], and on Windows is [&quot;cmd&quot;, &quot;/S&quot;, &quot;/C&quot;]&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;!-- 1. FROM creates a layer from the continuumio/miniconda3 Docker image.
-
-2. COPY adds files from your Docker client’s current directory.
-
-3. RUN builds your application with make.
-
-4. CMD specifies what command to run within the container.
-
-5. ENTRYPOINT is to set the image’s main command, allowing that image to be run as though it was that command.
-
-6. SHELL instruction allows the default shell used for the shell form of commands to be overridden. The default shell on Linux is `[&quot;/bin/sh&quot;, &quot;-c&quot;]`, and on Windows is `[&quot;cmd&quot;, &quot;/S&quot;, &quot;/C&quot;]` --&gt;
-
-&lt;p&gt;Container Image is built using&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker build &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; &amp;lt;app_name&amp;gt;:&amp;lt;label_name&amp;gt; &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;To make sure certain package is installed we can add,&lt;/p&gt;
-
-&lt;div class=&quot;language-dockerfile highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;RUN &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Make sure flask is installed:&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;RUN &lt;/span&gt;python &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;import flask&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The image defined by your Dockerfile generate containers that have &lt;strong&gt;ephemeral&lt;/strong&gt; states. It gets destroyed as soon as process is over. To access files in container we may either bash into container to run the command which generates a new file which we need on our local file system and then use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$docker cp&lt;/code&gt; to tranfer to local file system. And if we wish to use files from our local system in docker container we may mount those files either using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;COPY&lt;/code&gt; when generating container or we may mount it at runtime using volume. We can also specify volume which can be utilized by both local file system and docker.&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker build &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; dockerized-run &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker run &lt;span class=&quot;nt&quot;&gt;--rm&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-it&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; &amp;lt;PATH-TO_IMAGES&amp;gt;/images:/app/images &lt;span class=&quot;nt&quot;&gt;--entrypoint&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/bin/bash dockerized-run
-
-&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;base&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; root@b74706db6f68:/app# &lt;span class=&quot;nb&quot;&gt;ls
-&lt;/span&gt;environment.yml  images
-&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;base&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; root@b74706db6f68:/app# &lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;images
-&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;base&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; root@b74706db6f68:/app/images# &lt;span class=&quot;nb&quot;&gt;ls
-&lt;/span&gt;out.png  test.png
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;volume&quot;&gt;Volume&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Mounting volume at runtime.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker run &lt;span class=&quot;nt&quot;&gt;--rm&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-it&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; &amp;lt;source-path&amp;gt;:&amp;lt;target-path&amp;gt; &amp;lt;docker-container-name&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The above command will run docker with specified volume (-v) mounted in the&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Mounting volume at build time using docker compose.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;3.9&quot;&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;services&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;deeplearning&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;.&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;volumes&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;./images:/app/images&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Here &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;volume&lt;/code&gt; keyword specifies to mount current directory on local file system to /images on container. So the changes made to those files mounted at /images will also be reflected in local file system.&lt;/p&gt;
-
-&lt;h1 id=&quot;docker-compose&quot;&gt;Docker Compose&lt;/h1&gt;
-
-&lt;p&gt;It is used to start multiple containers as a single service. You may start services like react and flask server together as a service.&lt;/p&gt;
-
-&lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;3.9&quot;&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;services&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;web&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;.&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;ports&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;5000:5000&quot;&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;redis&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;redis:alpine&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Taken from docker compose example at &lt;a href=&quot;https://docs.docker.com/compose/gettingstarted/&quot;&gt;docker compose docs&lt;/a&gt;. Here we are starting 2 services 	web and redis. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Web&lt;/code&gt; is build using dockerfile as specified by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;. (dot)&lt;/code&gt; pointing towards dockerfile and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;port&lt;/code&gt; binds the container and the host machine to the exposed port, 5000. This can also be done using dockerfile by using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;EXPOSE&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;version&lt;/code&gt; is used to specify that we want the details of the version of Docker Compose.&lt;/p&gt;
-
-&lt;h1 id=&quot;application&quot;&gt;Application&lt;/h1&gt;
-&lt;p&gt;Lets also talk about dockers application in AI research. Now given todays deep learning systems and its other applications, the need for using sameversion of library becomes necessary for inducing reproducibilty in these models. The most common package manager used for python is anaconda.&lt;/p&gt;
-
-&lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;myenv&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;channels&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;conda-forge&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;dependencies&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;python=3.8&lt;/span&gt;
-  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;numpy&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;We build it with below specified dockerfile.&lt;/p&gt;
-
-&lt;div class=&quot;language-dockerfile highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; continuumio/miniconda3&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;COPY&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; environment.yml .&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;RUN &lt;/span&gt;conda &lt;span class=&quot;nb&quot;&gt;env &lt;/span&gt;create &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; environment.yml
-
-&lt;span class=&quot;k&quot;&gt;ENTRYPOINT&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; [&quot;conda&quot;, &quot;run&quot;, &quot;-n&quot;, &quot;example&quot;, \&lt;/span&gt;
-            &quot;python&quot;, &quot;-c&quot;, \
-            &quot;import numpy; print('success!')&quot;]
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;In this environment, we install Python 3.8 and NumPy, and when we run the image it imports NumPy to make sure everything is working. This can bloat upto &lt;em&gt;950MB&lt;/em&gt;. Where is all the disk space being going?&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Conda caches downloaded packages.&lt;/li&gt;
-  &lt;li&gt;Conda base environment where toolchain is installed takes huge space. For example, when we install &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;continuumio/miniconda3&lt;/code&gt;, it comes with its own python which we dont intend use.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;First problem can be solved by removing those cached files. Second problem is conda specific and hence unavoidable but we can do away with it at runtime.&lt;/p&gt;
-
-&lt;div class=&quot;language-dockerfile highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# The build-stage image:&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; continuumio/miniconda3 AS build&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# Install the package as normal:&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;COPY&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; environment.yml .&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;RUN &lt;/span&gt;conda &lt;span class=&quot;nb&quot;&gt;env &lt;/span&gt;create &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; environment.yml
-
-&lt;span class=&quot;c&quot;&gt;# Install conda-pack:&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;RUN &lt;/span&gt;conda &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; conda-forge conda-pack
-
-&lt;span class=&quot;c&quot;&gt;# Use conda-pack to create a standalone enviornment&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# in /venv:&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;RUN &lt;/span&gt;conda-pack &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; example &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; /tmp/env.tar &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\
-&lt;/span&gt;  &lt;span class=&quot;nb&quot;&gt;mkdir&lt;/span&gt; /venv &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /venv &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;tar &lt;/span&gt;xf /tmp/env.tar &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\
-&lt;/span&gt;  &lt;span class=&quot;nb&quot;&gt;rm&lt;/span&gt; /tmp/env.tar
-
-&lt;span class=&quot;c&quot;&gt;# We've put venv in same path it'll be in final image,&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# so now fix up paths:&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;RUN &lt;/span&gt;/venv/bin/conda-unpack
-
-
-&lt;span class=&quot;c&quot;&gt;# The runtime-stage image; we can use Debian as the&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# base image since the Conda env also includes Python&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# for us.&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; debian:buster AS runtime&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# Copy /venv from the previous stage:&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;COPY&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; --from=build /venv /venv&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# When image is run, run the code with the environment&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# activated:&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;SHELL&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; [&quot;/bin/bash&quot;, &quot;-c&quot;]&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;ENTRYPOINT&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; source /venv/bin/activate &amp;amp;&amp;amp; \&lt;/span&gt;
-           python -c &quot;import numpy; print('success!')&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;The above solutions is provided &lt;a href=&quot;https://pythonspeed.com/articles/conda-docker-image-size/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Follow me on twitter &lt;a href=&quot;https://twitter.com/theujjwal9&quot;&gt;@theujjwal9&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-        <pubDate>Thu, 24 Dec 2020 00:00:00 -0600</pubDate>
-        <link>/articles/20/docker</link>
-        <guid isPermaLink="true">/articles/20/docker</guid>
         
         
         <category>blog</category>
