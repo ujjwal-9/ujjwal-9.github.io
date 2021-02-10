@@ -33,7 +33,7 @@ I gave him a long, slow stare. Then I smiled.
 
 Such open-ended questioning gives your counterparts *illusion of control*. They start thinking that they possess the key to this negotiation. All this gives you one of the most important thing during negotiation **the time to think**.
 
-{% epigraph ' “I’m sorry, Robert, how do I know he’s even alive?” I said, using an apology and his first name, seeding more warmth into the interaction in order to complicate his gambit to bulldoze me. “I really am sorry, but how can I get you any money right now, much less one million dollars, if I don’t even know he’s alive?”' '' 'Presenting problem in negotation with touch of friendliness.' %}
+{% epigraph ' “I’m sorry, Robert, how do I know he’s even alive?” I said, using an apology and his first name, seeding more warmth into the interaction in order to complicate his gambit to bulldoze me. “I really am sorry, but how can I get you any money right now, much less one million dollars, if I don’t even know he’s alive?”' '' 'Hey I have a proble, solve it for me friend' %}
 
 Presenting the problem with the terms of negotition in question form (and not straight away pointing out the issue) may compels your counterparts in negotitaion to understand the unreasonable nature of the terms. 
 
