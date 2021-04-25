@@ -37,6 +37,11 @@ weight: 1
 
 [*The Power of your Subconscious Mind*]()<br />Joseph Murphy
 
+
+## Presentations
+
+[*ASPECT Scoring*](assets/pdf/ASPECTS.pdf)<br /> ASPECTS is a 10-point quantitative topographic CT scan score used for patients with middle cerebral artery (MCA) stroke.  To compute ASPECTS, 1 point is subtracted from 10 for any evidence of early ischemic change for each of the defined regions. This CT score is simple and reliable and may be helpful in the early stages of care for supporting transfer or therapy decisions.
+
 <!-- ## Software
 [*Is the Weather Weird?*](https://www.istheweatherweird.com)<br/>Jonah-Bloch Johnson and I made a website to help answer that question. Bea Malsky made a [twitter bot](https://twitter.com/itww_chicago).
 
