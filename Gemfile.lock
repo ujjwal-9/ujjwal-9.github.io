@@ -65,6 +65,7 @@ GEM
     trollop (2.9.9)
 
 PLATFORMS
+  universal-darwin-20
   x86_64-linux
 
 DEPENDENCIES

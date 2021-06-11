@@ -82,7 +82,7 @@ Sinuses Overlay on Face             |  Sinuses Overlay on CT | Frontal Sinuses o
 
 CT Scan for Basal skull fracture           |  Symptoms
 :-------------------------:|:-------------------------:
-<img src="/assets/img/brain-anatomy-ct/basilar-skull.png" width="330">  |  <img src="http://www.emdocs.net/wp-content/uploads/2019/04/Screen-Shot-2019-04-21-at-5.46.27-PM-768x759.png" width="350">
+<img src="/assets/img/brain-anatomy-ct/basilar-skull.png" width="330">  |  <img src="/assets/img/brain-anatomy-ct/skull-fracture-signs.png" width="350">
 
 [Source](http://www.emdocs.net/basilar-skull-fracture-basics-beyond/)
 
@@ -104,7 +104,7 @@ There are three layers of meninges (Acronym: Digital Audio Player):
 - Pia mater.
 
 <figure>
-<img src="https://teachmeanatomy.info/wp-content/uploads/Overview-of-the-Meninges-of-the-Brain.jpg" width=400>
+<img src="/assets/img/brain-anatomy-ct/Overview-of-the-Meninges-of-the-Brain.png" width=400>
 <figcaption>Overview of the meninges, and their relationship to the skull and brain</figcaption>
 </figure>
 
