@@ -5,8 +5,8 @@
     <description>Personal webpage</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 11 Jun 2021 18:26:14 -0500</pubDate>
-    <lastBuildDate>Fri, 11 Jun 2021 18:26:14 -0500</lastBuildDate>
+    <pubDate>Fri, 11 Jun 2021 18:33:42 -0500</pubDate>
+    <lastBuildDate>Fri, 11 Jun 2021 18:33:42 -0500</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -1136,7 +1136,7 @@ MathJax.Hub.Config({
   &lt;tbody&gt;
     &lt;tr&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/img/brain-anatomy-ct/basilar-skull.png&quot; width=&quot;330&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;http://www.emdocs.net/wp-content/uploads/2019/04/Screen-Shot-2019-04-21-at-5.46.27-PM-768x759.png&quot; width=&quot;350&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/img/brain-anatomy-ct/skull-fracture-signs.png&quot; width=&quot;350&quot; /&gt;&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -1162,7 +1162,7 @@ MathJax.Hub.Config({
 &lt;/ul&gt;
 
 &lt;figure&gt;
-&lt;img src=&quot;https://teachmeanatomy.info/wp-content/uploads/Overview-of-the-Meninges-of-the-Brain.jpg&quot; width=&quot;400&quot; /&gt;
+&lt;img src=&quot;/assets/img/brain-anatomy-ct/Overview-of-the-Meninges-of-the-Brain.png&quot; width=&quot;400&quot; /&gt;
 &lt;figcaption&gt;Overview of the meninges, and their relationship to the skull and brain&lt;/figcaption&gt;
 &lt;/figure&gt;
 
