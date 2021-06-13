@@ -375,7 +375,7 @@ You may also checkout [Head and spine anatomy](https://www.radiologycafe.com/med
 These are notes to me which helped me remember this anatomy. I followed learn by writing methodology here. Many things are missed here, please follow medical resources for that.
 
 
-# Refernces
+# References
 
 - [radiologymasterclass.co.uk](https://www.radiologymasterclass.co.uk/)
 - [kenhub.com](https://www.kenhub.com/)
