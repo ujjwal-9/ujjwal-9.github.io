@@ -5,8 +5,8 @@
     <description>Personal webpage</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 13 Jun 2021 06:41:18 -0500</pubDate>
-    <lastBuildDate>Sun, 13 Jun 2021 06:41:18 -0500</lastBuildDate>
+    <pubDate>Sun, 13 Jun 2021 06:55:08 -0500</pubDate>
+    <lastBuildDate>Sun, 13 Jun 2021 06:55:08 -0500</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -561,7 +561,7 @@ MathJax.Hub.Config({
       </item>
     
       <item>
-        <title>How to read HeadCT?</title>
+        <title>How to read HeadCT</title>
         <description>&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
 MathJax.Hub.Config({
   &lt;!-- tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}, --&gt;
