@@ -236,7 +236,7 @@ h1 {
   font-weight: 400;
   margin-top: 1.568rem;
   margin-bottom: 1.568rem;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   line-height: 0.784; }
 
 h2 {
@@ -244,13 +244,13 @@ h2 {
   font-weight: 400;
   margin-top: 1.866666666666667rem;
   margin-bottom: 0;
-  font-size: 2.1rem;
+  font-size: 2.0rem;
   line-height: 0.933333333333333; }
 
 h3 {
   font-style: italic;
   font-weight: 400;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   margin-top: 2.1777777777777778rem;
   margin-bottom: 0;
   line-height: 1.08888888888889; }
@@ -259,16 +259,16 @@ p .subtitle {
   font-style: italic;
   margin-top: 2.1777777777777778rem;
   margin-bottom: 2.1777777777777778rem;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   display: block;
-  line-height: 1.08888888888889; }
+  line-height: 1; }
 
 p, ol, ul {
-  font-size: 1.4rem; }
+  font-size: 1.2rem; }
 
 p, li {
-  line-height: 2rem;
-  margin-top: 1.4rem;
+  line-height: 1.7rem;
+  margin-top: 1rem;
   padding-right: 2rem;
   vertical-align: baseline; }
 
@@ -302,7 +302,7 @@ blockquote p, blockquote footer {
   padding-right: 2.5%; }
 
 blockquote footer {
-  font-size: 1.1rem;
+  font-size: 1.0rem;
   line-height: 1.78181818;
   margin-top: 1.78181818rem;
   margin-bottom: 1.78181818rem;
@@ -317,8 +317,8 @@ blockquote footer {
 
 pre, pre code, p code, p pre code {
   font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  font-size: 1.2rem;
-  line-height: 1.71428571;
+  font-size: 1.1rem;
+  line-height: 1.71428571rem;
   margin-top: 1.71428571rem; }
 
 h1 code, h2 code, h3 code {
@@ -337,7 +337,7 @@ table, table.booktabs {
   font-weight: normal; }
 
 th, td {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.71428571; }
 
 .booktabs th.cmid, th {
@@ -514,7 +514,7 @@ pre {
 
 span.newthought {
   font-variant: small-caps;
-  font-size: 1.2em;
+  font-size: 1.1em;
   letter-spacing: 0.05rem; }
 
 input.margin-toggle {

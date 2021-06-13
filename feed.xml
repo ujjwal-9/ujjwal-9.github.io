@@ -5,8 +5,8 @@
     <description>Personal webpage</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 11 Jun 2021 18:33:42 -0500</pubDate>
-    <lastBuildDate>Fri, 11 Jun 2021 18:33:42 -0500</lastBuildDate>
+    <pubDate>Sun, 13 Jun 2021 06:41:18 -0500</pubDate>
+    <lastBuildDate>Sun, 13 Jun 2021 06:41:18 -0500</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -1458,7 +1458,7 @@ MathJax.Hub.Config({
 
 &lt;p&gt;These are notes to me which helped me remember this anatomy. I followed learn by writing methodology here. Many things are missed here, please follow medical resources for that.&lt;/p&gt;
 
-&lt;h1 id=&quot;refernces&quot;&gt;Refernces&lt;/h1&gt;
+&lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.radiologymasterclass.co.uk/&quot;&gt;radiologymasterclass.co.uk&lt;/a&gt;&lt;/li&gt;
