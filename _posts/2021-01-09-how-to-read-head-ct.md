@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to read HeadCT?"
+title:  "How to read HeadCT"
 date:   2021-01-09
 title_include: true
 categories: blog
