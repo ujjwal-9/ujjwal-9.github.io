@@ -5,8 +5,8 @@
     <description>Personal webpage</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 13 Jun 2021 06:55:08 -0500</pubDate>
-    <lastBuildDate>Sun, 13 Jun 2021 06:55:08 -0500</lastBuildDate>
+    <pubDate>Fri, 18 Jun 2021 13:55:18 -0500</pubDate>
+    <lastBuildDate>Fri, 18 Jun 2021 13:55:18 -0500</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -273,7 +273,7 @@ begin
 end
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&quot;reference&quot;&gt;Reference&lt;/h1&gt;
+&lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://leanprover.github.io/theorem_proving_in_lean/&quot;&gt;Theorem proving in lean&lt;/a&gt;&lt;/p&gt;
 
