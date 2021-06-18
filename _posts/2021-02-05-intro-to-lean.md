@@ -245,7 +245,7 @@ begin
 end
 ```
 
-# Reference
+# References
 
 [Theorem proving in lean](https://leanprover.github.io/theorem_proving_in_lean/)
 

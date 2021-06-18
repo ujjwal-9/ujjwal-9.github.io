@@ -14,7 +14,7 @@ My primary focus is to build systems that offer true disentangled abstraction of
 
 I have  worked on diverse areas of AI during my internships ranging from Keyword Spotting, Multimodal Emotion Recognition to Object Detection and Segmentation
 
-Currently, I’m working as an intern - AI scientist at [qure.ai](https://qure.ai) where we are applying deep learning on medical images obtained from radiology.
+Currently, I’m working as AI scientist at [qure.ai](https://qure.ai) where we are applying deep learning on medical images. The goal is to make healthcare affordable while maintaining efficieny and effecttiveness.
 
 <!-- I'm a research scientist at the University of Illinois Urbana-Champaign's [Institute for Sustainability, Energy, and Environment](https://sustainability.illinois.edu/).
 

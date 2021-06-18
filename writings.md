@@ -6,41 +6,41 @@ weight: 1
 
 ## Blogs
 
-[*Introduction to Lean*](articles/21/intro-to-lean)<br/>It's a short introduction to lean theorem prover. It first part of the series covering Simple Type Theory and simple proof of infinitude of primes to give a feel of how it works.
+[***Introduction to Lean***](articles/21/intro-to-lean)<br/>It's a short introduction to lean theorem prover. It first part of the series covering Simple Type Theory and simple proof of infinitude of primes to give a feel of how it works.
 
-[*How to read HeadCT*](articles/21/how-to-read-head-ct)<br/>This blog reflects on how to read head CT scans and what are different types of bleeds?
+[***How to read HeadCT***](articles/21/how-to-read-head-ct)<br/>This blog reflects on how to read head CT scans and what are different types of bleeds?
 
-[*Brain Anatomy using CT Scans*](articles/21/ct-brain-anatomy)<br/> What is a CT scan? Brain components visible in CT scan and their relevance.
+[***Brain Anatomy using CT Scans***](articles/21/ct-brain-anatomy)<br/> What is a CT scan? Brain components visible in CT scan and their relevance.
 
-[*Introduction to Pydicom*](articles/20/pydicom-tutorial)<br/>This blog is a tutorial on pydicom which is a pure Python package for working with Dicom files. It lets you read, modify and write Dicom data in an easy “pythonic” way.
+[***Introduction to Pydicom***](articles/20/pydicom-tutorial)<br/>This blog is a tutorial on pydicom which is a pure Python package for working with Dicom files. It lets you read, modify and write Dicom data in an easy “pythonic” way.
 
-[*DICOM Standards*](articles/20/dicom-intro)<br/>What is Dicom? What standards does it follow? OHIF Viewer Walkthrough.
+[***DICOM Standards***](articles/20/dicom-intro)<br/>What is Dicom? What standards does it follow? OHIF Viewer Walkthrough.
 
-[*Docker Overview*](articles/20/docker)<br/>Leveraging docker to encourage reproducibility and easy maintainace of project.
+[***Docker Overview***](articles/20/docker)<br/>Leveraging docker to encourage reproducibility and easy maintainace of project.
 
-[*Heartrate detection using camera*](articles/19/heartrate-detection)<br/>How euler video magnification can be used to magnify motion and color.
+[***Heartrate detection using camera***](articles/19/heartrate-detection)<br/>How euler video magnification can be used to magnify motion and color.
 
-[*Knowledge Distillation*](articles/18/knowledge-distillation)<br/>Transforming large deep learning models to smaller models woith imporved perform.
+[***Knowledge Distillation***](articles/18/knowledge-distillation)<br/>Transforming large deep learning models to smaller models woith imporved perform.
 
 
 ## Book Recommendations
 
-[*Thinking, Fast and Slow*](articles/21/thinking-fast-and-slow)<br />Daniel Kahneman
+[***Thinking, Fast and Slow***](articles/21/thinking-fast-and-slow)<br />Daniel Kahneman
 
-[*Predictably Irrational*]()<br />Dan Ariely
+[***Predictably Irrational***]()<br />Dan Ariely
 
-[*Never Split the Difference: Negotiating As If Your Life Depended On It*](articles/21/never-split-the-difference)<br />Christopher Voss and Tahl Raz
+[***Never Split the Difference: Negotiating As If Your Life Depended On It***](articles/21/never-split-the-difference)<br />Christopher Voss and Tahl Raz
 
-[*The Concise Laws of Human Nature*]()<br />Robert Greene
+[***The Concise Laws of Human Nature***]()<br />Robert Greene
 
-[*The Psychology of Money: Timeless Lessons on Wealth, Greed, and Happiness*]()<br />Morgan Housel 
+[***The Psychology of Money: Timeless Lessons on Wealth, Greed, and Happiness***]()<br />Morgan Housel 
 
-[*The Power of your Subconscious Mind*]()<br />Joseph Murphy
+[***The Power of your Subconscious Mind***]()<br />Joseph Murphy
 
 
 ## Presentations
 
-[*ASPECT Scoring*](assets/pdf/ASPECTS.pdf)<br /> ASPECTS is a 10-point quantitative topographic CT scan score used for patients with middle cerebral artery (MCA) stroke.  To compute ASPECTS, 1 point is subtracted from 10 for any evidence of early ischemic change for each of the defined regions. This CT score is simple and reliable and may be helpful in the early stages of care for supporting transfer or therapy decisions.
+[***ASPECT Scoring***](assets/pdf/ASPECTS.pdf)<br /> ASPECTS is a 10-point quantitative topographic CT scan score used for patients with middle cerebral artery (MCA) stroke.  To compute ASPECTS, 1 point is subtracted from 10 for any evidence of early ischemic change for each of the defined regions. This CT score is simple and reliable and may be helpful in the early stages of care for supporting transfer or therapy decisions.
 
 <!-- ## Software
 [*Is the Weather Weird?*](https://www.istheweatherweird.com)<br/>Jonah-Bloch Johnson and I made a website to help answer that question. Bea Malsky made a [twitter bot](https://twitter.com/itww_chicago).
