@@ -247,7 +247,9 @@ end
 
 # References
 
-[Theorem proving in lean](https://leanprover.github.io/theorem_proving_in_lean/)
+{% bibliography --file intro-to-lean %}
+
+<!-- [Theorem proving in lean](https://leanprover.github.io/theorem_proving_in_lean/)
 
 [lean-forward.github.io](https://lean-forward.github.io/logical-verification/2020/)
 
@@ -257,4 +259,4 @@ end
 
 [Xena Project](https://xenaproject.wordpress.com/)
 
-[The Future of Mathematics?](https://www.youtube.com/watch?v=Dp-mQ3HxgDE&ab_channel=MicrosoftResearch)
+[The Future of Mathematics?](https://www.youtube.com/watch?v=Dp-mQ3HxgDE&ab_channel=MicrosoftResearch) -->

@@ -9,9 +9,7 @@ image_url: /assets/img/brain-anatomy-ct/cover.jpg
 
 > What is a CT scan? Brain components visible in CT scan and their relevance.
 
-This blog doesn't dig deep into anatomy and may miss many key terms. Its purpose is to be familiar with brain anatomy for CT. It's not for medical students although feel free to read and let me know what else can be added to it.
-
-I would also like to give credits for all the images and content to [radiologymasterclass.co.uk](https://www.radiologymasterclass.co.uk/)
+This blog doesn't dig deep into anatomy and may miss many key terms. Its purpose is to be familiar with brain anatomy for CT. 
 
 CT scans use a series of X-ray beams passed through the head. The images are then developed on sensitive film. This method creates cross-sectional images of the brain and shows the structure of the brain, but not its function.
 
@@ -372,16 +370,11 @@ There are some structures in brain which are normal if calcified.
 
 You may also checkout [Head and spine anatomy](https://www.radiologycafe.com/medical-students/radiology-basics/head-anatomy). This provides brain anatomy on slice by slice basis.
 
-These are notes to me which helped me remember this anatomy. I followed learn by writing methodology here. Many things are missed here, please follow medical resources for that.
-
 
 # References
 
-- [radiologymasterclass.co.uk](https://www.radiologymasterclass.co.uk/)
-- [kenhub.com](https://www.kenhub.com/)
-- [mayoclinic.org](https://www.mayoclinic.org/)
-- [teachmeanatomy.info](https://teachmeanatomy.info/)
-- [radiologycafe.com](https://www.radiologycafe.com/medical-students/radiology-basics/head-anatomy)
-
-
-> **Please follow [Radiology-Masterclass FB Page](https://www.facebook.com/pages/Radiology-Masterclass/105315179515082)**
+1. [radiologymasterclass.co.uk](https://www.radiologymasterclass.co.uk/)
+2. [kenhub.com](https://www.kenhub.com/)
+3. [mayoclinic.org](https://www.mayoclinic.org/)
+4. [teachmeanatomy.info](https://teachmeanatomy.info/)
+5. [radiologycafe.com](https://www.radiologycafe.com/medical-students/radiology-basics/head-anatomy)

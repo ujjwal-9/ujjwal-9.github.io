@@ -22,11 +22,18 @@ editor: vim
 plugins:
     - jekyll-seo-tag
     - jekyll-youtube
+    - jekyll-scholar
+
+scholar:
+  style: modern-language-association
+  source: _bibliography
+
+
 git:
   branch: master
 transfer:
   command: rsync
   settings: -av
   source: _site/
-  destination: ~/Git/clayh53.github.com/
+  destination: ~/Projects/ujjwal9.ml/
 google_analytics: UA-112402500-1

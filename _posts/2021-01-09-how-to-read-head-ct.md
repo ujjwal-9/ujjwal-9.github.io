@@ -420,4 +420,3 @@ It describes the situation where the intracranial ventricular system is enlarged
 1. obstruction of CSF flow.
 2. altered CSF dynamics.
 
-> **Follow me on twitter [@theujjwal9](https://twitter.com/@theujjwal9)**

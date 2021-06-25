@@ -35,5 +35,3 @@ Example: If you are in a condition where you already have a initial offer on a p
 
 
 We generally are more interested in knowing our counterpart's BANTA and reservation value. It is found out which some certainity during the negotition. But before the negotiation, we need to collect some open information like if you can get his/her bid for similar item, etc. Then using such information, we make our initial estimate.  
-
-> **Follow me on twitter [@theujjwal9](https://twitter.com/@theujjwal9)**
