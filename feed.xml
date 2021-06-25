@@ -5,8 +5,8 @@
     <description>Personal webpage</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 25 Jun 2021 02:07:51 -0500</pubDate>
-    <lastBuildDate>Fri, 25 Jun 2021 02:07:51 -0500</lastBuildDate>
+    <pubDate>Fri, 25 Jun 2021 02:18:51 -0500</pubDate>
+    <lastBuildDate>Fri, 25 Jun 2021 02:18:51 -0500</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -275,17 +275,24 @@ end
 
 &lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://leanprover.github.io/theorem_proving_in_lean/&quot;&gt;Theorem proving in lean&lt;/a&gt;&lt;/p&gt;
+&lt;ol class=&quot;bibliography&quot;&gt;&lt;li&gt;&lt;span id=&quot;Sphinx_2021_github&quot;&gt;&lt;i&gt;Theorem Proving in Lean — Theorem Proving in Lean 3.23.0 Documentation&lt;/i&gt;. &lt;a style=&quot;color:black; text-decoration: underline;&quot; href=&quot;https://leanprover.github.io/theorem_proving_in_lean/&quot;&gt;https://leanprover.github.io/theorem_proving_in_lean&lt;/a&gt;.&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;Mathematical_Induction_2021_github&quot;&gt;&lt;i&gt;Logical Verification 2020–2021&lt;/i&gt;. &lt;a style=&quot;color:black; text-decoration: underline;&quot; href=&quot;https://lean-forward.github.io/logical-verification/2020/&quot;&gt;https://lean-forward.github.io/logical-verification/2020&lt;/a&gt;.&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;Last_First_2021_ac&quot;&gt;&lt;i&gt;The Natural Number Game&lt;/i&gt;. &lt;a style=&quot;color:black; text-decoration: underline;&quot; href=&quot;https://www.ma.imperial.ac.uk/ buzzard/xena/natural_number_game/&quot;&gt;https://ma.imperial.ac.uk/ buzzard/xenanatural_number_game&lt;/a&gt;.&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;Mario_Carneiro_2021_ru&quot;&gt;Carneiro, Mario. &lt;i&gt;Formalizing 100 Theorems&lt;/i&gt;. 2021, &lt;a style=&quot;color:black; text-decoration: underline;&quot; href=&quot;https://www.cs.ru.nl/ freek/100/index.html&quot;&gt;https://cs.ru.nl/ freek/100/index.html&lt;/a&gt;.&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;Doing_2021_wordpress&quot;&gt;Doing. &lt;i&gt;Xena | Mathematicians Learning Lean by Doing.&lt;/i&gt; &lt;a style=&quot;color:black; text-decoration: underline;&quot; href=&quot;https://xenaproject.wordpress.com/&quot;&gt;https://xenaproject.wordpress.com&lt;/a&gt;.&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;Discussing_His_Vision_2021_youtube&quot;&gt;Vision, Discussing His. &lt;i&gt;The Future of Mathematics? - YouTube&lt;/i&gt;. &lt;a style=&quot;color:black; text-decoration: underline;&quot; href=&quot;https://www.youtube.com/watch?v=Dp-mQ3HxgDE&quot;&gt;https://youtube.com/watch?v=Dp-mQ3HxgDE&lt;/a&gt;.&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://lean-forward.github.io/logical-verification/2020/&quot;&gt;lean-forward.github.io&lt;/a&gt;&lt;/p&gt;
+&lt;!-- [Theorem proving in lean](https://leanprover.github.io/theorem_proving_in_lean/)
 
-&lt;p&gt;&lt;a href=&quot;https://wwwf.imperial.ac.uk/~buzzard/xena/natural_number_game/&quot;&gt;Natural Number Game By Kevin Buzzard and Mohammad Pedramfar.&lt;/a&gt;&lt;/p&gt;
+[lean-forward.github.io](https://lean-forward.github.io/logical-verification/2020/)
 
-&lt;p&gt;&lt;a href=&quot;http://www.cs.ru.nl/~freek/100/index.html&quot;&gt;Formalizing 100 theorems&lt;/a&gt;&lt;/p&gt;
+[Natural Number Game By Kevin Buzzard and Mohammad Pedramfar.](https://wwwf.imperial.ac.uk/~buzzard/xena/natural_number_game/)
 
-&lt;p&gt;&lt;a href=&quot;https://xenaproject.wordpress.com/&quot;&gt;Xena Project&lt;/a&gt;&lt;/p&gt;
+[Formalizing 100 theorems](http://www.cs.ru.nl/~freek/100/index.html)
 
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Dp-mQ3HxgDE&amp;amp;ab_channel=MicrosoftResearch&quot;&gt;The Future of Mathematics?&lt;/a&gt;&lt;/p&gt;
+[Xena Project](https://xenaproject.wordpress.com/)
+
+[The Future of Mathematics?](https://www.youtube.com/watch?v=Dp-mQ3HxgDE&amp;ab_channel=MicrosoftResearch) --&gt;
 </description>
         <pubDate>Fri, 05 Feb 2021 00:00:00 -0600</pubDate>
         <link>/articles/21/intro-to-lean</link>
@@ -461,10 +468,6 @@ I didn’t put it like a question. I made a downward-inflecting statement, in a 
 &lt;p&gt;Use mirrors to create a bond, keep people talking, buy time, and encourage your counterparts to reveal their strategy.&lt;/p&gt;
 
 &lt;!-- ## Chapter 3: Don’t Feel Their Pain, Label It --&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Follow me on twitter &lt;a href=&quot;https://twitter.com/@theujjwal9&quot;&gt;@theujjwal9&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
 </description>
         <pubDate>Fri, 05 Feb 2021 00:00:00 -0600</pubDate>
         <link>/articles/21/never-split-the-difference</link>
@@ -503,10 +506,6 @@ MathJax.Hub.Config({
 &lt;figure&gt;&lt;figcaption&gt;&lt;a href=&quot;http://www.successfulnegotiators.com/negotiators-blog/2017/1/16/basic-negotiation-terminology-batna-reservation-value-zopa&quot;&gt;Source&lt;/a&gt;&lt;/figcaption&gt;&lt;img src=&quot;/assets/img/banta-zopa/banta-zopa.png&quot; /&gt;&lt;/figure&gt;
 
 &lt;p&gt;We generally are more interested in knowing our counterpart’s BANTA and reservation value. It is found out which some certainity during the negotition. But before the negotiation, we need to collect some open information like if you can get his/her bid for similar item, etc. Then using such information, we make our initial estimate.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Follow me on twitter &lt;a href=&quot;https://twitter.com/@theujjwal9&quot;&gt;@theujjwal9&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
 </description>
         <pubDate>Tue, 02 Feb 2021 00:00:00 -0600</pubDate>
         <link>/notes/banta-zopa</link>
@@ -533,10 +532,6 @@ MathJax.Hub.Config({
 &lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
 
 &lt;p&gt;Availabilty of a label for bias makes it easier to anticipate, recognize, and understand. Example. previously many mental problems weren’t labeled like say depression but once it was labeled as such it became easier to perform diagnosis and treat. On the similar lines, author talks about halo effect &lt;label for=&quot;halo-effect&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;halo-effect&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;Halo effect is the tendency for positive impressions of someone in one area to positively influence one’s opinion or feelings in other areas. &lt;/span&gt;,&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Follow me on twitter &lt;a href=&quot;https://twitter.com/@theujjwal9&quot;&gt;@theujjwal9&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
 </description>
         <pubDate>Sun, 31 Jan 2021 00:00:00 -0600</pubDate>
         <link>/articles/21/thinking-fast-and-slow</link>
@@ -996,9 +991,6 @@ MathJax.Hub.Config({
   &lt;li&gt;altered CSF dynamics.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Follow me on twitter &lt;a href=&quot;https://twitter.com/@theujjwal9&quot;&gt;@theujjwal9&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
 </description>
         <pubDate>Sat, 09 Jan 2021 00:00:00 -0600</pubDate>
         <link>/articles/21/how-to-read-head-ct</link>
@@ -1015,9 +1007,7 @@ MathJax.Hub.Config({
   &lt;p&gt;What is a CT scan? Brain components visible in CT scan and their relevance.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;This blog doesn’t dig deep into anatomy and may miss many key terms. Its purpose is to be familiar with brain anatomy for CT. It’s not for medical students although feel free to read and let me know what else can be added to it.&lt;/p&gt;
-
-&lt;p&gt;I would also like to give credits for all the images and content to &lt;a href=&quot;https://www.radiologymasterclass.co.uk/&quot;&gt;radiologymasterclass.co.uk&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This blog doesn’t dig deep into anatomy and may miss many key terms. Its purpose is to be familiar with brain anatomy for CT.&lt;/p&gt;
 
 &lt;p&gt;CT scans use a series of X-ray beams passed through the head. The images are then developed on sensitive film. This method creates cross-sectional images of the brain and shows the structure of the brain, but not its function.&lt;/p&gt;
 
@@ -1456,21 +1446,15 @@ MathJax.Hub.Config({
 
 &lt;p&gt;You may also checkout &lt;a href=&quot;https://www.radiologycafe.com/medical-students/radiology-basics/head-anatomy&quot;&gt;Head and spine anatomy&lt;/a&gt;. This provides brain anatomy on slice by slice basis.&lt;/p&gt;
 
-&lt;p&gt;These are notes to me which helped me remember this anatomy. I followed learn by writing methodology here. Many things are missed here, please follow medical resources for that.&lt;/p&gt;
-
 &lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
 
-&lt;ul&gt;
+&lt;ol&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.radiologymasterclass.co.uk/&quot;&gt;radiologymasterclass.co.uk&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.kenhub.com/&quot;&gt;kenhub.com&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.mayoclinic.org/&quot;&gt;mayoclinic.org&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://teachmeanatomy.info/&quot;&gt;teachmeanatomy.info&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.radiologycafe.com/medical-students/radiology-basics/head-anatomy&quot;&gt;radiologycafe.com&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Please follow &lt;a href=&quot;https://www.facebook.com/pages/Radiology-Masterclass/105315179515082&quot;&gt;Radiology-Masterclass FB Page&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;/ol&gt;
 </description>
         <pubDate>Tue, 05 Jan 2021 00:00:00 -0600</pubDate>
         <link>/articles/21/ct-brain-anatomy</link>
