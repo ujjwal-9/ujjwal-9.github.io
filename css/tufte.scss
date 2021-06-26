@@ -600,11 +600,18 @@ img.headshot {
     }
 }
 
+footer, .fa {
+  color: $contrast-color;
+  text-decoration: none;
+}
+
 .language-plaintext{
-    font-size: 1rem;
+    font-family: monospace;
+    text-decoration: bold;
+    font-size: 1.02rem;
     border-radius: 3px;
     color: $contrast-color;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 // Youtube Styling
