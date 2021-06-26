@@ -30,6 +30,10 @@
   src: url("../fonts/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot?#iefix") format("embedded-opentype"), url("../fonts/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.woff") format("woff"), url("../fonts/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.ttf") format("truetype"), url("../fonts/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.svg#etbemboromanosf") format("svg");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'cascadia';
+  src: url("../fonts/CascadiaCode/Caskaydia Cove Nerd Font Complete Mono.ttf") format("truetype"), url("../fonts/CascadiaCode/Caskaydia Cove Nerd Font Complete Mono Windows Compatible.ttf") format("truetype"), url("../fonts/CascadiaCode/Caskaydia Cove Nerd Font Complete Windows Compatible.ttf") format("truetype"), url("../fonts/CascadiaCode/Caskaydia Cove Nerd Font Complete.ttf") format("truetype");
+  font-weight: 500; }
 /* This file contains all the constants for colors and font styles */
 /**
  * Syntax highlighting styles
@@ -755,7 +759,7 @@ footer, .fa {
   text-decoration: none; }
 
 .language-plaintext {
-  font-family: monospace;
+  font-family: "cascadia";
   text-decoration: bold;
   font-size: 1.02rem;
   border-radius: 3px;
