@@ -750,11 +750,17 @@ hr.slender {
 
   body header, body footer {
     display: none; } }
+footer, .fa {
+  color: #a00000;
+  text-decoration: none; }
+
 .language-plaintext {
-  font-size: 1rem;
+  font-family: monospace;
+  text-decoration: bold;
+  font-size: 1.02rem;
   border-radius: 3px;
   color: #a00000;
-  font-weight: 400; }
+  font-weight: 500; }
 
 iframe {
   margin-top: 1.5rem;
