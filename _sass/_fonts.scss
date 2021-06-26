@@ -35,3 +35,9 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'cascadia';
+  src: url("../fonts/CascadiaCode/Caskaydia Cove Nerd Font Complete Mono.ttf") format("truetype"), url("../fonts/CascadiaCode/Caskaydia Cove Nerd Font Complete Mono Windows Compatible.ttf") format("truetype"), url("../fonts/CascadiaCode/Caskaydia Cove Nerd Font Complete Windows Compatible.ttf") format("truetype"), url("../fonts/CascadiaCode/Caskaydia Cove Nerd Font Complete.ttf") format("truetype");
+  font-weight: 500;
+}
