@@ -3,12 +3,30 @@ layout: full-width
 title: Research
 weight: 2
 ---
+
+## 3DRefTransformer
+The task aims to discriminatively understand an instance of a particular 3D object described by natural language utterances among other instances of 3D objects of the same class appearing in a visual scene. We introduce the 3DRefTransformer net, a transformer-based neural network that identifies 3D objects described by linguistic utterances in real-world scenes. 
+
+<p class="paper" markdown="1">
+    *[3DRefTransformer: Fine-Grained Object Identification in Real-World Scenes Using Natural Language](https://openaccess.thecvf.com/content/WACV2022/papers/Abdelreheem_3DRefTransformer_Fine-Grained_Object_Identification_in_Real-World_Scenes_Using_Natural_Language_WACV_2022_paper.pdf)*<br/>
+    Published at WACV 2022. <br/>
+    Ahmed Abdelreheem, **Ujjwal Upadhyay**, Ivan Skorokhodov, Rawan Al Yahya, Jun Chen, Mohamed Elhoseiny
+</p>
+
 ## Latent Space Poisoning
-I conceptualized and developed an adversarial attack which used JointVAE architecture to search the latent space for potential examples which can fool the black box classifer. The work ended up beating PGD based defenses on various datasets (MNIST, CelebA, and SVHN) and reducing its success rate by ~70%.
+It's an adversarial attack which used JointVAE architecture to search the latent space for potential examples which can fool the black box classifer. The work ended up beating PGD based defenses on various datasets (MNIST, CelebA, and SVHN) and reducing its success rate by ~70%.
 
 <p class="paper" markdown="1">
     *[Generating Out of Distribution Adversarial Attack using Latent Space Poisoning](https://arxiv.org/abs/2012.05027)*<br/>
-    Accepted at IEEE SPL. <br/>
+    Published at IEEE SPL 2021. <br/>
+    **Ujjwal Upadhyay**, Prerana Mukherjee
+</p>
+
+## Stroke Care with AI in LMIC's
+AI solution (qER) was developed to report abnormalities given a non-contrast CT (NCCT). qER compiles findings into a detailed report highlighting abnormalities, indicating affected brain region along with estimated volume for bleeds. These findings coupled with clinical symptoms helps identify stroke.
+<p class="paper" markdown="1">
+    *[AI improves stroke diagnosis and care at a low resource hospital in India](https://www.jns-journal.com/article/S0022-510X(21)02356-X/fulltext)*<br/>
+    Published at Journal of the Neurological Sciences 2021. <br/>
     **Ujjwal Upadhyay**, Prerana Mukherjee
 </p>
 
@@ -29,6 +47,7 @@ In collaboration with the IIT Delhi, Marconi Society and Google, My team develop
 </p>
 
 ## Video Aggression Net
+The project aims at identifying agressive activity from video.
 <p class="paper" markdown="1">
     *[Video-AggNet: Fine-grained aggressive activity recognition in the wild]()*<br/>
     Submitted at IEEE ICME 2021.<br/>
