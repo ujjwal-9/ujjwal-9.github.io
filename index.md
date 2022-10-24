@@ -8,13 +8,13 @@ nav_exclude: true
 
 <img class="headshot" src="assets/img/headshot.jpg">
 
-I’m a researcher exploring domains of Artificial Intelligence. My research interests include computer vision, adversarial machine learning, and representation learning.
+I’m a researcher exploring domains of Artificial Intelligence. My research interests include computer vision, adversarial machine learning, and representation learning. My primary focus is to build systems that offer true disentangled abstraction of human intelligence. Recently, I have been involved in cutting-edge research in 3D vision, Scene understanding, and Neuroscience.
 
-My primary focus is to build systems that offer true disentangled abstraction of human psychology and challenges human consciousness. I plan to pursue my vision for such systems by extending my approach to reinforcement learning and non-differentiable intelligence.
+I have worked on diverse areas of AI ranging from 3D vision, keyword spotting, multimodal and multitask learning to object detection and segmentation.
 
-I have  worked on diverse areas of AI during my internships ranging from Keyword Spotting, Multimodal Emotion Recognition to Object Detection and Segmentation
+Currently, I’m working as AI scientist at [qure.ai](https://qure.ai) where we are applying novel deep learning on medical data. The goal is to make healthcare affordable and effective.
 
-Currently, I’m working as AI scientist at [qure.ai](https://qure.ai) where we are applying deep learning on medical images. The goal is to make healthcare affordable while maintaining efficieny and effecttiveness.
+I have collaborated with top researcher in their field like [Prof. Mohamed H. Elhoseiny](http://www.mohamed-elhoseiny.com/) (3D Vision, Creative Computing, Continual Learning, NLP), [Prof. Peter Wonka](https://peterwonka.net/) (Computer Graphics, 3D Vision), [Dr. Jason Tarpley](https://www.pacificneuroscienceinstitute.org/people/jason-tarpley/) (Neuroscience, Surgery), [Dr. Jeyaraj Pandian](https://www.linkedin.com/in/jeyaraj-pandian-5a207b1b6?originalSubdomain=in) (Neuroscience, Surgery)
 
 <!-- I'm a research scientist at the University of Illinois Urbana-Champaign's [Institute for Sustainability, Energy, and Environment](https://sustainability.illinois.edu/).
 
