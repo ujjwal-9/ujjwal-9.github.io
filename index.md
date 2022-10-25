@@ -14,7 +14,7 @@ I have worked on diverse areas of AI ranging from 3D vision, keyword spotting, m
 
 Currently, I’m working as AI scientist at [qure.ai](https://qure.ai) where we are applying novel deep learning on medical data. The goal is to make healthcare affordable and effective.
 
-I have collaborated with top researcher in their field like [Prof. Mohamed H. Elhoseiny](http://www.mohamed-elhoseiny.com/) (3D Vision, Creative Computing, Continual Learning, NLP), [Prof. Peter Wonka](https://peterwonka.net/) (Computer Graphics, 3D Vision), [Dr. Jason Tarpley](https://www.pacificneuroscienceinstitute.org/people/jason-tarpley/) (Neuroscience, Surgery), [Dr. Jeyaraj Pandian](https://www.linkedin.com/in/jeyaraj-pandian-5a207b1b6?originalSubdomain=in) (Neuroscience, Surgery)
+I have collaborated with top researcher in their field like [Prof. Mohamed H. Elhoseiny](http://www.mohamed-elhoseiny.com/) (3D Vision, Creative Computing, Continual Learning, NLP), [Prof. Peter Wonka](https://peterwonka.net/) (Computer Graphics, 3D Vision), [Dr. Aakanksha Chowdhery](https://achowdhery.github.io/achowdhery-website/index.html) (Efficient AI, Large Models, Edge Computing), [Dr. Jason Tarpley](https://www.pacificneuroscienceinstitute.org/people/jason-tarpley/) (Neuroscience, Surgery), [Dr. Jeyaraj Pandian](https://www.linkedin.com/in/jeyaraj-pandian-5a207b1b6?originalSubdomain=in) (Neuroscience, Surgery).
 
 <!-- I'm a research scientist at the University of Illinois Urbana-Champaign's [Institute for Sustainability, Energy, and Environment](https://sustainability.illinois.edu/).
 
