@@ -6,7 +6,7 @@ exclude_title: true
 nav_exclude: true
 ---
 
-<img class="headshot" src="assets/img/headshot.jpg">
+<img class="headshot" src="assets/img/headshot-v1.jpg">
 
 I’m a researcher exploring domains of Artificial Intelligence. My research interests include computer vision, adversarial machine learning, and representation learning. My primary focus is to build systems that offer true disentangled abstraction of human intelligence. Recently, I have been involved in cutting-edge research in 3D vision, Scene understanding, and Neuroscience.
 
