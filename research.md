@@ -36,13 +36,22 @@ weight: 2
 
 <p class="paper" markdown="1">
     *[AI based gaze deviation detection to aid LVO diagnosis in NCCT](https://jnis.bmj.com/content/14/Suppl_1/A41)*<br/>
-    Published at ECCV 2022. <br/>
+    Published at Society of NeuroInterventional Surgery (SNIS) 2022. <br/>
     **Ujjwal Upadhyay**, Satish Golla, Shubham Kumar, Kamila Szweda, Reza Shahripour, Jason Tarpley
 </p>
 
 ```Stroke caused by emergent large vessel occlusion (LVO) is a critical time-sensitive diagnosis requiring prompt identification to identify candidates for endovascular therapy (EVT). As a result, identifying imaging findings on non-contrast computed tomography (NCCT) that are predictive of LVO would aid in the identification of potential EVT candidates. We present and validate gaze deviation as an indicator for detecting LVO using NCCT. In addition, we present an Artificial Intelligence (AI) algorithm for detecting this indicator.```
 
-## Arterial Input Function Estimation
+## LVO Detection on CT Angiography using Deep Learning
+
+<p class="paper" markdown="1">
+    *[Deep Learning Based LVO Detection on CT Angiography of Brain](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lvpaXdEAAAAJ&citation_for_view=lvpaXdEAAAAJ:_FxGoFyzp5QC)*<br/>
+    Published at International Journal of Stroke 2022. <br/>
+    Shubham Kumar, Arjun Agarwal, Swetha Tanamala, Satish Golla, Preetham Putha, **Ujjwal Upadhyay**, Sasank Chilamkurthy, Jeyaraj Pandian
+</p>
+
+
+## Arterial Input Function Estimation on CT Perfusion
 
 <p class="paper" markdown="1">
     *[Machine Learning Approach to Arterial Input Function Estimation in Cerebral Perfusion Imaging](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lvpaXdEAAAAJ&citation_for_view=lvpaXdEAAAAJ:Y0pCki6q_DkC)*<br/>
