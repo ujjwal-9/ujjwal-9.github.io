@@ -6,7 +6,7 @@ weight: 1
 
 ## Blogs
 
-[***Introduction to Lean***](articles/21/intro-to-lean)<br/>It's a short introduction to lean theorem prover. It first part of the series covering Simple Type Theory and simple proof of infinitude of primes to give a feel of how it works.
+[***Introduction to Lean***](articles/22/intro-to-lean)<br/>It's a short introduction to lean theorem prover. It first part of the series covering Simple Type Theory and simple proof of infinitude of primes to give a feel of how it works.
 
 [***How to read HeadCT***](articles/21/how-to-read-head-ct)<br/>This blog reflects on how to read head CT scans and what are different types of bleeds?
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Introduction to Lean"
-date:   2021-02-05
+date:   2022-12-11
 title_include: true
 categories: blog
 image_url: /assets/img/intro-lean/cover.png
