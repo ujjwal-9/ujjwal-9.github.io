@@ -5,22 +5,9 @@
     <description>Personal webpage</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 02 Dec 2022 21:09:30 -0600</pubDate>
-    <lastBuildDate>Fri, 02 Dec 2022 21:09:30 -0600</lastBuildDate>
+    <pubDate>Sun, 11 Dec 2022 00:26:02 -0600</pubDate>
+    <lastBuildDate>Sun, 11 Dec 2022 00:26:02 -0600</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
-    
-      <item>
-        <title>Fallacy</title>
-        <description>
-</description>
-        <pubDate>Wed, 10 Feb 2021 00:00:00 -0600</pubDate>
-        <link>/articles/21/fallacy</link>
-        <guid isPermaLink="true">/articles/21/fallacy</guid>
-        
-        
-        <category>blog</category>
-        
-      </item>
     
       <item>
         <title>Introduction to Lean</title>
@@ -294,9 +281,22 @@ end
 
 [The Future of Mathematics?](https://www.youtube.com/watch?v=Dp-mQ3HxgDE&amp;ab_channel=MicrosoftResearch) --&gt;
 </description>
-        <pubDate>Fri, 05 Feb 2021 00:00:00 -0600</pubDate>
-        <link>/articles/21/intro-to-lean</link>
-        <guid isPermaLink="true">/articles/21/intro-to-lean</guid>
+        <pubDate>Sun, 11 Dec 2022 00:00:00 -0600</pubDate>
+        <link>/articles/22/intro-to-lean</link>
+        <guid isPermaLink="true">/articles/22/intro-to-lean</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Fallacy</title>
+        <description>
+</description>
+        <pubDate>Wed, 10 Feb 2021 00:00:00 -0600</pubDate>
+        <link>/articles/21/fallacy</link>
+        <guid isPermaLink="true">/articles/21/fallacy</guid>
         
         
         <category>blog</category>
