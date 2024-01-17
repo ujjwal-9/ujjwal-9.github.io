@@ -35,5 +35,5 @@ transfer:
   command: rsync
   settings: -av
   source: _site/
-  destination: ~/Projects/ujjwal9.ml/
+  destination: ~/projects/ujjwal9.com/
 google_analytics: UA-112402500-1
