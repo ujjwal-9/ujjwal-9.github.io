@@ -35,7 +35,7 @@
 
   <link rel="alternate" type="application/rss+xml" title="Ujjwal Upadhyay" href="/feed.xml" />
   <link rel="icon" type="image/svg" href="/assets/img/infinite.svg">
-  <!-- Begin Jekyll SEO tag v2.7.1 -->
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v3.9.0" />
 <meta property="og:title" content="blog" />
 <meta name="author" content="Ujjwal Upadhyay" />
@@ -43,10 +43,11 @@
 <meta name="description" content="Personal webpage" />
 <meta property="og:description" content="Personal webpage" />
 <meta property="og:site_name" content="Ujjwal Upadhyay" />
+<meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="blog" />
 <script type="application/ld+json">
-{"url":"/blog","headline":"blog","author":{"@type":"Person","name":"Ujjwal Upadhyay"},"description":"Personal webpage","@type":"WebPage","@context":"https://schema.org"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Ujjwal Upadhyay"},"description":"Personal webpage","headline":"blog","url":"/blog"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -153,30 +154,30 @@ another by checking that each inference is between those allowed.</p>
 
 <p>Lets see how we declare mathematical objects in lean and declare their types.</p>
 
-<pre><code class="language-lean">constant m : nat        -- m is a natural number
-constants b1 b2 : bool  -- declare two constants at once
+<div class="language-lean highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">constant</span> <span class="n">m</span> : <span class="n">nat</span><span class="cd">        -- m is a natural number</span>
+<span class="k">constants</span> <span class="n">b1</span> <span class="n">b2</span> : <span class="n">bool</span><span class="cd">  -- declare two constants at once</span>
 
-#check m                -- output: nat
-#check b1               -- bool
-#check b1 &amp;&amp; b2         -- "&amp;&amp;" is boolean and
-#check b1 || b2         -- boolean or
-</code></pre>
+<span class="k">#check</span> <span class="n">m</span><span class="cd">                -- output: nat</span>
+<span class="k">#check</span> <span class="n">b1</span><span class="cd">               -- bool</span>
+<span class="k">#check</span> <span class="n">b1</span> <span class="o">&amp;&amp;</span> <span class="n">b2</span><span class="cd">         -- "&amp;&amp;" is boolean and</span>
+<span class="k">#check</span> <span class="n">b1</span> <span class="o">||</span> <span class="n">b2</span><span class="cd">         -- boolean or</span>
+</code></pre></div></div>
 
 <p><code class="language-plaintext highlighter-rouge">constant</code> and <code class="language-plaintext highlighter-rouge">constants</code> commands introduce new constant symbols into the working environment. <code class="language-plaintext highlighter-rouge">#check</code> command asks Lean to report their types.</p>
 
 <p>Lets see how we convert make new types out of others.</p>
 
-<pre><code class="language-lean">constants m n : nat
-constant g : nat → nat → nat
-constant g': nat → (nat → nat)   -- has the same type as g!
-constant f : nat → nat           -- type the arrow as "\to" or "\r"
-constant F : (nat → nat) → nat   -- a "functional"
+<div class="language-lean highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">constants</span> <span class="n">m</span> <span class="n">n</span> : <span class="n">nat</span>
+<span class="k">constant</span> <span class="n">g</span> : <span class="n">nat</span> <span class="o">→</span> <span class="n">nat</span> <span class="o">→</span> <span class="n">nat</span>
+<span class="k">constant</span> <span class="n">g</span><span class="err">'</span>: <span class="n">nat</span> <span class="o">→</span> (<span class="n">nat</span> <span class="o">→</span> <span class="n">nat</span>)   <span class="cd">-- has the same type as g!</span>
+<span class="k">constant</span> <span class="n">f</span> : <span class="n">nat</span> <span class="o">→</span> <span class="n">nat</span><span class="cd">           -- type the arrow as "\to" or "\r"</span>
+<span class="k">constant</span> <span class="n">F</span> : (<span class="n">nat</span> <span class="o">→</span> <span class="n">nat</span>) <span class="o">→</span> <span class="n">nat</span><span class="cd">   -- a "functional"</span>
 
-#check g m n                     -- ℕ
-#check g m                       -- ℕ → ℕ
-#check F f                       -- ℕ
-#check g m n                     -- ℕ
-</code></pre>
+<span class="k">#check</span> <span class="n">g</span> <span class="n">m</span> <span class="n">n</span><span class="cd">                     -- ℕ</span>
+<span class="k">#check</span> <span class="n">g</span> <span class="n">m</span><span class="cd">                       -- ℕ → ℕ</span>
+<span class="k">#check</span> <span class="n">F</span> <span class="n">f</span><span class="cd">                       -- ℕ</span>
+<span class="k">#check</span> <span class="n">g</span> <span class="n">m</span> <span class="n">n</span><span class="cd">                     -- ℕ</span>
+</code></pre></div></div>
 
 <p>Thing to note from above example:</p>
 <ol>
@@ -194,38 +195,38 @@ constant F : (nat → nat) → nat   -- a "functional"
 
 <p>Leans dependent type theory extends simple type theory by making types as object of study themselves. We can also declare new constants and constructors for types.</p>
 
-<pre><code class="language-lean">constants α β : Type
-constant F : Type → Type
-constant G : Type → Type → Type
+<div class="language-lean highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">constants</span> α β : <span class="kt">Type</span>
+<span class="k">constant</span> <span class="n">F</span> : <span class="kt">Type</span> <span class="o">→</span> <span class="kt">Type</span>
+<span class="k">constant</span> <span class="n">G</span> : <span class="kt">Type</span> <span class="o">→</span> <span class="kt">Type</span> <span class="o">→</span> <span class="kt">Type</span>
 
-#check nat               -- Type
-#check bool              -- Type
-#check nat → bool        -- Type
-#check nat × bool        -- Type
-#check α                 -- Type
-#check F α               -- Type
-#check F nat             -- Type
-#check G α               -- Type → Type
-#check G α β             -- Type
-#check G α nat           -- Type
-</code></pre>
+<span class="k">#check</span> <span class="n">nat</span><span class="cd">               -- Type</span>
+<span class="k">#check</span> <span class="n">bool</span><span class="cd">              -- Type</span>
+<span class="k">#check</span> <span class="n">nat</span> <span class="o">→</span> <span class="n">bool</span><span class="cd">        -- Type</span>
+<span class="k">#check</span> <span class="n">nat</span> <span class="o">×</span> <span class="n">bool</span><span class="cd">        -- Type</span>
+<span class="k">#check</span> α                 <span class="cd">-- Type</span>
+<span class="k">#check</span> <span class="n">F</span> α               <span class="cd">-- Type</span>
+<span class="k">#check</span> <span class="n">F</span> <span class="n">nat</span><span class="cd">             -- Type</span>
+<span class="k">#check</span> <span class="n">G</span> α               <span class="cd">-- Type → Type</span>
+<span class="k">#check</span> <span class="n">G</span> α β             <span class="cd">-- Type</span>
+<span class="k">#check</span> <span class="n">G</span> α <span class="n">nat</span><span class="cd">           -- Type</span>
+</code></pre></div></div>
 
 <p>Type list α denotes the type of lists of elements of type α.</p>
 
-<pre><code class="language-lean">constant α : Type
+<div class="language-lean highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">constant</span> α : <span class="kt">Type</span>
 
-#check list α    -- Type
-#check list nat  -- Type
-</code></pre>
+<span class="k">#check</span> <span class="n">list</span> α    <span class="cd">-- Type</span>
+<span class="k">#check</span> <span class="n">list</span> <span class="n">nat</span><span class="cd">  -- Type</span>
+</code></pre></div></div>
 
 <blockquote>
   <p>Lean has an infinite hierarchy of types. It’s type also has type.</p>
 </blockquote>
 
-<pre><code class="language-lean">#check Type     -- Type 1
-#check Type 1   -- Type 2
-#check Type 2   -- Type 3
-</code></pre>
+<div class="language-lean highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">#check</span> <span class="kt">Type</span><span class="cd">     -- Type 1</span>
+<span class="k">#check</span> <span class="kt">Type</span> <span class="mi">1</span><span class="cd">   -- Type 2</span>
+<span class="k">#check</span> <span class="kt">Type</span> <span class="mi">2</span><span class="cd">   -- Type 3</span>
+</code></pre></div></div>
 
 <h2 id="functions">Functions</h2>
 
@@ -235,25 +236,25 @@ constant G : Type → Type → Type
 
 <p>Example. \(f(x) = x + 5\), where \(x\) is natural number. It is translated in lean as <code class="language-plaintext highlighter-rouge">λ x : nat, x + 5</code></p>
 
-<pre><code class="language-lean">constants α β  : Type
-constants a1 a2 : α
-constants b1 b2 : β
+<div class="language-lean highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">constants</span> α β  : <span class="kt">Type</span>
+<span class="k">constants</span> <span class="n">a1</span> <span class="n">a2</span> : α
+<span class="k">constants</span> <span class="n">b1</span> <span class="n">b2</span> : β
 
-constant f : α → α
-constant g : α → β
-constant h : α → β → α
-constant p : α → α → bool
+<span class="k">constant</span> <span class="n">f</span> : α <span class="o">→</span> α
+<span class="k">constant</span> <span class="n">g</span> : α <span class="o">→</span> β
+<span class="k">constant</span> <span class="n">h</span> : α <span class="o">→</span> β <span class="o">→</span> α
+<span class="k">constant</span> <span class="n">p</span> : α <span class="o">→</span> α <span class="o">→</span> <span class="n">bool</span>
 
-#check fun x : α, f x                      -- α → α
-#check λ x : α, f x                        -- α → α
-#check λ x : α, f (f x)                    -- α → α
-#check λ x : α, h x b1                     -- α → α
-#check λ y : β, h a1 y                     -- β → α
-#check λ x : α, p (f (f x)) (h (f a1) b2)  -- α → bool
-#check λ x : α, λ y : β, h (f x) y         -- α → β → α
-#check λ (x : α) (y : β), h (f x) y        -- α → β → α
-#check λ x y, h (f x) y                    -- α → β → α
-</code></pre>
+<span class="k">#check</span> <span class="k">fun</span> <span class="n">x</span> : α, <span class="n">f</span> <span class="n">x</span><span class="cd">                      -- α → α</span>
+<span class="k">#check</span> <span class="k">λ</span> <span class="n">x</span> : α, <span class="n">f</span> <span class="n">x</span><span class="cd">                        -- α → α</span>
+<span class="k">#check</span> <span class="k">λ</span> <span class="n">x</span> : α, <span class="n">f</span> (<span class="n">f</span> <span class="n">x</span>)                    <span class="cd">-- α → α</span>
+<span class="k">#check</span> <span class="k">λ</span> <span class="n">x</span> : α, <span class="n">h</span> <span class="n">x</span> <span class="n">b1</span><span class="cd">                     -- α → α</span>
+<span class="k">#check</span> <span class="k">λ</span> <span class="n">y</span> : β, <span class="n">h</span> <span class="n">a1</span> <span class="n">y</span><span class="cd">                     -- β → α</span>
+<span class="k">#check</span> <span class="k">λ</span> <span class="n">x</span> : α, <span class="n">p</span> (<span class="n">f</span> (<span class="n">f</span> <span class="n">x</span>)) (<span class="n">h</span> (<span class="n">f</span> <span class="n">a1</span>) <span class="n">b2</span>)  <span class="cd">-- α → bool</span>
+<span class="k">#check</span> <span class="k">λ</span> <span class="n">x</span> : α, <span class="k">λ</span> <span class="n">y</span> : β, <span class="n">h</span> (<span class="n">f</span> <span class="n">x</span>) <span class="n">y</span><span class="cd">         -- α → β → α</span>
+<span class="k">#check</span> <span class="k">λ</span> (<span class="n">x</span> : α) (<span class="n">y</span> : β), <span class="n">h</span> (<span class="n">f</span> <span class="n">x</span>) <span class="n">y</span><span class="cd">        -- α → β → α</span>
+<span class="k">#check</span> <span class="k">λ</span> <span class="n">x</span> <span class="n">y</span>, <span class="n">h</span> (<span class="n">f</span> <span class="n">x</span>) <span class="n">y</span><span class="cd">                    -- α → β → α</span>
+</code></pre></div></div>
 
 <blockquote>
   <p>Expression <code class="language-plaintext highlighter-rouge">λ x : α, x</code> denotes the identity function on α</p>
@@ -294,74 +295,74 @@ constant p : α → α → bool
 
 <h2 id="lean-proof">Lean Proof</h2>
 
-<pre><code class="language-lean">-- Definitions about natural numbers and primes
-import data.nat.prime
+<div class="language-lean highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cd">-- Definitions about natural numbers and primes</span>
+<span class="k">import</span> <span class="n">data</span><span class="o">.</span><span class="n">nat</span><span class="o">.</span><span class="n">prime</span><span class="cd">
 
--- Library on linear arithmatic
-import tactic.linarith
+-- Library on linear arithmatic</span>
+<span class="k">import</span> <span class="n">tactic</span><span class="o">.</span><span class="n">linarith</span><span class="cd">
 
--- Define namespace, which is natural numbers in this case
-open nat 
+-- Define namespace, which is natural numbers in this case</span>
+<span class="k">open</span> <span class="n">nat</span><span class="cd"> 
 
 
--- Define theorem or goal to prove
-theorem infinitude_of_primes: ∀ N, ∃ p &gt;= N, prime p :=
--- between begin-end block we write tactics
-begin
-  -- define N to be a natural number as a part of our local hypothesis
-  intro N,
+-- Define theorem or goal to prove</span>
+<span class="k">theorem</span> <span class="n">infinitude_of_primes</span>: <span class="o">∀</span> <span class="n">N</span>, <span class="o">∃</span> <span class="n">p</span> <span class="o">&gt;=</span> <span class="n">N</span>, <span class="n">prime</span> <span class="n">p</span> :=<span class="cd">
+-- between begin-end block we write tactics</span>
+<span class="k">begin</span><span class="cd">
+  -- define N to be a natural number as a part of our local hypothesis</span>
+  <span class="n">intro</span> <span class="n">N</span>,
 
-  -- Continue with proof as mentioned in link provided in header
-  -- let M to be N! + 1 : local definition
-  let M := factorial N + 1,
+  <span class="cd">-- Continue with proof as mentioned in link provided in header
+  -- let M to be N! + 1 : local definition</span>
+  <span class="n">let</span> <span class="n">M</span> := <span class="n">factorial</span> <span class="n">N</span> <span class="o">+</span> <span class="mi">1</span>,
   
-  -- let p be smallest prime factor of M which is not 1
-  let p := min_fac M,
+  <span class="cd">-- let p be smallest prime factor of M which is not 1</span>
+  <span class="n">let</span> <span class="n">p</span> := <span class="n">min_fac</span> <span class="n">M</span>,
 
 
-  -- define supporting hypothesis pp, p is prime
-  have pp : prime p := 
-  -- begin proof for supporting p being prime
-  begin
-    -- minimum factor of a number is prime, but what about if M = 1
-    refine min_fac_prime _,
-    -- so here we prove M != 1 (or M &gt; 1)
-    have : factorial N &gt; 0 := factorial_pos N,
-    -- this just automatically takes care of linear arithmatic required for proof
-    linarith,
-  end,
+  <span class="cd">-- define supporting hypothesis pp, p is prime</span>
+  <span class="k">have</span> <span class="n">pp</span> : <span class="n">prime</span> <span class="n">p</span> :=<span class="cd"> 
+  -- begin proof for supporting p being prime</span>
+  <span class="k">begin</span><span class="cd">
+    -- minimum factor of a number is prime, but what about if M = 1</span>
+    <span class="n">refine</span> <span class="n">min_fac_prime</span> <span class="n">_</span>,
+    <span class="cd">-- so here we prove M != 1 (or M &gt; 1)</span>
+    <span class="k">have</span> : <span class="n">factorial</span> <span class="n">N</span> <span class="o">&gt;</span> <span class="mi">0</span> := <span class="n">factorial_pos</span> <span class="n">N</span>,
+    <span class="cd">-- this just automatically takes care of linear arithmatic required for proof</span>
+    <span class="n">linarith</span>,
+  <span class="k">end</span>,
 
-  -- before this we had existenial statement but now we have condition in p
-  use p,
+  <span class="cd">-- before this we had existenial statement but now we have condition in p</span>
+  <span class="n">use</span> <span class="n">p</span>,
 
-  -- split our goal in  2 subgoals
-  split,
+  <span class="cd">-- split our goal in  2 subgoals</span>
+  <span class="n">split</span>,
 
-  -- proof by contradiction so it should output False
-  {by_contradiction,
+  <span class="cd">-- proof by contradiction so it should output False</span>
+  <span class="err">{</span><span class="n">by_contradiction</span>,
    
-   /- hypothesis h1, p divides N! + 1 proved by  
-   min_fac_dvd : ∀ (n : ℕ), n.min_fac ∣ n
-   -/
-   have h₁ : p ∣ factorial N + 1 := min_fac_dvd M, 
+   <span class="o">/-</span> <span class="k">hypothesis</span> <span class="n">h1</span>, <span class="n">p</span> <span class="n">divides</span> <span class="n">N</span><span class="o">!</span> <span class="o">+</span> <span class="mi">1</span> <span class="n">proved</span> <span class="k">by</span>  
+   <span class="n">min_fac_dvd</span> : <span class="o">∀</span> (<span class="n">n</span> : <span class="o">ℕ</span>), <span class="n">n</span><span class="o">.</span><span class="n">min_fac</span> <span class="err">∣</span> <span class="n">n</span>
+   <span class="o">-/</span>
+   <span class="k">have</span> <span class="n">h</span><span class="err">₁</span> : <span class="n">p</span> <span class="err">∣</span> <span class="n">factorial</span> <span class="n">N</span> <span class="o">+</span> <span class="mi">1</span> := <span class="n">min_fac_dvd</span> <span class="n">M</span>, 
    
-   -- hypothesis h2, p divides N!
-   have h₂ : p ∣  factorial N := 
-   begin
-     refine pp.dvd_factorial.mpr _,
-     -- proved p &lt;= N, using hypothsis h
-     exact le_of_not_ge h,
-   end,
-   /-
-   proved using dvd_add_right with support from local hypothesis h₂ and h₁
-   -/
-   have h : p ∣ 1 := (nat.dvd_add_right h₂).mp h₁,
-   -- prime not dividing one using local hypothesis pp and h
-   exact prime.not_dvd_one pp h, },
-   -- second part of proof is just our hypothesis pp that we already proved
-  {exact pp, },
-end
-</code></pre>
+   <span class="cd">-- hypothesis h2, p divides N!</span>
+   <span class="k">have</span> <span class="n">h</span><span class="err">₂</span> : <span class="n">p</span> <span class="err">∣</span>  <span class="n">factorial</span> <span class="n">N</span> := 
+   <span class="k">begin</span>
+     <span class="n">refine</span> <span class="n">pp</span><span class="o">.</span><span class="n">dvd_factorial</span><span class="o">.</span><span class="n">mpr</span> <span class="n">_</span>,
+     <span class="cd">-- proved p &lt;= N, using hypothsis h</span>
+     <span class="n">exact</span> <span class="n">le_of_not_ge</span> <span class="n">h</span>,
+   <span class="k">end</span>,
+   <span class="o">/-</span>
+   <span class="n">proved</span> <span class="k">using</span> <span class="n">dvd_add_right</span> <span class="k">with</span> <span class="n">support</span> <span class="k">from</span> <span class="n">local</span> <span class="k">hypothesis</span> <span class="n">h</span><span class="err">₂</span> <span class="n">and</span> <span class="n">h</span><span class="err">₁</span>
+   <span class="o">-/</span>
+   <span class="k">have</span> <span class="n">h</span> : <span class="n">p</span> <span class="err">∣</span> <span class="mi">1</span> := (<span class="n">nat</span><span class="o">.</span><span class="n">dvd_add_right</span> <span class="n">h</span><span class="err">₂</span>)<span class="o">.</span><span class="n">mp</span> <span class="n">h</span><span class="err">₁</span>,
+   <span class="cd">-- prime not dividing one using local hypothesis pp and h</span>
+   <span class="n">exact</span> <span class="n">prime</span><span class="o">.</span><span class="n">not_dvd_one</span> <span class="n">pp</span> <span class="n">h</span>, <span class="err">}</span>,
+   <span class="cd">-- second part of proof is just our hypothesis pp that we already proved</span>
+  <span class="err">{</span><span class="n">exact</span> <span class="n">pp</span>, <span class="err">}</span>,
+<span class="k">end</span>
+</code></pre></div></div>
 
 <h1 id="references">References</h1>
 
@@ -2280,7 +2281,7 @@ MathJax.Hub.Config({
 <p>First problem can be solved by removing those cached files. Second problem is conda specific and hence unavoidable but we can do away with it at runtime.</p>
 
 <div class="language-dockerfile highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># The build-stage image:</span>
-<span class="k">FROM</span><span class="s"> continuumio/miniconda3 AS build</span>
+<span class="k">FROM</span><span class="w"> </span><span class="s">continuumio/miniconda3</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="s">build</span>
 
 <span class="c"># Install the package as normal:</span>
 <span class="k">COPY</span><span class="s"> environment.yml .</span>
@@ -2303,7 +2304,7 @@ MathJax.Hub.Config({
 <span class="c"># The runtime-stage image; we can use Debian as the</span>
 <span class="c"># base image since the Conda env also includes Python</span>
 <span class="c"># for us.</span>
-<span class="k">FROM</span><span class="s"> debian:buster AS runtime</span>
+<span class="k">FROM</span><span class="w"> </span><span class="s">debian:buster</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="s">runtime</span>
 
 <span class="c"># Copy /venv from the previous stage:</span>
 <span class="k">COPY</span><span class="s"> --from=build /venv /venv</span>

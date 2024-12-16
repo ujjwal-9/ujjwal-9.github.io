@@ -5,8 +5,8 @@
     <description>Personal webpage</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 18 Jan 2024 04:59:35 -0600</pubDate>
-    <lastBuildDate>Thu, 18 Jan 2024 04:59:35 -0600</lastBuildDate>
+    <pubDate>Sun, 15 Dec 2024 20:24:46 -0600</pubDate>
+    <lastBuildDate>Sun, 15 Dec 2024 20:24:46 -0600</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -50,30 +50,30 @@ another by checking that each inference is between those allowed.&lt;/p&gt;
 
 &lt;p&gt;Lets see how we declare mathematical objects in lean and declare their types.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-lean&quot;&gt;constant m : nat        -- m is a natural number
-constants b1 b2 : bool  -- declare two constants at once
+&lt;div class=&quot;language-lean highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;constant&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt; : &lt;span class=&quot;n&quot;&gt;nat&lt;/span&gt;&lt;span class=&quot;cd&quot;&gt;        -- m is a natural number&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;constants&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b2&lt;/span&gt; : &lt;span class=&quot;n&quot;&gt;bool&lt;/span&gt;&lt;span class=&quot;cd&quot;&gt;  -- declare two constants at once&lt;/span&gt;
 
-#check m                -- output: nat
-#check b1               -- bool
-#check b1 &amp;amp;&amp;amp; b2         -- &quot;&amp;amp;&amp;amp;&quot; is boolean and
-#check b1 || b2         -- boolean or
-&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&quot;k&quot;&gt;#check&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;cd&quot;&gt;                -- output: nat&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;#check&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b1&lt;/span&gt;&lt;span class=&quot;cd&quot;&gt;               -- bool&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;#check&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b2&lt;/span&gt;&lt;span class=&quot;cd&quot;&gt;         -- &quot;&amp;amp;&amp;amp;&quot; is boolean and&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;#check&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b2&lt;/span&gt;&lt;span class=&quot;cd&quot;&gt;         -- boolean or&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;constant&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;constants&lt;/code&gt; commands introduce new constant symbols into the working environment. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#check&lt;/code&gt; command asks Lean to report their types.&lt;/p&gt;
 
 &lt;p&gt;Lets see how we convert make new types out of others.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-lean&quot;&gt;constants m n : nat
-constant g : nat → nat → nat
-constant g': nat → (nat → nat)   -- has the same type as g!
-constant f : nat → nat           -- type the arrow as &quot;\to&quot; or &quot;\r&quot;
-constant F : (nat → nat) → nat   -- a &quot;functional&quot;
+&lt;div class=&quot;language-lean highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;constants&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; : &lt;span class=&quot;n&quot;&gt;nat&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;constant&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;g&lt;/span&gt; : &lt;span class=&quot;n&quot;&gt;nat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;→&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;→&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nat&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;constant&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;g&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;'&lt;/span&gt;: &lt;span class=&quot;n&quot;&gt;nat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;→&lt;/span&gt; (&lt;span class=&quot;n&quot;&gt;nat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;→&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nat&lt;/span&gt;)   &lt;span class=&quot;cd&quot;&gt;-- has the same type as g!&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;constant&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt; : &lt;span class=&quot;n&quot;&gt;nat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;→&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nat&lt;/span&gt;&lt;span class=&quot;cd&quot;&gt;           -- type the arrow as &quot;\to&quot; or &quot;\r&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;constant&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;F&lt;/span&gt; : (&lt;span class=&quot;n&quot;&gt;nat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;→&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nat&lt;/span&gt;) &lt;span class=&quot;o&quot;&gt;→&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nat&lt;/span&gt;&lt;span class=&quot;cd&quot;&gt;   -- a &quot;functional&quot;&lt;/span&gt;
 
-#check g m n                     -- ℕ
-#check g m                       -- ℕ → ℕ
-#check F f                       -- ℕ
-#check g m n                     -- ℕ
-&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&quot;k&quot;&gt;#check&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;g&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;cd&quot;&gt;                     -- ℕ&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;#check&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;g&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;cd&quot;&gt;                       -- ℕ → ℕ&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;#check&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;F&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;cd&quot;&gt;                       -- ℕ&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;#check&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;g&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;cd&quot;&gt;                     -- ℕ&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Thing to note from above example:&lt;/p&gt;
 &lt;ol&gt;
@@ -91,38 +91,38 @@ constant F : (nat → nat) → nat   -- a &quot;functional&quot;
 
 &lt;p&gt;Leans dependent type theory extends simple type theory by making types as object of study themselves. We can also declare new constants and constructors for types.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-lean&quot;&gt;constants α β : Type
-constant F : Type → Type
-constant G : Type → Type → Type
+&lt;div class=&quot;language-lean highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;constants&lt;/span&gt; α β : &lt;span class=&quot;kt&quot;&gt;Type&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;constant&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;F&lt;/span&gt; : &lt;span class=&quot;kt&quot;&gt;Type&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;→&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Type&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;constant&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;G&lt;/span&gt; : &lt;span class=&quot;kt&quot;&gt;Type&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;→&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Type&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;→&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Type&lt;/span&gt;
 
-#check nat               -- Type
-#check bool              -- Type
-#check nat → bool        -- Type
-#check nat × bool        -- Type
-#check α                 -- Type
-#check F α               -- Type
-#check F nat             -- Type
-#check G α               -- Type → Type
-#check G α β             -- Type
-#check G α nat           -- Type
-&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&quot;k&quot;&gt;#check&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nat&lt;/span&gt;&lt;span class=&quot;cd&quot;&gt;               -- Type&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;#check&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bool&lt;/span&gt;&lt;span class=&quot;cd&quot;&gt;              -- Type&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;#check&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;→&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bool&lt;/span&gt;&lt;span class=&quot;cd&quot;&gt;        -- Type&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;#check&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;×&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bool&lt;/span&gt;&lt;span class=&quot;cd&quot;&gt;        -- Type&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;#check&lt;/span&gt; α                 &lt;span class=&quot;cd&quot;&gt;-- Type&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;#check&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;F&lt;/span&gt; α               &lt;span class=&quot;cd&quot;&gt;-- Type&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;#check&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;F&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nat&lt;/span&gt;&lt;span class=&quot;cd&quot;&gt;             -- Type&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;#check&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;G&lt;/span&gt; α               &lt;span class=&quot;cd&quot;&gt;-- Type → Type&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;#check&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;G&lt;/span&gt; α β             &lt;span class=&quot;cd&quot;&gt;-- Type&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;#check&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;G&lt;/span&gt; α &lt;span class=&quot;n&quot;&gt;nat&lt;/span&gt;&lt;span class=&quot;cd&quot;&gt;           -- Type&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Type list α denotes the type of lists of elements of type α.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-lean&quot;&gt;constant α : Type
+&lt;div class=&quot;language-lean highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;constant&lt;/span&gt; α : &lt;span class=&quot;kt&quot;&gt;Type&lt;/span&gt;
 
-#check list α    -- Type
-#check list nat  -- Type
-&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&quot;k&quot;&gt;#check&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;list&lt;/span&gt; α    &lt;span class=&quot;cd&quot;&gt;-- Type&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;#check&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;list&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nat&lt;/span&gt;&lt;span class=&quot;cd&quot;&gt;  -- Type&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Lean has an infinite hierarchy of types. It’s type also has type.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-lean&quot;&gt;#check Type     -- Type 1
-#check Type 1   -- Type 2
-#check Type 2   -- Type 3
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;language-lean highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;#check&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Type&lt;/span&gt;&lt;span class=&quot;cd&quot;&gt;     -- Type 1&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;#check&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Type&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;cd&quot;&gt;   -- Type 2&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;#check&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Type&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;cd&quot;&gt;   -- Type 3&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;functions&quot;&gt;Functions&lt;/h2&gt;
 
@@ -132,25 +132,25 @@ constant G : Type → Type → Type
 
 &lt;p&gt;Example. \(f(x) = x + 5\), where \(x\) is natural number. It is translated in lean as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;λ x : nat, x + 5&lt;/code&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-lean&quot;&gt;constants α β  : Type
-constants a1 a2 : α
-constants b1 b2 : β
+&lt;div class=&quot;language-lean highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;constants&lt;/span&gt; α β  : &lt;span class=&quot;kt&quot;&gt;Type&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;constants&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a2&lt;/span&gt; : α
+&lt;span class=&quot;k&quot;&gt;constants&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b2&lt;/span&gt; : β
 
-constant f : α → α
-constant g : α → β
-constant h : α → β → α
-constant p : α → α → bool
+&lt;span class=&quot;k&quot;&gt;constant&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt; : α &lt;span class=&quot;o&quot;&gt;→&lt;/span&gt; α
+&lt;span class=&quot;k&quot;&gt;constant&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;g&lt;/span&gt; : α &lt;span class=&quot;o&quot;&gt;→&lt;/span&gt; β
+&lt;span class=&quot;k&quot;&gt;constant&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt; : α &lt;span class=&quot;o&quot;&gt;→&lt;/span&gt; β &lt;span class=&quot;o&quot;&gt;→&lt;/span&gt; α
+&lt;span class=&quot;k&quot;&gt;constant&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt; : α &lt;span class=&quot;o&quot;&gt;→&lt;/span&gt; α &lt;span class=&quot;o&quot;&gt;→&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bool&lt;/span&gt;
 
-#check fun x : α, f x                      -- α → α
-#check λ x : α, f x                        -- α → α
-#check λ x : α, f (f x)                    -- α → α
-#check λ x : α, h x b1                     -- α → α
-#check λ y : β, h a1 y                     -- β → α
-#check λ x : α, p (f (f x)) (h (f a1) b2)  -- α → bool
-#check λ x : α, λ y : β, h (f x) y         -- α → β → α
-#check λ (x : α) (y : β), h (f x) y        -- α → β → α
-#check λ x y, h (f x) y                    -- α → β → α
-&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&quot;k&quot;&gt;#check&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; : α, &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;cd&quot;&gt;                      -- α → α&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;#check&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;λ&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; : α, &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;cd&quot;&gt;                        -- α → α&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;#check&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;λ&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; : α, &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt; (&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;)                    &lt;span class=&quot;cd&quot;&gt;-- α → α&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;#check&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;λ&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; : α, &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b1&lt;/span&gt;&lt;span class=&quot;cd&quot;&gt;                     -- α → α&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;#check&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;λ&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; : β, &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;cd&quot;&gt;                     -- β → α&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;#check&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;λ&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; : α, &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt; (&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt; (&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;)) (&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt; (&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a1&lt;/span&gt;) &lt;span class=&quot;n&quot;&gt;b2&lt;/span&gt;)  &lt;span class=&quot;cd&quot;&gt;-- α → bool&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;#check&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;λ&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; : α, &lt;span class=&quot;k&quot;&gt;λ&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; : β, &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt; (&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;) &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;cd&quot;&gt;         -- α → β → α&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;#check&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;λ&lt;/span&gt; (&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; : α) (&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; : β), &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt; (&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;) &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;cd&quot;&gt;        -- α → β → α&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;#check&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;λ&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;, &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt; (&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;) &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;cd&quot;&gt;                    -- α → β → α&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Expression &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;λ x : α, x&lt;/code&gt; denotes the identity function on α&lt;/p&gt;
@@ -191,74 +191,74 @@ constant p : α → α → bool
 
 &lt;h2 id=&quot;lean-proof&quot;&gt;Lean Proof&lt;/h2&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-lean&quot;&gt;-- Definitions about natural numbers and primes
-import data.nat.prime
+&lt;div class=&quot;language-lean highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cd&quot;&gt;-- Definitions about natural numbers and primes&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;prime&lt;/span&gt;&lt;span class=&quot;cd&quot;&gt;
 
--- Library on linear arithmatic
-import tactic.linarith
+-- Library on linear arithmatic&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tactic&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;linarith&lt;/span&gt;&lt;span class=&quot;cd&quot;&gt;
 
--- Define namespace, which is natural numbers in this case
-open nat 
+-- Define namespace, which is natural numbers in this case&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;open&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nat&lt;/span&gt;&lt;span class=&quot;cd&quot;&gt; 
 
 
--- Define theorem or goal to prove
-theorem infinitude_of_primes: ∀ N, ∃ p &amp;gt;= N, prime p :=
--- between begin-end block we write tactics
-begin
-  -- define N to be a natural number as a part of our local hypothesis
-  intro N,
+-- Define theorem or goal to prove&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;theorem&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;infinitude_of_primes&lt;/span&gt;: &lt;span class=&quot;o&quot;&gt;∀&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;, &lt;span class=&quot;o&quot;&gt;∃&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;, &lt;span class=&quot;n&quot;&gt;prime&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt; :=&lt;span class=&quot;cd&quot;&gt;
+-- between begin-end block we write tactics&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;&lt;span class=&quot;cd&quot;&gt;
+  -- define N to be a natural number as a part of our local hypothesis&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;intro&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;,
 
-  -- Continue with proof as mentioned in link provided in header
-  -- let M to be N! + 1 : local definition
-  let M := factorial N + 1,
+  &lt;span class=&quot;cd&quot;&gt;-- Continue with proof as mentioned in link provided in header
+  -- let M to be N! + 1 : local definition&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;M&lt;/span&gt; := &lt;span class=&quot;n&quot;&gt;factorial&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;N&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;,
   
-  -- let p be smallest prime factor of M which is not 1
-  let p := min_fac M,
+  &lt;span class=&quot;cd&quot;&gt;-- let p be smallest prime factor of M which is not 1&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt; := &lt;span class=&quot;n&quot;&gt;min_fac&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;M&lt;/span&gt;,
 
 
-  -- define supporting hypothesis pp, p is prime
-  have pp : prime p := 
-  -- begin proof for supporting p being prime
-  begin
-    -- minimum factor of a number is prime, but what about if M = 1
-    refine min_fac_prime _,
-    -- so here we prove M != 1 (or M &amp;gt; 1)
-    have : factorial N &amp;gt; 0 := factorial_pos N,
-    -- this just automatically takes care of linear arithmatic required for proof
-    linarith,
-  end,
+  &lt;span class=&quot;cd&quot;&gt;-- define supporting hypothesis pp, p is prime&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;have&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pp&lt;/span&gt; : &lt;span class=&quot;n&quot;&gt;prime&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt; :=&lt;span class=&quot;cd&quot;&gt; 
+  -- begin proof for supporting p being prime&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;&lt;span class=&quot;cd&quot;&gt;
+    -- minimum factor of a number is prime, but what about if M = 1&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;refine&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;min_fac_prime&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_&lt;/span&gt;,
+    &lt;span class=&quot;cd&quot;&gt;-- so here we prove M != 1 (or M &amp;gt; 1)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;have&lt;/span&gt; : &lt;span class=&quot;n&quot;&gt;factorial&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;N&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; := &lt;span class=&quot;n&quot;&gt;factorial_pos&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;,
+    &lt;span class=&quot;cd&quot;&gt;-- this just automatically takes care of linear arithmatic required for proof&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;linarith&lt;/span&gt;,
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;,
 
-  -- before this we had existenial statement but now we have condition in p
-  use p,
+  &lt;span class=&quot;cd&quot;&gt;-- before this we had existenial statement but now we have condition in p&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;use&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;,
 
-  -- split our goal in  2 subgoals
-  split,
+  &lt;span class=&quot;cd&quot;&gt;-- split our goal in  2 subgoals&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;,
 
-  -- proof by contradiction so it should output False
-  {by_contradiction,
+  &lt;span class=&quot;cd&quot;&gt;-- proof by contradiction so it should output False&lt;/span&gt;
+  &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;by_contradiction&lt;/span&gt;,
    
-   /- hypothesis h1, p divides N! + 1 proved by  
-   min_fac_dvd : ∀ (n : ℕ), n.min_fac ∣ n
-   -/
-   have h₁ : p ∣ factorial N + 1 := min_fac_dvd M, 
+   &lt;span class=&quot;o&quot;&gt;/-&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;hypothesis&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h1&lt;/span&gt;, &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;divides&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;proved&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;by&lt;/span&gt;  
+   &lt;span class=&quot;n&quot;&gt;min_fac_dvd&lt;/span&gt; : &lt;span class=&quot;o&quot;&gt;∀&lt;/span&gt; (&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; : &lt;span class=&quot;o&quot;&gt;ℕ&lt;/span&gt;), &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min_fac&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;∣&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;
+   &lt;span class=&quot;o&quot;&gt;-/&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;have&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;₁&lt;/span&gt; : &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;∣&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;factorial&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;N&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; := &lt;span class=&quot;n&quot;&gt;min_fac_dvd&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;M&lt;/span&gt;, 
    
-   -- hypothesis h2, p divides N!
-   have h₂ : p ∣  factorial N := 
-   begin
-     refine pp.dvd_factorial.mpr _,
-     -- proved p &amp;lt;= N, using hypothsis h
-     exact le_of_not_ge h,
-   end,
-   /-
-   proved using dvd_add_right with support from local hypothesis h₂ and h₁
-   -/
-   have h : p ∣ 1 := (nat.dvd_add_right h₂).mp h₁,
-   -- prime not dividing one using local hypothesis pp and h
-   exact prime.not_dvd_one pp h, },
-   -- second part of proof is just our hypothesis pp that we already proved
-  {exact pp, },
-end
-&lt;/code&gt;&lt;/pre&gt;
+   &lt;span class=&quot;cd&quot;&gt;-- hypothesis h2, p divides N!&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;have&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;₂&lt;/span&gt; : &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;∣&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;factorial&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;N&lt;/span&gt; := 
+   &lt;span class=&quot;k&quot;&gt;begin&lt;/span&gt;
+     &lt;span class=&quot;n&quot;&gt;refine&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dvd_factorial&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mpr&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_&lt;/span&gt;,
+     &lt;span class=&quot;cd&quot;&gt;-- proved p &amp;lt;= N, using hypothsis h&lt;/span&gt;
+     &lt;span class=&quot;n&quot;&gt;exact&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;le_of_not_ge&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;,
+   &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;,
+   &lt;span class=&quot;o&quot;&gt;/-&lt;/span&gt;
+   &lt;span class=&quot;n&quot;&gt;proved&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dvd_add_right&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;support&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;local&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;hypothesis&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;₂&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;₁&lt;/span&gt;
+   &lt;span class=&quot;o&quot;&gt;-/&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;have&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt; : &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;∣&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; := (&lt;span class=&quot;n&quot;&gt;nat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dvd_add_right&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;₂&lt;/span&gt;)&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mp&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;₁&lt;/span&gt;,
+   &lt;span class=&quot;cd&quot;&gt;-- prime not dividing one using local hypothesis pp and h&lt;/span&gt;
+   &lt;span class=&quot;n&quot;&gt;exact&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;prime&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;not_dvd_one&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pp&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;, &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;,
+   &lt;span class=&quot;cd&quot;&gt;-- second part of proof is just our hypothesis pp that we already proved&lt;/span&gt;
+  &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;exact&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pp&lt;/span&gt;, &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;,
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
 
