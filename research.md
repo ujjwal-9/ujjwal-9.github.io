@@ -4,6 +4,8 @@ title: Research
 weight: 3
 ---
 
+[Google Scholar Profile](https://scholar.google.com/citations?user=lvpaXdEAAAAJ&hl=en)
+
 ## 3DCoMPaT
 <p class="paper" markdown="1">
     *[3DCoMPaT: Composition of Materials on Parts of 3D Things](https://3dcompat-dataset.org/)*<br/>
