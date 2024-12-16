@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-70SVKC0TJP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-70SVKC0TJP');
+  </script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Ujjwal Upadhyay - Introduction to Diffusion Models</title>
+  <meta name="description" content="Diffusion models have emerged as a powerful class of generative models, particularly in generating high-quality images. They operate by progressively adding ...">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
+  
+    <link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+  
+  
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  <link rel="stylesheet" type="text/css" href="/css/tufte.css">
+  <link rel="stylesheet" type="text/css" href="/css/icomoon.css">
+  <!-- <link rel="stylesheet" type="text/css" href="/css/print.css" media="print"> -->
+
+  <link rel="canonical" href="/articles/23/intro-to-diffusion-model">
+
+  <link rel="alternate" type="application/rss+xml" title="Ujjwal Upadhyay" href="/feed.xml" />
+  <link rel="icon" type="image/svg" href="/assets/img/infinite.svg">
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Introduction to Diffusion Models" />
+<meta name="author" content="Ujjwal Upadhyay" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Diffusion models have emerged as a powerful class of generative models, particularly in generating high-quality images. They operate by progressively adding noise to training data and then learning to reverse this process, effectively generating new data samples from random noise. This approach is deeply rooted in concepts from statistical physics and stochastic differential equations (SDEs). Generative Modeling and the Role of the Score Function In generative modeling, our goal is to estimate a data distribution \(q_{\text{data}}(x)\) using a model \(p_{\theta}(x)\) parameterized by \(\theta\). A key concept in this context is the score function, defined as the gradient of the log-density of the data distribution: [s(x) = \nabla_x \log q_{\text{data}}(x)] This score function provides the direction in which the data density increases most rapidly and is instrumental in guiding the generation of new samples. Langevin Dynamics and the Fokker-Planck Equation Langevin dynamics describe the evolution of a system under both deterministic forces and stochastic noise. In the context of diffusion models, they are used to sample from a distribution by iteratively updating samples with both gradient information (from the score function) and Gaussian noise: [x_{t+1} = x_t + \frac{\epsilon}{2} s(x_t) + \sqrt{\epsilon} z_t] where \(\epsilon\) is a step size and \(z_t \sim \mathcal{N}(0, I)\) is Gaussian noise. The corresponding Fokker-Planck equation describes the time evolution of the probability density function of the system’s state, ensuring that, under appropriate conditions, the samples converge to the target distribution. Constructing the Forward and Reverse Processes Diffusion models define a forward process that gradually adds noise to the data, transforming it into a simple prior distribution (e.g., Gaussian). This process can be modeled as a stochastic differential equation: [dx = f(x, t)\, dt + g(t)\, dW_t] where \(f(x, t)\) is a drift term, \(g(t)\) is a diffusion coefficient, and \(W_t\) represents a Wiener process. The reverse process, which aims to denoise and generate new samples, follows a similar SDE but with time running backward. Estimating the Score Function A critical challenge in diffusion models is accurately estimating the score function \(s(x)\). One effective method is denoising score matching, which involves training a neural network to predict the gradient of the log-density of noisy data. The objective function for this training is: [\mathbb{E}{q{\sigma}(x)} \left[ \frac{1}{2} \left| s_{\theta}(x) - \nabla_x \log q_{\sigma}(x) \right|^2 \right]] where \(q_{\sigma}(x)\) is the distribution of data corrupted with noise of level \(\sigma\). By minimizing this objective, the model learns to approximate the true score function, enabling effective sample generation. Training and Sampling with Diffusion Models Training a diffusion model involves two main steps: Defining a Noise Schedule: Set a schedule for the noise levels to be added during the forward process, typically increasing over time. Learning to Denoise: Train a neural network to reverse the noising process by estimating the score function at various noise levels. Once trained, sampling from the model is achieved by starting with random noise and iteratively applying the learned reverse process to generate data samples that resemble the training data distribution. Follow me on Twitter @theujjwal9" />
+<meta property="og:description" content="Diffusion models have emerged as a powerful class of generative models, particularly in generating high-quality images. They operate by progressively adding noise to training data and then learning to reverse this process, effectively generating new data samples from random noise. This approach is deeply rooted in concepts from statistical physics and stochastic differential equations (SDEs). Generative Modeling and the Role of the Score Function In generative modeling, our goal is to estimate a data distribution \(q_{\text{data}}(x)\) using a model \(p_{\theta}(x)\) parameterized by \(\theta\). A key concept in this context is the score function, defined as the gradient of the log-density of the data distribution: [s(x) = \nabla_x \log q_{\text{data}}(x)] This score function provides the direction in which the data density increases most rapidly and is instrumental in guiding the generation of new samples. Langevin Dynamics and the Fokker-Planck Equation Langevin dynamics describe the evolution of a system under both deterministic forces and stochastic noise. In the context of diffusion models, they are used to sample from a distribution by iteratively updating samples with both gradient information (from the score function) and Gaussian noise: [x_{t+1} = x_t + \frac{\epsilon}{2} s(x_t) + \sqrt{\epsilon} z_t] where \(\epsilon\) is a step size and \(z_t \sim \mathcal{N}(0, I)\) is Gaussian noise. The corresponding Fokker-Planck equation describes the time evolution of the probability density function of the system’s state, ensuring that, under appropriate conditions, the samples converge to the target distribution. Constructing the Forward and Reverse Processes Diffusion models define a forward process that gradually adds noise to the data, transforming it into a simple prior distribution (e.g., Gaussian). This process can be modeled as a stochastic differential equation: [dx = f(x, t)\, dt + g(t)\, dW_t] where \(f(x, t)\) is a drift term, \(g(t)\) is a diffusion coefficient, and \(W_t\) represents a Wiener process. The reverse process, which aims to denoise and generate new samples, follows a similar SDE but with time running backward. Estimating the Score Function A critical challenge in diffusion models is accurately estimating the score function \(s(x)\). One effective method is denoising score matching, which involves training a neural network to predict the gradient of the log-density of noisy data. The objective function for this training is: [\mathbb{E}{q{\sigma}(x)} \left[ \frac{1}{2} \left| s_{\theta}(x) - \nabla_x \log q_{\sigma}(x) \right|^2 \right]] where \(q_{\sigma}(x)\) is the distribution of data corrupted with noise of level \(\sigma\). By minimizing this objective, the model learns to approximate the true score function, enabling effective sample generation. Training and Sampling with Diffusion Models Training a diffusion model involves two main steps: Defining a Noise Schedule: Set a schedule for the noise levels to be added during the forward process, typically increasing over time. Learning to Denoise: Train a neural network to reverse the noising process by estimating the score function at various noise levels. Once trained, sampling from the model is achieved by starting with random noise and iteratively applying the learned reverse process to generate data samples that resemble the training data distribution. Follow me on Twitter @theujjwal9" />
+<meta property="og:site_name" content="Ujjwal Upadhyay" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-10-12T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Introduction to Diffusion Models" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ujjwal Upadhyay"},"dateModified":"2023-10-12T00:00:00-05:00","datePublished":"2023-10-12T00:00:00-05:00","description":"Diffusion models have emerged as a powerful class of generative models, particularly in generating high-quality images. They operate by progressively adding noise to training data and then learning to reverse this process, effectively generating new data samples from random noise. This approach is deeply rooted in concepts from statistical physics and stochastic differential equations (SDEs). Generative Modeling and the Role of the Score Function In generative modeling, our goal is to estimate a data distribution \\(q_{\\text{data}}(x)\\) using a model \\(p_{\\theta}(x)\\) parameterized by \\(\\theta\\). A key concept in this context is the score function, defined as the gradient of the log-density of the data distribution: [s(x) = \\nabla_x \\log q_{\\text{data}}(x)] This score function provides the direction in which the data density increases most rapidly and is instrumental in guiding the generation of new samples. Langevin Dynamics and the Fokker-Planck Equation Langevin dynamics describe the evolution of a system under both deterministic forces and stochastic noise. In the context of diffusion models, they are used to sample from a distribution by iteratively updating samples with both gradient information (from the score function) and Gaussian noise: [x_{t+1} = x_t + \\frac{\\epsilon}{2} s(x_t) + \\sqrt{\\epsilon} z_t] where \\(\\epsilon\\) is a step size and \\(z_t \\sim \\mathcal{N}(0, I)\\) is Gaussian noise. The corresponding Fokker-Planck equation describes the time evolution of the probability density function of the system’s state, ensuring that, under appropriate conditions, the samples converge to the target distribution. Constructing the Forward and Reverse Processes Diffusion models define a forward process that gradually adds noise to the data, transforming it into a simple prior distribution (e.g., Gaussian). This process can be modeled as a stochastic differential equation: [dx = f(x, t)\\, dt + g(t)\\, dW_t] where \\(f(x, t)\\) is a drift term, \\(g(t)\\) is a diffusion coefficient, and \\(W_t\\) represents a Wiener process. The reverse process, which aims to denoise and generate new samples, follows a similar SDE but with time running backward. Estimating the Score Function A critical challenge in diffusion models is accurately estimating the score function \\(s(x)\\). One effective method is denoising score matching, which involves training a neural network to predict the gradient of the log-density of noisy data. The objective function for this training is: [\\mathbb{E}{q{\\sigma}(x)} \\left[ \\frac{1}{2} \\left| s_{\\theta}(x) - \\nabla_x \\log q_{\\sigma}(x) \\right|^2 \\right]] where \\(q_{\\sigma}(x)\\) is the distribution of data corrupted with noise of level \\(\\sigma\\). By minimizing this objective, the model learns to approximate the true score function, enabling effective sample generation. Training and Sampling with Diffusion Models Training a diffusion model involves two main steps: Defining a Noise Schedule: Set a schedule for the noise levels to be added during the forward process, typically increasing over time. Learning to Denoise: Train a neural network to reverse the noising process by estimating the score function at various noise levels. Once trained, sampling from the model is achieved by starting with random noise and iteratively applying the learned reverse process to generate data samples that resemble the training data distribution. Follow me on Twitter @theujjwal9","headline":"Introduction to Diffusion Models","mainEntityOfPage":{"@type":"WebPage","@id":"/articles/23/intro-to-diffusion-model"},"url":"/articles/23/intro-to-diffusion-model"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+  
+
+  
+
+  
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+<header>
+    <nav class="group">
+        <ul class="topnav" style="float:left">
+            <li><a style="padding-top:.5em" href="/"><strong>Ujjwal Upadhyay</strong></a></li>
+        </ul>
+	<ul class="topnav">    
+        
+	
+            
+            
+            
+  	
+            
+            
+	        
+                <li><a class="right" href="/research">Research</a></li>
+	        
+	    
+            
+  	
+            
+            
+	        
+                <li><a class="right" href="/writings">Writings</a></li>
+	        
+	    
+            
+  	
+            
+            
+	        
+                <li><a class="right" href="/scratchpad">Scratchpad</a></li>
+	        
+	    
+            
+  	
+            
+            
+            
+  	
+            
+  	
+            
+  	
+            
+  	
+        <!-- <li><a class="right" href="https://drive.google.com/file/d/13Hxj3cRTK9nMl54z58sPOoOah6iEtw-C/view?usp=sharing">cv</a></li> -->
+	</ul>
+	</nav>
+        <hr class="slender">
+</header>
+
+    <article class="group">
+      <h1 style="font-style:italic; font-size:1.8rem; font-weight: 600;">Introduction to Diffusion Models</h1>
+<p class="subtitle">October 12, 2023</p>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  <!-- tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}, -->
+  jax: ["input/TeX","output/HTML-CSS"],
+  displayAlign: "left",
+  "HTML-CSS": { scale: 110}
+});
+</script>
+
+<p>Diffusion models have emerged as a powerful class of generative models, particularly in generating high-quality images. They operate by progressively adding noise to training data and then learning to reverse this process, effectively generating new data samples from random noise. This approach is deeply rooted in concepts from statistical physics and stochastic differential equations (SDEs).</p>
+
+<h2 id="generative-modeling-and-the-role-of-the-score-function">Generative Modeling and the Role of the Score Function</h2>
+
+<p>In generative modeling, our goal is to estimate a data distribution \(q_{\text{data}}(x)\) using a model \(p_{\theta}(x)\) parameterized by \(\theta\). A key concept in this context is the <em>score function</em>, defined as the gradient of the log-density of the data distribution:</p>
+
+\[s(x) = \nabla_x \log q_{\text{data}}(x)\]
+
+<p>This score function provides the direction in which the data density increases most rapidly and is instrumental in guiding the generation of new samples.</p>
+
+<h2 id="langevin-dynamics-and-the-fokker-planck-equation">Langevin Dynamics and the Fokker-Planck Equation</h2>
+
+<p>Langevin dynamics describe the evolution of a system under both deterministic forces and stochastic noise. In the context of diffusion models, they are used to sample from a distribution by iteratively updating samples with both gradient information (from the score function) and Gaussian noise:</p>
+
+\[x_{t+1} = x_t + \frac{\epsilon}{2} s(x_t) + \sqrt{\epsilon} z_t\]
+
+<p>where \(\epsilon\) is a step size and \(z_t \sim \mathcal{N}(0, I)\) is Gaussian noise. The corresponding Fokker-Planck equation describes the time evolution of the probability density function of the system’s state, ensuring that, under appropriate conditions, the samples converge to the target distribution.</p>
+
+<h2 id="constructing-the-forward-and-reverse-processes">Constructing the Forward and Reverse Processes</h2>
+
+<p>Diffusion models define a forward process that gradually adds noise to the data, transforming it into a simple prior distribution (e.g., Gaussian). This process can be modeled as a stochastic differential equation:</p>
+
+\[dx = f(x, t)\, dt + g(t)\, dW_t\]
+
+<p>where \(f(x, t)\) is a drift term, \(g(t)\) is a diffusion coefficient, and \(W_t\) represents a Wiener process. The reverse process, which aims to denoise and generate new samples, follows a similar SDE but with time running backward.</p>
+
+<h2 id="estimating-the-score-function">Estimating the Score Function</h2>
+
+<p>A critical challenge in diffusion models is accurately estimating the score function \(s(x)\). One effective method is <em>denoising score matching</em>, which involves training a neural network to predict the gradient of the log-density of noisy data. The objective function for this training is:</p>
+
+\[\mathbb{E}_{q_{\sigma}(x)} \left[ \frac{1}{2} \left\| s_{\theta}(x) - \nabla_x \log q_{\sigma}(x) \right\|^2 \right]\]
+
+<p>where \(q_{\sigma}(x)\) is the distribution of data corrupted with noise of level \(\sigma\). By minimizing this objective, the model learns to approximate the true score function, enabling effective sample generation.</p>
+
+<h2 id="training-and-sampling-with-diffusion-models">Training and Sampling with Diffusion Models</h2>
+
+<p>Training a diffusion model involves two main steps:</p>
+
+<ol>
+  <li>
+    <p><strong>Defining a Noise Schedule</strong>: Set a schedule for the noise levels to be added during the forward process, typically increasing over time.</p>
+  </li>
+  <li>
+    <p><strong>Learning to Denoise</strong>: Train a neural network to reverse the noising process by estimating the score function at various noise levels.</p>
+  </li>
+</ol>
+
+<p>Once trained, sampling from the model is achieved by starting with random noise and iteratively applying the learned reverse process to generate data samples that resemble the training data distribution.</p>
+
+<blockquote>
+  <p><strong>Follow me on Twitter <a href="https://twitter.com/theujjwal9">@theujjwal9</a></strong></p>
+</blockquote>
+
+
+
+    </article>
+    <span class="print-footer">Introduction to Diffusion Models - October 12, 2023 - Ujjwal Upadhyay</span>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+<!-- <style>
+
+i:hover{
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+
+</style> -->
+
+<footer>
+  <hr class="slender">
+  <ul class="footer-links" style="font-size: 1.6rem;">
+    <li><a href="mailto:ujjwalupadhyay8@gmail.com"><i class="fa fa-envelope"></i></a></li>
+    <li><a href="https://twitter.com/theujjwal9"><i class="fa fa-twitter"></i></a></li>
+    <li><a href="https://github.com/ujjwal-9"><i class="fa fa-github"></i></a></li>
+    <li><a href="https://www.linkedin.com/in/ujjwal-9/"><i class="fa fa-linkedin"></i></a></li>
+    <li><a href="https://scholar.google.com/citations?user=lvpaXdEAAAAJ&hl=en"><i class="fa fa-graduation-cap"></i></a></li>
+    <li><a href="https://ujjwal-9.github.io/feed.xml"><i class="fa fa-rss"></i></a></li>
+    <!-- 
+      <li>
+        <a href="https://github.com/ujjwal-9"><span class="icon-github"></span></a>
+      </li>
+    
+      <li>
+        <a href="https://linkedin.com/in/ujjwal-9"><span class="icon-linkedin"></span></a>
+      </li>
+    
+      <li>
+        <a href="/feed.xml"><span class="icon-rss2"></span></a>
+      </li>
+       -->
+  </ul>
+<div class="credits">
+<span>&copy; 2024 &nbsp;&nbsp;UJJWAL UPADHYAY</span></br> <br>
+</div>  
+</footer>
+  </body>
+</html>

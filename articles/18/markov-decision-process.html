@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-70SVKC0TJP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-70SVKC0TJP');
+  </script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Ujjwal Upadhyay - Markov Decision Process: A Framework for Decision Making</title>
+  <meta name="description" content="Markov Decision Process (MDP) provides a mathematical framework for modeling decision-making in situations where outcomes are partly random and partly under ...">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
+  
+    <link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+  
+  
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  <link rel="stylesheet" type="text/css" href="/css/tufte.css">
+  <link rel="stylesheet" type="text/css" href="/css/icomoon.css">
+  <!-- <link rel="stylesheet" type="text/css" href="/css/print.css" media="print"> -->
+
+  <link rel="canonical" href="/articles/18/markov-decision-process">
+
+  <link rel="alternate" type="application/rss+xml" title="Ujjwal Upadhyay" href="/feed.xml" />
+  <link rel="icon" type="image/svg" href="/assets/img/infinite.svg">
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Markov Decision Process: A Framework for Decision Making" />
+<meta name="author" content="Ujjwal Upadhyay" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Markov Decision Process (MDP) provides a mathematical framework for modeling decision-making in situations where outcomes are partly random and partly under the control of a decision-maker. Let’s dive into how MDPs help us understand different types of environments and decision-making scenarios. Types of Decision Environments Decision environments can be categorized along several dimensions: Complete vs Incomplete Information Fully Observable vs Partially Observable Competitive vs Collaborative Static vs Dynamic Deterministic vs Stochastic Today, we’ll focus on observability in environments and how it impacts decision-making. Fully Observable Environments In a fully observable environment, the agent has complete information about the current state of the system. Mathematically, we can represent this as: [s_t = f(o_t)] where: \(s_t\) is the true state at time t \(o_t\) is the observation at time t \(f\) is a direct mapping function Example: Chess Consider a chess game. The state space can be represented as: [S = {s_1, s_2, …, s_n}] where each \(s_i\) represents a possible board configuration. The optimal policy \(\pi^*\) depends only on the current state: [\pi^*(s) = \arg\max_a Q(s,a)] where \(Q(s,a)\) is the action-value function representing the expected future reward. Partially Observable Environments In partially observable environments, the agent cannot directly observe the true state. Instead, it maintains a belief state based on past observations. This can be represented as: [b_t = P(s_t o_1, o_2, …, o_t)] where: \(b_t\) is the belief state at time t \(s_t\) is the true state \(o_1, o_2, ..., o_t\) are observations up to time t Example: Poker In poker, the optimal policy depends on both current observation and history: [\pi^*(b_t) = \arg\max_a \sum_{s \in S} b_t(s)Q(s,a)] where \(b_t(s)\) represents the probability of being in state \(s\) given the history of observations. The Markov Property The key distinction lies in the Markov property. In fully observable environments: [P(s_{t+1} s_t, s_{t-1}, …, s_1) = P(s_{t+1} s_t)] This means the future is independent of the past given the present. However, in partially observable environments, we need to maintain a history: [P(s_{t+1} o_t, o_{t-1}, …, o_1) \neq P(s_{t+1} o_t)] Real-World Applications Consider a self-driving car: Fully Observable: Highway driving with clear weather and perfect sensor data Partially Observable: Urban driving in fog where past observations help predict hidden obstacles The mathematical framework for decision-making changes based on observability: [V(s) = \max_a \left[R(s,a) + \gamma \sum_{s’} P(s’ s,a)V(s’)\right]] where: \(V(s)\) is the value function \(R(s,a)\) is the reward function \(\gamma\) is the discount factor \(P(s&#39;|s,a)\) is the transition probability This equation, known as the Bellman equation, takes different forms depending on whether we’re dealing with fully or partially observable environments. Conclusion Understanding the observability of an environment is crucial for designing effective decision-making systems. While fully observable environments like chess can rely solely on current state information, partially observable environments like poker require sophisticated belief state tracking and historical information processing. The mathematical frameworks we’ve explored help us design better algorithms for each type of environment, leading to more effective decision-making systems in real-world applications." />
+<meta property="og:description" content="Markov Decision Process (MDP) provides a mathematical framework for modeling decision-making in situations where outcomes are partly random and partly under the control of a decision-maker. Let’s dive into how MDPs help us understand different types of environments and decision-making scenarios. Types of Decision Environments Decision environments can be categorized along several dimensions: Complete vs Incomplete Information Fully Observable vs Partially Observable Competitive vs Collaborative Static vs Dynamic Deterministic vs Stochastic Today, we’ll focus on observability in environments and how it impacts decision-making. Fully Observable Environments In a fully observable environment, the agent has complete information about the current state of the system. Mathematically, we can represent this as: [s_t = f(o_t)] where: \(s_t\) is the true state at time t \(o_t\) is the observation at time t \(f\) is a direct mapping function Example: Chess Consider a chess game. The state space can be represented as: [S = {s_1, s_2, …, s_n}] where each \(s_i\) represents a possible board configuration. The optimal policy \(\pi^*\) depends only on the current state: [\pi^*(s) = \arg\max_a Q(s,a)] where \(Q(s,a)\) is the action-value function representing the expected future reward. Partially Observable Environments In partially observable environments, the agent cannot directly observe the true state. Instead, it maintains a belief state based on past observations. This can be represented as: [b_t = P(s_t o_1, o_2, …, o_t)] where: \(b_t\) is the belief state at time t \(s_t\) is the true state \(o_1, o_2, ..., o_t\) are observations up to time t Example: Poker In poker, the optimal policy depends on both current observation and history: [\pi^*(b_t) = \arg\max_a \sum_{s \in S} b_t(s)Q(s,a)] where \(b_t(s)\) represents the probability of being in state \(s\) given the history of observations. The Markov Property The key distinction lies in the Markov property. In fully observable environments: [P(s_{t+1} s_t, s_{t-1}, …, s_1) = P(s_{t+1} s_t)] This means the future is independent of the past given the present. However, in partially observable environments, we need to maintain a history: [P(s_{t+1} o_t, o_{t-1}, …, o_1) \neq P(s_{t+1} o_t)] Real-World Applications Consider a self-driving car: Fully Observable: Highway driving with clear weather and perfect sensor data Partially Observable: Urban driving in fog where past observations help predict hidden obstacles The mathematical framework for decision-making changes based on observability: [V(s) = \max_a \left[R(s,a) + \gamma \sum_{s’} P(s’ s,a)V(s’)\right]] where: \(V(s)\) is the value function \(R(s,a)\) is the reward function \(\gamma\) is the discount factor \(P(s&#39;|s,a)\) is the transition probability This equation, known as the Bellman equation, takes different forms depending on whether we’re dealing with fully or partially observable environments. Conclusion Understanding the observability of an environment is crucial for designing effective decision-making systems. While fully observable environments like chess can rely solely on current state information, partially observable environments like poker require sophisticated belief state tracking and historical information processing. The mathematical frameworks we’ve explored help us design better algorithms for each type of environment, leading to more effective decision-making systems in real-world applications." />
+<meta property="og:site_name" content="Ujjwal Upadhyay" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-12-22T00:00:00-06:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Markov Decision Process: A Framework for Decision Making" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ujjwal Upadhyay"},"dateModified":"2018-12-22T00:00:00-06:00","datePublished":"2018-12-22T00:00:00-06:00","description":"Markov Decision Process (MDP) provides a mathematical framework for modeling decision-making in situations where outcomes are partly random and partly under the control of a decision-maker. Let’s dive into how MDPs help us understand different types of environments and decision-making scenarios. Types of Decision Environments Decision environments can be categorized along several dimensions: Complete vs Incomplete Information Fully Observable vs Partially Observable Competitive vs Collaborative Static vs Dynamic Deterministic vs Stochastic Today, we’ll focus on observability in environments and how it impacts decision-making. Fully Observable Environments In a fully observable environment, the agent has complete information about the current state of the system. Mathematically, we can represent this as: [s_t = f(o_t)] where: \\(s_t\\) is the true state at time t \\(o_t\\) is the observation at time t \\(f\\) is a direct mapping function Example: Chess Consider a chess game. The state space can be represented as: [S = {s_1, s_2, …, s_n}] where each \\(s_i\\) represents a possible board configuration. The optimal policy \\(\\pi^*\\) depends only on the current state: [\\pi^*(s) = \\arg\\max_a Q(s,a)] where \\(Q(s,a)\\) is the action-value function representing the expected future reward. Partially Observable Environments In partially observable environments, the agent cannot directly observe the true state. Instead, it maintains a belief state based on past observations. This can be represented as: [b_t = P(s_t o_1, o_2, …, o_t)] where: \\(b_t\\) is the belief state at time t \\(s_t\\) is the true state \\(o_1, o_2, ..., o_t\\) are observations up to time t Example: Poker In poker, the optimal policy depends on both current observation and history: [\\pi^*(b_t) = \\arg\\max_a \\sum_{s \\in S} b_t(s)Q(s,a)] where \\(b_t(s)\\) represents the probability of being in state \\(s\\) given the history of observations. The Markov Property The key distinction lies in the Markov property. In fully observable environments: [P(s_{t+1} s_t, s_{t-1}, …, s_1) = P(s_{t+1} s_t)] This means the future is independent of the past given the present. However, in partially observable environments, we need to maintain a history: [P(s_{t+1} o_t, o_{t-1}, …, o_1) \\neq P(s_{t+1} o_t)] Real-World Applications Consider a self-driving car: Fully Observable: Highway driving with clear weather and perfect sensor data Partially Observable: Urban driving in fog where past observations help predict hidden obstacles The mathematical framework for decision-making changes based on observability: [V(s) = \\max_a \\left[R(s,a) + \\gamma \\sum_{s’} P(s’ s,a)V(s’)\\right]] where: \\(V(s)\\) is the value function \\(R(s,a)\\) is the reward function \\(\\gamma\\) is the discount factor \\(P(s&#39;|s,a)\\) is the transition probability This equation, known as the Bellman equation, takes different forms depending on whether we’re dealing with fully or partially observable environments. Conclusion Understanding the observability of an environment is crucial for designing effective decision-making systems. While fully observable environments like chess can rely solely on current state information, partially observable environments like poker require sophisticated belief state tracking and historical information processing. The mathematical frameworks we’ve explored help us design better algorithms for each type of environment, leading to more effective decision-making systems in real-world applications.","headline":"Markov Decision Process: A Framework for Decision Making","mainEntityOfPage":{"@type":"WebPage","@id":"/articles/18/markov-decision-process"},"url":"/articles/18/markov-decision-process"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+  
+
+  
+
+  
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+<header>
+    <nav class="group">
+        <ul class="topnav" style="float:left">
+            <li><a style="padding-top:.5em" href="/"><strong>Ujjwal Upadhyay</strong></a></li>
+        </ul>
+	<ul class="topnav">    
+        
+	
+            
+            
+            
+  	
+            
+            
+	        
+                <li><a class="right" href="/research">Research</a></li>
+	        
+	    
+            
+  	
+            
+            
+	        
+                <li><a class="right" href="/writings">Writings</a></li>
+	        
+	    
+            
+  	
+            
+            
+	        
+                <li><a class="right" href="/scratchpad">Scratchpad</a></li>
+	        
+	    
+            
+  	
+            
+            
+            
+  	
+            
+  	
+            
+  	
+            
+  	
+        <!-- <li><a class="right" href="https://drive.google.com/file/d/13Hxj3cRTK9nMl54z58sPOoOah6iEtw-C/view?usp=sharing">cv</a></li> -->
+	</ul>
+	</nav>
+        <hr class="slender">
+</header>
+
+    <article class="group">
+      <h1 style="font-style:italic; font-size:1.8rem; font-weight: 600;">Markov Decision Process: A Framework for Decision Making</h1>
+<p class="subtitle">December 22, 2018</p>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  <!-- tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}, -->
+  jax: ["input/TeX","output/HTML-CSS"],
+  displayAlign: "left",
+  "HTML-CSS": { scale: 110}
+});
+</script>
+
+<p>Markov Decision Process (MDP) provides a mathematical framework for modeling decision-making in situations where outcomes are partly random and partly under the control of a decision-maker. Let’s dive into how MDPs help us understand different types of environments and decision-making scenarios.</p>
+
+<h2 id="types-of-decision-environments">Types of Decision Environments</h2>
+
+<p>Decision environments can be categorized along several dimensions:</p>
+
+<ol>
+  <li>Complete vs Incomplete Information</li>
+  <li>Fully Observable vs Partially Observable</li>
+  <li>Competitive vs Collaborative</li>
+  <li>Static vs Dynamic</li>
+  <li>Deterministic vs Stochastic</li>
+</ol>
+
+<p>Today, we’ll focus on observability in environments and how it impacts decision-making.</p>
+
+<h2 id="fully-observable-environments">Fully Observable Environments</h2>
+
+<p>In a fully observable environment, the agent has complete information about the current state of the system. Mathematically, we can represent this as:</p>
+
+\[s_t = f(o_t)\]
+
+<p>where:</p>
+<ul>
+  <li>\(s_t\) is the true state at time t</li>
+  <li>\(o_t\) is the observation at time t</li>
+  <li>\(f\) is a direct mapping function</li>
+</ul>
+
+<h3 id="example-chess">Example: Chess</h3>
+<p>Consider a chess game. The state space can be represented as:</p>
+
+\[S = \{s_1, s_2, ..., s_n\}\]
+
+<p>where each \(s_i\) represents a possible board configuration. The optimal policy \(\pi^*\) depends only on the current state:</p>
+
+\[\pi^*(s) = \arg\max_a Q(s,a)\]
+
+<p>where \(Q(s,a)\) is the action-value function representing the expected future reward.</p>
+
+<h2 id="partially-observable-environments">Partially Observable Environments</h2>
+
+<p>In partially observable environments, the agent cannot directly observe the true state. Instead, it maintains a belief state based on past observations. This can be represented as:</p>
+
+\[b_t = P(s_t | o_1, o_2, ..., o_t)\]
+
+<p>where:</p>
+<ul>
+  <li>\(b_t\) is the belief state at time t</li>
+  <li>\(s_t\) is the true state</li>
+  <li>\(o_1, o_2, ..., o_t\) are observations up to time t</li>
+</ul>
+
+<h3 id="example-poker">Example: Poker</h3>
+<p>In poker, the optimal policy depends on both current observation and history:</p>
+
+\[\pi^*(b_t) = \arg\max_a \sum_{s \in S} b_t(s)Q(s,a)\]
+
+<p>where \(b_t(s)\) represents the probability of being in state \(s\) given the history of observations.</p>
+
+<h2 id="the-markov-property">The Markov Property</h2>
+
+<p>The key distinction lies in the Markov property. In fully observable environments:</p>
+
+\[P(s_{t+1}|s_t, s_{t-1}, ..., s_1) = P(s_{t+1}|s_t)\]
+
+<p>This means the future is independent of the past given the present. However, in partially observable environments, we need to maintain a history:</p>
+
+\[P(s_{t+1}|o_t, o_{t-1}, ..., o_1) \neq P(s_{t+1}|o_t)\]
+
+<h2 id="real-world-applications">Real-World Applications</h2>
+
+<p>Consider a self-driving car:</p>
+<ul>
+  <li><strong>Fully Observable</strong>: Highway driving with clear weather and perfect sensor data</li>
+  <li><strong>Partially Observable</strong>: Urban driving in fog where past observations help predict hidden obstacles</li>
+</ul>
+
+<p>The mathematical framework for decision-making changes based on observability:</p>
+
+\[V(s) = \max_a \left[R(s,a) + \gamma \sum_{s'} P(s'|s,a)V(s')\right]\]
+
+<p>where:</p>
+<ul>
+  <li>\(V(s)\) is the value function</li>
+  <li>\(R(s,a)\) is the reward function</li>
+  <li>\(\gamma\) is the discount factor</li>
+  <li>\(P(s'|s,a)\) is the transition probability</li>
+</ul>
+
+<p>This equation, known as the Bellman equation, takes different forms depending on whether we’re dealing with fully or partially observable environments.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Understanding the observability of an environment is crucial for designing effective decision-making systems. While fully observable environments like chess can rely solely on current state information, partially observable environments like poker require sophisticated belief state tracking and historical information processing.</p>
+
+<p>The mathematical frameworks we’ve explored help us design better algorithms for each type of environment, leading to more effective decision-making systems in real-world applications.</p>
+
+
+
+    </article>
+    <span class="print-footer">Markov Decision Process: A Framework for Decision Making - December 22, 2018 - Ujjwal Upadhyay</span>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+<!-- <style>
+
+i:hover{
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+
+</style> -->
+
+<footer>
+  <hr class="slender">
+  <ul class="footer-links" style="font-size: 1.6rem;">
+    <li><a href="mailto:ujjwalupadhyay8@gmail.com"><i class="fa fa-envelope"></i></a></li>
+    <li><a href="https://twitter.com/theujjwal9"><i class="fa fa-twitter"></i></a></li>
+    <li><a href="https://github.com/ujjwal-9"><i class="fa fa-github"></i></a></li>
+    <li><a href="https://www.linkedin.com/in/ujjwal-9/"><i class="fa fa-linkedin"></i></a></li>
+    <li><a href="https://scholar.google.com/citations?user=lvpaXdEAAAAJ&hl=en"><i class="fa fa-graduation-cap"></i></a></li>
+    <li><a href="https://ujjwal-9.github.io/feed.xml"><i class="fa fa-rss"></i></a></li>
+    <!-- 
+      <li>
+        <a href="https://github.com/ujjwal-9"><span class="icon-github"></span></a>
+      </li>
+    
+      <li>
+        <a href="https://linkedin.com/in/ujjwal-9"><span class="icon-linkedin"></span></a>
+      </li>
+    
+      <li>
+        <a href="/feed.xml"><span class="icon-rss2"></span></a>
+      </li>
+       -->
+  </ul>
+<div class="credits">
+<span>&copy; 2024 &nbsp;&nbsp;UJJWAL UPADHYAY</span></br> <br>
+</div>  
+</footer>
+  </body>
+</html>

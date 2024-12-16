@@ -189,30 +189,30 @@ html, body {
 
 html {
   text-align: baseline;
-  font-size: 11px;
+  font-size: 0.6rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
 @media screen and (min-width: 800px) {
   html {
-    font-size: 12px; } }
+    font-size: 0.65rem; } }
 @media screen and (min-width: 900px) {
   html {
-    font-size: 13px; } }
+    font-size: 0.7rem; } }
 @media screen and (min-width: 1000px) {
   html {
-    font-size: 14px; } }
+    font-size: 0.75rem; } }
 @media screen and (min-width: 1100px) {
   html {
-    font-size: 15px; } }
+    font-size: 0.8rem; } }
 @media screen and (min-width: 1200px) {
   html {
-    font-size: 16px; } }
+    font-size: 0.85rem; } }
 @media screen and (min-width: 1300px) {
   html {
-    font-size: 17px; } }
+    font-size: 0.9rem; } }
 .mjx-math {
-  font-size: 1.3rem; }
+  font-size: 1.6rem; }
 
 a {
   color: black;
@@ -241,7 +241,7 @@ h1 {
   font-weight: 600;
   margin-top: 2.1rem;
   margin-bottom: 1rem;
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   line-height: 0.784;
   font-style: italic; }
 
@@ -250,13 +250,13 @@ h2 {
   font-weight: 600;
   margin-top: 2rem;
   margin-bottom: 0;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   line-height: 0.933333333333333; }
 
 h3 {
   font-style: italic;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin-top: 2.1777777777777778rem;
   margin-bottom: 0;
   line-height: 1.08888888888889; }
@@ -265,7 +265,7 @@ p .subtitle {
   font-style: italic;
   margin-top: 2.1777777777777778rem;
   margin-bottom: 2.1777777777777778rem;
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   display: block;
   line-height: 1.7; }
 
@@ -273,7 +273,7 @@ p, ol, ul {
   font-size: 1.2rem; }
 
 p, li {
-  line-height: 1.8rem;
+  line-height: 1.6rem;
   margin-top: 1rem;
   padding-right: 2rem;
   vertical-align: baseline; }
@@ -308,7 +308,7 @@ blockquote p, blockquote footer {
   padding-right: 2.5%; }
 
 blockquote footer {
-  font-size: 1.0rem;
+  font-size: 1rem;
   line-height: 1.78181818;
   margin-top: 1.78181818rem;
   margin-bottom: 1.78181818rem;
@@ -319,18 +319,17 @@ blockquote footer {
 */
 .sans {
   font-family: "Gill Sans", "Gill Sans MT", "Lato", Calibri, sans-serif;
-  letter-spacing: .03em; }
+  letter-spacing: 0.03em; }
 
 pre, pre code, p code, p pre code {
   font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.71428571rem;
   margin-top: 1.71428571rem; }
 
 h1 code, h2 code, h3 code {
-  font-size: 0.80em; }
+  font-size: 0.75rem; }
 
-/*-- Table styling section - For Tufte-Jekyll, booktabs style is default for Markdown tables  --*/
 table, table.booktabs {
   width: auto;
   border-spacing: 0px;
@@ -362,7 +361,7 @@ th, td {
   text-align: left; }
 
 .booktabs caption, caption {
-  font-size: 90%;
+  font-size: 0.9rem;
   text-align: left;
   width: auto;
   margin-left: auto;
@@ -386,7 +385,7 @@ th, td {
   width: 50%;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 1.0rem;
+  font-size: 1rem;
   line-height: 1.96; }
 
 /* -- End of Table Styling section --*/
@@ -422,7 +421,7 @@ figcaption {
   margin-right: -50%;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 1.0rem;
+  font-size: 1rem;
   line-height: 1.6;
   vertical-align: baseline;
   position: relative;
@@ -444,7 +443,7 @@ img {
   width: 50%;
   margin-top: 0;
   margin-bottom: 1.96rem;
-  font-size: 1.0rem;
+  font-size: 1rem;
   line-height: 1.96;
   vertical-align: baseline;
   position: relative; }
@@ -520,7 +519,7 @@ pre {
 
 span.newthought {
   font-variant: small-caps;
-  font-size: 1.1em;
+  font-size: 1.1rem;
   letter-spacing: 0.05rem; }
 
 input.margin-toggle {
@@ -591,7 +590,7 @@ label.margin-toggle:not(.sidenote-number) {
   color: #a00000; }
 
 .smaller {
-  font-size: 80%; }
+  font-size: 0.8rem; }
 
 header > nav.group, body footer {
   width: 95%;
@@ -691,19 +690,19 @@ hr.slender {
     display: none; } }
 @media (min-width: 760px) {
   img.headshot {
-    width: 12em;
-    height: 12em;
-    margin-right: 1em;
-    margin-bottom: .25em;
+    width: 12rem;
+    height: 12rem;
+    margin-right: 1rem;
+    margin-bottom: 0.25rem;
     float: left; } }
 @media (max-width: 760px) {
   img.headshot {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 1em;
-    max-width: 12em;
-    max-height: 12em; } }
+    margin-bottom: 1rem;
+    max-width: 12rem;
+    max-height: 12rem; } }
 @media print {
   * {
     -webkit-transition: none !important;
@@ -721,11 +720,11 @@ hr.slender {
     orphans: 4;
     widows: 2; }
   body {
-    font-size: 12pt; }
+    font-size: 0.75rem; }
 
   html body span.print-footer {
     font-family: "Gill Sans", "Gill Sans MT", "Lato", Calibri, sans-serif;
-    font-size: 9pt;
+    font-size: 0.5625rem;
     margin-top: 22.4pt;
     padding-top: 4pt;
     border-top: 1px solid #000; }
@@ -756,11 +755,9 @@ footer, .fa {
   text-decoration: none; }
 
 .language-plaintext {
-  font-family: "cascadia";
-  text-decoration: bold;
+  font-family: ETbook, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
   font-size: 1.02rem;
   border-radius: 3px;
-  color: #a00000;
   font-weight: 500; }
 
 iframe {
