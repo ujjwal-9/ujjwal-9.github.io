@@ -6,11 +6,11 @@ title_include: true
 categories: blog
 image_url: /assets/img/dicom-intro/dicom-arch.png
 ---
-[Dicom Website!](https://www.dicomstandard.org/)
+[DICOM Website!](https://www.dicomstandard.org/)
 
 **DICOM = Digital Imaging and Communications in Medicine**
 
-DICOM standard includes a file format definition and a network communications protocol that uses TCP/IP to communicate between systems.
+The DICOM standard includes a file format definition and a network communications protocol that uses TCP/IP to communicate between systems.
 
 
 <script type="text/x-mathjax-config">
@@ -24,7 +24,7 @@ MathJax.Hub.Config({
 
 # Abstract
 
-Dicom standard was conceptualized and implemented when CT (computed tomography) Scans were developed. It takes special care of not losing the information when translating the medical images and other data to digital format. This is done so as to keep it as close to original as possible. 
+The DICOM standard was conceptualized and implemented when CT (computed tomography) scans were developed. It takes special care not to lose information when translating medical images and other data to digital format. This is done to keep it as close to the original as possible.
 
 > The main objective of this new standard was to create an open platform for the communication of medical images and related data.
 
@@ -35,14 +35,14 @@ The contents of the DICOM standard go far beyond a definition of an exchange for
 
 DICOM defines:
 
-1. data structures (formats) for medical images and related data,
-2. network oriented services, e. g.
-+ image transmission
-+ query of an image archive (PACS)
-+ print (hardcopy)
+1. Data structures (formats) for medical images and related data
+2. Network-oriented services, e.g.:
++ Image transmission
++ Query of an image archive (PACS)
++ Print (hardcopy)
 + RIS - PACS - modality integration
-3. formats for storage media exchange
-4.requirements for conforming devices and programs
+3. Formats for storage media exchange
+4. Requirements for conforming devices and programs
 
 <img src="/assets/img/dicom-intro/dicom-workflow.png" width=600> {% marginnote "sidenote-id" "[[Image Source]](https://www.softneta.com/solutions/dicom-anonymization-for-medical-education-and-research/)" %}
 
@@ -56,30 +56,30 @@ DICOM defines:
 
 <img src="/assets/img/dicom-intro/dicom-protocol-workflow.png" width=600> {% marginnote "sidenote-id" "[[Image Source]](https://www.extrahop.com/company/blog/2016/introduction-to-dicom-protocol/)" %}
 
-PACS-RIS integration improves the flow of images for the radiologist. They communicate using some set of commands (called HL7) concerned with Admission/Discharge/Transfer (ADT) and Order/Entry.
+PACS-RIS integration improves the flow of images for radiologists. They communicate using a set of commands (called HL7) concerned with Admission/Discharge/Transfer (ADT) and Order/Entry.
 
 ## DICOM Data Structures
 
-Dicom consists of list of image attributes which contain vast amount of image and medical information:
-- patient information (name, sex, identification number)
-- modality and imaging procedure information (device parameters, calibration, radiation dose, contrast media)
-- image information (resolution, windowing)
+DICOM consists of a list of image attributes which contain vast amounts of image and medical information:
+- Patient information (name, sex, identification number)
+- Modality and imaging procedure information (device parameters, calibration, radiation dose, contrast media)
+- Image information (resolution, windowing)
 
-Dicom goes to the lengths and defines significance of each data element in multitude of cases. It defines if an attribute is required, optional or important for certain cases. But this feature comes at a cost. 
-1. Image objects are frequently incomplete : There is inconsistency in filling all the fields with the data. Some fields in image objects are often are left blank and some are filled with incorrect data. 
-2. Another problem occurs when displaying an image on a device that is made from different manufacturer, because different imaging equipment use different amplitude ranges and the same number of allocated bits. In that case, images can be displayed as underexposed or overexposed with poor contrast, so those parameters should be adjusted manually.
+DICOM goes to great lengths and defines the significance of each data element in a multitude of cases. It defines if an attribute is required, optional, or important for certain cases. But this feature comes at a cost:
+1. Image objects are frequently incomplete: There is inconsistency in filling all the fields with data. Some fields in image objects are often left blank and some are filled with incorrect data.
+2. Another problem occurs when displaying an image on a device made by a different manufacturer, because different imaging equipment uses different amplitude ranges and the same number of allocated bits. In that case, images can be displayed as underexposed or overexposed with poor contrast, so those parameters should be adjusted manually.
 
 ## DICOM Network Services
 
-This service is based over client-sever concept. They (Dicom applications) establish connection to exchange information. In addition to image transmission, there are other features too:
+This service is based on the client-server concept. DICOM applications establish connections to exchange information. In addition to image transmission, there are other features:
 
-- Image Archive Service: search images in a PACS archive by certain criteria (patient, time of creation of the images, modality etc.) and to selectively download images from this archive.
-- Print Service: gives access to cameras and printers over a network.
-- Modality Worklist Service: Download updated information regarding patient using above decribed PACS-RIS system.
+- Image Archive Service: Search images in a PACS archive by certain criteria (patient, time of creation of the images, modality etc.) and selectively download images from this archive
+- Print Service: Gives access to cameras and printers over a network
+- Modality Worklist Service: Download updated information regarding patients using the above-described PACS-RIS system
 
 ### Patient Model
 
-Queries to image archives (PACS) are made in 4 level of DICOM hierarchy:
+Queries to image archives (PACS) are made in 4 levels of DICOM hierarchy:
 <figure>
 <svg width="300" height="300" viewBox="0 0 596 1628" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d)">

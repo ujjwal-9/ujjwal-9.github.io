@@ -1,7 +1,7 @@
 ---
 layout: full-width
 title: Research
-weight: 2
+weight: 3
 ---
 
 ## 3DCoMPaT

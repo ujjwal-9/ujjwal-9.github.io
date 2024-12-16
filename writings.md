@@ -1,10 +1,12 @@
 ---
 layout: full-width
 title: Writings
-weight: 1
+weight: 2
 ---
 
 ## Blogs
+
+[***Introduction to True Intelligence***](articles/24/intro-to-true-intelligence)<br/>Exploring the principles of compositional understanding and adaptability in AI systems - how can we create AI that reasons and solves problems beyond its training data? This article examines the theoretical foundations and practical approaches to achieving true machine intelligence.
 
 [***Introduction to Lean***](articles/22/intro-to-lean)<br/>It's a short introduction to lean theorem prover. It first part of the series covering Simple Type Theory and simple proof of infinitude of primes to give a feel of how it works.
 
@@ -18,7 +20,7 @@ weight: 1
 
 [***Docker Overview***](articles/20/docker)<br/>Leveraging docker to encourage reproducibility and easy maintainace of project.
 
-[***Heartrate detection using camera***](articles/19/heartrate-detection)<br/>How euler video magnification can be used to magnify motion and color.
+[***Heart Rate detection using camera***](articles/19/heartrate-detection)<br/>How euler video magnification can be used to magnify motion and color.
 
 [***Knowledge Distillation***](articles/18/knowledge-distillation)<br/>Transforming large deep learning models to smaller models woith imporved perform.
 
@@ -39,6 +41,14 @@ weight: 1
 ## Presentations
 
 [***ASPECT Scoring***](assets/pdf/ASPECTS.pdf)<br /> ASPECTS is a 10-point quantitative topographic CT scan score used for patients with middle cerebral artery (MCA) stroke.  To compute ASPECTS, 1 point is subtracted from 10 for any evidence of early ischemic change for each of the defined regions. This CT score is simple and reliable and may be helpful in the early stages of care for supporting transfer or therapy decisions.
+
+[***Deep Meta Handles***](assets/pdf/deep-meta-handles.pdf)<br /> A novel approach to learning deformation handles for 3D meshes using biharmonic coordinates. Rather than generating meshes from scratch, which is challenging due to irregular data structures, this work focuses on learning to deform existing mesh geometries while preserving their connectivity structure. The method enables intuitive and efficient mesh manipulation through learned meta-handles.
+
+[***VMNet***](assets/pdf/vmnet.pdf)<br /> VMNet is a novel deep learning architecture that combines geodesic and euclidean convolutions over 3D meshes and their voxel representations. Rather than operating on a single representation, this dual-stream approach leverages both the precise geometric information from mesh-based geodesic convolutions and the regular grid structure of voxel-based euclidean convolutions. The network performs semantic segmentation on 3D scenes from the ScanNet dataset, effectively labeling different parts of indoor environments.
+
+[***SimSiam***](assets/pdf/simsiam.pdf)<br /> SimSiam is a simple framework for self-supervised learning that demonstrates how siamese networks are fundamental to contrastive learning methods. It achieves competitive performance using stop-gradient operations and small batch sizes, showing that complex techniques used in other methods like MoCo, BYOL, SimCLR and SwAV are mainly design choices rather than essential components.
+
+[***BYOL***](assets/pdf/byol.pdf)<br /> BYOL (Bootstrap Your Own Latent) is a novel self-supervised learning approach that achieves state-of-the-art performance without relying on negative pairs. Using two neural networks that learn from each other through different augmented views of images, it reaches 74.3% top-1 accuracy on ImageNet with ResNet-50 and demonstrates strong transfer learning capabilities.
 
 <!-- ## Software
 [*Is the Weather Weird?*](https://www.istheweatherweird.com)<br/>Jonah-Bloch Johnson and I made a website to help answer that question. Bea Malsky made a [twitter bot](https://twitter.com/itww_chicago).
