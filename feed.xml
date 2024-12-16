@@ -5,9 +5,153 @@
     <description>Personal webpage</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 15 Dec 2024 20:24:46 -0600</pubDate>
-    <lastBuildDate>Sun, 15 Dec 2024 20:24:46 -0600</lastBuildDate>
+    <pubDate>Sun, 15 Dec 2024 20:30:01 -0600</pubDate>
+    <lastBuildDate>Sun, 15 Dec 2024 20:30:01 -0600</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>True Intelligence - Part 1</title>
+        <description>&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
+MathJax.Hub.Config({
+  &lt;!-- tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}, --&gt;
+  jax: [&quot;input/TeX&quot;,&quot;output/HTML-CSS&quot;],
+  displayAlign: &quot;left&quot;,
+  &quot;HTML-CSS&quot;: { scale: 110}
+});
+&lt;/script&gt;
+
+&lt;h1 id=&quot;abstract&quot;&gt;Abstract&lt;/h1&gt;
+
+&lt;p&gt;True intelligence lies in the ability to adapt to the unknown. This poses one of the most enduring challenges in artificial intelligence: how to create systems capable of reasoning and solving problems beyond their initial training data. While AI systems excel in specific tasks with clear data boundaries, they often falter when presented with novel problems or contexts, such as rare medical conditions or unseen scenarios in robotics. The essence of intelligence, both human and artificial, involves compositional reasoning—the ability to deconstruct tasks into core components and recombine them in new contexts.&lt;/p&gt;
+
+&lt;p&gt;In this blog, we explore the principles of compositional understanding, the theoretical underpinnings of true intelligence, and potential approaches to achieving adaptability in artificial systems.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;the-challenge-of-adaptation&quot;&gt;The Challenge of Adaptation&lt;/h1&gt;
+
+&lt;p&gt;The human mind excels at navigating unknown situations. For instance, a clinician encountering an unfamiliar disease can rely on foundational medical knowledge and observations to draw meaningful conclusions. In contrast, many AI models are brittle, trained to excel only within narrowly defined distributions.&lt;/p&gt;
+
+&lt;p&gt;The challenge can be mathematically framed as follows:&lt;/p&gt;
+
+&lt;p&gt;Given an input space \(X\), a task space \(T\), and a distribution \(P(X, T)\) over these spaces, an AI model \(M\) is designed to map inputs \(x \in X\) to outputs \(t \in T\). True intelligence requires \(M\) to generalize to distributions \(P'(X, T)\), where \(P'(X, T)\) may be significantly different from \(P(X, T)\). This requires learning core abstractions \(A\) such that:&lt;/p&gt;
+
+\[\text{Adaptation: } f: A \times P'(X, T) \to M'\]
+
+&lt;p&gt;where \(M'\) is the adapted model for the new distribution.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;compositional-reasoning&quot;&gt;Compositional Reasoning&lt;/h1&gt;
+
+&lt;p&gt;Humans achieve generalization by leveraging compositional reasoning. This involves identifying atomic concepts or sub-problems and combining them to solve complex tasks. In mathematical terms, compositional reasoning can be expressed as:&lt;/p&gt;
+
+\[M(x) = f\Big(\sum_{i=1}^{n} g_i(x)\Big)\]
+
+&lt;p&gt;where \(g_i(x)\) represents atomic functions capturing fundamental logic or features, and \(f\) is the recombination function that enables solving a new problem.&lt;/p&gt;
+
+&lt;p&gt;For example:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Recognizing individual shapes (\(g_i(x)\)) in a visual scene.&lt;/li&gt;
+  &lt;li&gt;Recombining these shapes (\(f\)) to infer the presence of an object.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;This approach mirrors how humans decompose problems like understanding a sentence by identifying words, syntax, and semantics.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;bottlenecks-in-current-ai-systems&quot;&gt;Bottlenecks in Current AI Systems&lt;/h1&gt;
+
+&lt;p&gt;Current AI systems primarily rely on pattern recognition, which struggles with:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Out-of-distribution scenarios&lt;/strong&gt;: Rare or novel cases are often misclassified.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Spurious correlations&lt;/strong&gt;: Systems often mistake correlation for causation.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Lack of interpretability&lt;/strong&gt;: Deep learning models often function as “black boxes.”&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;To move beyond these limitations, we must design systems that exhibit reasoning rather than rote memorization.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;the-path-to-true-intelligence&quot;&gt;The Path to True Intelligence&lt;/h1&gt;
+
+&lt;p&gt;True intelligence requires overcoming the combinatorial explosion of possibilities in real-world tasks. Consider program synthesis as an analogy: generating all possible programs that solve a task is infeasible. Instead, humans use intuition and abstraction to navigate vast solution spaces.&lt;/p&gt;
+
+&lt;h2 id=&quot;abstraction-and-generalization&quot;&gt;Abstraction and Generalization&lt;/h2&gt;
+
+&lt;p&gt;Abstractions are reusable building blocks that form the foundation of reasoning. They can be conceptualized as:&lt;/p&gt;
+
+\[A = \{ a_1, a_2, \dots, a_k \}\]
+
+&lt;p&gt;where \(a_i\) represents a primitive abstraction derived from past experiences. A system capable of generalization must:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Learn \(A\) from data.&lt;/li&gt;
+  &lt;li&gt;Recombine \(A\) to form solutions for unseen problems.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;framework-for-compositional-ai&quot;&gt;Framework for Compositional AI&lt;/h2&gt;
+
+&lt;p&gt;We propose a dual-phase framework:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Abstraction Generation&lt;/strong&gt;: Discover core abstractions using techniques like clustering, unsupervised learning, or symbolic representation.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Synthesis and Reasoning&lt;/strong&gt;: Use abstraction banks to compose solutions for novel tasks.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The formal process is:&lt;/p&gt;
+
+\[S(x, T) = f(A, T)\]
+
+&lt;p&gt;where \(S(x, T)\) synthesizes solutions \(x \to T\) using abstractions \(A\) and recombination logic \(f\).&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;applications-in-high-stakes-domains&quot;&gt;Applications in High-Stakes Domains&lt;/h1&gt;
+
+&lt;p&gt;Compositional AI is particularly relevant in high-stakes domains like healthcare. For example, in stroke detection:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Abstraction&lt;/strong&gt;: Identify features such as gaze deviation or ischemic regions.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Reasoning&lt;/strong&gt;: Combine these features to diagnose rare stroke patterns.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Similarly, in robotics, compositional reasoning allows systems to adapt to dynamic environments by recombining learned motor skills and sensory processing.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;toward-explainability&quot;&gt;Toward Explainability&lt;/h1&gt;
+
+&lt;p&gt;An essential requirement for true intelligence is interpretability. A system’s reasoning process must be transparent and explainable, enabling users to trust its decisions. This can be achieved through structured outputs, such as:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Semantic annotations&lt;/strong&gt;: Annotating decisions with explanations tied to abstractions.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Visual grounding&lt;/strong&gt;: Linking outputs to visual or sensory evidence.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Structured reasoning graphs&lt;/strong&gt;: Representing inference paths as directed acyclic graphs (DAGs).&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;the-future-of-ai-research&quot;&gt;The Future of AI Research&lt;/h1&gt;
+
+&lt;p&gt;True intelligence is the next frontier in AI. It requires bridging the gap between pattern recognition and reasoning through abstractions and composition. The future lies in:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Developing datasets and benchmarks that emphasize compositional complexity.&lt;/li&gt;
+  &lt;li&gt;Designing architectures that integrate deep learning with symbolic reasoning.&lt;/li&gt;
+  &lt;li&gt;Incorporating feedback loops for real-time adaptation and learning.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;True intelligence is not just about solving problems but understanding them in a way that allows adaptation to new, unknown challenges. By pursuing compositional AI, we take a significant step toward systems that mirror the adaptability and creativity of human cognition.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Follow me on Twitter &lt;a href=&quot;https://twitter.com/theujjwal9&quot;&gt;@theujjwal9&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Sun, 01 Dec 2024 00:00:00 -0600</pubDate>
+        <link>/articles/24/intro-to-true-intelligence</link>
+        <guid isPermaLink="true">/articles/24/intro-to-true-intelligence</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>Introduction to Lean</title>
@@ -284,19 +428,6 @@ another by checking that each inference is between those allowed.&lt;/p&gt;
         <pubDate>Sun, 11 Dec 2022 00:00:00 -0600</pubDate>
         <link>/articles/22/intro-to-lean</link>
         <guid isPermaLink="true">/articles/22/intro-to-lean</guid>
-        
-        
-        <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>Fallacy</title>
-        <description>
-</description>
-        <pubDate>Wed, 10 Feb 2021 00:00:00 -0600</pubDate>
-        <link>/articles/21/fallacy</link>
-        <guid isPermaLink="true">/articles/21/fallacy</guid>
         
         
         <category>blog</category>
@@ -1649,11 +1780,11 @@ MathJax.Hub.Config({
     
       <item>
         <title>DICOM Standards</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://www.dicomstandard.org/&quot;&gt;Dicom Website!&lt;/a&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;a href=&quot;https://www.dicomstandard.org/&quot;&gt;DICOM Website!&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;DICOM = Digital Imaging and Communications in Medicine&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;DICOM standard includes a file format definition and a network communications protocol that uses TCP/IP to communicate between systems.&lt;/p&gt;
+&lt;p&gt;The DICOM standard includes a file format definition and a network communications protocol that uses TCP/IP to communicate between systems.&lt;/p&gt;
 
 &lt;script type=&quot;text/x-mathjax-config&quot;&gt;
 MathJax.Hub.Config({
@@ -1666,7 +1797,7 @@ MathJax.Hub.Config({
 
 &lt;h1 id=&quot;abstract&quot;&gt;Abstract&lt;/h1&gt;
 
-&lt;p&gt;Dicom standard was conceptualized and implemented when CT (computed tomography) Scans were developed. It takes special care of not losing the information when translating the medical images and other data to digital format. This is done so as to keep it as close to original as possible.&lt;/p&gt;
+&lt;p&gt;The DICOM standard was conceptualized and implemented when CT (computed tomography) scans were developed. It takes special care not to lose information when translating medical images and other data to digital format. This is done to keep it as close to the original as possible.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;The main objective of this new standard was to create an open platform for the communication of medical images and related data.&lt;/p&gt;
@@ -1679,17 +1810,17 @@ MathJax.Hub.Config({
 &lt;p&gt;DICOM defines:&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;data structures (formats) for medical images and related data,&lt;/li&gt;
-  &lt;li&gt;network oriented services, e. g.
+  &lt;li&gt;Data structures (formats) for medical images and related data&lt;/li&gt;
+  &lt;li&gt;Network-oriented services, e.g.:
     &lt;ul&gt;
-      &lt;li&gt;image transmission&lt;/li&gt;
-      &lt;li&gt;query of an image archive (PACS)&lt;/li&gt;
-      &lt;li&gt;print (hardcopy)&lt;/li&gt;
+      &lt;li&gt;Image transmission&lt;/li&gt;
+      &lt;li&gt;Query of an image archive (PACS)&lt;/li&gt;
+      &lt;li&gt;Print (hardcopy)&lt;/li&gt;
       &lt;li&gt;RIS - PACS - modality integration&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;formats for storage media exchange
-4.requirements for conforming devices and programs&lt;/li&gt;
+  &lt;li&gt;Formats for storage media exchange&lt;/li&gt;
+  &lt;li&gt;Requirements for conforming devices and programs&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/img/dicom-intro/dicom-workflow.png&quot; width=&quot;600&quot; /&gt; &lt;label for=&quot;sidenote-id&quot; class=&quot;margin-toggle&quot;&gt; ⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;sidenote-id&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;&lt;a href=&quot;https://www.softneta.com/solutions/dicom-anonymization-for-medical-education-and-research/&quot;&gt;[Image Source]&lt;/a&gt; &lt;/span&gt;&lt;/p&gt;
@@ -1704,36 +1835,36 @@ MathJax.Hub.Config({
 
 &lt;p&gt;&lt;img src=&quot;/assets/img/dicom-intro/dicom-protocol-workflow.png&quot; width=&quot;600&quot; /&gt; &lt;label for=&quot;sidenote-id&quot; class=&quot;margin-toggle&quot;&gt; ⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;sidenote-id&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;&lt;a href=&quot;https://www.extrahop.com/company/blog/2016/introduction-to-dicom-protocol/&quot;&gt;[Image Source]&lt;/a&gt; &lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;PACS-RIS integration improves the flow of images for the radiologist. They communicate using some set of commands (called HL7) concerned with Admission/Discharge/Transfer (ADT) and Order/Entry.&lt;/p&gt;
+&lt;p&gt;PACS-RIS integration improves the flow of images for radiologists. They communicate using a set of commands (called HL7) concerned with Admission/Discharge/Transfer (ADT) and Order/Entry.&lt;/p&gt;
 
 &lt;h2 id=&quot;dicom-data-structures&quot;&gt;DICOM Data Structures&lt;/h2&gt;
 
-&lt;p&gt;Dicom consists of list of image attributes which contain vast amount of image and medical information:&lt;/p&gt;
+&lt;p&gt;DICOM consists of a list of image attributes which contain vast amounts of image and medical information:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;patient information (name, sex, identification number)&lt;/li&gt;
-  &lt;li&gt;modality and imaging procedure information (device parameters, calibration, radiation dose, contrast media)&lt;/li&gt;
-  &lt;li&gt;image information (resolution, windowing)&lt;/li&gt;
+  &lt;li&gt;Patient information (name, sex, identification number)&lt;/li&gt;
+  &lt;li&gt;Modality and imaging procedure information (device parameters, calibration, radiation dose, contrast media)&lt;/li&gt;
+  &lt;li&gt;Image information (resolution, windowing)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Dicom goes to the lengths and defines significance of each data element in multitude of cases. It defines if an attribute is required, optional or important for certain cases. But this feature comes at a cost.&lt;/p&gt;
+&lt;p&gt;DICOM goes to great lengths and defines the significance of each data element in a multitude of cases. It defines if an attribute is required, optional, or important for certain cases. But this feature comes at a cost:&lt;/p&gt;
 &lt;ol&gt;
-  &lt;li&gt;Image objects are frequently incomplete : There is inconsistency in filling all the fields with the data. Some fields in image objects are often are left blank and some are filled with incorrect data.&lt;/li&gt;
-  &lt;li&gt;Another problem occurs when displaying an image on a device that is made from different manufacturer, because different imaging equipment use different amplitude ranges and the same number of allocated bits. In that case, images can be displayed as underexposed or overexposed with poor contrast, so those parameters should be adjusted manually.&lt;/li&gt;
+  &lt;li&gt;Image objects are frequently incomplete: There is inconsistency in filling all the fields with data. Some fields in image objects are often left blank and some are filled with incorrect data.&lt;/li&gt;
+  &lt;li&gt;Another problem occurs when displaying an image on a device made by a different manufacturer, because different imaging equipment uses different amplitude ranges and the same number of allocated bits. In that case, images can be displayed as underexposed or overexposed with poor contrast, so those parameters should be adjusted manually.&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h2 id=&quot;dicom-network-services&quot;&gt;DICOM Network Services&lt;/h2&gt;
 
-&lt;p&gt;This service is based over client-sever concept. They (Dicom applications) establish connection to exchange information. In addition to image transmission, there are other features too:&lt;/p&gt;
+&lt;p&gt;This service is based on the client-server concept. DICOM applications establish connections to exchange information. In addition to image transmission, there are other features:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Image Archive Service: search images in a PACS archive by certain criteria (patient, time of creation of the images, modality etc.) and to selectively download images from this archive.&lt;/li&gt;
-  &lt;li&gt;Print Service: gives access to cameras and printers over a network.&lt;/li&gt;
-  &lt;li&gt;Modality Worklist Service: Download updated information regarding patient using above decribed PACS-RIS system.&lt;/li&gt;
+  &lt;li&gt;Image Archive Service: Search images in a PACS archive by certain criteria (patient, time of creation of the images, modality etc.) and selectively download images from this archive&lt;/li&gt;
+  &lt;li&gt;Print Service: Gives access to cameras and printers over a network&lt;/li&gt;
+  &lt;li&gt;Modality Worklist Service: Download updated information regarding patients using the above-described PACS-RIS system&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;patient-model&quot;&gt;Patient Model&lt;/h3&gt;
 
-&lt;p&gt;Queries to image archives (PACS) are made in 4 level of DICOM hierarchy:&lt;/p&gt;
+&lt;p&gt;Queries to image archives (PACS) are made in 4 levels of DICOM hierarchy:&lt;/p&gt;
 &lt;figure&gt;
 &lt;svg width=&quot;300&quot; height=&quot;300&quot; viewBox=&quot;0 0 596 1628&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
 &lt;g filter=&quot;url(#filter0_d)&quot;&gt;

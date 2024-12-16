@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-70SVKC0TJP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-70SVKC0TJP');
+  </script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Ujjwal Upadhyay - True Intelligence - Part 1</title>
+  <meta name="description" content="AbstractTrue intelligence lies in the ability to adapt to the unknown. This poses one of the most enduring challenges in artificial intelligence: how to crea...">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
+  
+    <link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+  
+  
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  <link rel="stylesheet" type="text/css" href="/css/tufte.css">
+  <link rel="stylesheet" type="text/css" href="/css/icomoon.css">
+  <!-- <link rel="stylesheet" type="text/css" href="/css/print.css" media="print"> -->
+
+  <link rel="canonical" href="/articles/24/intro-to-true-intelligence">
+
+  <link rel="alternate" type="application/rss+xml" title="Ujjwal Upadhyay" href="/feed.xml" />
+  <link rel="icon" type="image/svg" href="/assets/img/infinite.svg">
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="True Intelligence - Part 1" />
+<meta name="author" content="Ujjwal Upadhyay" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Abstract True intelligence lies in the ability to adapt to the unknown. This poses one of the most enduring challenges in artificial intelligence: how to create systems capable of reasoning and solving problems beyond their initial training data. While AI systems excel in specific tasks with clear data boundaries, they often falter when presented with novel problems or contexts, such as rare medical conditions or unseen scenarios in robotics. The essence of intelligence, both human and artificial, involves compositional reasoning—the ability to deconstruct tasks into core components and recombine them in new contexts. In this blog, we explore the principles of compositional understanding, the theoretical underpinnings of true intelligence, and potential approaches to achieving adaptability in artificial systems. The Challenge of Adaptation The human mind excels at navigating unknown situations. For instance, a clinician encountering an unfamiliar disease can rely on foundational medical knowledge and observations to draw meaningful conclusions. In contrast, many AI models are brittle, trained to excel only within narrowly defined distributions. The challenge can be mathematically framed as follows: Given an input space \(X\), a task space \(T\), and a distribution \(P(X, T)\) over these spaces, an AI model \(M\) is designed to map inputs \(x \in X\) to outputs \(t \in T\). True intelligence requires \(M\) to generalize to distributions \(P&#39;(X, T)\), where \(P&#39;(X, T)\) may be significantly different from \(P(X, T)\). This requires learning core abstractions \(A\) such that: [\text{Adaptation: } f: A \times P’(X, T) \to M’] where \(M&#39;\) is the adapted model for the new distribution. Compositional Reasoning Humans achieve generalization by leveraging compositional reasoning. This involves identifying atomic concepts or sub-problems and combining them to solve complex tasks. In mathematical terms, compositional reasoning can be expressed as: [M(x) = f\Big(\sum_{i=1}^{n} g_i(x)\Big)] where \(g_i(x)\) represents atomic functions capturing fundamental logic or features, and \(f\) is the recombination function that enables solving a new problem. For example: Recognizing individual shapes (\(g_i(x)\)) in a visual scene. Recombining these shapes (\(f\)) to infer the presence of an object. This approach mirrors how humans decompose problems like understanding a sentence by identifying words, syntax, and semantics. Bottlenecks in Current AI Systems Current AI systems primarily rely on pattern recognition, which struggles with: Out-of-distribution scenarios: Rare or novel cases are often misclassified. Spurious correlations: Systems often mistake correlation for causation. Lack of interpretability: Deep learning models often function as “black boxes.” To move beyond these limitations, we must design systems that exhibit reasoning rather than rote memorization. The Path to True Intelligence True intelligence requires overcoming the combinatorial explosion of possibilities in real-world tasks. Consider program synthesis as an analogy: generating all possible programs that solve a task is infeasible. Instead, humans use intuition and abstraction to navigate vast solution spaces. Abstraction and Generalization Abstractions are reusable building blocks that form the foundation of reasoning. They can be conceptualized as: [A = { a_1, a_2, \dots, a_k }] where \(a_i\) represents a primitive abstraction derived from past experiences. A system capable of generalization must: Learn \(A\) from data. Recombine \(A\) to form solutions for unseen problems. Framework for Compositional AI We propose a dual-phase framework: Abstraction Generation: Discover core abstractions using techniques like clustering, unsupervised learning, or symbolic representation. Synthesis and Reasoning: Use abstraction banks to compose solutions for novel tasks. The formal process is: [S(x, T) = f(A, T)] where \(S(x, T)\) synthesizes solutions \(x \to T\) using abstractions \(A\) and recombination logic \(f\). Applications in High-Stakes Domains Compositional AI is particularly relevant in high-stakes domains like healthcare. For example, in stroke detection: Abstraction: Identify features such as gaze deviation or ischemic regions. Reasoning: Combine these features to diagnose rare stroke patterns. Similarly, in robotics, compositional reasoning allows systems to adapt to dynamic environments by recombining learned motor skills and sensory processing. Toward Explainability An essential requirement for true intelligence is interpretability. A system’s reasoning process must be transparent and explainable, enabling users to trust its decisions. This can be achieved through structured outputs, such as: Semantic annotations: Annotating decisions with explanations tied to abstractions. Visual grounding: Linking outputs to visual or sensory evidence. Structured reasoning graphs: Representing inference paths as directed acyclic graphs (DAGs). The Future of AI Research True intelligence is the next frontier in AI. It requires bridging the gap between pattern recognition and reasoning through abstractions and composition. The future lies in: Developing datasets and benchmarks that emphasize compositional complexity. Designing architectures that integrate deep learning with symbolic reasoning. Incorporating feedback loops for real-time adaptation and learning. True intelligence is not just about solving problems but understanding them in a way that allows adaptation to new, unknown challenges. By pursuing compositional AI, we take a significant step toward systems that mirror the adaptability and creativity of human cognition. Follow me on Twitter @theujjwal9" />
+<meta property="og:description" content="Abstract True intelligence lies in the ability to adapt to the unknown. This poses one of the most enduring challenges in artificial intelligence: how to create systems capable of reasoning and solving problems beyond their initial training data. While AI systems excel in specific tasks with clear data boundaries, they often falter when presented with novel problems or contexts, such as rare medical conditions or unseen scenarios in robotics. The essence of intelligence, both human and artificial, involves compositional reasoning—the ability to deconstruct tasks into core components and recombine them in new contexts. In this blog, we explore the principles of compositional understanding, the theoretical underpinnings of true intelligence, and potential approaches to achieving adaptability in artificial systems. The Challenge of Adaptation The human mind excels at navigating unknown situations. For instance, a clinician encountering an unfamiliar disease can rely on foundational medical knowledge and observations to draw meaningful conclusions. In contrast, many AI models are brittle, trained to excel only within narrowly defined distributions. The challenge can be mathematically framed as follows: Given an input space \(X\), a task space \(T\), and a distribution \(P(X, T)\) over these spaces, an AI model \(M\) is designed to map inputs \(x \in X\) to outputs \(t \in T\). True intelligence requires \(M\) to generalize to distributions \(P&#39;(X, T)\), where \(P&#39;(X, T)\) may be significantly different from \(P(X, T)\). This requires learning core abstractions \(A\) such that: [\text{Adaptation: } f: A \times P’(X, T) \to M’] where \(M&#39;\) is the adapted model for the new distribution. Compositional Reasoning Humans achieve generalization by leveraging compositional reasoning. This involves identifying atomic concepts or sub-problems and combining them to solve complex tasks. In mathematical terms, compositional reasoning can be expressed as: [M(x) = f\Big(\sum_{i=1}^{n} g_i(x)\Big)] where \(g_i(x)\) represents atomic functions capturing fundamental logic or features, and \(f\) is the recombination function that enables solving a new problem. For example: Recognizing individual shapes (\(g_i(x)\)) in a visual scene. Recombining these shapes (\(f\)) to infer the presence of an object. This approach mirrors how humans decompose problems like understanding a sentence by identifying words, syntax, and semantics. Bottlenecks in Current AI Systems Current AI systems primarily rely on pattern recognition, which struggles with: Out-of-distribution scenarios: Rare or novel cases are often misclassified. Spurious correlations: Systems often mistake correlation for causation. Lack of interpretability: Deep learning models often function as “black boxes.” To move beyond these limitations, we must design systems that exhibit reasoning rather than rote memorization. The Path to True Intelligence True intelligence requires overcoming the combinatorial explosion of possibilities in real-world tasks. Consider program synthesis as an analogy: generating all possible programs that solve a task is infeasible. Instead, humans use intuition and abstraction to navigate vast solution spaces. Abstraction and Generalization Abstractions are reusable building blocks that form the foundation of reasoning. They can be conceptualized as: [A = { a_1, a_2, \dots, a_k }] where \(a_i\) represents a primitive abstraction derived from past experiences. A system capable of generalization must: Learn \(A\) from data. Recombine \(A\) to form solutions for unseen problems. Framework for Compositional AI We propose a dual-phase framework: Abstraction Generation: Discover core abstractions using techniques like clustering, unsupervised learning, or symbolic representation. Synthesis and Reasoning: Use abstraction banks to compose solutions for novel tasks. The formal process is: [S(x, T) = f(A, T)] where \(S(x, T)\) synthesizes solutions \(x \to T\) using abstractions \(A\) and recombination logic \(f\). Applications in High-Stakes Domains Compositional AI is particularly relevant in high-stakes domains like healthcare. For example, in stroke detection: Abstraction: Identify features such as gaze deviation or ischemic regions. Reasoning: Combine these features to diagnose rare stroke patterns. Similarly, in robotics, compositional reasoning allows systems to adapt to dynamic environments by recombining learned motor skills and sensory processing. Toward Explainability An essential requirement for true intelligence is interpretability. A system’s reasoning process must be transparent and explainable, enabling users to trust its decisions. This can be achieved through structured outputs, such as: Semantic annotations: Annotating decisions with explanations tied to abstractions. Visual grounding: Linking outputs to visual or sensory evidence. Structured reasoning graphs: Representing inference paths as directed acyclic graphs (DAGs). The Future of AI Research True intelligence is the next frontier in AI. It requires bridging the gap between pattern recognition and reasoning through abstractions and composition. The future lies in: Developing datasets and benchmarks that emphasize compositional complexity. Designing architectures that integrate deep learning with symbolic reasoning. Incorporating feedback loops for real-time adaptation and learning. True intelligence is not just about solving problems but understanding them in a way that allows adaptation to new, unknown challenges. By pursuing compositional AI, we take a significant step toward systems that mirror the adaptability and creativity of human cognition. Follow me on Twitter @theujjwal9" />
+<meta property="og:site_name" content="Ujjwal Upadhyay" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-12-01T00:00:00-06:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="True Intelligence - Part 1" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ujjwal Upadhyay"},"dateModified":"2024-12-01T00:00:00-06:00","datePublished":"2024-12-01T00:00:00-06:00","description":"Abstract True intelligence lies in the ability to adapt to the unknown. This poses one of the most enduring challenges in artificial intelligence: how to create systems capable of reasoning and solving problems beyond their initial training data. While AI systems excel in specific tasks with clear data boundaries, they often falter when presented with novel problems or contexts, such as rare medical conditions or unseen scenarios in robotics. The essence of intelligence, both human and artificial, involves compositional reasoning—the ability to deconstruct tasks into core components and recombine them in new contexts. In this blog, we explore the principles of compositional understanding, the theoretical underpinnings of true intelligence, and potential approaches to achieving adaptability in artificial systems. The Challenge of Adaptation The human mind excels at navigating unknown situations. For instance, a clinician encountering an unfamiliar disease can rely on foundational medical knowledge and observations to draw meaningful conclusions. In contrast, many AI models are brittle, trained to excel only within narrowly defined distributions. The challenge can be mathematically framed as follows: Given an input space \\(X\\), a task space \\(T\\), and a distribution \\(P(X, T)\\) over these spaces, an AI model \\(M\\) is designed to map inputs \\(x \\in X\\) to outputs \\(t \\in T\\). True intelligence requires \\(M\\) to generalize to distributions \\(P&#39;(X, T)\\), where \\(P&#39;(X, T)\\) may be significantly different from \\(P(X, T)\\). This requires learning core abstractions \\(A\\) such that: [\\text{Adaptation: } f: A \\times P’(X, T) \\to M’] where \\(M&#39;\\) is the adapted model for the new distribution. Compositional Reasoning Humans achieve generalization by leveraging compositional reasoning. This involves identifying atomic concepts or sub-problems and combining them to solve complex tasks. In mathematical terms, compositional reasoning can be expressed as: [M(x) = f\\Big(\\sum_{i=1}^{n} g_i(x)\\Big)] where \\(g_i(x)\\) represents atomic functions capturing fundamental logic or features, and \\(f\\) is the recombination function that enables solving a new problem. For example: Recognizing individual shapes (\\(g_i(x)\\)) in a visual scene. Recombining these shapes (\\(f\\)) to infer the presence of an object. This approach mirrors how humans decompose problems like understanding a sentence by identifying words, syntax, and semantics. Bottlenecks in Current AI Systems Current AI systems primarily rely on pattern recognition, which struggles with: Out-of-distribution scenarios: Rare or novel cases are often misclassified. Spurious correlations: Systems often mistake correlation for causation. Lack of interpretability: Deep learning models often function as “black boxes.” To move beyond these limitations, we must design systems that exhibit reasoning rather than rote memorization. The Path to True Intelligence True intelligence requires overcoming the combinatorial explosion of possibilities in real-world tasks. Consider program synthesis as an analogy: generating all possible programs that solve a task is infeasible. Instead, humans use intuition and abstraction to navigate vast solution spaces. Abstraction and Generalization Abstractions are reusable building blocks that form the foundation of reasoning. They can be conceptualized as: [A = { a_1, a_2, \\dots, a_k }] where \\(a_i\\) represents a primitive abstraction derived from past experiences. A system capable of generalization must: Learn \\(A\\) from data. Recombine \\(A\\) to form solutions for unseen problems. Framework for Compositional AI We propose a dual-phase framework: Abstraction Generation: Discover core abstractions using techniques like clustering, unsupervised learning, or symbolic representation. Synthesis and Reasoning: Use abstraction banks to compose solutions for novel tasks. The formal process is: [S(x, T) = f(A, T)] where \\(S(x, T)\\) synthesizes solutions \\(x \\to T\\) using abstractions \\(A\\) and recombination logic \\(f\\). Applications in High-Stakes Domains Compositional AI is particularly relevant in high-stakes domains like healthcare. For example, in stroke detection: Abstraction: Identify features such as gaze deviation or ischemic regions. Reasoning: Combine these features to diagnose rare stroke patterns. Similarly, in robotics, compositional reasoning allows systems to adapt to dynamic environments by recombining learned motor skills and sensory processing. Toward Explainability An essential requirement for true intelligence is interpretability. A system’s reasoning process must be transparent and explainable, enabling users to trust its decisions. This can be achieved through structured outputs, such as: Semantic annotations: Annotating decisions with explanations tied to abstractions. Visual grounding: Linking outputs to visual or sensory evidence. Structured reasoning graphs: Representing inference paths as directed acyclic graphs (DAGs). The Future of AI Research True intelligence is the next frontier in AI. It requires bridging the gap between pattern recognition and reasoning through abstractions and composition. The future lies in: Developing datasets and benchmarks that emphasize compositional complexity. Designing architectures that integrate deep learning with symbolic reasoning. Incorporating feedback loops for real-time adaptation and learning. True intelligence is not just about solving problems but understanding them in a way that allows adaptation to new, unknown challenges. By pursuing compositional AI, we take a significant step toward systems that mirror the adaptability and creativity of human cognition. Follow me on Twitter @theujjwal9","headline":"True Intelligence - Part 1","mainEntityOfPage":{"@type":"WebPage","@id":"/articles/24/intro-to-true-intelligence"},"url":"/articles/24/intro-to-true-intelligence"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+  
+
+  
+
+  
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+<header>
+    <nav class="group">
+        <ul class="topnav" style="float:left">
+            <li><a style="padding-top:.5em" href="/"><strong>Ujjwal Upadhyay</strong></a></li>
+        </ul>
+	<ul class="topnav">    
+        
+	
+            
+            
+            
+  	
+            
+            
+	        
+                <li><a class="right" href="/research">Research</a></li>
+	        
+	    
+            
+  	
+            
+            
+	        
+                <li><a class="right" href="/writings">Writings</a></li>
+	        
+	    
+            
+  	
+            
+            
+	        
+                <li><a class="right" href="/scratchpad">Scratchpad</a></li>
+	        
+	    
+            
+  	
+            
+            
+            
+  	
+            
+  	
+            
+  	
+            
+  	
+        <!-- <li><a class="right" href="https://drive.google.com/file/d/13Hxj3cRTK9nMl54z58sPOoOah6iEtw-C/view?usp=sharing">cv</a></li> -->
+	</ul>
+	</nav>
+        <hr class="slender">
+</header>
+
+    <article class="group">
+      <h1 style="font-style:normal; font-size:3rem; font-weight: 500;">True Intelligence - Part 1</h1>
+<p class="subtitle">December 1, 2024</p>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  <!-- tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}, -->
+  jax: ["input/TeX","output/HTML-CSS"],
+  displayAlign: "left",
+  "HTML-CSS": { scale: 110}
+});
+</script>
+
+<h1 id="abstract">Abstract</h1>
+
+<p>True intelligence lies in the ability to adapt to the unknown. This poses one of the most enduring challenges in artificial intelligence: how to create systems capable of reasoning and solving problems beyond their initial training data. While AI systems excel in specific tasks with clear data boundaries, they often falter when presented with novel problems or contexts, such as rare medical conditions or unseen scenarios in robotics. The essence of intelligence, both human and artificial, involves compositional reasoning—the ability to deconstruct tasks into core components and recombine them in new contexts.</p>
+
+<p>In this blog, we explore the principles of compositional understanding, the theoretical underpinnings of true intelligence, and potential approaches to achieving adaptability in artificial systems.</p>
+
+<hr />
+
+<h1 id="the-challenge-of-adaptation">The Challenge of Adaptation</h1>
+
+<p>The human mind excels at navigating unknown situations. For instance, a clinician encountering an unfamiliar disease can rely on foundational medical knowledge and observations to draw meaningful conclusions. In contrast, many AI models are brittle, trained to excel only within narrowly defined distributions.</p>
+
+<p>The challenge can be mathematically framed as follows:</p>
+
+<p>Given an input space \(X\), a task space \(T\), and a distribution \(P(X, T)\) over these spaces, an AI model \(M\) is designed to map inputs \(x \in X\) to outputs \(t \in T\). True intelligence requires \(M\) to generalize to distributions \(P'(X, T)\), where \(P'(X, T)\) may be significantly different from \(P(X, T)\). This requires learning core abstractions \(A\) such that:</p>
+
+\[\text{Adaptation: } f: A \times P'(X, T) \to M'\]
+
+<p>where \(M'\) is the adapted model for the new distribution.</p>
+
+<hr />
+
+<h1 id="compositional-reasoning">Compositional Reasoning</h1>
+
+<p>Humans achieve generalization by leveraging compositional reasoning. This involves identifying atomic concepts or sub-problems and combining them to solve complex tasks. In mathematical terms, compositional reasoning can be expressed as:</p>
+
+\[M(x) = f\Big(\sum_{i=1}^{n} g_i(x)\Big)\]
+
+<p>where \(g_i(x)\) represents atomic functions capturing fundamental logic or features, and \(f\) is the recombination function that enables solving a new problem.</p>
+
+<p>For example:</p>
+<ol>
+  <li>Recognizing individual shapes (\(g_i(x)\)) in a visual scene.</li>
+  <li>Recombining these shapes (\(f\)) to infer the presence of an object.</li>
+</ol>
+
+<p>This approach mirrors how humans decompose problems like understanding a sentence by identifying words, syntax, and semantics.</p>
+
+<hr />
+
+<h1 id="bottlenecks-in-current-ai-systems">Bottlenecks in Current AI Systems</h1>
+
+<p>Current AI systems primarily rely on pattern recognition, which struggles with:</p>
+<ol>
+  <li><strong>Out-of-distribution scenarios</strong>: Rare or novel cases are often misclassified.</li>
+  <li><strong>Spurious correlations</strong>: Systems often mistake correlation for causation.</li>
+  <li><strong>Lack of interpretability</strong>: Deep learning models often function as “black boxes.”</li>
+</ol>
+
+<p>To move beyond these limitations, we must design systems that exhibit reasoning rather than rote memorization.</p>
+
+<hr />
+
+<h1 id="the-path-to-true-intelligence">The Path to True Intelligence</h1>
+
+<p>True intelligence requires overcoming the combinatorial explosion of possibilities in real-world tasks. Consider program synthesis as an analogy: generating all possible programs that solve a task is infeasible. Instead, humans use intuition and abstraction to navigate vast solution spaces.</p>
+
+<h2 id="abstraction-and-generalization">Abstraction and Generalization</h2>
+
+<p>Abstractions are reusable building blocks that form the foundation of reasoning. They can be conceptualized as:</p>
+
+\[A = \{ a_1, a_2, \dots, a_k \}\]
+
+<p>where \(a_i\) represents a primitive abstraction derived from past experiences. A system capable of generalization must:</p>
+<ol>
+  <li>Learn \(A\) from data.</li>
+  <li>Recombine \(A\) to form solutions for unseen problems.</li>
+</ol>
+
+<h2 id="framework-for-compositional-ai">Framework for Compositional AI</h2>
+
+<p>We propose a dual-phase framework:</p>
+<ol>
+  <li><strong>Abstraction Generation</strong>: Discover core abstractions using techniques like clustering, unsupervised learning, or symbolic representation.</li>
+  <li><strong>Synthesis and Reasoning</strong>: Use abstraction banks to compose solutions for novel tasks.</li>
+</ol>
+
+<p>The formal process is:</p>
+
+\[S(x, T) = f(A, T)\]
+
+<p>where \(S(x, T)\) synthesizes solutions \(x \to T\) using abstractions \(A\) and recombination logic \(f\).</p>
+
+<hr />
+
+<h1 id="applications-in-high-stakes-domains">Applications in High-Stakes Domains</h1>
+
+<p>Compositional AI is particularly relevant in high-stakes domains like healthcare. For example, in stroke detection:</p>
+<ol>
+  <li><strong>Abstraction</strong>: Identify features such as gaze deviation or ischemic regions.</li>
+  <li><strong>Reasoning</strong>: Combine these features to diagnose rare stroke patterns.</li>
+</ol>
+
+<p>Similarly, in robotics, compositional reasoning allows systems to adapt to dynamic environments by recombining learned motor skills and sensory processing.</p>
+
+<hr />
+
+<h1 id="toward-explainability">Toward Explainability</h1>
+
+<p>An essential requirement for true intelligence is interpretability. A system’s reasoning process must be transparent and explainable, enabling users to trust its decisions. This can be achieved through structured outputs, such as:</p>
+
+<ol>
+  <li><strong>Semantic annotations</strong>: Annotating decisions with explanations tied to abstractions.</li>
+  <li><strong>Visual grounding</strong>: Linking outputs to visual or sensory evidence.</li>
+  <li><strong>Structured reasoning graphs</strong>: Representing inference paths as directed acyclic graphs (DAGs).</li>
+</ol>
+
+<hr />
+
+<h1 id="the-future-of-ai-research">The Future of AI Research</h1>
+
+<p>True intelligence is the next frontier in AI. It requires bridging the gap between pattern recognition and reasoning through abstractions and composition. The future lies in:</p>
+<ol>
+  <li>Developing datasets and benchmarks that emphasize compositional complexity.</li>
+  <li>Designing architectures that integrate deep learning with symbolic reasoning.</li>
+  <li>Incorporating feedback loops for real-time adaptation and learning.</li>
+</ol>
+
+<p>True intelligence is not just about solving problems but understanding them in a way that allows adaptation to new, unknown challenges. By pursuing compositional AI, we take a significant step toward systems that mirror the adaptability and creativity of human cognition.</p>
+
+<blockquote>
+  <p><strong>Follow me on Twitter <a href="https://twitter.com/theujjwal9">@theujjwal9</a></strong></p>
+</blockquote>
+
+
+
+    </article>
+    <span class="print-footer">True Intelligence - Part 1 - December 1, 2024 - Ujjwal Upadhyay</span>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+<!-- <style>
+
+i:hover{
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+
+</style> -->
+
+<footer>
+  <hr class="slender">
+  <ul class="footer-links" style="font-size: 1.6rem;">
+    <li><a href="mailto:ujjwalupadhyay8@gmail.com"><i class="fa fa-envelope"></i></a></li>
+    <li><a href="https://twitter.com/theujjwal9"><i class="fa fa-twitter"></i></a></li>
+    <li><a href="https://github.com/ujjwal-9"><i class="fa fa-github"></i></a></li>
+    <li><a href="https://www.linkedin.com/in/ujjwal-9/"><i class="fa fa-linkedin"></i></a></li>
+    <li><a href="https://scholar.google.com/citations?user=lvpaXdEAAAAJ&hl=en"><i class="fa fa-graduation-cap"></i></a></li>
+    <li><a href="https://ujjwal-9.github.io/feed.xml"><i class="fa fa-rss"></i></a></li>
+    <!-- 
+      <li>
+        <a href="https://github.com/ujjwal-9"><span class="icon-github"></span></a>
+      </li>
+    
+      <li>
+        <a href="https://linkedin.com/in/ujjwal-9"><span class="icon-linkedin"></span></a>
+      </li>
+    
+      <li>
+        <a href="/feed.xml"><span class="icon-rss2"></span></a>
+      </li>
+       -->
+  </ul>
+<div class="credits">
+<span>&copy; 2024 &nbsp;&nbsp;UJJWAL UPADHYAY</span></br> <br>
+</div>  
+</footer>
+  </body>
+</html>

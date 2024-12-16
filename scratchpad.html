@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-70SVKC0TJP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-70SVKC0TJP');
+  </script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Ujjwal Upadhyay - Scratchpad</title>
+  <meta name="description" content="Personal webpage">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
+  
+    <link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+  
+  
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  <link rel="stylesheet" type="text/css" href="/css/tufte.css">
+  <link rel="stylesheet" type="text/css" href="/css/icomoon.css">
+  <!-- <link rel="stylesheet" type="text/css" href="/css/print.css" media="print"> -->
+
+  <link rel="canonical" href="/scratchpad">
+
+  <link rel="alternate" type="application/rss+xml" title="Ujjwal Upadhyay" href="/feed.xml" />
+  <link rel="icon" type="image/svg" href="/assets/img/infinite.svg">
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Scratchpad" />
+<meta name="author" content="Ujjwal Upadhyay" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Personal webpage" />
+<meta property="og:description" content="Personal webpage" />
+<meta property="og:site_name" content="Ujjwal Upadhyay" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Scratchpad" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Ujjwal Upadhyay"},"description":"Personal webpage","headline":"Scratchpad","url":"/scratchpad"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+  
+
+  
+
+  
+</head>
+
+  <body class="full-width">
+    <!--- Header and nav template site-wide -->
+<header>
+    <nav class="group">
+        <ul class="topnav" style="float:left">
+            <li><a style="padding-top:.5em" href="/"><strong>Ujjwal Upadhyay</strong></a></li>
+        </ul>
+	<ul class="topnav">    
+        
+	
+            
+            
+            
+  	
+            
+            
+	        
+                <li><a class="right" href="/research">Research</a></li>
+	        
+	    
+            
+  	
+            
+            
+	        
+                <li><a class="right" href="/writings">Writings</a></li>
+	        
+	    
+            
+  	
+            
+            
+	        
+                <li><a class="active right" href="/scratchpad">Scratchpad</a></li>
+	        
+	    
+            
+  	
+            
+            
+            
+  	
+            
+  	
+            
+  	
+            
+  	
+        <!-- <li><a class="right" href="https://drive.google.com/file/d/13Hxj3cRTK9nMl54z58sPOoOah6iEtw-C/view?usp=sharing">cv</a></li> -->
+	</ul>
+	</nav>
+        <hr class="slender">
+</header>
+
+    <article>
+    
+      <h3 id="bit-representation">Bit Representation:</h3>
+<ul>
+  <li>Different floating-point formats are compared for their efficiency:
+    <ul>
+      <li><strong>float32</strong>: Standard format with higher precision, but uses more transistors.</li>
+      <li><strong>float16</strong>: Reduces precision but increases efficiency (5x).</li>
+      <li><strong>bfloat16</strong>: Balances efficiency and precision (10x).</li>
+      <li><strong>Float8 E4M3 and E5M2</strong>: Provide even greater efficiency (40x–60x).</li>
+      <li><strong>MXFP4 E2M1</strong>: Offers the highest efficiency (180x).</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="algorithms">Algorithms:</h3>
+<ul>
+  <li><strong>Key optimizations and methodologies</strong>:
+    <ul>
+      <li>GPT2 with RoPE and no dropout for enhanced reasoning.</li>
+      <li>Use of <strong>Flash Attention</strong> for improved computational efficiency.</li>
+      <li>Implementation of <strong>Unsloth techniques</strong> like gradient checkpointing, chunked cross-entropy, and chained matrix multiplication.</li>
+      <li>Multi-query attention and shared key-value layers in Character AI to optimize inference.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="kernels-and-fusing">Kernels and Fusing:</h3>
+<ul>
+  <li>Important fused components include:
+    <ul>
+      <li>RMS Layernorm.</li>
+      <li>RoPE embeddings for rotational positional encoding.</li>
+      <li>Fused LoRA for reducing FLOPs during fine-tuning.</li>
+      <li>SwiGLU activation for stable training.</li>
+      <li><code class="language-plaintext highlighter-rouge">torch.compile</code> to optimize PyTorch models.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="high-quality-data">High-Quality Data:</h3>
+<ul>
+  <li>Emphasis on using better data for model training.</li>
+</ul>
+
+<h3 id="future-directions">Future Directions:</h3>
+<ul>
+  <li>Hypotheses about advancements:
+    <ul>
+      <li>Transition to <strong>float4/float6</strong> may be challenging.</li>
+      <li>Increased use of sparse weight averaging (SWA).</li>
+      <li>Deeper models within the same resource budget.</li>
+      <li>Hardware limitations pushing software optimization boundaries.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="references-to-key-research">References to Key Research:</h3>
+<ul>
+  <li>Physics of Language Models (Zeyuan Allen-Zhu et al.) explores scaling laws and reasoning processes in models.</li>
+  <li>Optimization techniques for sub-billion parameter models for on-device use cases.</li>
+</ul>
+
+<h3 id="resources">Resources:</h3>
+<ul>
+  <li><strong>Unsloth.ai</strong> and <strong>Character AI</strong> blogs offer insights into advanced optimizations.</li>
+  <li>GitHub repositories and research papers for deeper exploration.</li>
+</ul>
+
+<h1 id="pytorch-training-tips">PyTorch Training Tips</h1>
+<p>The memory-efficient weight loading technique you’ve explored focuses on minimizing the memory overhead when loading large pretrained or fine-tuned models in PyTorch. Here’s a breakdown of the key approaches and their rationale:</p>
+
+<p>Here’s a structured notebook-style code representation of the conversation, with explanations embedded as comments:</p>
+
+<h3 id="memory-efficient-model-weight-loading-in-pytorch">Memory-Efficient Model Weight Loading in PyTorch</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Step 1: Import necessary libraries
+</span><span class="kn">import</span> <span class="nn">torch</span>
+<span class="kn">import</span> <span class="nn">gc</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">psutil</span>
+<span class="kn">from</span> <span class="nn">threading</span> <span class="kn">import</span> <span class="n">Thread</span>
+
+<span class="c1"># Step 2: Utilities for memory tracking and cleanup
+</span><span class="k">def</span> <span class="nf">start_memory_tracking</span><span class="p">():</span>
+    <span class="s">"""Initialize GPU memory tracking."""</span>
+    <span class="k">if</span> <span class="n">torch</span><span class="p">.</span><span class="n">cuda</span><span class="p">.</span><span class="n">is_available</span><span class="p">():</span>
+        <span class="n">torch</span><span class="p">.</span><span class="n">cuda</span><span class="p">.</span><span class="n">reset_peak_memory_stats</span><span class="p">()</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"CUDA is not available. GPU memory tracking will not work."</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">print_memory_usage</span><span class="p">():</span>
+    <span class="s">"""Print the maximum GPU memory allocated."""</span>
+    <span class="n">max_gpu_memory</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="n">cuda</span><span class="p">.</span><span class="n">max_memory_allocated</span><span class="p">()</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1024</span> <span class="o">**</span> <span class="mi">3</span><span class="p">)</span>  <span class="c1"># Convert bytes to GB
+</span>    <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"Maximum GPU memory allocated: </span><span class="si">{</span><span class="n">max_gpu_memory</span><span class="si">:</span><span class="p">.</span><span class="mi">1</span><span class="n">f</span><span class="si">}</span><span class="s"> GB"</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">cleanup</span><span class="p">():</span>
+    <span class="s">"""Cleanup unused memory."""</span>
+    <span class="n">gc</span><span class="p">.</span><span class="n">collect</span><span class="p">()</span>
+    <span class="n">torch</span><span class="p">.</span><span class="n">cuda</span><span class="p">.</span><span class="n">empty_cache</span><span class="p">()</span>
+    <span class="n">time</span><span class="p">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>  <span class="c1"># Allow memory to clear
+</span>    <span class="n">torch</span><span class="p">.</span><span class="n">cuda</span><span class="p">.</span><span class="n">reset_peak_memory_stats</span><span class="p">()</span>
+
+<span class="k">def</span> <span class="nf">memory_usage_in_gb</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="s">"""Monitor CPU memory usage during the execution of a function."""</span>
+    <span class="n">process</span> <span class="o">=</span> <span class="n">psutil</span><span class="p">.</span><span class="n">Process</span><span class="p">(</span><span class="n">os</span><span class="p">.</span><span class="n">getpid</span><span class="p">())</span>
+    <span class="n">baseline_mem</span> <span class="o">=</span> <span class="n">process</span><span class="p">.</span><span class="n">memory_info</span><span class="p">().</span><span class="n">rss</span> <span class="o">/</span> <span class="mi">1024</span> <span class="o">**</span> <span class="mi">3</span>  <span class="c1"># Convert to GB
+</span>
+    <span class="n">mem_usage</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">done</span> <span class="o">=</span> <span class="bp">False</span>
+
+    <span class="k">def</span> <span class="nf">monitor_memory</span><span class="p">():</span>
+        <span class="k">while</span> <span class="ow">not</span> <span class="n">done</span><span class="p">:</span>
+            <span class="n">mem_usage</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">process</span><span class="p">.</span><span class="n">memory_info</span><span class="p">().</span><span class="n">rss</span> <span class="o">/</span> <span class="mi">1024</span> <span class="o">**</span> <span class="mi">3</span><span class="p">)</span>  <span class="c1"># Convert to GB
+</span>            <span class="n">time</span><span class="p">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span>
+
+    <span class="n">t</span> <span class="o">=</span> <span class="n">Thread</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="n">monitor_memory</span><span class="p">)</span>
+    <span class="n">t</span><span class="p">.</span><span class="n">start</span><span class="p">()</span>
+
+    <span class="c1"># Run the function
+</span>    <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+    <span class="n">done</span> <span class="o">=</span> <span class="bp">True</span>
+    <span class="n">t</span><span class="p">.</span><span class="n">join</span><span class="p">()</span>
+    <span class="n">peak_mem_usage_gb</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">mem_usage</span><span class="p">)</span> <span class="o">-</span> <span class="n">baseline_mem</span>
+    <span class="k">return</span> <span class="n">peak_mem_usage_gb</span>
+
+<span class="c1"># Step 3: Define the model setup
+</span><span class="k">class</span> <span class="nc">GPTModel</span><span class="p">(</span><span class="n">torch</span><span class="p">.</span><span class="n">nn</span><span class="p">.</span><span class="n">Module</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">config</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">().</span><span class="n">__init__</span><span class="p">()</span>
+        <span class="c1"># Define a simple transformer-like structure for demonstration
+</span>        <span class="bp">self</span><span class="p">.</span><span class="n">embedding</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="n">nn</span><span class="p">.</span><span class="n">Embedding</span><span class="p">(</span><span class="n">config</span><span class="p">[</span><span class="s">"vocab_size"</span><span class="p">],</span> <span class="n">config</span><span class="p">[</span><span class="s">"emb_dim"</span><span class="p">])</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">layers</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="n">nn</span><span class="p">.</span><span class="n">ModuleList</span><span class="p">([</span>
+            <span class="n">torch</span><span class="p">.</span><span class="n">nn</span><span class="p">.</span><span class="n">TransformerEncoderLayer</span><span class="p">(</span>
+                <span class="n">d_model</span><span class="o">=</span><span class="n">config</span><span class="p">[</span><span class="s">"emb_dim"</span><span class="p">],</span>
+                <span class="n">nhead</span><span class="o">=</span><span class="n">config</span><span class="p">[</span><span class="s">"n_heads"</span><span class="p">],</span>
+                <span class="n">batch_first</span><span class="o">=</span><span class="bp">True</span>
+            <span class="p">)</span>
+            <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">config</span><span class="p">[</span><span class="s">"n_layers"</span><span class="p">])</span>
+        <span class="p">])</span>
+    
+    <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">embedding</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">layer</span> <span class="ow">in</span> <span class="bp">self</span><span class="p">.</span><span class="n">layers</span><span class="p">:</span>
+            <span class="n">x</span> <span class="o">=</span> <span class="n">layer</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">x</span>
+
+<span class="n">BASE_CONFIG</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s">"vocab_size"</span><span class="p">:</span> <span class="mi">50257</span><span class="p">,</span>
+    <span class="s">"context_length"</span><span class="p">:</span> <span class="mi">1024</span><span class="p">,</span>
+    <span class="s">"drop_rate"</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">,</span>
+    <span class="s">"qkv_bias"</span><span class="p">:</span> <span class="bp">True</span>
+<span class="p">}</span>
+
+<span class="n">model_configs</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s">"gpt2-small (124M)"</span><span class="p">:</span> <span class="p">{</span><span class="s">"emb_dim"</span><span class="p">:</span> <span class="mi">768</span><span class="p">,</span> <span class="s">"n_layers"</span><span class="p">:</span> <span class="mi">12</span><span class="p">,</span> <span class="s">"n_heads"</span><span class="p">:</span> <span class="mi">12</span><span class="p">},</span>
+    <span class="s">"gpt2-medium (355M)"</span><span class="p">:</span> <span class="p">{</span><span class="s">"emb_dim"</span><span class="p">:</span> <span class="mi">1024</span><span class="p">,</span> <span class="s">"n_layers"</span><span class="p">:</span> <span class="mi">24</span><span class="p">,</span> <span class="s">"n_heads"</span><span class="p">:</span> <span class="mi">16</span><span class="p">},</span>
+    <span class="s">"gpt2-large (774M)"</span><span class="p">:</span> <span class="p">{</span><span class="s">"emb_dim"</span><span class="p">:</span> <span class="mi">1280</span><span class="p">,</span> <span class="s">"n_layers"</span><span class="p">:</span> <span class="mi">36</span><span class="p">,</span> <span class="s">"n_heads"</span><span class="p">:</span> <span class="mi">20</span><span class="p">},</span>
+    <span class="s">"gpt2-xl (1558M)"</span><span class="p">:</span> <span class="p">{</span><span class="s">"emb_dim"</span><span class="p">:</span> <span class="mi">1600</span><span class="p">,</span> <span class="s">"n_layers"</span><span class="p">:</span> <span class="mi">48</span><span class="p">,</span> <span class="s">"n_heads"</span><span class="p">:</span> <span class="mi">25</span><span class="p">},</span>
+<span class="p">}</span>
+
+<span class="c1"># Choose model configuration
+</span><span class="n">CHOOSE_MODEL</span> <span class="o">=</span> <span class="s">"gpt2-large (774M)"</span>
+<span class="n">BASE_CONFIG</span><span class="p">.</span><span class="n">update</span><span class="p">(</span><span class="n">model_configs</span><span class="p">[</span><span class="n">CHOOSE_MODEL</span><span class="p">])</span>
+
+<span class="c1"># Step 4: Memory-efficient weight loading methods
+</span><span class="k">def</span> <span class="nf">load_weights_sequentially</span><span class="p">():</span>
+    <span class="s">"""Load model weights sequentially to save GPU memory."""</span>
+    <span class="n">start_memory_tracking</span><span class="p">()</span>
+
+    <span class="n">model</span> <span class="o">=</span> <span class="n">GPTModel</span><span class="p">(</span><span class="n">BASE_CONFIG</span><span class="p">).</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
+    <span class="n">state_dict</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="n">load</span><span class="p">(</span><span class="s">"model.pth"</span><span class="p">,</span> <span class="n">map_location</span><span class="o">=</span><span class="s">"cpu"</span><span class="p">)</span>
+
+    <span class="c1"># Sequentially copy weights
+</span>    <span class="k">with</span> <span class="n">torch</span><span class="p">.</span><span class="n">no_grad</span><span class="p">():</span>
+        <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">param</span> <span class="ow">in</span> <span class="n">model</span><span class="p">.</span><span class="n">named_parameters</span><span class="p">():</span>
+            <span class="k">if</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">state_dict</span><span class="p">:</span>
+                <span class="n">param</span><span class="p">.</span><span class="n">copy_</span><span class="p">(</span><span class="n">state_dict</span><span class="p">[</span><span class="n">name</span><span class="p">].</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"Warning: </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s"> not found in state_dict."</span><span class="p">)</span>
+
+    <span class="n">print_memory_usage</span><span class="p">()</span>
+
+<span class="k">def</span> <span class="nf">load_with_meta_device</span><span class="p">():</span>
+    <span class="s">"""Load model weights using PyTorch's meta device."""</span>
+    <span class="n">start_memory_tracking</span><span class="p">()</span>
+
+    <span class="k">with</span> <span class="n">torch</span><span class="p">.</span><span class="n">device</span><span class="p">(</span><span class="s">"meta"</span><span class="p">):</span>
+        <span class="n">model</span> <span class="o">=</span> <span class="n">GPTModel</span><span class="p">(</span><span class="n">BASE_CONFIG</span><span class="p">)</span>
+
+    <span class="n">model</span> <span class="o">=</span> <span class="n">model</span><span class="p">.</span><span class="n">to_empty</span><span class="p">(</span><span class="n">device</span><span class="o">=</span><span class="n">device</span><span class="p">)</span>
+    <span class="n">state_dict</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="n">load</span><span class="p">(</span><span class="s">"model.pth"</span><span class="p">,</span> <span class="n">map_location</span><span class="o">=</span><span class="n">device</span><span class="p">)</span>
+
+    <span class="c1"># Sequentially copy weights
+</span>    <span class="k">with</span> <span class="n">torch</span><span class="p">.</span><span class="n">no_grad</span><span class="p">():</span>
+        <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">param</span> <span class="ow">in</span> <span class="n">model</span><span class="p">.</span><span class="n">named_parameters</span><span class="p">():</span>
+            <span class="k">if</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">state_dict</span><span class="p">:</span>
+                <span class="n">param</span><span class="p">.</span><span class="n">copy_</span><span class="p">(</span><span class="n">state_dict</span><span class="p">[</span><span class="n">name</span><span class="p">])</span>
+
+    <span class="n">print_memory_usage</span><span class="p">()</span>
+
+<span class="k">def</span> <span class="nf">load_with_mmap</span><span class="p">():</span>
+    <span class="s">"""Load model weights with mmap=True for memory efficiency."""</span>
+    <span class="n">start_memory_tracking</span><span class="p">()</span>
+
+    <span class="k">with</span> <span class="n">torch</span><span class="p">.</span><span class="n">device</span><span class="p">(</span><span class="s">"meta"</span><span class="p">):</span>
+        <span class="n">model</span> <span class="o">=</span> <span class="n">GPTModel</span><span class="p">(</span><span class="n">BASE_CONFIG</span><span class="p">)</span>
+
+    <span class="n">model</span><span class="p">.</span><span class="n">load_state_dict</span><span class="p">(</span>
+        <span class="n">torch</span><span class="p">.</span><span class="n">load</span><span class="p">(</span><span class="s">"model.pth"</span><span class="p">,</span> <span class="n">map_location</span><span class="o">=</span><span class="n">device</span><span class="p">,</span> <span class="n">mmap</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    <span class="p">)</span>
+
+    <span class="n">print_memory_usage</span><span class="p">()</span>
+
+<span class="k">def</span> <span class="nf">load_weights_individually</span><span class="p">():</span>
+    <span class="s">"""Save and load each weight tensor separately."""</span>
+    <span class="n">param_dir</span> <span class="o">=</span> <span class="s">"model_parameters"</span>
+
+    <span class="c1"># Save individual parameters
+</span>    <span class="n">state_dict</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="n">load</span><span class="p">(</span><span class="s">"model.pth"</span><span class="p">)</span>
+    <span class="n">os</span><span class="p">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">param_dir</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">param</span> <span class="ow">in</span> <span class="n">state_dict</span><span class="p">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="n">torch</span><span class="p">.</span><span class="n">save</span><span class="p">(</span><span class="n">param</span><span class="p">.</span><span class="n">cpu</span><span class="p">(),</span> <span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="n">param_dir</span><span class="p">,</span> <span class="sa">f</span><span class="s">"</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s">.pt"</span><span class="p">))</span>
+
+    <span class="c1"># Load individual parameters
+</span>    <span class="n">start_memory_tracking</span><span class="p">()</span>
+
+    <span class="k">with</span> <span class="n">torch</span><span class="p">.</span><span class="n">device</span><span class="p">(</span><span class="s">"meta"</span><span class="p">):</span>
+        <span class="n">model</span> <span class="o">=</span> <span class="n">GPTModel</span><span class="p">(</span><span class="n">BASE_CONFIG</span><span class="p">)</span>
+
+    <span class="n">model</span> <span class="o">=</span> <span class="n">model</span><span class="p">.</span><span class="n">to_empty</span><span class="p">(</span><span class="n">device</span><span class="o">=</span><span class="n">device</span><span class="p">)</span>
+
+    <span class="k">with</span> <span class="n">torch</span><span class="p">.</span><span class="n">no_grad</span><span class="p">():</span>
+        <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">param</span> <span class="ow">in</span> <span class="n">model</span><span class="p">.</span><span class="n">named_parameters</span><span class="p">():</span>
+            <span class="n">weight_path</span> <span class="o">=</span> <span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="n">param_dir</span><span class="p">,</span> <span class="sa">f</span><span class="s">"</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s">.pt"</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">exists</span><span class="p">(</span><span class="n">weight_path</span><span class="p">):</span>
+                <span class="n">param</span><span class="p">.</span><span class="n">copy_</span><span class="p">(</span><span class="n">torch</span><span class="p">.</span><span class="n">load</span><span class="p">(</span><span class="n">weight_path</span><span class="p">,</span> <span class="n">map_location</span><span class="o">=</span><span class="s">"cpu"</span><span class="p">).</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">))</span>
+
+    <span class="n">print_memory_usage</span><span class="p">()</span>
+
+<span class="c1"># Example usage
+</span><span class="n">device</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="n">device</span><span class="p">(</span><span class="s">"cuda"</span> <span class="k">if</span> <span class="n">torch</span><span class="p">.</span><span class="n">cuda</span><span class="p">.</span><span class="n">is_available</span><span class="p">()</span> <span class="k">else</span> <span class="s">"cpu"</span><span class="p">)</span>
+
+<span class="c1"># Uncomment the desired method to test
+# load_weights_sequentially()
+# load_with_meta_device()
+# load_with_mmap()
+# load_weights_individually()
+</span></code></pre></div></div>
+
+<hr />
+
+<h3 id="explanation-of-methods">Explanation of Methods</h3>
+
+<ol>
+  <li><strong>Sequential Loading</strong>:
+    <ul>
+      <li>Loads model weights one by one, transferring them from CPU to GPU, minimizing GPU memory overhead.</li>
+    </ul>
+  </li>
+  <li><strong>Meta Device</strong>:
+    <ul>
+      <li>Instantiates a “meta” model with no memory allocation initially and directly loads weights into GPU, reducing CPU memory usage.</li>
+    </ul>
+  </li>
+  <li><strong>Memory Mapping (<code class="language-plaintext highlighter-rouge">mmap=True</code>)</strong>:
+    <ul>
+      <li>Allows direct access to weights from disk instead of loading them fully into memory, ideal for low-memory systems.</li>
+    </ul>
+  </li>
+  <li><strong>Individual Tensor Loading</strong>:
+    <ul>
+      <li>Saves each tensor as a separate file, loads them one at a time during model setup, and immediately applies the weight, ensuring minimal memory usage.</li>
+    </ul>
+  </li>
+</ol>
+
+<p>This approach ensures efficient utilization of memory resources while dealing with large models in PyTorch.</p>
+
+<h3 id="1-the-problem">1. <strong>The Problem</strong></h3>
+<p>When loading a large model’s weights using <code class="language-plaintext highlighter-rouge">torch.load(model.pth)</code>, you often end up with the model in GPU memory twice (once during model instantiation and again when loading the state_dict). This can be problematic on systems with limited GPU or CPU memory, especially for larger models like GPT-2 (XL).</p>
+
+<h3 id="2-sequential-weight-loading">2. <strong>Sequential Weight Loading</strong></h3>
+<p>A solution to avoid loading the model twice into memory is sequential loading. The idea here is:</p>
+<ul>
+  <li>Load the model’s structure into GPU memory.</li>
+  <li>Load the weights (state_dict) into CPU memory.</li>
+  <li>Then, one by one, move each weight from CPU to GPU memory.</li>
+</ul>
+
+<p>By doing this, you only hold one parameter tensor in memory at a time during the transfer process. This method significantly reduces peak memory usage compared to the default approach.</p>
+
+<h3 id="3-using-the-meta-device">3. <strong>Using the <code class="language-plaintext highlighter-rouge">meta</code> Device</strong></h3>
+<p>The <code class="language-plaintext highlighter-rouge">meta</code> device in PyTorch allows you to define the model’s structure without immediately allocating memory. By using this, you can bypass CPU memory entirely and directly load weights onto the GPU, which is especially useful when CPU memory is constrained.</p>
+<ul>
+  <li>You create the model on the <code class="language-plaintext highlighter-rouge">meta</code> device.</li>
+  <li>Then, you load weights directly into GPU memory sequentially.</li>
+  <li>This reduces CPU memory usage significantly while still keeping GPU memory requirements manageable.</li>
+</ul>
+
+<h3 id="4-memory-mapping-mmaptrue">4. <strong>Memory Mapping (<code class="language-plaintext highlighter-rouge">mmap=True</code>)</strong></h3>
+<p>The <code class="language-plaintext highlighter-rouge">mmap=True</code> option in PyTorch enables memory-mapped file I/O, allowing data to be accessed directly from disk rather than being fully loaded into RAM. This method is effective in environments where both CPU and GPU memory are limited but disk space is sufficient.</p>
+
+<h3 id="5-loading-weights-individually">5. <strong>Loading Weights Individually</strong></h3>
+<p>An even more memory-conservative option is to save and load each weight tensor separately:</p>
+<ul>
+  <li>Instead of loading the entire state_dict, you save each weight tensor individually.</li>
+  <li>When loading, you load each tensor one by one, apply it to the corresponding model parameter, and immediately free the memory used by that tensor.</li>
+  <li>This brute-force method further reduces memory usage since you never hold the entire state_dict in memory.</li>
+</ul>
+
+<h3 id="key-takeaways"><strong>Key Takeaways:</strong></h3>
+<ul>
+  <li><strong>Sequential Loading:</strong> Reduces peak GPU memory usage by avoiding holding the model in memory twice.</li>
+  <li><strong>Meta Device Loading:</strong> Bypasses CPU memory when CPU is the bottleneck but GPU has sufficient memory.</li>
+  <li><strong>Memory Mapping:</strong> Allows for efficient memory usage by accessing model weights directly from disk, useful when both CPU and GPU memory are tight.</li>
+  <li><strong>Individual Tensor Loading:</strong> The most conservative in terms of memory, useful for extreme memory-constrained environments.</li>
+</ul>
+
+<p>This combination of techniques allows you to load models in resource-constrained environments while optimizing memory use for efficient deep learning workflows.</p>
+
+<h1 id="random-coding-stuff-saved">Random Coding Stuff Saved</h1>
+
+<p>Here’s a collection of coding tricks and techniques I’ve saved for handling tricky cases while training models in PyTorch. These are things I often refer back to when working on projects.</p>
+
+<h2 id="1-gradient-accumulation-for-large-batch-sizes">1. Gradient Accumulation (For Large Batch Sizes)</h2>
+
+<p>When my GPU memory can’t handle large batch sizes, I use gradient accumulation over several smaller batches:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">accumulation_steps</span> <span class="o">=</span> <span class="mi">4</span>  <span class="c1"># Adjust based on your memory constraints
+</span><span class="n">optimizer</span><span class="p">.</span><span class="n">zero_grad</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">inputs</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">data_loader</span><span class="p">):</span>
+    <span class="n">outputs</span> <span class="o">=</span> <span class="n">model</span><span class="p">(</span><span class="n">inputs</span><span class="p">)</span>
+    <span class="n">loss</span> <span class="o">=</span> <span class="n">loss_fn</span><span class="p">(</span><span class="n">outputs</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span>
+    <span class="n">loss</span> <span class="o">=</span> <span class="n">loss</span> <span class="o">/</span> <span class="n">accumulation_steps</span>  <span class="c1"># Normalize loss for accumulation
+</span>    <span class="n">loss</span><span class="p">.</span><span class="n">backward</span><span class="p">()</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="n">accumulation_steps</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">optimizer</span><span class="p">.</span><span class="n">step</span><span class="p">()</span>
+        <span class="n">optimizer</span><span class="p">.</span><span class="n">zero_grad</span><span class="p">()</span>
+
+<span class="c1"># Handle any remaining gradients
+</span><span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="n">accumulation_steps</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">optimizer</span><span class="p">.</span><span class="n">step</span><span class="p">()</span>
+    <span class="n">optimizer</span><span class="p">.</span><span class="n">zero_grad</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h2 id="2-mixed-precision-training">2. Mixed Precision Training</h2>
+
+<p>For faster computation and reduced memory usage, I use <code class="language-plaintext highlighter-rouge">torch.cuda.amp</code> for mixed precision training:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">scaler</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="n">cuda</span><span class="p">.</span><span class="n">amp</span><span class="p">.</span><span class="n">GradScaler</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">inputs</span><span class="p">,</span> <span class="n">labels</span> <span class="ow">in</span> <span class="n">data_loader</span><span class="p">:</span>
+    <span class="n">optimizer</span><span class="p">.</span><span class="n">zero_grad</span><span class="p">()</span>
+    
+    <span class="k">with</span> <span class="n">torch</span><span class="p">.</span><span class="n">cuda</span><span class="p">.</span><span class="n">amp</span><span class="p">.</span><span class="n">autocast</span><span class="p">():</span>
+        <span class="n">outputs</span> <span class="o">=</span> <span class="n">model</span><span class="p">(</span><span class="n">inputs</span><span class="p">)</span>
+        <span class="n">loss</span> <span class="o">=</span> <span class="n">loss_fn</span><span class="p">(</span><span class="n">outputs</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span>
+    
+    <span class="n">scaler</span><span class="p">.</span><span class="n">scale</span><span class="p">(</span><span class="n">loss</span><span class="p">).</span><span class="n">backward</span><span class="p">()</span>
+    <span class="n">scaler</span><span class="p">.</span><span class="n">step</span><span class="p">(</span><span class="n">optimizer</span><span class="p">)</span>
+    <span class="n">scaler</span><span class="p">.</span><span class="n">update</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h2 id="3-model-checkpointing-for-resuming-training">3. Model Checkpointing for Resuming Training</h2>
+
+<p>I always save and load checkpoints to resume training efficiently:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Save checkpoint
+</span><span class="n">torch</span><span class="p">.</span><span class="n">save</span><span class="p">({</span>
+    <span class="s">'epoch'</span><span class="p">:</span> <span class="n">epoch</span><span class="p">,</span>
+    <span class="s">'model_state_dict'</span><span class="p">:</span> <span class="n">model</span><span class="p">.</span><span class="n">state_dict</span><span class="p">(),</span>
+    <span class="s">'optimizer_state_dict'</span><span class="p">:</span> <span class="n">optimizer</span><span class="p">.</span><span class="n">state_dict</span><span class="p">(),</span>
+    <span class="s">'loss'</span><span class="p">:</span> <span class="n">loss</span><span class="p">,</span>
+<span class="p">},</span> <span class="s">'checkpoint.pth'</span><span class="p">)</span>
+
+<span class="c1"># Load checkpoint
+</span><span class="n">checkpoint</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="n">load</span><span class="p">(</span><span class="s">'checkpoint.pth'</span><span class="p">)</span>
+<span class="n">model</span><span class="p">.</span><span class="n">load_state_dict</span><span class="p">(</span><span class="n">checkpoint</span><span class="p">[</span><span class="s">'model_state_dict'</span><span class="p">])</span>
+<span class="n">optimizer</span><span class="p">.</span><span class="n">load_state_dict</span><span class="p">(</span><span class="n">checkpoint</span><span class="p">[</span><span class="s">'optimizer_state_dict'</span><span class="p">])</span>
+<span class="n">start_epoch</span> <span class="o">=</span> <span class="n">checkpoint</span><span class="p">[</span><span class="s">'epoch'</span><span class="p">]</span>
+<span class="n">loss</span> <span class="o">=</span> <span class="n">checkpoint</span><span class="p">[</span><span class="s">'loss'</span><span class="p">]</span>
+</code></pre></div></div>
+
+<h2 id="4-custom-learning-rate-scheduler">4. Custom Learning Rate Scheduler</h2>
+
+<p>For complex requirements, I create my own learning rate scheduler:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">custom_lr_scheduler</span><span class="p">(</span><span class="n">epoch</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">epoch</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mf">0.001</span>
+    <span class="k">elif</span> <span class="n">epoch</span> <span class="o">&lt;</span> <span class="mi">20</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mf">0.0001</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mf">0.00001</span>
+
+<span class="k">for</span> <span class="n">epoch</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_epochs</span><span class="p">):</span>
+    <span class="n">lr</span> <span class="o">=</span> <span class="n">custom_lr_scheduler</span><span class="p">(</span><span class="n">epoch</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">param_group</span> <span class="ow">in</span> <span class="n">optimizer</span><span class="p">.</span><span class="n">param_groups</span><span class="p">:</span>
+        <span class="n">param_group</span><span class="p">[</span><span class="s">'lr'</span><span class="p">]</span> <span class="o">=</span> <span class="n">lr</span>
+    <span class="c1"># Training loop
+</span></code></pre></div></div>
+
+<h2 id="5-distributed-data-parallel-ddp-training">5. Distributed Data Parallel (DDP) Training</h2>
+
+<p>When I train models on multiple GPUs, I use DDP:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">torch.distributed</span> <span class="k">as</span> <span class="n">dist</span>
+<span class="kn">from</span> <span class="nn">torch.nn.parallel</span> <span class="kn">import</span> <span class="n">DistributedDataParallel</span> <span class="k">as</span> <span class="n">DDP</span>
+
+<span class="n">dist</span><span class="p">.</span><span class="n">init_process_group</span><span class="p">(</span><span class="s">"nccl"</span><span class="p">,</span> <span class="n">init_method</span><span class="o">=</span><span class="s">"env://"</span><span class="p">)</span>
+<span class="n">local_rank</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">os</span><span class="p">.</span><span class="n">environ</span><span class="p">[</span><span class="s">"LOCAL_RANK"</span><span class="p">])</span>
+<span class="n">torch</span><span class="p">.</span><span class="n">cuda</span><span class="p">.</span><span class="n">set_device</span><span class="p">(</span><span class="n">local_rank</span><span class="p">)</span>
+
+<span class="n">model</span> <span class="o">=</span> <span class="n">model</span><span class="p">.</span><span class="n">to</span><span class="p">(</span><span class="n">local_rank</span><span class="p">)</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">DDP</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">device_ids</span><span class="o">=</span><span class="p">[</span><span class="n">local_rank</span><span class="p">])</span>
+
+<span class="c1"># Usual training loop
+</span></code></pre></div></div>
+
+<h2 id="6-gradient-clipping">6. Gradient Clipping</h2>
+
+<p>To prevent exploding gradients, I clip them:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">torch</span><span class="p">.</span><span class="n">nn</span><span class="p">.</span><span class="n">utils</span><span class="p">.</span><span class="n">clip_grad_norm_</span><span class="p">(</span><span class="n">model</span><span class="p">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="n">max_norm</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
+
+<span class="c1"># Inside training loop
+</span><span class="n">loss</span><span class="p">.</span><span class="n">backward</span><span class="p">()</span>
+<span class="n">torch</span><span class="p">.</span><span class="n">nn</span><span class="p">.</span><span class="n">utils</span><span class="p">.</span><span class="n">clip_grad_norm_</span><span class="p">(</span><span class="n">model</span><span class="p">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="n">max_norm</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
+<span class="n">optimizer</span><span class="p">.</span><span class="n">step</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h2 id="7-handling-imbalanced-datasets">7. Handling Imbalanced Datasets</h2>
+
+<p>For imbalanced datasets, I use weighted loss functions:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">torch.nn</span> <span class="kn">import</span> <span class="n">CrossEntropyLoss</span>
+
+<span class="n">class_weights</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="n">tensor</span><span class="p">([</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">]).</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>  <span class="c1"># Adjust weights
+</span><span class="n">loss_fn</span> <span class="o">=</span> <span class="n">CrossEntropyLoss</span><span class="p">(</span><span class="n">weight</span><span class="o">=</span><span class="n">class_weights</span><span class="p">)</span>
+
+<span class="c1"># Training loop
+</span><span class="n">loss</span> <span class="o">=</span> <span class="n">loss_fn</span><span class="p">(</span><span class="n">outputs</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="8-debugging-nans-in-gradients">8. Debugging NaNs in Gradients</h2>
+
+<p>Sometimes I run into NaNs in gradients and debug them like this:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">param</span> <span class="ow">in</span> <span class="n">model</span><span class="p">.</span><span class="n">named_parameters</span><span class="p">():</span>
+    <span class="k">if</span> <span class="n">param</span><span class="p">.</span><span class="n">grad</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">torch</span><span class="p">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">param</span><span class="p">.</span><span class="n">grad</span><span class="p">).</span><span class="nb">any</span><span class="p">():</span>
+            <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"NaN detected in gradients of </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="9-efficient-data-loading">9. Efficient Data Loading</h2>
+
+<p>I use <code class="language-plaintext highlighter-rouge">prefetch_factor</code> and <code class="language-plaintext highlighter-rouge">persistent_workers</code> to make data loading faster:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">data_loader</span> <span class="o">=</span> <span class="n">DataLoader</span><span class="p">(</span>
+    <span class="n">dataset</span><span class="p">,</span> 
+    <span class="n">batch_size</span><span class="o">=</span><span class="mi">32</span><span class="p">,</span> 
+    <span class="n">shuffle</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> 
+    <span class="n">num_workers</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> 
+    <span class="n">prefetch_factor</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> 
+    <span class="n">persistent_workers</span><span class="o">=</span><span class="bp">True</span>
+<span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="10-model-debugging-with-hooks">10. Model Debugging with Hooks</h2>
+
+<p>To inspect intermediate layer outputs, I use hooks:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">hook_fn</span><span class="p">(</span><span class="n">module</span><span class="p">,</span> <span class="nb">input</span><span class="p">,</span> <span class="n">output</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"Layer: </span><span class="si">{</span><span class="n">module</span><span class="p">.</span><span class="n">__class__</span><span class="p">.</span><span class="n">__name__</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"Output shape: </span><span class="si">{</span><span class="n">output</span><span class="p">.</span><span class="n">shape</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">layer</span> <span class="ow">in</span> <span class="n">model</span><span class="p">.</span><span class="n">children</span><span class="p">():</span>
+    <span class="n">layer</span><span class="p">.</span><span class="n">register_forward_hook</span><span class="p">(</span><span class="n">hook_fn</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>These snippets have been lifesavers for me when training models in PyTorch. Let me know if you want to dive deeper into any of these!</p>
+
+    </article>
+    <span class="print-footer">Scratchpad - Ujjwal Upadhyay</span>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+<!-- <style>
+
+i:hover{
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+
+</style> -->
+
+<footer>
+  <hr class="slender">
+  <ul class="footer-links" style="font-size: 1.6rem;">
+    <li><a href="mailto:ujjwalupadhyay8@gmail.com"><i class="fa fa-envelope"></i></a></li>
+    <li><a href="https://twitter.com/theujjwal9"><i class="fa fa-twitter"></i></a></li>
+    <li><a href="https://github.com/ujjwal-9"><i class="fa fa-github"></i></a></li>
+    <li><a href="https://www.linkedin.com/in/ujjwal-9/"><i class="fa fa-linkedin"></i></a></li>
+    <li><a href="https://scholar.google.com/citations?user=lvpaXdEAAAAJ&hl=en"><i class="fa fa-graduation-cap"></i></a></li>
+    <li><a href="https://ujjwal-9.github.io/feed.xml"><i class="fa fa-rss"></i></a></li>
+    <!-- 
+      <li>
+        <a href="https://github.com/ujjwal-9"><span class="icon-github"></span></a>
+      </li>
+    
+      <li>
+        <a href="https://linkedin.com/in/ujjwal-9"><span class="icon-linkedin"></span></a>
+      </li>
+    
+      <li>
+        <a href="/feed.xml"><span class="icon-rss2"></span></a>
+      </li>
+       -->
+  </ul>
+<div class="credits">
+<span>&copy; 2024 &nbsp;&nbsp;UJJWAL UPADHYAY</span></br> <br>
+</div>  
+</footer>
+  </body>
+</html>
