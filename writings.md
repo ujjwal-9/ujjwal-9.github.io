@@ -8,6 +8,8 @@ weight: 2
 
 [***Introduction to True Intelligence***](articles/24/intro-to-true-intelligence)<br/>Exploring the principles of compositional understanding and adaptability in AI systems - how can we create AI that reasons and solves problems beyond its training data? This article examines the theoretical foundations and practical approaches to achieving true machine intelligence.
 
+[***Introduction to Diffusion Models***](articles/23/intro-to-diffusion-model)<br/>Mathematical introduction to Diffusion Models in Generative Modeling
+
 [***Introduction to Lean***](articles/22/intro-to-lean)<br/>It's a short introduction to lean theorem prover. It first part of the series covering Simple Type Theory and simple proof of infinitude of primes to give a feel of how it works.
 
 [***How to read HeadCT***](articles/21/how-to-read-head-ct)<br/>This blog reflects on how to read head CT scans and what are different types of bleeds?
@@ -22,6 +24,8 @@ weight: 2
 
 [***Heart Rate detection using camera***](articles/19/heartrate-detection)<br/>How euler video magnification can be used to magnify motion and color.
 
+[***Markov Decision Process***](articles/18/markov-decision-process)<br/>A framework for decision making in situations where outcomes are partly random and partly under the control of a decision-maker.
+
 [***Knowledge Distillation***](articles/18/knowledge-distillation)<br/>Transforming large deep learning models to smaller models woith imporved perform.
 
 
@@ -33,10 +37,10 @@ weight: 2
 
 [***Predictably Irrational***]()<br />Dan Ariely
 
-[***The Concise Laws of Human Nature***]()<br />Robert Greene
 
-[***The Psychology of Money: Timeless Lessons on Wealth, Greed, and Happiness***]()<br />Morgan Housel 
+## Notes
 
+[***BANTA & ZOPA***](articles/21/banta-zopa)<br />Some negotiation strategies.
 
 ## Presentations
 

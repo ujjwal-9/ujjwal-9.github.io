@@ -43,7 +43,7 @@ Both of the above examples correspond to tactics called **calibrated questions**
 
 Answering such question demand that you possess deep emotional strength i.e you need to keep aside your emotions and your feeling about what other side means and from my point of view, you could even raise a counter question, like *what seems to be the problem with which you think I can help you*. This will give us insights into line of thinking of your counterpart about why he/she needs time to think through our offer or what bothers him/her. Once you get the information which your counterpart is hiding like the motive of negotitaion or even some small information which can help with your terms, you can gain authority without letting the other party know.
 
-> In negotiation, one should follow a strict sequence of actions (like in [Banta & Zopa](/notes/banta-zopa)) rather play around as per the psychology and nature of your counterpart.
+> In negotiation, one should follow a strict sequence of actions (like in [Banta & Zopa](/articles/21/banta-zopa)) rather play around as per the psychology and nature of your counterpart.
 
 Other mistake in negotiation is to think that your counterpart is fully rational and selfish and is not affected by emotions, rather its found in studies that emotion plays a very important role in negotiation which has the power to influence the rational thinking and logical mind. {%sidenote 'thinking-fast-and-slow' "<a href='https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow'>Thinking, Fast and Slow</a>  by Daniel Kahneman."%}
 

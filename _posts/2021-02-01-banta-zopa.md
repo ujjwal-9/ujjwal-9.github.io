@@ -1,11 +1,9 @@
 ---
 layout: post
 title:  "BANTA & ZOPA"
-date: 2021-02-02
-last_update: 2021-02-03
+date:   2021-02-02
 title_include: true
-categories: book
-permalink: /notes/banta-zopa
+categories: blog
 ---
 
 <script type="text/x-mathjax-config">
