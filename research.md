@@ -13,7 +13,9 @@ MathJax.Hub.Config({
 });
 </script>
 
-Full list of publications can be found on [Google Scholar Profile](https://scholar.google.com/citations?user=lvpaXdEAAAAJ&hl=en)
+I have been fortunate to collaborate with leading experts across diverse fields, including [Prof. Mohamed H. Elhoseiny](http://www.mohamed-elhoseiny.com/) (3D Vision, Creative Computing, Continual Learning, NLP), [Prof. Peter Wonka](https://peterwonka.net/) (Computer Graphics, 3D Vision), [Dr. Aakanksha Chowdhery](https://www.achowdhery.com/) (Efficient AI, Large Language Models, Edge Computing), [Dr. Jason Tarpley](https://www.pacificneuroscienceinstitute.org/people/jason-tarpley/) (Neuroscience, Surgery), [Dr. Jeyaraj Pandian](https://www.linkedin.com/in/jeyaraj-pandian-5a207b1b6?originalSubdomain=in) (Neuroscience, Surgery). Their insights and expertise have greatly enriched my research and broadened my perspective on building impactful AI systems.
+
+**You can find my full list of publications on my [google scholar profile](https://scholar.google.com/citations?user=lvpaXdEAAAAJ&hl=en)**
 
 ## Selected Publications
 
