@@ -5,8 +5,8 @@
     <description>Personal webpage</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 16 Dec 2024 04:12:51 -0600</pubDate>
-    <lastBuildDate>Mon, 16 Dec 2024 04:12:51 -0600</lastBuildDate>
+    <pubDate>Tue, 17 Dec 2024 09:20:54 -0600</pubDate>
+    <lastBuildDate>Tue, 17 Dec 2024 09:20:54 -0600</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -26,8 +26,6 @@ MathJax.Hub.Config({
 
 &lt;p&gt;In this blog, we explore the principles of compositional understanding, the theoretical underpinnings of true intelligence, and potential approaches to achieving adaptability in artificial systems.&lt;/p&gt;
 
-&lt;hr /&gt;
-
 &lt;h1 id=&quot;the-challenge-of-adaptation&quot;&gt;The Challenge of Adaptation&lt;/h1&gt;
 
 &lt;p&gt;The human mind excels at navigating unknown situations. For instance, a clinician encountering an unfamiliar disease can rely on foundational medical knowledge and observations to draw meaningful conclusions. In contrast, many AI models are brittle, trained to excel only within narrowly defined distributions.&lt;/p&gt;
@@ -39,8 +37,6 @@ MathJax.Hub.Config({
 \[\text{Adaptation: } f: A \times P'(X, T) \to M'\]
 
 &lt;p&gt;where \(M'\) is the adapted model for the new distribution.&lt;/p&gt;
-
-&lt;hr /&gt;
 
 &lt;h1 id=&quot;compositional-reasoning&quot;&gt;Compositional Reasoning&lt;/h1&gt;
 
@@ -58,8 +54,6 @@ MathJax.Hub.Config({
 
 &lt;p&gt;This approach mirrors how humans decompose problems like understanding a sentence by identifying words, syntax, and semantics.&lt;/p&gt;
 
-&lt;hr /&gt;
-
 &lt;h1 id=&quot;bottlenecks-in-current-ai-systems&quot;&gt;Bottlenecks in Current AI Systems&lt;/h1&gt;
 
 &lt;p&gt;Current AI systems primarily rely on pattern recognition, which struggles with:&lt;/p&gt;
@@ -70,8 +64,6 @@ MathJax.Hub.Config({
 &lt;/ol&gt;
 
 &lt;p&gt;To move beyond these limitations, we must design systems that exhibit reasoning rather than rote memorization.&lt;/p&gt;
-
-&lt;hr /&gt;
 
 &lt;h1 id=&quot;the-path-to-true-intelligence&quot;&gt;The Path to True Intelligence&lt;/h1&gt;
 
@@ -103,8 +95,6 @@ MathJax.Hub.Config({
 
 &lt;p&gt;where \(S(x, T)\) synthesizes solutions \(x \to T\) using abstractions \(A\) and recombination logic \(f\).&lt;/p&gt;
 
-&lt;hr /&gt;
-
 &lt;h1 id=&quot;applications-in-high-stakes-domains&quot;&gt;Applications in High-Stakes Domains&lt;/h1&gt;
 
 &lt;p&gt;Compositional AI is particularly relevant in high-stakes domains like healthcare. For example, in stroke detection:&lt;/p&gt;
@@ -115,8 +105,6 @@ MathJax.Hub.Config({
 
 &lt;p&gt;Similarly, in robotics, compositional reasoning allows systems to adapt to dynamic environments by recombining learned motor skills and sensory processing.&lt;/p&gt;
 
-&lt;hr /&gt;
-
 &lt;h1 id=&quot;toward-explainability&quot;&gt;Toward Explainability&lt;/h1&gt;
 
 &lt;p&gt;An essential requirement for true intelligence is interpretability. A system’s reasoning process must be transparent and explainable, enabling users to trust its decisions. This can be achieved through structured outputs, such as:&lt;/p&gt;
@@ -126,8 +114,6 @@ MathJax.Hub.Config({
   &lt;li&gt;&lt;strong&gt;Visual grounding&lt;/strong&gt;: Linking outputs to visual or sensory evidence.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Structured reasoning graphs&lt;/strong&gt;: Representing inference paths as directed acyclic graphs (DAGs).&lt;/li&gt;
 &lt;/ol&gt;
-
-&lt;hr /&gt;
 
 &lt;h1 id=&quot;the-future-of-ai-research&quot;&gt;The Future of AI Research&lt;/h1&gt;
 
