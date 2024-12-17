@@ -1,10 +1,8 @@
 ---
 layout: full-width
-title: Writings
+title: Blog
 weight: 2
 ---
-
-## Blogs
 
 [***Introduction to True Intelligence***](articles/24/intro-to-true-intelligence)<br/>Exploring the principles of compositional understanding and adaptability in AI systems - how can we create AI that reasons and solves problems beyond its training data? This article examines the theoretical foundations and practical approaches to achieving true machine intelligence.
 
@@ -29,7 +27,7 @@ weight: 2
 [***Knowledge Distillation***](articles/18/knowledge-distillation)<br/>Transforming large deep learning models to smaller models woith imporved perform.
 
 
-## Book Recommendations
+# Book Recommendations
 
 [***Never Split the Difference: Negotiating As If Your Life Depended On It***](articles/21/never-split-the-difference)<br />Christopher Voss and Tahl Raz
 
@@ -38,11 +36,11 @@ weight: 2
 [***Predictably Irrational***]()<br />Dan Ariely
 
 
-## Notes
+# Notes
 
 [***BANTA & ZOPA***](articles/21/banta-zopa)<br />Some negotiation strategies.
 
-## Presentations
+# Presentations
 
 [***ASPECT Scoring***](assets/pdf/ASPECTS.pdf)<br /> ASPECTS is a 10-point quantitative topographic CT scan score used for patients with middle cerebral artery (MCA) stroke.  To compute ASPECTS, 1 point is subtracted from 10 for any evidence of early ischemic change for each of the defined regions. This CT score is simple and reliable and may be helpful in the early stages of care for supporting transfer or therapy decisions.
 
