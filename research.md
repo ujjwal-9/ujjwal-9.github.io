@@ -13,6 +13,8 @@ MathJax.Hub.Config({
 });
 </script>
 
+I am particularly interested in representation learning, adversarial robustness, and compositional reasoning, with a strong focus on their applications in computational biology, medicine, and their interplay with human intelligence. These areas excite me because they bridge fundamental AI challenges with real-world impact. While I have a strong inclination toward these topics, I remain open to exploring a variety of research problems that push the boundaries of AI.
+
 I have been fortunate to collaborate with leading experts across diverse fields, including [Prof. Mohamed H. Elhoseiny](http://www.mohamed-elhoseiny.com/) (3D Vision, Creative Computing, Continual Learning, NLP), [Prof. Peter Wonka](https://peterwonka.net/) (Computer Graphics, 3D Vision), [Dr. Aakanksha Chowdhery](https://www.achowdhery.com/) (Efficient AI, Large Language Models, Edge Computing), [Dr. Jason Tarpley](https://www.pacificneuroscienceinstitute.org/people/jason-tarpley/) (Neuroscience, Surgery), [Dr. Jeyaraj Pandian](https://www.linkedin.com/in/jeyaraj-pandian-5a207b1b6?originalSubdomain=in) (Neuroscience, Surgery). Their insights and expertise have greatly enriched my research and broadened my perspective on building impactful AI systems.
 
 &nbsp;
