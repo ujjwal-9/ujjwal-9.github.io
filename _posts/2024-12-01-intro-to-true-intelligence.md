@@ -21,7 +21,6 @@ True intelligence lies in the ability to adapt to the unknown. This poses one of
 
 In this blog, we explore the principles of compositional understanding, the theoretical underpinnings of true intelligence, and potential approaches to achieving adaptability in artificial systems.
 
----
 
 # The Challenge of Adaptation
 
@@ -36,8 +35,6 @@ $$
 $$
 
 where $$M'$$ is the adapted model for the new distribution.
-
----
 
 # Compositional Reasoning
 
@@ -55,7 +52,6 @@ For example:
 
 This approach mirrors how humans decompose problems like understanding a sentence by identifying words, syntax, and semantics.
 
----
 
 # Bottlenecks in Current AI Systems
 
@@ -66,7 +62,6 @@ Current AI systems primarily rely on pattern recognition, which struggles with:
 
 To move beyond these limitations, we must design systems that exhibit reasoning rather than rote memorization.
 
----
 
 # The Path to True Intelligence
 
@@ -94,7 +89,6 @@ $$ S(x, T) = f(A, T) $$
 
 where $$S(x, T)$$ synthesizes solutions $$x \to T$$ using abstractions $$A$$ and recombination logic $$f$$.
 
----
 
 # Applications in High-Stakes Domains
 
@@ -104,7 +98,6 @@ Compositional AI is particularly relevant in high-stakes domains like healthcare
 
 Similarly, in robotics, compositional reasoning allows systems to adapt to dynamic environments by recombining learned motor skills and sensory processing.
 
----
 
 # Toward Explainability
 
@@ -114,7 +107,6 @@ An essential requirement for true intelligence is interpretability. A system's r
 2. **Visual grounding**: Linking outputs to visual or sensory evidence.
 3. **Structured reasoning graphs**: Representing inference paths as directed acyclic graphs (DAGs).
 
----
 
 # The Future of AI Research
 

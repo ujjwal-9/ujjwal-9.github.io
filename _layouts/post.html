@@ -1,12 +1,20 @@
----
-layout: default
----
-<h1 style="font-style:italic; font-size:1.8rem; font-weight: 600;">{{ page.title}}</h1>
-<p class="subtitle">{{ page.date | date: "%B %-d, %Y" }}</p>
-
-{{ content }}
-
-{% if page.last_update %}
-<br/><br/>
-Last updated: {{ page.last_update | date: "%B %-d, %Y" }}
-{% endif %}
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body class="full-width">
+    {% include header.html %}
+    <article>
+        <h1 style="font-style:italic; font-size:1.8rem; font-weight: 600;">{{ page.title}}</h1>
+        <p class="subtitle">{{ page.date | date: "%B %-d, %Y" }}</p>
+        
+        {{ content }}
+        
+        {% if page.last_update %}
+        <br/><br/>
+        Last updated: {{ page.last_update | date: "%B %-d, %Y" }}
+        {% endif %}
+    </article>
+    {% include print-footer.html %}
+    {% include footer.html %}
+  </body>
+</html>
