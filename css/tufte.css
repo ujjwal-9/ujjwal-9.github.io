@@ -690,10 +690,10 @@ hr.slender {
     display: none; } }
 @media (min-width: 760px) {
   img.headshot {
-    width: 20rem;
-    height: 20rem;
+    width: 22rem;
+    height: 22rem;
     margin-right: 1rem;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.30rem;
     float: left; } }
 @media (max-width: 760px) {
   img.headshot {
