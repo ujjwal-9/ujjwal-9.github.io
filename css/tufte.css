@@ -692,15 +692,28 @@ hr.slender {
   .print-footer {
     display: none; } }
 @media (min-width: 760px) {
+  .content-wrapper {
+    display: flex;
+    align-items: flex-start; }
+
   img.headshot {
-    width: 22rem;
-    height: 22rem;
-    margin-right: 1rem;
-    margin-bottom: 0.30rem;
-    float: left; } }
+    width: 24rem;
+    height: 24rem;
+    margin-top: 1.2em;
+    margin-right: 2rem;
+    margin-bottom: 0;
+    flex-shrink: 0;
+    vertical-align: top; }
+
+  .text-content {
+    flex: 1;
+    margin-top: 0; } }
 @media (max-width: 760px) {
+  .content-wrapper {
+    display: block; }
+
   img.headshot {
-    display: block;
+    float: none;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1rem;
