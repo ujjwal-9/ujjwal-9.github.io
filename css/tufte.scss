@@ -400,7 +400,7 @@ nav.group a.active:after{ content:"\000a0\0003e" ;}
 header > nav  a{
 font-size: 1.2rem;
 font-family: $sans-font;
-letter-spacing: 0.15em;
+letter-spacing: 0.1em;
 text-transform: uppercase;
 color: $contrast-color;
 padding-top: 1.5rem;
@@ -409,8 +409,8 @@ display: inline-block;
 float: left;
 margin-top: 0;
 margin-bottom: 0;
-padding-right: 2rem;
-//margin-left: 1rem;
+padding-right: 1.4rem;
+// margin-left: 1.3rem;
 vertical-align: baseline;
 }
 header > nav a img{
@@ -430,6 +430,10 @@ padding: 0.5rem 0.25rem;
 }
 .credits{
 padding: 1rem 0rem;
+}
+
+article{
+padding-left: 1.5rem;
 }
 
 //change font color for credit links in footer

@@ -1,6 +1,6 @@
 ---
 layout: full-width
-title: Scratchpad
+title: Random
 weight: 1
 ---
 
