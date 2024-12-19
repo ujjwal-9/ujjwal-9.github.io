@@ -605,7 +605,7 @@ nav.group a.active:after {
 header > nav a {
   font-size: 1.2rem;
   font-family: "Gill Sans", "Gill Sans MT", "Lato", Calibri, sans-serif;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #a00000;
   padding-top: 1.5rem;
@@ -614,7 +614,7 @@ header > nav a {
   float: left;
   margin-top: 0;
   margin-bottom: 0;
-  padding-right: 2rem;
+  padding-right: 1.4rem;
   vertical-align: baseline; }
 
 header > nav a img {
@@ -634,6 +634,9 @@ ul.footer-links li {
 
 .credits {
   padding: 1rem 0rem; }
+
+article {
+  padding-left: 1.5rem; }
 
 .credits {
   font-family: "Gill Sans", "Gill Sans MT", "Lato", Calibri, sans-serif; }
