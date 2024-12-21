@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ujjwal Upadhyay</title>
-    <description>Personal webpage</description>
+    <title>Ujjwal's Mindspace</title>
+    <description>Ujjwal's Mindspace</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 20 Dec 2024 22:05:28 -0600</pubDate>
-    <lastBuildDate>Fri, 20 Dec 2024 22:05:28 -0600</lastBuildDate>
+    <pubDate>Sat, 21 Dec 2024 09:39:22 +0530</pubDate>
+    <lastBuildDate>Sat, 21 Dec 2024 09:39:22 +0530</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -130,7 +130,7 @@ MathJax.Hub.Config({
   &lt;p&gt;&lt;strong&gt;Follow me on Twitter &lt;a href=&quot;https://twitter.com/theujjwal9&quot;&gt;@theujjwal9&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
-        <pubDate>Sun, 01 Dec 2024 00:00:00 -0600</pubDate>
+        <pubDate>Sun, 01 Dec 2024 00:00:00 +0530</pubDate>
         <link>/articles/24/intro-to-true-intelligence</link>
         <guid isPermaLink="true">/articles/24/intro-to-true-intelligence</guid>
         
@@ -203,7 +203,7 @@ MathJax.Hub.Config({
   &lt;p&gt;&lt;strong&gt;Follow me on Twitter &lt;a href=&quot;https://twitter.com/theujjwal9&quot;&gt;@theujjwal9&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
-        <pubDate>Thu, 12 Oct 2023 00:00:00 -0500</pubDate>
+        <pubDate>Thu, 12 Oct 2023 00:00:00 +0530</pubDate>
         <link>/articles/23/intro-to-diffusion-model</link>
         <guid isPermaLink="true">/articles/23/intro-to-diffusion-model</guid>
         
@@ -484,7 +484,7 @@ another by checking that each inference is between those allowed.&lt;/p&gt;
 
 [The Future of Mathematics?](https://www.youtube.com/watch?v=Dp-mQ3HxgDE&amp;ab_channel=MicrosoftResearch) --&gt;
 </description>
-        <pubDate>Sun, 11 Dec 2022 00:00:00 -0600</pubDate>
+        <pubDate>Sun, 11 Dec 2022 00:00:00 +0530</pubDate>
         <link>/articles/22/intro-to-lean</link>
         <guid isPermaLink="true">/articles/22/intro-to-lean</guid>
         
@@ -659,7 +659,7 @@ I didn’t put it like a question. I made a downward-inflecting statement, in a 
 
 &lt;!-- ## Chapter 3: Don’t Feel Their Pain, Label It --&gt;
 </description>
-        <pubDate>Fri, 05 Feb 2021 00:00:00 -0600</pubDate>
+        <pubDate>Fri, 05 Feb 2021 00:00:00 +0530</pubDate>
         <link>/articles/21/never-split-the-difference</link>
         <guid isPermaLink="true">/articles/21/never-split-the-difference</guid>
         
@@ -697,7 +697,7 @@ MathJax.Hub.Config({
 
 &lt;p&gt;We generally are more interested in knowing our counterpart’s BANTA and reservation value. It is found out which some certainity during the negotition. But before the negotiation, we need to collect some open information like if you can get his/her bid for similar item, etc. Then using such information, we make our initial estimate.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 02 Feb 2021 00:00:00 -0600</pubDate>
+        <pubDate>Tue, 02 Feb 2021 00:00:00 +0530</pubDate>
         <link>/articles/21/banta-zopa</link>
         <guid isPermaLink="true">/articles/21/banta-zopa</guid>
         
@@ -783,7 +783,7 @@ MathJax.Hub.Config({
 &lt;p&gt;These excerpts illustrate the rich insights from Thinking, Fast and Slow and highlight its relevance to understanding decision-making, biases, and human behavior. Let me know if you’d like to explore specific chapters or concepts further!&lt;/p&gt;
 
 </description>
-        <pubDate>Sun, 31 Jan 2021 00:00:00 -0600</pubDate>
+        <pubDate>Sun, 31 Jan 2021 00:00:00 +0530</pubDate>
         <link>/articles/21/thinking-fast-and-slow</link>
         <guid isPermaLink="true">/articles/21/thinking-fast-and-slow</guid>
         
@@ -796,7 +796,7 @@ MathJax.Hub.Config({
         <title>Lean Proof Assistant</title>
         <description>
 </description>
-        <pubDate>Thu, 21 Jan 2021 00:00:00 -0600</pubDate>
+        <pubDate>Thu, 21 Jan 2021 00:00:00 +0530</pubDate>
         <link>/articles/21/a-test-draft</link>
         <guid isPermaLink="true">/articles/21/a-test-draft</guid>
         
@@ -1242,7 +1242,7 @@ MathJax.Hub.Config({
 &lt;/ol&gt;
 
 </description>
-        <pubDate>Sat, 09 Jan 2021 00:00:00 -0600</pubDate>
+        <pubDate>Sat, 09 Jan 2021 00:00:00 +0530</pubDate>
         <link>/articles/21/how-to-read-head-ct</link>
         <guid isPermaLink="true">/articles/21/how-to-read-head-ct</guid>
         
@@ -1706,7 +1706,7 @@ MathJax.Hub.Config({
   &lt;li&gt;&lt;a href=&quot;https://www.radiologycafe.com/medical-students/radiology-basics/head-anatomy&quot;&gt;radiologycafe.com&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </description>
-        <pubDate>Tue, 05 Jan 2021 00:00:00 -0600</pubDate>
+        <pubDate>Tue, 05 Jan 2021 00:00:00 +0530</pubDate>
         <link>/articles/21/ct-brain-anatomy</link>
         <guid isPermaLink="true">/articles/21/ct-brain-anatomy</guid>
         
@@ -1888,7 +1888,7 @@ MathJax.Hub.Config({
   &lt;p&gt;&lt;strong&gt;Follow me on twitter &lt;a href=&quot;https://twitter.com/theujjwal9&quot;&gt;@theujjwal9&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
-        <pubDate>Thu, 31 Dec 2020 00:00:00 -0600</pubDate>
+        <pubDate>Thu, 31 Dec 2020 00:00:00 +0530</pubDate>
         <link>/articles/20/pydicom-tutorial</link>
         <guid isPermaLink="true">/articles/20/pydicom-tutorial</guid>
         
