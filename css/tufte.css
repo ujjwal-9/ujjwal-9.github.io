@@ -770,6 +770,9 @@ footer, .fa, .fa-brands, .fa-solid {
   color: #a00000;
   text-decoration: none; }
 
+.fa-inline {
+  color: black; }
+
 .language-plaintext {
   font-family: ETbook, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
   font-size: 1.02rem;
