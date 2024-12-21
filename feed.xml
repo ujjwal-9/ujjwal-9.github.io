@@ -5,8 +5,8 @@
     <description>Ujjwal's Mindspace</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 21 Dec 2024 09:39:22 +0530</pubDate>
-    <lastBuildDate>Sat, 21 Dec 2024 09:39:22 +0530</lastBuildDate>
+    <pubDate>Sat, 21 Dec 2024 09:43:40 +0530</pubDate>
+    <lastBuildDate>Sat, 21 Dec 2024 09:43:40 +0530</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -1770,7 +1770,7 @@ MathJax.Hub.Config({
 &lt;/blockquote&gt;
 
 &lt;figure&gt;
-&lt;img src=&quot;https://www.materialise.com/sites/default/files/image-uploads/pages/academy/Medical/slice_increment.jpg&quot; /&gt;
+&lt;img src=&quot;https://i.sstatic.net/Cx1ri.png&quot; /&gt;
 &lt;figcaption&gt;Slice Increment and Slice Thickness&lt;/figcaption&gt;
 &lt;/figure&gt;
 
