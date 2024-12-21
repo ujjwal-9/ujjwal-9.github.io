@@ -25,6 +25,7 @@ nav_exclude: true
   clear: both;
 }
 
+
 html, body { height: 100%; }
 
 // First significant deviation from CSS on tufte.css site - variable font size as browser width expands or contracts
@@ -610,7 +611,7 @@ display:none;
 }
 }
 
-footer, .fa {
+footer, .fa, .fa-brands, .fa-solid{
 color: $contrast-color;
 text-decoration: none;
 }

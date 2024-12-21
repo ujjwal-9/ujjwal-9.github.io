@@ -6,6 +6,7 @@ title_include: true
 categories: blog
 ---
 
+
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
   <!-- tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}, -->
@@ -14,7 +15,6 @@ MathJax.Hub.Config({
   "HTML-CSS": { scale: 110}
 });
 </script>
-
 # Abstract
 
 True intelligence lies in the ability to adapt to the unknown. This poses one of the most enduring challenges in artificial intelligence: how to create systems capable of reasoning and solving problems beyond their initial training data. While AI systems excel in specific tasks with clear data boundaries, they often falter when presented with novel problems or contexts, such as rare medical conditions or unseen scenarios in robotics. The essence of intelligence, both human and artificial, involves compositional reasoning—the ability to deconstruct tasks into core components and recombine them in new contexts. 
