@@ -766,7 +766,7 @@ hr.slender {
 
   body header, body footer {
     display: none; } }
-footer, .fa {
+footer, .fa, .fa-brands, .fa-solid {
   color: #a00000;
   text-decoration: none; }
 
