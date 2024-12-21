@@ -1,13 +1,13 @@
 baseurl:
-title: Ujjwal Upadhyay
+title: Ujjwal's Mindspace
 author: Ujjwal Upadhyay
 simple_search: http://google.com/search
-description: Personal webpage
+description: Ujjwal's Mindspace
 name: Ujjwal Upadhyay
 markdown: kramdown
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 permalink: /articles/:short_year/:title
-timezone: America/Chicago
+timezone: Asia/Kolkata
 excerpt_separator: <!--more-->  # you can specify your own separator, of course.
 exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'UploadToGithub.Rakefile', 'README.md', 'vendor']
 post:
@@ -35,5 +35,5 @@ transfer:
   command: rsync
   settings: -av
   source: _site/
-  destination: ~/projects/ujjwal9.com/
+  destination: ~/ujjwal9.com/
 google_analytics: UA-112402500-1
