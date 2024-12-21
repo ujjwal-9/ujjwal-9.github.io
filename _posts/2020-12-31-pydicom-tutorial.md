@@ -64,10 +64,7 @@ def load_scan(path):
 
 > Slice thickness directly impacts the precision of target localization during treatment.
 
-<figure>
-<img src="https://i.sstatic.net/Cx1ri.png">
-<figcaption>Slice Increment and Slice Thickness</figcaption>
-</figure>
+{% maincolumn 'assets/img/pydicom-tutorial/slice-increment-and-thickness.png' 'Slice Increment and Slice Thickness.' %}
 
 Slice Increment/Spacing refers to the movement of the table/scanner for scanning the next slice.
 
@@ -97,7 +94,7 @@ def get_pixels_hu(scans):
 HU scaling is explained in my [dicom standard blog](http://ujjwal9.ml/blog/medicine/2020/12/28/dicom-intro.html). 
 
 **Multiplanar reconstruction**
-{% maincolumn 'https://images.ctfassets.net/cnu0m8re1exe/1k0YS9HKpsyurGlnI1Zlky/223cbf9b658b7068925ba7f944a9bb39/sagittal.jpg' 'Multiplanar view of brain.' %}
+{% maincolumn 'assets/img/pydicom-tutorial/windowing-org.png' 'Multiplanar view of brain.' %}
 
 
 ```python
