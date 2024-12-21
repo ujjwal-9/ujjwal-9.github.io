@@ -65,7 +65,7 @@ def load_scan(path):
 > Slice thickness directly impacts the precision of target localization during treatment.
 
 <figure>
-<img src="https://www.materialise.com/sites/default/files/image-uploads/pages/academy/Medical/slice_increment.jpg">
+<img src="https://i.sstatic.net/Cx1ri.png">
 <figcaption>Slice Increment and Slice Thickness</figcaption>
 </figure>
 
