@@ -15,7 +15,7 @@ MathJax.Hub.Config({
 
 I am particularly interested in representation learning, adversarial robustness, and compositional reasoning, with a strong focus on their applications in computational biology, medicine, and their interplay with human intelligence. While I have a strong inclination toward these topics, I remain open to exploring a variety of research problems that push the boundaries of AI.
 
-**You can find my full list of publications on my [google scholar profile](https://scholar.google.com/citations?user=lvpaXdEAAAAJ&hl=en).**
+**You can find my full list of publications on my [google scholar profile <i class="fa-inline fa-brands fa-google-scholar"></i>](https://scholar.google.com/citations?user=lvpaXdEAAAAJ&hl=en).**
 
 ## Selected Publications
 
