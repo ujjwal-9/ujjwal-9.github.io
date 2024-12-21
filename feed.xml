@@ -5,8 +5,8 @@
     <description>Ujjwal's Mindspace</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 21 Dec 2024 09:43:40 +0530</pubDate>
-    <lastBuildDate>Sat, 21 Dec 2024 09:43:40 +0530</lastBuildDate>
+    <pubDate>Sat, 21 Dec 2024 09:50:33 +0530</pubDate>
+    <lastBuildDate>Sat, 21 Dec 2024 09:50:33 +0530</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -1769,10 +1769,7 @@ MathJax.Hub.Config({
   &lt;p&gt;Slice thickness directly impacts the precision of target localization during treatment.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;figure&gt;
-&lt;img src=&quot;https://i.sstatic.net/Cx1ri.png&quot; /&gt;
-&lt;figcaption&gt;Slice Increment and Slice Thickness&lt;/figcaption&gt;
-&lt;/figure&gt;
+&lt;figure&gt;&lt;figcaption&gt;Slice Increment and Slice Thickness.&lt;/figcaption&gt;&lt;img src=&quot;/assets/img/pydicom-tutorial/slice-increment-and-thickness.png&quot; /&gt;&lt;/figure&gt;
 
 &lt;p&gt;Slice Increment/Spacing refers to the movement of the table/scanner for scanning the next slice.&lt;/p&gt;
 
@@ -1803,7 +1800,7 @@ MathJax.Hub.Config({
 &lt;p&gt;HU scaling is explained in my &lt;a href=&quot;http://ujjwal9.ml/blog/medicine/2020/12/28/dicom-intro.html&quot;&gt;dicom standard blog&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Multiplanar reconstruction&lt;/strong&gt;&lt;/p&gt;
-&lt;figure&gt;&lt;figcaption&gt;Multiplanar view of brain.&lt;/figcaption&gt;&lt;img src=&quot;https://images.ctfassets.net/cnu0m8re1exe/1k0YS9HKpsyurGlnI1Zlky/223cbf9b658b7068925ba7f944a9bb39/sagittal.jpg&quot; /&gt;&lt;/figure&gt;
+&lt;figure&gt;&lt;figcaption&gt;Multiplanar view of brain.&lt;/figcaption&gt;&lt;img src=&quot;/assets/img/pydicom-tutorial/windowing-org.png&quot; /&gt;&lt;/figure&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;slices&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sorted&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;patient_dicom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SliceLocation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 

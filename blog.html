@@ -1858,10 +1858,7 @@ MathJax.Hub.Config({
   <p>Slice thickness directly impacts the precision of target localization during treatment.</p>
 </blockquote>
 
-<figure>
-<img src="https://i.sstatic.net/Cx1ri.png" />
-<figcaption>Slice Increment and Slice Thickness</figcaption>
-</figure>
+<figure><figcaption>Slice Increment and Slice Thickness.</figcaption><img src="/assets/img/pydicom-tutorial/slice-increment-and-thickness.png" /></figure>
 
 <p>Slice Increment/Spacing refers to the movement of the table/scanner for scanning the next slice.</p>
 
@@ -1892,7 +1889,7 @@ MathJax.Hub.Config({
 <p>HU scaling is explained in my <a href="http://ujjwal9.ml/blog/medicine/2020/12/28/dicom-intro.html">dicom standard blog</a>.</p>
 
 <p><strong>Multiplanar reconstruction</strong></p>
-<figure><figcaption>Multiplanar view of brain.</figcaption><img src="https://images.ctfassets.net/cnu0m8re1exe/1k0YS9HKpsyurGlnI1Zlky/223cbf9b658b7068925ba7f944a9bb39/sagittal.jpg" /></figure>
+<figure><figcaption>Multiplanar view of brain.</figcaption><img src="/assets/img/pydicom-tutorial/windowing-org.png" /></figure>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">slices</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">patient_dicom</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">s</span><span class="p">:</span> <span class="n">s</span><span class="p">.</span><span class="n">SliceLocation</span><span class="p">)</span>
 
